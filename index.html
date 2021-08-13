@@ -80,7 +80,7 @@ map.on('click', function(e) {
    var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).bindPopup('<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i>');
 
      //Marvels
-   var el_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i></i>');
+   var el_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s peak. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
    var el_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).bindPopup('<b><h3>Belasan Mesa</h3></b><i></i>');
    var el_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).bindPopup('<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i>');
    var el_bargetownmarvel = L.marker([6.893707, 10.491943], {icon: marvIcon}).bindPopup('<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i>');
@@ -136,7 +136,7 @@ map.on('click', function(e) {
    var poi_24 = L.marker([-27.078692, 50.537109], {icon: poiIcon}).bindPopup('<b><h3>Lake Fel & River Fel</h3></b><i></i>');
    var poi_25 = L.marker([-42.366662, 28.300781], {icon: poiIcon}).bindPopup('<b><h3>Xerus</h3></b><i></i>');
    var poi_26 = L.marker([-21.033237, 57.084961], {icon: poiIcon}).bindPopup('<b><h3>River Brys</h3></b><i></i>');
-   var poi_27 = L.marker([-25.522615, 55.777588], {icon: poiIcon}).bindPopup('<b><h3>27</h3></b><i></i>');
+   var poi_27 = L.marker([-29.305561, 50.679932], {icon: poiIcon}).bindPopup('<b><h3>A Way Below</h3></b><i></i>');
    var poi_28 = L.marker([-46.626806, 33.33252], {icon: poiIcon}).bindPopup('<b><h3>The Dista Sunsea</h3></b><i></i>');
    var poi_29 = L.marker([-45.606352, 41.671143], {icon: poiIcon}).bindPopup('<b><h3>Lastport</h3></b><i></i>');
    var poi_30 = L.marker([-57.183902, 49.482422], {icon: poiIcon}).bindPopup('<b><h3>Here Be Monsters</h3></h3></b><i>Sometimes it&#39;s quicker to sail the Outer Blue to get to your destination... but it definetly isn&#39;t safer. Some 40% of ships who make this journey don&#39;t return, and even fewer return without casualties.<br><br>Reports of dark, choking mists moving just above the water and freak lightning storms that disrupt navigation are some of the challenges of this route. Not to mention the towering shapes that rise from the water and crash back down or the four-legged beasts that seem to wade through the kilometer deep waters and tower into the sky. Captains brave or foolhardy enough to attempt these crossings and survive are known by the nickname "Kal Gadai" (lit. Stolen Fates) by other seasoned sailors.</i>');
@@ -200,14 +200,17 @@ map.on('click', function(e) {
    var poi_88 = L.marker([-6.413566, 64.061279], {icon: poiIcon}).bindPopup('<b><h3>Hilgael</h3></b><i></i>');
    var poi_89 = L.marker([-33.94336, -61.040039], {icon: poiIcon}).bindPopup('<b><h3>Screams from Below the Waves</h3></b><i></i>');
    var poi_90 = L.marker([37.631635, 28.927002], {icon: poiIcon}).bindPopup('<b><h3>The Attos Gulf & the Lembas Delta</h3></b><i></i>');
-   var poi_91 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>91</h3></b><i></i>');
+   var poi_91 = L.marker([-14.477234, 58.677979], {icon: poiIcon}).bindPopup('<b><h3>Aberic&eacute; Phosphor Mines</h3></b><i></i>');
+   var poi_92 = L.marker([-8.526701, 60.831299], {icon: poiIcon}).bindPopup('<b><h3>A Tinkerer&#39;s Masterwork</h3></b><i></i>');
+   var poi_93 = L.marker([-2.032045, 66.016846], {icon: poiIcon}).bindPopup('<b><h3>The Vents through the Current</h3></b><i></i>');
+   var poi_94 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>94</h3></b><i></i>');
 
 
         //Marker Groups
             var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
             var mg_marvels = L.layerGroup([el_canedmtn,el_belasan,el_glimmer,el_bargetownmarvel,el_heartroot,el_trdunes,el_dkonisle,el_chain, el_alhoriascent,el_ghostlights,el_saltrokmarvel,el_osivin,el_olmara]);
             //var mg_towns = L.layerGroup([,,,,,]);
-            var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,  poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_49,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90]);
+            var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,  poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_49,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);
             
         //Marker Overlay
             var overlays = {
