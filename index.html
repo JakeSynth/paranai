@@ -91,7 +91,16 @@ map.on('click', function(e) {
    var el_olmara = L.marker([-47.709762, -1.043701], {icon: marvIcon}).bindPopup('<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>But there is one catch in this murky blue that has never been caught. Many will say they&#39;ve seen the beast, but few tell truths. Ol&#39; Mara, named after the first fishing ship she capsized and sank, makes an appearance every couple years but never to the same person twice. Some have gone a lifetime without seeing her. Some claim to have had her on the end of their rod before she snapped the line and swam back to the depths. Through all the tales told one thing seems to stay the same, the bright red stripe along her brilliant white body resembling a streaking star across the dark of the water.</i>');
     
      //Towns
-   var twn_X = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>1</h3></b><i></i>');
+   var twn_1 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>1</h3></b><i></i>');
+   var twn_2 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>2</h3></b><i></i>');
+   var twn_3 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>3</h3></b><i></i>');
+   var twn_4 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>5</h3></b><i></i>');
+   var twn_5 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>4</h3></b><i></i>');
+   var twn_6 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>6</h3></b><i></i>');
+   var twn_7 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>7</h3></b><i></i>');
+   var twn_8 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>8</h3></b><i></i>');
+   var twn_9 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>9</h3></b><i></i>');
+   var twn_10 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>10</h3></b><i></i>');
 
      //Places of Interest
    var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).bindPopup('<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i>');
@@ -115,7 +124,7 @@ map.on('click', function(e) {
    var poi_17 = L.marker([2.394322, 55.561523], {icon: poiIcon}).bindPopup('<b><h3>Jadencroft Manor</h3></b><i></i>');
    var poi_currentriver = L.marker([-48.683708, -10.733643], {icon: poiIcon}).bindPopup('<b><h3>The Current (The Endless Stream)</h3></b><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i>');
    var poi_18 = L.marker([31.222197, 36.44165], {icon: poiIcon}).bindPopup('<b><h3>Asbolish</h3></b><i></i>');
-   var poi_19 = L.marker([-29.036961, 141.635742], {icon: poiIcon}).bindPopup('<b><h3>The Rift Islands</h3></b><i></i>');
+   var poi_19 = L.marker([-29.036961, 141.635742], {icon: poiIcon}).bindPopup('<b><h3>The Rift Islands</h3></b><i>An outer-blue fisherman from Acrostai washed up on shore the only survivor of his boat when a huge wave of magical energy destroyed it. He spoke of massive walls of rock, ash bursting from the ocean in a blue haze, and of a rift below the waves that these rocks seemed to jet from. Later expeditions to find the islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close. </i>');
    var poi_20 = L.marker([32.045333, -118.78418], {icon: poiIcon}).bindPopup('<b><h3>The Brittle</h3></b><i></i>');
    var poi_21 = L.marker([46.346928, 26.619873], {icon: poiIcon}).bindPopup('<b><h3>The Sullen Grove & Berenwyrg Ruins</h3></b><i></i>');
    var poi_22 = L.marker([-39.901309, 49.405518], {icon: poiIcon}).bindPopup('<b><h3>The Tritonlord Lakes</h3></b><i></i>');
@@ -176,8 +185,8 @@ map.on('click', function(e) {
    var poi_77 = L.marker([34.379713, -26.125488], {icon: poiIcon}).bindPopup('<b><h3>Glacier River Tkerrim</h3></b><i></i>');
    var poi_78 = L.marker([26.076521, -33.376465], {icon: poiIcon}).bindPopup('<b><h3>River for the King Almen Assar</h3></b><i></i>');
    var poi_79 = L.marker([24.746831, -32.058105], {icon: poiIcon}).bindPopup('<b><h3>The Twin Cities of Twara</h3></b><i></i>');
-   var poi_80 = L.marker([12.961736, -41.737061], {icon: poiIcon}).bindPopup('<b><h3>The Putrid Marsh North</h3></b><i></i>');
-   var poi_81 = L.marker([19.414792, -35.496826], {icon: poiIcon}).bindPopup('<b><h3>The Putrid Marsh South</h3></b><i></i>');
+   var poi_80 = L.marker([12.961736, -41.737061], {icon: poiIcon}).bindPopup('<b><h3>The Putrid Marsh South</h3></b><i></i>');
+   var poi_81 = L.marker([19.414792, -35.496826], {icon: poiIcon}).bindPopup('<b><h3>The Putrid Marsh North</h3></b><i></i>');
    var poi_82 = L.marker([34.894942, -13.842773], {icon: poiIcon}).bindPopup('<b><h3>The Gomai Sandsea (West)</h3></b><i></i>');
    var poi_83 = L.marker([-25.700938, 43.198242], {icon: poiIcon}).bindPopup('<b><h3>Ancient Murals on the Cliffs</h3></b><i></i>');
    var poi_84 = L.marker([38.367502, 3.493652], {icon: poiIcon}).bindPopup('<b><h3>Castor Port</h3></b><i></i>');
@@ -188,16 +197,6 @@ map.on('click', function(e) {
    var poi_89 = L.marker([-33.94336, -61.040039], {icon: poiIcon}).bindPopup('<b><h3>Screams from Below the Waves</h3></b><i></i>');
    var poi_90 = L.marker([37.631635, 28.927002], {icon: poiIcon}).bindPopup('<b><h3>The Attos Gulf & the Lembas Delta</h3></b><i></i>');
    var poi_91 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>91</h3></b><i></i>');
-   var poi_92 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>92</h3></b><i></i>');
-   var poi_93 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>93</h3></b><i></i>');
-   var poi_94 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>94</h3></b><i></i>');
-   var poi_95 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>95</h3></b><i></i>');
-   var poi_96 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>96</h3></b><i></i>');
-   var poi_97 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>97</h3></b><i></i>');
-   var poi_98 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>98</h3></b><i></i>');
-   var poi_99 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>99</h3></b><i></i>');
-   var poi_100 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>100</h3></b><i></i>');
-   var poi_10x = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>10</h3></b><i></i>');
 
 
         //Marker Groups
