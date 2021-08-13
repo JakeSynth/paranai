@@ -13,7 +13,7 @@
 
 
      //Map
-    var map = L.map('map', {attribution: false}).setView([0, 0], 0);
+    var map = L.map('map').setView([0, 0], 0);
     L.tileLayer('geo/{z}/{x}/{y}.png', {
       continuousWorld: false,
       noWrap: true,  
@@ -39,7 +39,7 @@
     poiIcon = new ImpoIcon({iconUrl: 'scripts/images/poi.png'});
 
      //Coordinate Finder
-    var marker = L.marker([0, 0], {
+    var marker = L.marker([2.635789, 251.71875], {
       draggable: true,
     }).addTo(map);
     marker.bindPopup('LatLng Marker').openPopup();
