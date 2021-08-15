@@ -47,13 +47,13 @@
     poiIcon = new ImpoIcon({iconUrl: 'scripts/images/poi.png'});
 
      //Coordinate Finder
-    var marker = L.marker([2.635789, 251.71875], {
-      draggable: true,
-    }).addTo(map);
-    marker.bindPopup('LatLng Marker').openPopup();
-    marker.on('dragend', function(e) {
-      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-    });
+    //var marker = L.marker([2.635789, 251.71875], {
+      //draggable: true,
+    //}).addTo(map);
+    //marker.bindPopup('LatLng Marker').openPopup();
+    //marker.on('dragend', function(e) {
+      //marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    //});
 
 
 
@@ -63,8 +63,8 @@ map.on('click', function(e) {
     //Capitals
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).bindPopup('<b><h3>Castor Port</h3></b><i></i>');
    var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).bindPopup('<b><h3>Vellenai (Capital)</h3></b><i></i>');
-   var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).bindPopup('<b><h3>The Current<br></h3></b>Trade Capital)</i>');
-   var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).bindPopup('<b><h3>The Southold<br></h3></b>Crown Capital)</i>');
+   var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).bindPopup('<b><h3>The Current<br></h3></b><i>(Trade Capital)</i>');
+   var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).bindPopup('<b><h3>The Southold<br></h3></b><i>(Crown Capital)</i>');
    var el_farnun = L.marker([-42.228517, 40.473633], {icon: capIcon}).bindPopup('<b><h3>Far N&#39;un</h3></b><i></i>');
    var el_szenjun = L.marker([-36.332828, -41.187744], {icon: capIcon}).bindPopup('<b><h3>Szen Jun</h3></b><i></i>');
    var el_prismcap = L.marker([2.218684, -45.966797], {icon: capIcon}).bindPopup('<b><h3>The Prism</h3></b><i>(The United Cities of Gannis, Terris, & Great Virim)</i>');
