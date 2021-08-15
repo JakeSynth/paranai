@@ -15,10 +15,13 @@
     <div id="map" style="width: 100%; height: 100%; background: #455586;"></div>
     <script type="text/javascript">
 
+      //My Attribution
+    var myAttrib = 'Created by <a href="https://www.instagram.com/jakesynth">JakeSynth</a>, 2021';
 
      //Map
     var map = L.map('map').setView([0, 0], 0);
     L.tileLayer('geo/{z}/{x}/{y}.png', {
+      attribution: myAttrib,
       continuousWorld: false,
       noWrap: true,  
       minZoom: 3,
@@ -80,7 +83,7 @@ map.on('click', function(e) {
    var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).bindPopup('<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i>');
 
      //Marvels
-   var el_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s peak. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
+   var el_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
    var el_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).bindPopup('<b><h3>Belasan Mesa</h3></b><i></i>');
    var el_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).bindPopup('<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i>');
    var el_bargetownmarvel = L.marker([6.893707, 10.491943], {icon: marvIcon}).bindPopup('<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i>');
