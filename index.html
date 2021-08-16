@@ -11,14 +11,15 @@
     <script src="scripts/leaflet.js"></script>
 </head>
   
-  <body style="height: 100%;margin: 0;">
+<body style="height: 100%;margin: 0;">
     <div id="map" style="width: 100%; height: 100%; background: #455586;"></div>
     <script type="text/javascript">
 
-     //My Attribution
+  //My Attribution
     var myAttrib = 'Created by <a href="https://www.instagram.com/jakesynth">JakeSynth</a>, 2021';
 
-     //Map
+
+  //Map
     var map = L.map('map').setView([0, 0], 0);
     L.tileLayer('geo/{z}/{x}/{y}.png', {
       attribution: myAttrib,
@@ -27,7 +28,6 @@
       minZoom: 3,
       maxZoom: 7,
     }).addTo(map);
-
 
      //Custom Icons
     var ImpoIcon = L.Icon.extend({
@@ -39,7 +39,7 @@
     shadowAnchor: [13, 42],  // the same for the shadow
     popupAnchor:  [0, -42]
     } // point from which the popup should open relative to the iconAnchor
-});
+    });
 
     var capIcon = new ImpoIcon({iconUrl: 'scripts/images/capital.png',}),
     marvIcon = new ImpoIcon({iconUrl: 'scripts/images/marvel.png'});
@@ -55,12 +55,10 @@
       //marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     //});
 
+    map.on('click', function(e) {
+    });
 
-
-map.on('click', function(e) {
-});
-
-    //Capitals
+  //Capitals
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).bindPopup('<b><h3>Castor Port</h3></b><i></i>');
    var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).bindPopup('<b><h3>Vellenai (Capital)</h3></b><i></i>');
    var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).bindPopup('<b><h3>The Current<br></h3></b><i>(Trade Capital)</i>');
@@ -73,7 +71,7 @@ map.on('click', function(e) {
    var el_saltrokcap = L.marker([32.814978, -114.32373], {icon: capIcon}).bindPopup('<b><h3>Saltrok</h3></b><i></i>');
    var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).bindPopup('<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i>');
 
-     //Marvels
+  //Marvels
    var el_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
    var el_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).bindPopup('<b><h3>Belasan Mesa</h3></b><i></i>');
    var el_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).bindPopup('<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i>');
@@ -88,7 +86,7 @@ map.on('click', function(e) {
    var el_osivin = L.marker([32.593106, -23.763428], {icon: marvIcon}).bindPopup('<b><h3>Osiris & Vinferra</h3></b><i>The Shattered Mountains</i>');
    var el_olmara = L.marker([-47.709762, -1.043701], {icon: marvIcon}).bindPopup('<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>But there is one catch in this murky blue that has never been caught. Many will say they&#39;ve seen the beast, but few tell truths. Ol&#39; Mara, named after the first fishing ship she capsized and sank, makes an appearance every couple years but never to the same person twice. Some have gone a lifetime without seeing her. Some claim to have had her on the end of their rod before she snapped the line and swam back to the depths. Through all the tales told one thing seems to stay the same, the bright red stripe along her brilliant white body resembling a streaking star across the dark of the water.</i>');
 
-     //Places of Interest
+  //Places of Interest
    var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).bindPopup('<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i>');
    var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).bindPopup('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i>');
    var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).bindPopup('<b><h3>Nogesic & the Ruins</h3></b><i></i>');
@@ -186,7 +184,7 @@ map.on('click', function(e) {
    var poi_93 = L.marker([-2.032045, 66.016846], {icon: poiIcon}).bindPopup('<b><h3>The Vents through the Current</h3></b><i></i>');
    var poi_94 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>94</h3></b><i></i>');
     
-     //Towns
+  //Towns
    var twn_1 = L.marker([-38.401949, 44.769287], {icon: townIcon}).bindPopup('<b><h3>Wvom</h3></b><i></i>');
    var twn_2 = L.marker([-42.585444, 48.175049], {icon: townIcon}).bindPopup('<b><h3>Czarshold</h3></b><i></i>');
    var twn_3 = L.marker([-36.914764, 49.96582], {icon: townIcon}).bindPopup('<b><h3>Nestu</h3></b><i></i>');
@@ -207,7 +205,7 @@ map.on('click', function(e) {
    var twn_18 = L.marker([-23.251441, 48.691406], {icon: townIcon}).bindPopup('<b><h3>Hagara Port</h3></b><i></i>');
    var twn_19 = L.marker([-25.532528, 55.777588], {icon: townIcon}).bindPopup('<b><h3>Heiss Prison City</h3></b><i></i>');
    var twn_20 = L.marker([-21.524627, 58.64502], {icon: townIcon}).bindPopup('<b><h3>Dune Limit</h3></b><i></i>');
-   var twn_21 = L.marker([-20.519644, 61.710205], {icon: townIcon}).bindPopup('<b><h3>Sandas End</h3></b><i></i>');
+   var twn_21 = L.marker([-20.519644, 61.710205], {icon: townIcon}).bindPopup('<b><h3>Sanda&#39;s End</h3></b><i></i>');
    var twn_22 = L.marker([-16.83609, 56.315918], {icon: townIcon}).bindPopup('<b><h3>Satiny</h3></b><i></i>');
    var twn_23 = L.marker([-12.972442, 60.809326], {icon: townIcon}).bindPopup('<b><h3>Metiny</h3></b><i></i>');
    var twn_24 = L.marker([-16.804541, 59.490967], {icon: townIcon}).bindPopup('<b><h3>Vill</h3></b><i></i>');
@@ -383,26 +381,28 @@ map.on('click', function(e) {
    var twn_194 = L.marker([-38.453589, -44.58252], {icon: townIcon}).bindPopup('<b><h3>Hiti Num</h3></b><i>The Wandering City of Num</i>');
    var twn_195 = L.marker([48.173412, -9.481201], {icon: townIcon}).bindPopup('<b><h3>Saltlick</h3></b><i></i>');
    var twn_196 = L.marker([-23.049407, 64.061279], {icon: townIcon}).bindPopup('<b><h3>Lak</h3></b><i></i>');
-   var twn_197 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>197</h3></b><i></i>');
+   var twn_197 = L.marker([-40.513799, 49.471436], {icon: townIcon}).bindPopup('<b><h3>Tirion</h3></b><i></i>');
+   var twn_198 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>198</h3></b><i></i>');
+   var twn_199 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>199</h3></b><i></i>');
 
 
-        //Marker Groups
-            var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
-            var mg_marvels = L.layerGroup([el_canedmtn,el_belasan,el_glimmer,el_bargetownmarvel,el_heartroot,el_trdunes,el_dkonisle,el_chain, el_alhoriascent,el_ghostlights,el_saltrokmarvel,el_osivin,el_olmara]);
-            var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196]);
-            var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);
+  //Marker Groups
+    var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
+    var mg_marvels = L.layerGroup([el_canedmtn,el_belasan,el_glimmer,el_bargetownmarvel,el_heartroot,el_trdunes,el_dkonisle,el_chain, el_alhoriascent,el_ghostlights,el_saltrokmarvel,el_osivin,el_olmara]);
+    var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197]);
+      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);
             
-        //Marker Overlay
-            var overlays = {
-          "The Capitals of Paranai" : mg_capitals,
-          "Towns & Named Settlements" : mg_towns,
-          "Azrigoli’s “The Thirteen Marvels”" : mg_marvels,
-          "Other Places of Interest" : mg_poi,
-                }
+       //Marker Overlay
+      var overlays = {
+        "The Capitals of Paranai" : mg_capitals,
+        "Towns & Named Settlements" : mg_towns,
+        "Azrigoli’s “The Thirteen Marvels”" : mg_marvels,
+        "Other Places of Interest" : mg_poi,
+        }
 
                 
-        //Marker Group Control DONT EDIT
-            L.control.layers(null, overlays).addTo(map);
+       //Marker Group Control
+      L.control.layers(null, overlays).addTo(map);
   
     </script>
   </body>
