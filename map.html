@@ -9,10 +9,14 @@
     <script src="scripts/leaflet.js"></script>
     <script src="scripts/L.Control.Sidebar.js"></script>
     <link rel="stylesheet" href="scripts/L.Control.Sidebar.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
     <style type="text/css">
     @media (min-width: 768px) {
     .close {display: none;}
     .close:hover {color: #999;}
+    .h1 {font-family: 'Cinzel', serif;}
   </style>
     </head>
   
@@ -22,11 +26,11 @@
     <div id="map" style="width: 100%; height: 100%; background: #455586;"></div>
     <script type="text/javascript">
 
-  //My Attribution
+//My Attribution
     var myAttrib = 'Created by <a href="https://www.instagram.com/jakesynth">JakeSynth</a>, 2021';
 
 
-    //Map
+//Map
     var map = L.map('map').setView([0, 0], 0);
     L.tileLayer('geo/{z}/{x}/{y}.png', {
       attribution: myAttrib,
@@ -36,7 +40,7 @@
       maxZoom: 7,
     }).addTo(map);
 
-    //Custom Icons
+//Custom Icons
     var ImpoIcon = L.Icon.extend({
     options: {
     shadowUrl: 'scripts/images/marker-shadow.png',
@@ -54,7 +58,7 @@
     townIcon = new ImpoIcon({iconUrl: 'scripts/images/town.png'});
     poiIcon = new ImpoIcon({iconUrl: 'scripts/images/poi.png'});
 
-     //Coordinate Finder
+//Coordinate Finder
     //var marker = L.marker([2.635789, 251.71875], {
       //draggable: true,
     //}).addTo(map);
@@ -63,7 +67,7 @@
       //marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     //});
 
-    //Sidebar
+//Sidebar
  var sidebar = L.control.sidebar('sidebar', {
             closeButton: true,
             position: 'left'
@@ -75,31 +79,12 @@
       })
 
 
-
-    var bungle = L.marker([50, 7]).on('click', function () {
-        sidebar.hide();
-        sidebar.show();
-        sidebar.setContent('');
-      }).bindTooltip('<b><h3>Castor Port</h3></b><i></i>',{
-        direction: 'top'
-      });
-
-    var chicken = L.marker([50, 15]).on('click', function () {
-            sidebar.hide();
-            sidebar.show();
-          sidebar.setContent('<h1>cheese<h1>');
-    });
-
-
-  //Markers
-
-
-  //Capitals
+//Markers
+//Capitals
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).on('click', function () {
-        sidebar.hide();
         sidebar.show();
         sidebar.setContent('<h1>Castor Port</h1><i>The Port Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>');})
-        .bindPopup('<b><h3>Castor Port</h3></b><i>The Port Capital of Gomai</i>',{direction: 'top'});
+    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Port Capital of Gomai</i>',{direction: 'top'}"));
    var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).bindPopup('<b><h3>Vellenai (Capital)</h3></b><i></i>');
    var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).bindPopup('<b><h3>The Current<br></h3></b><i>(Trade Capital)</i>');
    var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).bindPopup('<b><h3>The Southold<br></h3></b><i>(Crown Capital)</i>');
@@ -110,23 +95,21 @@
    var el_ekonport = L.marker([-31.989442, -82.188721], {icon: capIcon}).bindPopup('<b><h3>Ekonport & Inkinport</h3></b><i>The Twinned Port Capitals of Tcara</i>');
    var el_saltrokcap = L.marker([32.814978, -114.32373], {icon: capIcon}).bindPopup('<b><h3>Saltrok</h3></b><i></i>');
    var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).bindPopup('<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i>');
-
-  //Marvels
-   var el_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
-   var el_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).bindPopup('<b><h3>Belasan Mesa</h3></b><i></i>');
-   var el_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).bindPopup('<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i>');
-   var el_bargetownmarvel = L.marker([6.893707, 10.491943], {icon: marvIcon}).bindPopup('<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i>');
-   var el_heartroot = L.marker([4.083453, 58.513184], {icon: marvIcon}).bindPopup('<b><h3>The Heartroot of Gallis</h3></b><i></i>');
-   var el_trdunes = L.marker([42.147114, 4.899902], {icon: marvIcon}).bindPopup('<b><h3>The Trembling Dunes</h3></b><i></i>');
-   var el_dkonisle = L.marker([42.730874, 32.003174], {icon: marvIcon}).bindPopup('<b><h3>The Residents on the Dkon Islands</h3></b><i></i>');
-   var el_chain = L.marker([-40.780541, -32.003174], {icon: marvIcon}).bindPopup('<b><h3>The Chain</h3></b><i></i>');
-   var el_alhoriascent = L.marker([-30.306503, -91.779785], {icon: marvIcon}).bindPopup('<b><h3>The Pilgrimage up the Alhori Ascent</h3></b><i></i>');
-   var el_ghostlights = L.marker([-19.766704, 115.532227], {icon: marvIcon}).bindPopup('<b><h3>The Ghost Lights over the Steaming Sea</h3></b><i>Mesmerising colours that shine through the fog of the Steaming Sea. Some say the hypnotic swirls and bands of glowing effervescence in the sky come from something of great power lying further beyond the impassable wall of mist, but these are only rumors.</i>');
-   var el_saltrokmarvel = L.marker([32.630123, -114.598389], {icon: marvIcon}).bindPopup('<b><h3>The Ruined City of Saltrok</h3></b><i></i>');
-   var el_osivin = L.marker([32.593106, -23.763428], {icon: marvIcon}).bindPopup('<b><h3>Osiris & Vinferra</h3></b><i>The Shattered Mountains</i>');
-   var el_olmara = L.marker([-47.709762, -1.043701], {icon: marvIcon}).bindPopup('<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>But there is one catch in this murky blue that has never been caught. Many will say they&#39;ve seen the beast, but few tell truths. Ol&#39; Mara, named after the first fishing ship she capsized and sank, makes an appearance every couple years but never to the same person twice. Some have gone a lifetime without seeing her. Some claim to have had her on the end of their rod before she snapped the line and swam back to the depths. Through all the tales told one thing seems to stay the same, the bright red stripe along her brilliant white body resembling a streaking star across the dark of the water.</i>');
-
-  //Places of Interest
+//Marvels
+   var mv_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
+   var mv_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).bindPopup('<b><h3>Belasan Mesa</h3></b><i></i>');
+   var mv_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).bindPopup('<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i>');
+   var mv_bargetownmarvel = L.marker([6.893707, 10.491943], {icon: marvIcon}).bindPopup('<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i>');
+   var mv_heartroot = L.marker([4.083453, 58.513184], {icon: marvIcon}).bindPopup('<b><h3>The Heartroot of Gallis</h3></b><i></i>');
+   var mv_trdunes = L.marker([42.147114, 4.899902], {icon: marvIcon}).bindPopup('<b><h3>The Trembling Dunes</h3></b><i></i>');
+   var mv_dkonisle = L.marker([42.730874, 32.003174], {icon: marvIcon}).bindPopup('<b><h3>The Residents on the Dkon Islands</h3></b><i></i>');
+   var mv_chain = L.marker([-40.780541, -32.003174], {icon: marvIcon}).bindPopup('<b><h3>The Chain</h3></b><i></i>');
+   var mv_alhoriascent = L.marker([-30.306503, -91.779785], {icon: marvIcon}).bindPopup('<b><h3>The Pilgrimage up the Alhori Ascent</h3></b><i></i>');
+   var mv_ghostlights = L.marker([-19.766704, 115.532227], {icon: marvIcon}).bindPopup('<b><h3>The Ghost Lights over the Steaming Sea</h3></b><i>Mesmerising colours that shine through the fog of the Steaming Sea. Some say the hypnotic swirls and bands of glowing effervescence in the sky come from something of great power lying further beyond the impassable wall of mist, but these are only rumors.</i>');
+   var mv_saltrokmarvel = L.marker([32.630123, -114.598389], {icon: marvIcon}).bindPopup('<b><h3>The Ruined City of Saltrok</h3></b><i></i>');
+   var mv_osivin = L.marker([32.593106, -23.763428], {icon: marvIcon}).bindPopup('<b><h3>Osiris & Vinferra</h3></b><i>The Shattered Mountains</i>');
+   var mv_olmara = L.marker([-47.709762, -1.043701], {icon: marvIcon}).bindPopup('<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>But there is one catch in this murky blue that has never been caught. Many will say they&#39;ve seen the beast, but few tell truths. Ol&#39; Mara, named after the first fishing ship she capsized and sank, makes an appearance every couple years but never to the same person twice. Some have gone a lifetime without seeing her. Some claim to have had her on the end of their rod before she snapped the line and swam back to the depths. Through all the tales told one thing seems to stay the same, the bright red stripe along her brilliant white body resembling a streaking star across the dark of the water.</i>');
+//Places of Interest
    var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).bindPopup('<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i>');
    var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).bindPopup('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i>');
    var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).bindPopup('<b><h3>Nogesic & the Ruins</h3></b><i></i>');
@@ -223,8 +206,7 @@
    var poi_92 = L.marker([-8.526701, 60.831299], {icon: poiIcon}).bindPopup('<b><h3>A Tinkerer&#39;s Masterwork</h3></b><i></i>');
    var poi_93 = L.marker([-2.032045, 66.016846], {icon: poiIcon}).bindPopup('<b><h3>The Vents through the Current</h3></b><i></i>');
    var poi_94 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>94</h3></b><i></i>');
-    
-  //Towns
+//Towns
    var twn_1 = L.marker([-38.401949, 44.769287], {icon: townIcon}).bindPopup('<b><h3>Wvom</h3></b><i></i>');
    var twn_2 = L.marker([-42.585444, 48.175049], {icon: townIcon}).bindPopup('<b><h3>Czarshold</h3></b><i></i>');
    var twn_3 = L.marker([-36.914764, 49.96582], {icon: townIcon}).bindPopup('<b><h3>Nestu</h3></b><i></i>');
@@ -425,23 +407,659 @@
    var twn_198 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>198</h3></b><i></i>');
    var twn_199 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>199</h3></b><i></i>');
 
-   
-  //Marker Groups
+
+//Hover Event Listeners
+  //Capitals
+  el_castorport.on("mouseover", function(evt) { this.openPopup(); });
+  el_castorport.on("mouseout", function(evt) { this.closePopup(); });
+  el_vellenaicap.on("mouseover", function(evt) { this.openPopup(); });
+  el_vellenaicap.on("mouseout", function(evt) { this.closePopup(); });
+  el_currentcap.on("mouseover", function(evt) { this.openPopup(); });
+  el_currentcap.on("mouseout", function(evt) { this.closePopup(); });
+  el_southold.on("mouseover", function(evt) { this.openPopup(); });
+  el_southold.on("mouseout", function(evt) { this.closePopup(); });
+  el_farnun.on("mouseover", function(evt) { this.openPopup(); });
+  el_farnun.on("mouseout", function(evt) { this.closePopup(); });
+  el_szenjun.on("mouseover", function(evt) { this.openPopup(); });
+  el_szenjun.on("mouseout", function(evt) { this.closePopup(); });
+  el_prismcap.on("mouseover", function(evt) { this.openPopup(); });
+  el_prismcap.on("mouseout", function(evt) { this.closePopup(); });
+  el_ellosciti.on("mouseover", function(evt) { this.openPopup(); });
+  el_ellosciti.on("mouseout", function(evt) { this.closePopup(); });
+  el_saltrokcap.on("mouseover", function(evt) { this.openPopup(); });
+  el_saltrokcap.on("mouseout", function(evt) { this.closePopup(); });
+  el_bargetowncap.on("mouseover", function(evt) { this.openPopup(); });
+  el_bargetowncap.on("mouseout", function(evt) { this.closePopup(); });
+
+  //Marvels
+  mv_canedmtn.on("mouseover", function(evt) { this.openPopup(); });
+  mv_canedmtn.on("mouseout", function(evt) { this.closePopup(); });
+  mv_belasan.on("mouseover", function(evt) { this.openPopup(); });
+  mv_belasan.on("mouseout", function(evt) { this.closePopup(); });
+  mv_glimmer.on("mouseover", function(evt) { this.openPopup(); });
+  mv_glimmer.on("mouseout", function(evt) { this.closePopup(); });
+  mv_bargetownmarvel.on("mouseover", function(evt) { this.openPopup(); });
+  mv_bargetownmarvel.on("mouseout", function(evt) { this.closePopup(); });
+  mv_heartroot.on("mouseover", function(evt) { this.openPopup(); });
+  mv_heartroot.on("mouseout", function(evt) { this.closePopup(); });
+  mv_trdunes.on("mouseover", function(evt) { this.openPopup(); });
+  mv_trdunes.on("mouseout", function(evt) { this.closePopup(); });
+  mv_dkonisle.on("mouseover", function(evt) { this.openPopup(); });
+  mv_dkonisle.on("mouseout", function(evt) { this.closePopup(); });
+  mv_chain.on("mouseover", function(evt) { this.openPopup(); });
+  mv_chain.on("mouseout", function(evt) { this.closePopup(); });
+  mv_alhoriascent.on("mouseover", function(evt) { this.openPopup(); });
+  mv_alhoriascent.on("mouseout", function(evt) { this.closePopup(); });
+  mv_ghostlights.on("mouseover", function(evt) { this.openPopup(); });
+  mv_ghostlights.on("mouseout", function(evt) { this.closePopup(); });
+  mv_saltrokmarvel.on("mouseover", function(evt) { this.openPopup(); });
+  mv_saltrokmarvel.on("mouseout", function(evt) { this.closePopup(); });
+  mv_osivin.on("mouseover", function(evt) { this.openPopup(); });
+  mv_osivin.on("mouseout", function(evt) { this.closePopup(); });
+  mv_olmara.on("mouseover", function(evt) { this.openPopup(); });
+  mv_olmara.on("mouseout", function(evt) { this.closePopup(); });
+
+  //Places of Interest
+  poi_deep.on("mouseover", function(evt) { this.openPopup(); });
+  poi_deep.on("mouseout", function(evt) { this.closePopup(); });
+  poi_acrbreaker.on("mouseover", function(evt) { this.openPopup(); });
+  poi_acrbreaker.on("mouseout", function(evt) { this.closePopup(); });
+  poi_1.on("mouseover", function(evt) { this.openPopup(); });
+  poi_1.on("mouseout", function(evt) { this.closePopup(); });
+  poi_2.on("mouseover", function(evt) { this.openPopup(); });
+  poi_2.on("mouseout", function(evt) { this.closePopup(); });
+  poi_3.on("mouseover", function(evt) { this.openPopup(); });
+  poi_3.on("mouseout", function(evt) { this.closePopup(); });
+  poi_4.on("mouseover", function(evt) { this.openPopup(); });
+  poi_4.on("mouseout", function(evt) { this.closePopup(); });
+  poi_5.on("mouseover", function(evt) { this.openPopup(); });
+  poi_5.on("mouseout", function(evt) { this.closePopup(); });
+  poi_6.on("mouseover", function(evt) { this.openPopup(); });
+  poi_6.on("mouseout", function(evt) { this.closePopup(); });
+  poi_7.on("mouseover", function(evt) { this.openPopup(); });
+  poi_7.on("mouseout", function(evt) { this.closePopup(); });
+  poi_8.on("mouseover", function(evt) { this.openPopup(); });
+  poi_8.on("mouseout", function(evt) { this.closePopup(); });
+  poi_9.on("mouseover", function(evt) { this.openPopup(); });
+  poi_9.on("mouseout", function(evt) { this.closePopup(); });
+  poi_10.on("mouseover", function(evt) { this.openPopup(); });
+  poi_10.on("mouseout", function(evt) { this.closePopup(); });
+  poi_11.on("mouseover", function(evt) { this.openPopup(); });
+  poi_11.on("mouseout", function(evt) { this.closePopup(); });
+  poi_12.on("mouseover", function(evt) { this.openPopup(); });
+  poi_12.on("mouseout", function(evt) { this.closePopup(); });
+  poi_13.on("mouseover", function(evt) { this.openPopup(); });
+  poi_13.on("mouseout", function(evt) { this.closePopup(); });
+  poi_14.on("mouseover", function(evt) { this.openPopup(); });
+  poi_14.on("mouseout", function(evt) { this.closePopup(); });
+  poi_15.on("mouseover", function(evt) { this.openPopup(); });
+  poi_15.on("mouseout", function(evt) { this.closePopup(); });
+  poi_16.on("mouseover", function(evt) { this.openPopup(); });
+  poi_16.on("mouseout", function(evt) { this.closePopup(); });
+  poi_17.on("mouseover", function(evt) { this.openPopup(); });
+  poi_17.on("mouseout", function(evt) { this.closePopup(); });
+  poi_currentriver.on("mouseover", function(evt) { this.openPopup(); });
+  poi_currentriver.on("mouseout", function(evt) { this.closePopup(); });
+  poi_18.on("mouseover", function(evt) { this.openPopup(); });
+  poi_18.on("mouseout", function(evt) { this.closePopup(); });
+  poi_19.on("mouseover", function(evt) { this.openPopup(); });
+  poi_19.on("mouseout", function(evt) { this.closePopup(); });
+  poi_20.on("mouseover", function(evt) { this.openPopup(); });
+  poi_20.on("mouseout", function(evt) { this.closePopup(); });
+  poi_21.on("mouseover", function(evt) { this.openPopup(); });
+  poi_21.on("mouseout", function(evt) { this.closePopup(); });
+  poi_22.on("mouseover", function(evt) { this.openPopup(); });
+  poi_22.on("mouseout", function(evt) { this.closePopup(); });
+  poi_23.on("mouseover", function(evt) { this.openPopup(); });
+  poi_23.on("mouseout", function(evt) { this.closePopup(); });
+  poi_24.on("mouseover", function(evt) { this.openPopup(); });
+  poi_24.on("mouseout", function(evt) { this.closePopup(); });
+  poi_25.on("mouseover", function(evt) { this.openPopup(); });
+  poi_25.on("mouseout", function(evt) { this.closePopup(); });
+  poi_26.on("mouseover", function(evt) { this.openPopup(); });
+  poi_26.on("mouseout", function(evt) { this.closePopup(); });
+  poi_27.on("mouseover", function(evt) { this.openPopup(); });
+  poi_27.on("mouseout", function(evt) { this.closePopup(); });
+  poi_28.on("mouseover", function(evt) { this.openPopup(); });
+  poi_28.on("mouseout", function(evt) { this.closePopup(); });
+  poi_29.on("mouseover", function(evt) { this.openPopup(); });
+  poi_29.on("mouseout", function(evt) { this.closePopup(); });
+  poi_30.on("mouseover", function(evt) { this.openPopup(); });
+  poi_30.on("mouseout", function(evt) { this.closePopup(); });
+  poi_31.on("mouseover", function(evt) { this.openPopup(); });
+  poi_31.on("mouseout", function(evt) { this.closePopup(); });
+  poi_32.on("mouseover", function(evt) { this.openPopup(); });
+  poi_32.on("mouseout", function(evt) { this.closePopup(); });
+  poi_33.on("mouseover", function(evt) { this.openPopup(); });
+  poi_33.on("mouseout", function(evt) { this.closePopup(); });
+  poi_34.on("mouseover", function(evt) { this.openPopup(); });
+  poi_34.on("mouseout", function(evt) { this.closePopup(); });
+  poi_35.on("mouseover", function(evt) { this.openPopup(); });
+  poi_35.on("mouseout", function(evt) { this.closePopup(); });
+  poi_36.on("mouseover", function(evt) { this.openPopup(); });
+  poi_36.on("mouseout", function(evt) { this.closePopup(); });
+  poi_37.on("mouseover", function(evt) { this.openPopup(); });
+  poi_37.on("mouseout", function(evt) { this.closePopup(); });
+  poi_38.on("mouseover", function(evt) { this.openPopup(); });
+  poi_38.on("mouseout", function(evt) { this.closePopup(); });
+  poi_39.on("mouseover", function(evt) { this.openPopup(); });
+  poi_39.on("mouseout", function(evt) { this.closePopup(); });
+  poi_40.on("mouseover", function(evt) { this.openPopup(); });
+  poi_40.on("mouseout", function(evt) { this.closePopup(); });
+  poi_41.on("mouseover", function(evt) { this.openPopup(); });
+  poi_41.on("mouseout", function(evt) { this.closePopup(); });
+  poi_42.on("mouseover", function(evt) { this.openPopup(); });
+  poi_42.on("mouseout", function(evt) { this.closePopup(); });
+  poi_43.on("mouseover", function(evt) { this.openPopup(); });
+  poi_43.on("mouseout", function(evt) { this.closePopup(); });
+  poi_44.on("mouseover", function(evt) { this.openPopup(); });
+  poi_44.on("mouseout", function(evt) { this.closePopup(); });
+  poi_45.on("mouseover", function(evt) { this.openPopup(); });
+  poi_45.on("mouseout", function(evt) { this.closePopup(); });
+  poi_46.on("mouseover", function(evt) { this.openPopup(); });
+  poi_46.on("mouseout", function(evt) { this.closePopup(); });
+  poi_47.on("mouseover", function(evt) { this.openPopup(); });
+  poi_47.on("mouseout", function(evt) { this.closePopup(); });
+  poi_48.on("mouseover", function(evt) { this.openPopup(); });
+  poi_48.on("mouseout", function(evt) { this.closePopup(); });
+  poi_50.on("mouseover", function(evt) { this.openPopup(); });
+  poi_50.on("mouseout", function(evt) { this.closePopup(); });
+  poi_51.on("mouseover", function(evt) { this.openPopup(); });
+  poi_51.on("mouseout", function(evt) { this.closePopup(); });
+  poi_52.on("mouseover", function(evt) { this.openPopup(); });
+  poi_52.on("mouseout", function(evt) { this.closePopup(); });
+  poi_53.on("mouseover", function(evt) { this.openPopup(); });
+  poi_53.on("mouseout", function(evt) { this.closePopup(); });
+  poi_54.on("mouseover", function(evt) { this.openPopup(); });
+  poi_54.on("mouseout", function(evt) { this.closePopup(); });
+  poi_55.on("mouseover", function(evt) { this.openPopup(); });
+  poi_55.on("mouseout", function(evt) { this.closePopup(); });
+  poi_56.on("mouseover", function(evt) { this.openPopup(); });
+  poi_56.on("mouseout", function(evt) { this.closePopup(); });
+  poi_57.on("mouseover", function(evt) { this.openPopup(); });
+  poi_57.on("mouseout", function(evt) { this.closePopup(); });
+  poi_58.on("mouseover", function(evt) { this.openPopup(); });
+  poi_58.on("mouseout", function(evt) { this.closePopup(); });
+  poi_59.on("mouseover", function(evt) { this.openPopup(); });
+  poi_59.on("mouseout", function(evt) { this.closePopup(); });
+  poi_60.on("mouseover", function(evt) { this.openPopup(); });
+  poi_60.on("mouseout", function(evt) { this.closePopup(); });
+  poi_61.on("mouseover", function(evt) { this.openPopup(); });
+  poi_61.on("mouseout", function(evt) { this.closePopup(); });
+  poi_62.on("mouseover", function(evt) { this.openPopup(); });
+  poi_62.on("mouseout", function(evt) { this.closePopup(); });
+  poi_63.on("mouseover", function(evt) { this.openPopup(); });
+  poi_63.on("mouseout", function(evt) { this.closePopup(); });
+  poi_64.on("mouseover", function(evt) { this.openPopup(); });
+  poi_64.on("mouseout", function(evt) { this.closePopup(); });
+  poi_65.on("mouseover", function(evt) { this.openPopup(); });
+  poi_65.on("mouseout", function(evt) { this.closePopup(); });
+  poi_66.on("mouseover", function(evt) { this.openPopup(); });
+  poi_66.on("mouseout", function(evt) { this.closePopup(); });
+  poi_67.on("mouseover", function(evt) { this.openPopup(); });
+  poi_67.on("mouseout", function(evt) { this.closePopup(); });
+  poi_68.on("mouseover", function(evt) { this.openPopup(); });
+  poi_68.on("mouseout", function(evt) { this.closePopup(); });
+  poi_69.on("mouseover", function(evt) { this.openPopup(); });
+  poi_69.on("mouseout", function(evt) { this.closePopup(); });
+  poi_70.on("mouseover", function(evt) { this.openPopup(); });
+  poi_70.on("mouseout", function(evt) { this.closePopup(); });
+  poi_71.on("mouseover", function(evt) { this.openPopup(); });
+  poi_71.on("mouseout", function(evt) { this.closePopup(); });
+  poi_72.on("mouseover", function(evt) { this.openPopup(); });
+  poi_72.on("mouseout", function(evt) { this.closePopup(); });
+  poi_73.on("mouseover", function(evt) { this.openPopup(); });
+  poi_73.on("mouseout", function(evt) { this.closePopup(); });
+  poi_74.on("mouseover", function(evt) { this.openPopup(); });
+  poi_74.on("mouseout", function(evt) { this.closePopup(); });
+  poi_75.on("mouseover", function(evt) { this.openPopup(); });
+  poi_75.on("mouseout", function(evt) { this.closePopup(); });
+  poi_76.on("mouseover", function(evt) { this.openPopup(); });
+  poi_76.on("mouseout", function(evt) { this.closePopup(); });
+  poi_77.on("mouseover", function(evt) { this.openPopup(); });
+  poi_77.on("mouseout", function(evt) { this.closePopup(); });
+  poi_78.on("mouseover", function(evt) { this.openPopup(); });
+  poi_78.on("mouseout", function(evt) { this.closePopup(); });
+  poi_79.on("mouseover", function(evt) { this.openPopup(); });
+  poi_79.on("mouseout", function(evt) { this.closePopup(); });
+  poi_80.on("mouseover", function(evt) { this.openPopup(); });
+  poi_80.on("mouseout", function(evt) { this.closePopup(); });
+  poi_81.on("mouseover", function(evt) { this.openPopup(); });
+  poi_81.on("mouseout", function(evt) { this.closePopup(); });
+  poi_82.on("mouseover", function(evt) { this.openPopup(); });
+  poi_82.on("mouseout", function(evt) { this.closePopup(); });
+  poi_83.on("mouseover", function(evt) { this.openPopup(); });
+  poi_83.on("mouseout", function(evt) { this.closePopup(); });
+  poi_84.on("mouseover", function(evt) { this.openPopup(); });
+  poi_84.on("mouseout", function(evt) { this.closePopup(); });
+  poi_85.on("mouseover", function(evt) { this.openPopup(); });
+  poi_85.on("mouseout", function(evt) { this.closePopup(); });
+  poi_86.on("mouseover", function(evt) { this.openPopup(); });
+  poi_86.on("mouseout", function(evt) { this.closePopup(); });
+  poi_87.on("mouseover", function(evt) { this.openPopup(); });
+  poi_87.on("mouseout", function(evt) { this.closePopup(); });
+  poi_88.on("mouseover", function(evt) { this.openPopup(); });
+  poi_88.on("mouseout", function(evt) { this.closePopup(); });
+  poi_89.on("mouseover", function(evt) { this.openPopup(); });
+  poi_89.on("mouseout", function(evt) { this.closePopup(); });
+  poi_90.on("mouseover", function(evt) { this.openPopup(); });
+  poi_90.on("mouseout", function(evt) { this.closePopup(); });
+  poi_91.on("mouseover", function(evt) { this.openPopup(); });
+  poi_91.on("mouseout", function(evt) { this.closePopup(); });
+  poi_92.on("mouseover", function(evt) { this.openPopup(); });
+  poi_92.on("mouseout", function(evt) { this.closePopup(); });
+  poi_93.on("mouseover", function(evt) { this.openPopup(); });
+  poi_93.on("mouseout", function(evt) { this.closePopup(); });
+
+  //Towns
+  twn_1.on("mouseover", function(evt) { this.openPopup(); });
+  twn_1.on("mouseout", function(evt) { this.closePopup(); });
+  twn_2.on("mouseover", function(evt) { this.openPopup(); });
+  twn_2.on("mouseout", function(evt) { this.closePopup(); });
+  twn_3.on("mouseover", function(evt) { this.openPopup(); });
+  twn_3.on("mouseout", function(evt) { this.closePopup(); });
+  twn_4.on("mouseover", function(evt) { this.openPopup(); });
+  twn_4.on("mouseout", function(evt) { this.closePopup(); });
+  twn_5.on("mouseover", function(evt) { this.openPopup(); });
+  twn_5.on("mouseout", function(evt) { this.closePopup(); });
+  twn_6.on("mouseover", function(evt) { this.openPopup(); });
+  twn_6.on("mouseout", function(evt) { this.closePopup(); });
+  twn_7.on("mouseover", function(evt) { this.openPopup(); });
+  twn_7.on("mouseout", function(evt) { this.closePopup(); });
+  twn_8.on("mouseover", function(evt) { this.openPopup(); });
+  twn_8.on("mouseout", function(evt) { this.closePopup(); });
+  twn_9.on("mouseover", function(evt) { this.openPopup(); });
+  twn_9.on("mouseout", function(evt) { this.closePopup(); });
+  twn_10.on("mouseover", function(evt) { this.openPopup(); });
+  twn_10.on("mouseout", function(evt) { this.closePopup(); });
+  twn_11.on("mouseover", function(evt) { this.openPopup(); });
+  twn_11.on("mouseout", function(evt) { this.closePopup(); });
+  twn_12.on("mouseover", function(evt) { this.openPopup(); });
+  twn_12.on("mouseout", function(evt) { this.closePopup(); });
+  twn_13.on("mouseover", function(evt) { this.openPopup(); });
+  twn_13.on("mouseout", function(evt) { this.closePopup(); });
+  twn_14.on("mouseover", function(evt) { this.openPopup(); });
+  twn_14.on("mouseout", function(evt) { this.closePopup(); });
+  twn_15.on("mouseover", function(evt) { this.openPopup(); });
+  twn_15.on("mouseout", function(evt) { this.closePopup(); });
+  twn_16.on("mouseover", function(evt) { this.openPopup(); });
+  twn_16.on("mouseout", function(evt) { this.closePopup(); });
+  twn_17.on("mouseover", function(evt) { this.openPopup(); });
+  twn_17.on("mouseout", function(evt) { this.closePopup(); });
+  twn_18.on("mouseover", function(evt) { this.openPopup(); });
+  twn_18.on("mouseout", function(evt) { this.closePopup(); });
+  twn_19.on("mouseover", function(evt) { this.openPopup(); });
+  twn_19.on("mouseout", function(evt) { this.closePopup(); });
+  twn_20.on("mouseover", function(evt) { this.openPopup(); });
+  twn_20.on("mouseout", function(evt) { this.closePopup(); });
+  twn_21.on("mouseover", function(evt) { this.openPopup(); });
+  twn_21.on("mouseout", function(evt) { this.closePopup(); });
+  twn_22.on("mouseover", function(evt) { this.openPopup(); });
+  twn_22.on("mouseout", function(evt) { this.closePopup(); });
+  twn_23.on("mouseover", function(evt) { this.openPopup(); });
+  twn_23.on("mouseout", function(evt) { this.closePopup(); });
+  twn_24.on("mouseover", function(evt) { this.openPopup(); });
+  twn_24.on("mouseout", function(evt) { this.closePopup(); });
+  twn_25.on("mouseover", function(evt) { this.openPopup(); });
+  twn_25.on("mouseout", function(evt) { this.closePopup(); });
+  twn_26.on("mouseover", function(evt) { this.openPopup(); });
+  twn_26.on("mouseout", function(evt) { this.closePopup(); });
+  twn_27.on("mouseover", function(evt) { this.openPopup(); });
+  twn_27.on("mouseout", function(evt) { this.closePopup(); });
+  twn_28.on("mouseover", function(evt) { this.openPopup(); });
+  twn_28.on("mouseout", function(evt) { this.closePopup(); });
+  twn_29.on("mouseover", function(evt) { this.openPopup(); });
+  twn_29.on("mouseout", function(evt) { this.closePopup(); });
+  twn_30.on("mouseover", function(evt) { this.openPopup(); });
+  twn_30.on("mouseout", function(evt) { this.closePopup(); });
+  twn_31.on("mouseover", function(evt) { this.openPopup(); });
+  twn_31.on("mouseout", function(evt) { this.closePopup(); });
+  twn_32.on("mouseover", function(evt) { this.openPopup(); });
+  twn_32.on("mouseout", function(evt) { this.closePopup(); });
+  twn_33.on("mouseover", function(evt) { this.openPopup(); });
+  twn_33.on("mouseout", function(evt) { this.closePopup(); });
+  twn_34.on("mouseover", function(evt) { this.openPopup(); });
+  twn_34.on("mouseout", function(evt) { this.closePopup(); });
+  twn_35.on("mouseover", function(evt) { this.openPopup(); });
+  twn_35.on("mouseout", function(evt) { this.closePopup(); });
+  twn_36.on("mouseover", function(evt) { this.openPopup(); });
+  twn_36.on("mouseout", function(evt) { this.closePopup(); });
+  twn_37.on("mouseover", function(evt) { this.openPopup(); });
+  twn_37.on("mouseout", function(evt) { this.closePopup(); });
+  twn_38.on("mouseover", function(evt) { this.openPopup(); });
+  twn_38.on("mouseout", function(evt) { this.closePopup(); });
+  twn_39.on("mouseover", function(evt) { this.openPopup(); });
+  twn_39.on("mouseout", function(evt) { this.closePopup(); });
+  twn_40.on("mouseover", function(evt) { this.openPopup(); });
+  twn_40.on("mouseout", function(evt) { this.closePopup(); });
+  twn_41.on("mouseover", function(evt) { this.openPopup(); });
+  twn_41.on("mouseout", function(evt) { this.closePopup(); });
+  twn_42.on("mouseover", function(evt) { this.openPopup(); });
+  twn_42.on("mouseout", function(evt) { this.closePopup(); });
+  twn_43.on("mouseover", function(evt) { this.openPopup(); });
+  twn_43.on("mouseout", function(evt) { this.closePopup(); });
+  twn_44.on("mouseover", function(evt) { this.openPopup(); });
+  twn_44.on("mouseout", function(evt) { this.closePopup(); });
+  twn_45.on("mouseover", function(evt) { this.openPopup(); });
+  twn_45.on("mouseout", function(evt) { this.closePopup(); });
+  twn_46.on("mouseover", function(evt) { this.openPopup(); });
+  twn_46.on("mouseout", function(evt) { this.closePopup(); });
+  twn_47.on("mouseover", function(evt) { this.openPopup(); });
+  twn_47.on("mouseout", function(evt) { this.closePopup(); });
+  twn_48.on("mouseover", function(evt) { this.openPopup(); });
+  twn_48.on("mouseout", function(evt) { this.closePopup(); });
+  twn_49.on("mouseover", function(evt) { this.openPopup(); });
+  twn_49.on("mouseout", function(evt) { this.closePopup(); });
+  twn_50.on("mouseover", function(evt) { this.openPopup(); });
+  twn_50.on("mouseout", function(evt) { this.closePopup(); });
+  twn_51.on("mouseover", function(evt) { this.openPopup(); });
+  twn_51.on("mouseout", function(evt) { this.closePopup(); });
+  twn_52.on("mouseover", function(evt) { this.openPopup(); });
+  twn_52.on("mouseout", function(evt) { this.closePopup(); });
+  twn_53.on("mouseover", function(evt) { this.openPopup(); });
+  twn_53.on("mouseout", function(evt) { this.closePopup(); });
+  twn_54.on("mouseover", function(evt) { this.openPopup(); });
+  twn_54.on("mouseout", function(evt) { this.closePopup(); });
+  twn_55.on("mouseover", function(evt) { this.openPopup(); });
+  twn_55.on("mouseout", function(evt) { this.closePopup(); });
+  twn_56.on("mouseover", function(evt) { this.openPopup(); });
+  twn_56.on("mouseout", function(evt) { this.closePopup(); });
+  twn_57.on("mouseover", function(evt) { this.openPopup(); });
+  twn_57.on("mouseout", function(evt) { this.closePopup(); });
+  twn_58.on("mouseover", function(evt) { this.openPopup(); });
+  twn_58.on("mouseout", function(evt) { this.closePopup(); });
+  twn_59.on("mouseover", function(evt) { this.openPopup(); });
+  twn_59.on("mouseout", function(evt) { this.closePopup(); });
+  twn_60.on("mouseover", function(evt) { this.openPopup(); });
+  twn_60.on("mouseout", function(evt) { this.closePopup(); });
+  twn_61.on("mouseover", function(evt) { this.openPopup(); });
+  twn_61.on("mouseout", function(evt) { this.closePopup(); });
+  twn_62.on("mouseover", function(evt) { this.openPopup(); });
+  twn_62.on("mouseout", function(evt) { this.closePopup(); });
+  twn_63.on("mouseover", function(evt) { this.openPopup(); });
+  twn_63.on("mouseout", function(evt) { this.closePopup(); });
+  twn_64.on("mouseover", function(evt) { this.openPopup(); });
+  twn_64.on("mouseout", function(evt) { this.closePopup(); });
+  twn_65.on("mouseover", function(evt) { this.openPopup(); });
+  twn_65.on("mouseout", function(evt) { this.closePopup(); });
+  twn_66.on("mouseover", function(evt) { this.openPopup(); });
+  twn_66.on("mouseout", function(evt) { this.closePopup(); });
+  twn_67.on("mouseover", function(evt) { this.openPopup(); });
+  twn_67.on("mouseout", function(evt) { this.closePopup(); });
+  twn_68.on("mouseover", function(evt) { this.openPopup(); });
+  twn_68.on("mouseout", function(evt) { this.closePopup(); });
+  twn_69.on("mouseover", function(evt) { this.openPopup(); });
+  twn_69.on("mouseout", function(evt) { this.closePopup(); });
+  twn_70.on("mouseover", function(evt) { this.openPopup(); });
+  twn_70.on("mouseout", function(evt) { this.closePopup(); });
+  twn_71.on("mouseover", function(evt) { this.openPopup(); });
+  twn_71.on("mouseout", function(evt) { this.closePopup(); });
+  twn_72.on("mouseover", function(evt) { this.openPopup(); });
+  twn_72.on("mouseout", function(evt) { this.closePopup(); });
+  twn_73.on("mouseover", function(evt) { this.openPopup(); });
+  twn_73.on("mouseout", function(evt) { this.closePopup(); });
+  twn_74.on("mouseover", function(evt) { this.openPopup(); });
+  twn_74.on("mouseout", function(evt) { this.closePopup(); });
+  twn_75.on("mouseover", function(evt) { this.openPopup(); });
+  twn_75.on("mouseout", function(evt) { this.closePopup(); });
+  twn_76.on("mouseover", function(evt) { this.openPopup(); });
+  twn_76.on("mouseout", function(evt) { this.closePopup(); });
+  twn_77.on("mouseover", function(evt) { this.openPopup(); });
+  twn_77.on("mouseout", function(evt) { this.closePopup(); });
+  twn_78.on("mouseover", function(evt) { this.openPopup(); });
+  twn_78.on("mouseout", function(evt) { this.closePopup(); });
+  twn_79.on("mouseover", function(evt) { this.openPopup(); });
+  twn_79.on("mouseout", function(evt) { this.closePopup(); });
+  twn_80.on("mouseover", function(evt) { this.openPopup(); });
+  twn_80.on("mouseout", function(evt) { this.closePopup(); });
+  twn_81.on("mouseover", function(evt) { this.openPopup(); });
+  twn_81.on("mouseout", function(evt) { this.closePopup(); });
+  twn_82.on("mouseover", function(evt) { this.openPopup(); });
+  twn_82.on("mouseout", function(evt) { this.closePopup(); });
+  twn_83.on("mouseover", function(evt) { this.openPopup(); });
+  twn_83.on("mouseout", function(evt) { this.closePopup(); });
+  twn_84.on("mouseover", function(evt) { this.openPopup(); });
+  twn_84.on("mouseout", function(evt) { this.closePopup(); });
+  twn_85.on("mouseover", function(evt) { this.openPopup(); });
+  twn_85.on("mouseout", function(evt) { this.closePopup(); });
+  twn_86.on("mouseover", function(evt) { this.openPopup(); });
+  twn_86.on("mouseout", function(evt) { this.closePopup(); });
+  twn_87.on("mouseover", function(evt) { this.openPopup(); });
+  twn_87.on("mouseout", function(evt) { this.closePopup(); });
+  twn_88.on("mouseover", function(evt) { this.openPopup(); });
+  twn_88.on("mouseout", function(evt) { this.closePopup(); });
+  twn_89.on("mouseover", function(evt) { this.openPopup(); });
+  twn_89.on("mouseout", function(evt) { this.closePopup(); });
+  twn_90.on("mouseover", function(evt) { this.openPopup(); });
+  twn_90.on("mouseout", function(evt) { this.closePopup(); });
+  twn_91.on("mouseover", function(evt) { this.openPopup(); });
+  twn_91.on("mouseout", function(evt) { this.closePopup(); });
+  twn_92.on("mouseover", function(evt) { this.openPopup(); });
+  twn_92.on("mouseout", function(evt) { this.closePopup(); });
+  twn_93.on("mouseover", function(evt) { this.openPopup(); });
+  twn_93.on("mouseout", function(evt) { this.closePopup(); });
+  twn_94.on("mouseover", function(evt) { this.openPopup(); });
+  twn_94.on("mouseout", function(evt) { this.closePopup(); });
+  twn_95.on("mouseover", function(evt) { this.openPopup(); });
+  twn_95.on("mouseout", function(evt) { this.closePopup(); });
+  twn_96.on("mouseover", function(evt) { this.openPopup(); });
+  twn_96.on("mouseout", function(evt) { this.closePopup(); });
+  twn_97.on("mouseover", function(evt) { this.openPopup(); });
+  twn_97.on("mouseout", function(evt) { this.closePopup(); });
+  twn_98.on("mouseover", function(evt) { this.openPopup(); });
+  twn_98.on("mouseout", function(evt) { this.closePopup(); });
+  twn_99.on("mouseover", function(evt) { this.openPopup(); });
+  twn_99.on("mouseout", function(evt) { this.closePopup(); });
+  twn_100.on("mouseover", function(evt) { this.openPopup(); });
+  twn_100.on("mouseout", function(evt) { this.closePopup(); });
+  twn_101.on("mouseover", function(evt) { this.openPopup(); });
+  twn_101.on("mouseout", function(evt) { this.closePopup(); });
+  twn_102.on("mouseover", function(evt) { this.openPopup(); });
+  twn_102.on("mouseout", function(evt) { this.closePopup(); });
+  twn_103.on("mouseover", function(evt) { this.openPopup(); });
+  twn_103.on("mouseout", function(evt) { this.closePopup(); });
+  twn_104.on("mouseover", function(evt) { this.openPopup(); });
+  twn_104.on("mouseout", function(evt) { this.closePopup(); });
+  twn_105.on("mouseover", function(evt) { this.openPopup(); });
+  twn_105.on("mouseout", function(evt) { this.closePopup(); });
+  twn_106.on("mouseover", function(evt) { this.openPopup(); });
+  twn_106.on("mouseout", function(evt) { this.closePopup(); });
+  twn_107.on("mouseover", function(evt) { this.openPopup(); });
+  twn_107.on("mouseout", function(evt) { this.closePopup(); });
+  twn_108.on("mouseover", function(evt) { this.openPopup(); });
+  twn_108.on("mouseout", function(evt) { this.closePopup(); });
+  twn_109.on("mouseover", function(evt) { this.openPopup(); });
+  twn_109.on("mouseout", function(evt) { this.closePopup(); });
+  twn_110.on("mouseover", function(evt) { this.openPopup(); });
+  twn_110.on("mouseout", function(evt) { this.closePopup(); });
+  twn_111.on("mouseover", function(evt) { this.openPopup(); });
+  twn_111.on("mouseout", function(evt) { this.closePopup(); });
+  twn_112.on("mouseover", function(evt) { this.openPopup(); });
+  twn_112.on("mouseout", function(evt) { this.closePopup(); });
+  twn_113.on("mouseover", function(evt) { this.openPopup(); });
+  twn_113.on("mouseout", function(evt) { this.closePopup(); });
+  twn_114.on("mouseover", function(evt) { this.openPopup(); });
+  twn_114.on("mouseout", function(evt) { this.closePopup(); });
+  twn_115.on("mouseover", function(evt) { this.openPopup(); });
+  twn_115.on("mouseout", function(evt) { this.closePopup(); });
+  twn_116.on("mouseover", function(evt) { this.openPopup(); });
+  twn_116.on("mouseout", function(evt) { this.closePopup(); });
+  twn_117.on("mouseover", function(evt) { this.openPopup(); });
+  twn_117.on("mouseout", function(evt) { this.closePopup(); });
+  twn_118.on("mouseover", function(evt) { this.openPopup(); });
+  twn_118.on("mouseout", function(evt) { this.closePopup(); });
+  twn_119.on("mouseover", function(evt) { this.openPopup(); });
+  twn_119.on("mouseout", function(evt) { this.closePopup(); });
+  twn_120.on("mouseover", function(evt) { this.openPopup(); });
+  twn_120.on("mouseout", function(evt) { this.closePopup(); });
+  twn_121.on("mouseover", function(evt) { this.openPopup(); });
+  twn_121.on("mouseout", function(evt) { this.closePopup(); });
+  twn_122.on("mouseover", function(evt) { this.openPopup(); });
+  twn_122.on("mouseout", function(evt) { this.closePopup(); });
+  twn_123.on("mouseover", function(evt) { this.openPopup(); });
+  twn_123.on("mouseout", function(evt) { this.closePopup(); });
+  twn_124.on("mouseover", function(evt) { this.openPopup(); });
+  twn_124.on("mouseout", function(evt) { this.closePopup(); });
+  twn_125.on("mouseover", function(evt) { this.openPopup(); });
+  twn_125.on("mouseout", function(evt) { this.closePopup(); });
+  twn_126.on("mouseover", function(evt) { this.openPopup(); });
+  twn_126.on("mouseout", function(evt) { this.closePopup(); });
+  twn_127.on("mouseover", function(evt) { this.openPopup(); });
+  twn_127.on("mouseout", function(evt) { this.closePopup(); });
+  twn_128.on("mouseover", function(evt) { this.openPopup(); });
+  twn_128.on("mouseout", function(evt) { this.closePopup(); });
+  twn_129.on("mouseover", function(evt) { this.openPopup(); });
+  twn_129.on("mouseout", function(evt) { this.closePopup(); });
+  twn_130.on("mouseover", function(evt) { this.openPopup(); });
+  twn_130.on("mouseout", function(evt) { this.closePopup(); });
+  twn_131.on("mouseover", function(evt) { this.openPopup(); });
+  twn_131.on("mouseout", function(evt) { this.closePopup(); });
+  twn_132.on("mouseover", function(evt) { this.openPopup(); });
+  twn_132.on("mouseout", function(evt) { this.closePopup(); });
+  twn_133.on("mouseover", function(evt) { this.openPopup(); });
+  twn_133.on("mouseout", function(evt) { this.closePopup(); });
+  twn_134.on("mouseover", function(evt) { this.openPopup(); });
+  twn_134.on("mouseout", function(evt) { this.closePopup(); });
+  twn_135.on("mouseover", function(evt) { this.openPopup(); });
+  twn_135.on("mouseout", function(evt) { this.closePopup(); });
+  twn_136.on("mouseover", function(evt) { this.openPopup(); });
+  twn_136.on("mouseout", function(evt) { this.closePopup(); });
+  twn_137.on("mouseover", function(evt) { this.openPopup(); });
+  twn_137.on("mouseout", function(evt) { this.closePopup(); });
+  twn_138.on("mouseover", function(evt) { this.openPopup(); });
+  twn_138.on("mouseout", function(evt) { this.closePopup(); });
+  twn_139.on("mouseover", function(evt) { this.openPopup(); });
+  twn_139.on("mouseout", function(evt) { this.closePopup(); });
+  twn_140.on("mouseover", function(evt) { this.openPopup(); });
+  twn_140.on("mouseout", function(evt) { this.closePopup(); });
+  twn_141.on("mouseover", function(evt) { this.openPopup(); });
+  twn_141.on("mouseout", function(evt) { this.closePopup(); });
+  twn_142.on("mouseover", function(evt) { this.openPopup(); });
+  twn_142.on("mouseout", function(evt) { this.closePopup(); });
+  twn_143.on("mouseover", function(evt) { this.openPopup(); });
+  twn_143.on("mouseout", function(evt) { this.closePopup(); });
+  twn_144.on("mouseover", function(evt) { this.openPopup(); });
+  twn_144.on("mouseout", function(evt) { this.closePopup(); });
+  twn_145.on("mouseover", function(evt) { this.openPopup(); });
+  twn_145.on("mouseout", function(evt) { this.closePopup(); });
+  twn_146.on("mouseover", function(evt) { this.openPopup(); });
+  twn_146.on("mouseout", function(evt) { this.closePopup(); });
+  twn_147.on("mouseover", function(evt) { this.openPopup(); });
+  twn_147.on("mouseout", function(evt) { this.closePopup(); });
+  twn_148.on("mouseover", function(evt) { this.openPopup(); });
+  twn_148.on("mouseout", function(evt) { this.closePopup(); });
+  twn_149.on("mouseover", function(evt) { this.openPopup(); });
+  twn_149.on("mouseout", function(evt) { this.closePopup(); });
+  twn_150.on("mouseover", function(evt) { this.openPopup(); });
+  twn_150.on("mouseout", function(evt) { this.closePopup(); });
+  twn_151.on("mouseover", function(evt) { this.openPopup(); });
+  twn_151.on("mouseout", function(evt) { this.closePopup(); });
+  twn_152.on("mouseover", function(evt) { this.openPopup(); });
+  twn_152.on("mouseout", function(evt) { this.closePopup(); });
+  twn_153.on("mouseover", function(evt) { this.openPopup(); });
+  twn_153.on("mouseout", function(evt) { this.closePopup(); });
+  twn_154.on("mouseover", function(evt) { this.openPopup(); });
+  twn_154.on("mouseout", function(evt) { this.closePopup(); });
+  twn_155.on("mouseover", function(evt) { this.openPopup(); });
+  twn_155.on("mouseout", function(evt) { this.closePopup(); });
+  twn_156.on("mouseover", function(evt) { this.openPopup(); });
+  twn_156.on("mouseout", function(evt) { this.closePopup(); });
+  twn_157.on("mouseover", function(evt) { this.openPopup(); });
+  twn_157.on("mouseout", function(evt) { this.closePopup(); });
+  twn_158.on("mouseover", function(evt) { this.openPopup(); });
+  twn_158.on("mouseout", function(evt) { this.closePopup(); });
+  twn_159.on("mouseover", function(evt) { this.openPopup(); });
+  twn_159.on("mouseout", function(evt) { this.closePopup(); });
+  twn_160.on("mouseover", function(evt) { this.openPopup(); });
+  twn_160.on("mouseout", function(evt) { this.closePopup(); });
+  twn_161.on("mouseover", function(evt) { this.openPopup(); });
+  twn_161.on("mouseout", function(evt) { this.closePopup(); });
+  twn_162.on("mouseover", function(evt) { this.openPopup(); });
+  twn_162.on("mouseout", function(evt) { this.closePopup(); });
+  twn_163.on("mouseover", function(evt) { this.openPopup(); });
+  twn_163.on("mouseout", function(evt) { this.closePopup(); });
+  twn_164.on("mouseover", function(evt) { this.openPopup(); });
+  twn_164.on("mouseout", function(evt) { this.closePopup(); });
+  twn_165.on("mouseover", function(evt) { this.openPopup(); });
+  twn_165.on("mouseout", function(evt) { this.closePopup(); });
+  twn_166.on("mouseover", function(evt) { this.openPopup(); });
+  twn_166.on("mouseout", function(evt) { this.closePopup(); });
+  twn_167.on("mouseover", function(evt) { this.openPopup(); });
+  twn_167.on("mouseout", function(evt) { this.closePopup(); });
+  twn_168.on("mouseover", function(evt) { this.openPopup(); });
+  twn_168.on("mouseout", function(evt) { this.closePopup(); });
+  twn_169.on("mouseover", function(evt) { this.openPopup(); });
+  twn_169.on("mouseout", function(evt) { this.closePopup(); });
+  twn_170.on("mouseover", function(evt) { this.openPopup(); });
+  twn_170.on("mouseout", function(evt) { this.closePopup(); });
+  twn_171.on("mouseover", function(evt) { this.openPopup(); });
+  twn_171.on("mouseout", function(evt) { this.closePopup(); });
+  twn_172.on("mouseover", function(evt) { this.openPopup(); });
+  twn_172.on("mouseout", function(evt) { this.closePopup(); });
+  twn_173.on("mouseover", function(evt) { this.openPopup(); });
+  twn_173.on("mouseout", function(evt) { this.closePopup(); });
+  twn_174.on("mouseover", function(evt) { this.openPopup(); });
+  twn_174.on("mouseout", function(evt) { this.closePopup(); });
+  twn_175.on("mouseover", function(evt) { this.openPopup(); });
+  twn_175.on("mouseout", function(evt) { this.closePopup(); });
+  twn_176.on("mouseover", function(evt) { this.openPopup(); });
+  twn_176.on("mouseout", function(evt) { this.closePopup(); });
+  twn_177.on("mouseover", function(evt) { this.openPopup(); });
+  twn_177.on("mouseout", function(evt) { this.closePopup(); });
+  twn_178.on("mouseover", function(evt) { this.openPopup(); });
+  twn_178.on("mouseout", function(evt) { this.closePopup(); });
+  twn_179.on("mouseover", function(evt) { this.openPopup(); });
+  twn_179.on("mouseout", function(evt) { this.closePopup(); });
+  twn_180.on("mouseover", function(evt) { this.openPopup(); });
+  twn_180.on("mouseout", function(evt) { this.closePopup(); });
+  twn_181.on("mouseover", function(evt) { this.openPopup(); });
+  twn_181.on("mouseout", function(evt) { this.closePopup(); });
+  twn_182.on("mouseover", function(evt) { this.openPopup(); });
+  twn_182.on("mouseout", function(evt) { this.closePopup(); });
+  twn_183.on("mouseover", function(evt) { this.openPopup(); });
+  twn_183.on("mouseout", function(evt) { this.closePopup(); });
+  twn_184.on("mouseover", function(evt) { this.openPopup(); });
+  twn_184.on("mouseout", function(evt) { this.closePopup(); });
+  twn_185.on("mouseover", function(evt) { this.openPopup(); });
+  twn_185.on("mouseout", function(evt) { this.closePopup(); });
+  twn_186.on("mouseover", function(evt) { this.openPopup(); });
+  twn_186.on("mouseout", function(evt) { this.closePopup(); });
+  twn_187.on("mouseover", function(evt) { this.openPopup(); });
+  twn_187.on("mouseout", function(evt) { this.closePopup(); });
+  twn_188.on("mouseover", function(evt) { this.openPopup(); });
+  twn_188.on("mouseout", function(evt) { this.closePopup(); });
+  twn_189.on("mouseover", function(evt) { this.openPopup(); });
+  twn_189.on("mouseout", function(evt) { this.closePopup(); });
+  twn_190.on("mouseover", function(evt) { this.openPopup(); });
+  twn_190.on("mouseout", function(evt) { this.closePopup(); });
+  twn_191.on("mouseover", function(evt) { this.openPopup(); });
+  twn_191.on("mouseout", function(evt) { this.closePopup(); });
+  twn_192.on("mouseover", function(evt) { this.openPopup(); });
+  twn_192.on("mouseout", function(evt) { this.closePopup(); });
+  twn_193.on("mouseover", function(evt) { this.openPopup(); });
+  twn_193.on("mouseout", function(evt) { this.closePopup(); });
+  twn_194.on("mouseover", function(evt) { this.openPopup(); });
+  twn_194.on("mouseout", function(evt) { this.closePopup(); });
+  twn_195.on("mouseover", function(evt) { this.openPopup(); });
+  twn_195.on("mouseout", function(evt) { this.closePopup(); });
+  twn_196.on("mouseover", function(evt) { this.openPopup(); });
+  twn_196.on("mouseout", function(evt) { this.closePopup(); });
+  twn_197.on("mouseover", function(evt) { this.openPopup(); });
+  twn_197.on("mouseout", function(evt) { this.closePopup(); });
+
+//Marker Groups
     var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
-    var mg_marvels = L.layerGroup([el_canedmtn,el_belasan,el_glimmer,el_bargetownmarvel,el_heartroot,el_trdunes,el_dkonisle,el_chain, el_alhoriascent,el_ghostlights,el_saltrokmarvel,el_osivin,el_olmara]);
-    var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197,chicken]);
-      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93,bungle]);
-            
-       //Marker Overlay
+    var mg_marvels = L.layerGroup([mv_canedmtn,mv_belasan,mv_glimmer,mv_bargetownmarvel,mv_heartroot,mv_trdunes,mv_dkonisle,mv_chain,mv_alhoriascent,mv_ghostlights,mv_saltrokmarvel,mv_osivin,mv_olmara]);
+    var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197,]);
+      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);     
+//Marker Overlay 
       var overlays = {
         "The Capitals of Paranai" : mg_capitals,
         "Towns & Named Settlements" : mg_towns,
-        "Azrigoli’s “The Thirteen Marvels”" : mg_marvels,
+        "Azrigoli&#39;s &QUOT;The Thirteen Marvels&QUOT;" : mg_marvels,
         "Other Places of Interest" : mg_poi,
-        }
-
-                
-       //Marker Group Control
+        }    
+//Marker Group Control
       L.control.layers(null, overlays).addTo(map);
     </script>
   </body>
