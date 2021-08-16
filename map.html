@@ -5,13 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scripts/leaflet.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
     <script src="scripts/leaflet.js"></script>
-</head>
+    <script src="scripts/L.Control.Sidebar.js"></script>
+    <link rel="stylesheet" href="scripts/L.Control.Sidebar.css" />
+    <style type="text/css">
+    @media (min-width: 768px) {
+    .close {display: none;}
+    .close:hover {color: #ffffff;}
+  </style>
+    </head>
   
 <body style="height: 100%;margin: 0;">
+  <div id="sidebar">
+</div>
     <div id="map" style="width: 100%; height: 100%; background: #455586;"></div>
     <script type="text/javascript">
 
@@ -19,7 +28,7 @@
     var myAttrib = 'Created by <a href="https://www.instagram.com/jakesynth">JakeSynth</a>, 2021';
 
 
-  //Map
+    //Map
     var map = L.map('map').setView([0, 0], 0);
     L.tileLayer('geo/{z}/{x}/{y}.png', {
       attribution: myAttrib,
@@ -29,7 +38,7 @@
       maxZoom: 7,
     }).addTo(map);
 
-     //Custom Icons
+    //Custom Icons
     var ImpoIcon = L.Icon.extend({
     options: {
     shadowUrl: 'scripts/images/marker-shadow.png',
@@ -37,7 +46,8 @@
     shadowSize:   [42, 42], // size of the shadow
     iconAnchor:   [13, 42], // point of the icon which will correspond to marker's location
     shadowAnchor: [13, 42],  // the same for the shadow
-    popupAnchor:  [0, -42]
+    popupAnchor:  [0, -42],
+    tooltipAnchor: [0, -42]
     } // point from which the popup should open relative to the iconAnchor
     });
 
@@ -55,11 +65,43 @@
       //marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     //});
 
-    map.on('click', function(e) {
+    //Sidebar
+ var sidebar = L.control.sidebar('sidebar', {
+            closeButton: true,
+            position: 'left'
+        });
+        map.addControl(sidebar);
+
+    map.on('click', function () {
+        sidebar.hide();
+      })
+
+
+
+    var bungle = L.marker([50, 7]).on('click', function () {
+        sidebar.hide();
+        sidebar.show();
+        sidebar.setContent('');
+      }).bindTooltip('<b><h3>Castor Port</h3></b><i></i>',{
+        direction: 'top'
+      });
+
+    var chicken = L.marker([50, 15]).on('click', function () {
+            sidebar.hide();
+            sidebar.show();
+          sidebar.setContent('<h1>cheese<h1>');
     });
 
+
+  //Markers
+
+
   //Capitals
-   var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).bindPopup('<b><h3>Castor Port</h3></b><i></i>');
+   var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).on('click', function () {
+        sidebar.hide();
+        sidebar.show();
+        sidebar.setContent('<h1>Castor Port</h1><i>The Port Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>');})
+        .bindPopup('<b><h3>Castor Port</h3></b><i>The Port Capital of Gomai</i>',{direction: 'top'});
    var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).bindPopup('<b><h3>Vellenai (Capital)</h3></b><i></i>');
    var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).bindPopup('<b><h3>The Current<br></h3></b><i>(Trade Capital)</i>');
    var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).bindPopup('<b><h3>The Southold<br></h3></b><i>(Crown Capital)</i>');
@@ -385,12 +427,12 @@
    var twn_198 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>198</h3></b><i></i>');
    var twn_199 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>199</h3></b><i></i>');
 
-
+   
   //Marker Groups
     var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
     var mg_marvels = L.layerGroup([el_canedmtn,el_belasan,el_glimmer,el_bargetownmarvel,el_heartroot,el_trdunes,el_dkonisle,el_chain, el_alhoriascent,el_ghostlights,el_saltrokmarvel,el_osivin,el_olmara]);
-    var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197]);
-      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);
+    var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197,chicken]);
+      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93,bungle]);
             
        //Marker Overlay
       var overlays = {
@@ -403,7 +445,6 @@
                 
        //Marker Group Control
       L.control.layers(null, overlays).addTo(map);
-  
     </script>
   </body>
 </html>
