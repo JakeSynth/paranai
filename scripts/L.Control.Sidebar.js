@@ -32,7 +32,7 @@ L.Control.Sidebar = L.Control.extend({
         if (this.options.closeButton) {
             var close = this._closeButton =
                 L.DomUtil.create('a', 'close', container);
-            close.innerHTML = '&rarrhk;';
+            close.innerHTML = '&rarrhk;&#xFE0E;';
         }
     },
 
