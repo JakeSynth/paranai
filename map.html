@@ -81,72 +81,110 @@
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('<h1>Castor Port</h1><i>The Golden Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>');})
-    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Golden Capital of Gomai</i>"));
+    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Golden Capital of Gomai</i><br><br>Click to see more."));
     var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_vellenaicap.bindPopup(L.popup().setContent("<b><h3>Vellenai (Capital)</h3></b><i>The Mythos Capital of Vellenai</i>"));
+    el_vellenaicap.bindPopup(L.popup().setContent("<b><h3>Vellenai (Capital)</h3></b><i>The Mythos Capital of Vellenai</i><br><br>Click to see more."));
     var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_currentcap.bindPopup(L.popup().setContent("<b><h3>The Current<br></h3></b><i>The Trade Capital of Acrostai</i>"));
+    el_currentcap.bindPopup(L.popup().setContent("<b><h3>The Current<br></h3></b><i>The Trade Capital of Acrostai</i><br><br>Click to see more."));
     var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_southold.bindPopup(L.popup().setContent("<b><h3>The Southold<br></h3></b><i>The Crown Capital of Acrostai</i>"));
+    el_southold.bindPopup(L.popup().setContent("<b><h3>The Southold<br></h3></b><i>The Crown Capital of Acrostai</i><br><br>Click to see more."));
     var el_farnun = L.marker([-42.228517, 40.473633], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_farnun.bindPopup(L.popup().setContent("<b><h3>Far N&#39;un</h3></b><i>The Ancient Capital of Ashokai</i>"));
+    el_farnun.bindPopup(L.popup().setContent("<b><h3>Far N&#39;un</h3></b><i>The Ancient Capital of Ashokai</i><br><br>Click to see more."));
     var el_szenjun = L.marker([-36.332828, -41.187744], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_szenjun.bindPopup(L.popup().setContent('<b><h3>Szen Jun</h3></b><i>The Gargantuan Capital of Amri Szen, "The Evercity"</i>'));
+    el_szenjun.bindPopup(L.popup().setContent('<b><h3>Szen Jun</h3></b><i>The Gargantuan Capital of Amri Szen, "The Evercity"</i><br><br>Click to see more.'));
     var el_prismcap = L.marker([2.218684, -45.966797], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_prismcap.bindPopup(L.popup().setContent("<b><h3>The Prism</h3></b><i>The United Cities of Gannis, Terris, & Great Virim; Capital of Ovrikai</i>"));
+    el_prismcap.bindPopup(L.popup().setContent("<b><h3>The Prism</h3></b><i>The United Cities of Gannis, Terris, & Great Virim; Capital of Ovrikai</i><br><br>Click to see more."));
     var el_ellosciti = L.marker([34.687428, -18.566895], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_ellosciti.bindPopup(L.popup().setContent("<b><h3>Ellos Citi</h3></b><i>The Scorching Capital of Anaagai</i>"));
+    el_ellosciti.bindPopup(L.popup().setContent("<b><h3>Ellos Citi</h3></b><i>The Scorching Capital of Anaagai</i><br><br>Click to see more."));
     var el_ekonport = L.marker([-31.989442, -82.188721], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_ekonport.bindPopup(L.popup().setContent("<b><h3>Ekonport & Inkinport</h3></b><i>The Twinned Trade Capitals of Tcara</i>"));
+    el_ekonport.bindPopup(L.popup().setContent("<b><h3>Ekonport & Inkinport</h3></b><i>The Twinned Trade Capitals of Tcara</i><br><br>Click to see more."));
     var el_saltrokcap = L.marker([32.814978, -114.32373], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_saltrokcap.bindPopup(L.popup().setContent("<b><h3>Saltrok</h3></b><i>The Ruined Capital of the Brittle</i>"));
+    el_saltrokcap.bindPopup(L.popup().setContent("<b><h3>Saltrok</h3></b><i>The Ruined Capital of the Brittle</i><br><br>Click to see more."));
     var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    el_bargetowncap.bindPopup(L.popup().setContent("<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i>"));
+    el_bargetowncap.bindPopup(L.popup().setContent("<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i><br><br>Click to see more."));
 
 //Marvels
-      
-   var mv_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
-   var mv_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).bindPopup('<b><h3>Belasan Mesa</h3></b><i></i>');
-   var mv_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).bindPopup('<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i>');
-   var mv_bargetownmarvel = L.marker([6.893707, 10.491943], {icon: marvIcon}).bindPopup('<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i>');
-   var mv_heartroot = L.marker([4.083453, 58.513184], {icon: marvIcon}).bindPopup('<b><h3>The Heartroot of Gallis</h3></b><i></i>');
-   var mv_trdunes = L.marker([42.147114, 4.899902], {icon: marvIcon}).bindPopup('<b><h3>The Trembling Dunes</h3></b><i></i>');
-   var mv_dkonisle = L.marker([42.730874, 32.003174], {icon: marvIcon}).bindPopup('<b><h3>The Residents on the Dkon Islands</h3></b><i></i>');
-   var mv_chain = L.marker([-40.780541, -32.003174], {icon: marvIcon}).bindPopup('<b><h3>The Chain</h3></b><i></i>');
-   var mv_alhoriascent = L.marker([-30.306503, -91.779785], {icon: marvIcon}).bindPopup('<b><h3>The Pilgrimage up the Alhori Ascent</h3></b><i></i>');
-   var mv_ghostlights = L.marker([-19.766704, 115.532227], {icon: marvIcon}).bindPopup('<b><h3>The Ghost Lights over the Steaming Sea</h3></b><i>Mesmerising colours that shine through the fog of the Steaming Sea. Some say the hypnotic swirls and bands of glowing effervescence in the sky come from something of great power lying further beyond the impassable wall of mist, but these are only rumors.</i>');
-   var mv_saltrokmarvel = L.marker([32.630123, -114.598389], {icon: marvIcon}).bindPopup('<b><h3>The Ruined City of Saltrok</h3></b><i></i>');
-   var mv_osivin = L.marker([32.593106, -23.763428], {icon: marvIcon}).bindPopup('<b><h3>Osiris & Vinferra</h3></b><i>The Shattered Mountains</i>');
-   var mv_olmara = L.marker([-47.709762, -1.043701], {icon: marvIcon}).bindPopup('<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>But there is one catch in this murky blue that has never been caught. Many will say they&#39;ve seen the beast, but few tell truths. Ol&#39; Mara, named after the first fishing ship she capsized and sank, makes an appearance every couple years but never to the same person twice. Some have gone a lifetime without seeing her. Some claim to have had her on the end of their rod before she snapped the line and swam back to the depths. Through all the tales told one thing seems to stay the same, the bright red stripe along her brilliant white body resembling a streaking star across the dark of the water.</i>');
+    var mv_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content<br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.');})
+    mv_canedmtn.bindPopup(L.popup().setContent("<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.</i><br><br>Click to see more."));
+    var mv_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_belasan.bindPopup(L.popup().setContent("<b><h3>Belasan Mesa</h3></b><i></i><br><br>Click to see more."));
+    var mv_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_glimmer.bindPopup(L.popup().setContent("<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i><br><br>Click to see more."));
+    var mv_bargetownmarvel = L.marker([6.893707, 10.491943], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_bargetownmarvel.bindPopup(L.popup().setContent("<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i><br><br>Click to see more."));
+    var mv_heartroot = L.marker([4.083453, 58.513184], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_heartroot.bindPopup(L.popup().setContent("<b><h3>The Heartroot of Gallis</h3></b><i></i><br><br>Click to see more."));
+    var mv_trdunes = L.marker([42.147114, 4.899902], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_trdunes.bindPopup(L.popup().setContent("<b><h3>The Trembling Dunes</h3></b><i></i><br><br>Click to see more."));
+    var mv_dkonisle = L.marker([42.730874, 32.003174], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_dkonisle.bindPopup(L.popup().setContent("<b><h3>The Residents on the Dkon Islands</h3></b><i></i><br><br>Click to see more."));
+    var mv_chain = L.marker([-40.780541, -32.003174], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_chain.bindPopup(L.popup().setContent("<b><h3>The Chain</h3></b><i></i><br><br>Click to see more."));
+    var mv_alhoriascent = L.marker([-30.306503, -91.779785], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_alhoriascent.bindPopup(L.popup().setContent("<b><h3>The Pilgrimage up the Alhori Ascent</h3></b><i></i><br><br>Click to see more."));
+    var mv_ghostlights = L.marker([-19.766704, 115.532227], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_ghostlights.bindPopup(L.popup().setContent("<b><h3>The Ghost Lights over the Steaming Sea</h3></b><i>Mesmerising colours that shine through the fog of the Steaming Sea. Some say the hypnotic swirls and bands of glowing effervescence in the sky come from something of great power lying further beyond the impassable wall of mist, but these are only rumors.</i><br><br>Click to see more."));
+    var mv_saltrokmarvel = L.marker([32.630123, -114.598389], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_saltrokmarvel.bindPopup(L.popup().setContent("<b><h3>The Ruined City of Saltrok</h3></b><i></i><br><br>Click to see more."));
+    var mv_osivin = L.marker([32.593106, -23.763428], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    mv_osivin.bindPopup(L.popup().setContent("<b><h3>Osiris & Vinferra</h3></b><i>The Shattered Mountains</i><br><br>Click to see more."));
+    var mv_olmara = L.marker([-47.709762, -1.043701], {icon: marvIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content<br>But there is one catch in this murky blue that has never been caught. Many will say they&#39;ve seen the beast, but few tell truths. Ol&#39; Mara, named after the first fishing ship she capsized and sank, makes an appearance every couple years but never to the same person twice. Some have gone a lifetime without seeing her. Some claim to have had her on the end of their rod before she snapped the line and swam back to the depths. Through all the tales told one thing seems to stay the same, the bright red stripe along her brilliant white body resembling a streaking star across the dark of the water.');})
+    mv_olmara.bindPopup(L.popup().setContent("<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>Click to see more.</i>"));
 //Places of Interest
-   var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).bindPopup('<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i>');
-   var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).bindPopup('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i>');
-   var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).bindPopup('<b><h3>Nogesic & the Ruins</h3></b><i></i>');
-   var poi_2 = L.marker([42.585444, -11.1467294], {icon: poiIcon}).bindPopup('<b><h3>Burial</h3></b><i></i>');
-   var poi_3 = L.marker([47.180753, -2.83227592], {icon: poiIcon}).bindPopup('<b><h3>Old Castor</h3></b><i></i>');
-   var poi_4 = L.marker([45.384563, 10.4875482], {icon: poiIcon}).bindPopup('<b><h3>River Castor</h3></b><i></i>');
-   var poi_5 = L.marker([46.0366355, 17.804442], {icon: poiIcon}).bindPopup('<b><h3>Coffik</h3></b><i></i>');
-   var poi_6 = L.marker([40.269468, 12.6386711], {icon: poiIcon}).bindPopup('<b><h3>Castor&#39;s Grove</h3></b><i></i>');
+   var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).bindPopup('<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i><br><br>Click to see more.');
+   var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).bindPopup('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i><br><br>Click to see more.');
+   var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).bindPopup('<b><h3>Nogesic & the Ruins</h3></b><i></i><br><br>Click to see more.');
+   var poi_2 = L.marker([42.585444, -11.1467294], {icon: poiIcon}).bindPopup('<b><h3>Burial</h3></b><i></i><br><br>Click to see more.');
+   var poi_3 = L.marker([47.180753, -2.83227592], {icon: poiIcon}).bindPopup('<b><h3>Old Castor</h3></b><i></i><br><br>Click to see more.');
+   var poi_4 = L.marker([45.384563, 10.4875482], {icon: poiIcon}).bindPopup('<b><h3>River Castor</h3></b><i></i><br><br>Click to see more.');
+   var poi_5 = L.marker([46.0366355, 17.804442], {icon: poiIcon}).bindPopup('<b><h3>Coffik</h3></b><i></i><br><br>Click to see more.');
+   var poi_6 = L.marker([40.269468, 12.6386711], {icon: poiIcon}).bindPopup('<b><h3>Castor&#39;s Grove</h3></b><i></i><br><br>Click to see more.');
    var poi_7 = L.marker([42.611323, 17.7846678], {icon: poiIcon}).bindPopup('<b><h3>The Gomai Sandsea (East)</h3></b><i></i>');
    var poi_8 = L.marker([41.8286420, 31.4890138], {icon: poiIcon}).bindPopup('<b><h3>Lake Dkon</h3></b><i>The wriggling waters move with something a tad more than just waves. The waters of Lake Dkon, untouched for thousands of years due to the legends of monsters with mouths like tooth-filled tuba, is teeming with a newly evolved race of fish people. Their culture completely unique from anything else in Paranai and curious to see what&#39;s so good about this "land" thing the species up there flap about on.<br><br>Nestled in the lake are tiny islands that the fishy-men have built their first surface town. Hoping for trade and to meet new people they occasionally venture out to spread word of this fantastic new hotspot and perhaps offer something a little more magical than just fish pie with a side of fish-chips.</i>');
    var poi_9 = L.marker([31.853297, 50.427246], {icon: poiIcon}).bindPopup('<b><h3>Lake Trish & River Trish</h3></b><i></i>');
