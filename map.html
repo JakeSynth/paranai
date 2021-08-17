@@ -80,18 +80,49 @@
 //Capitals
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('<h1>Castor Port</h1><i>The Port Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>');})
-    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Port Capital of Gomai</i>"));
-   var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).bindPopup('<b><h3>Vellenai (Capital)</h3></b><i></i>');
-   var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).bindPopup('<b><h3>The Current<br></h3></b><i>(Trade Capital)</i>');
-   var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).bindPopup('<b><h3>The Southold<br></h3></b><i>(Crown Capital)</i>');
-   var el_farnun = L.marker([-42.228517, 40.473633], {icon: capIcon}).bindPopup('<b><h3>Far N&#39;un</h3></b><i></i>');
-   var el_szenjun = L.marker([-36.332828, -41.187744], {icon: capIcon}).bindPopup('<b><h3>Szen Jun</h3></b><i></i>');
-   var el_prismcap = L.marker([2.218684, -45.966797], {icon: capIcon}).bindPopup('<b><h3>The Prism</h3></b><i>(The United Cities of Gannis, Terris, & Great Virim)</i>');
-   var el_ellosciti = L.marker([34.687428, -18.566895], {icon: capIcon}).bindPopup('<b><h3>Ellos Citi</h3></b><i></i>');
-   var el_ekonport = L.marker([-31.989442, -82.188721], {icon: capIcon}).bindPopup('<b><h3>Ekonport & Inkinport</h3></b><i>The Twinned Port Capitals of Tcara</i>');
-   var el_saltrokcap = L.marker([32.814978, -114.32373], {icon: capIcon}).bindPopup('<b><h3>Saltrok</h3></b><i></i>');
-   var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).bindPopup('<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i>');
+        sidebar.setContent('<h1>Castor Port</h1><i>The Golden Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>');})
+    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Golden Capital of Gomai</i>"));
+    var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_vellenaicap.bindPopup(L.popup().setContent("<b><h3>Vellenai (Capital)</h3></b><i>The Mythos Capital of Vellenai</i>"));
+    var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_currentcap.bindPopup(L.popup().setContent("<b><h3>The Current<br></h3></b><i>The Trade Capital of Acrostai</i>"));
+    var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_southold.bindPopup(L.popup().setContent("<b><h3>The Southold<br></h3></b><i>The Crown Capital of Acrostai</i>"));
+    var el_farnun = L.marker([-42.228517, 40.473633], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_farnun.bindPopup(L.popup().setContent("<b><h3>Far N&#39;un</h3></b><i>The Ancient Capital of Ashokai</i>"));
+    var el_szenjun = L.marker([-36.332828, -41.187744], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_szenjun.bindPopup(L.popup().setContent('<b><h3>Szen Jun</h3></b><i>The Gargantuan Capital of Amri Szen, "The Evercity"</i>'));
+    var el_prismcap = L.marker([2.218684, -45.966797], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_prismcap.bindPopup(L.popup().setContent("<b><h3>The Prism</h3></b><i>The United Cities of Gannis, Terris, & Great Virim; Capital of Ovrikai</i>"));
+    var el_ellosciti = L.marker([34.687428, -18.566895], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_ellosciti.bindPopup(L.popup().setContent("<b><h3>Ellos Citi</h3></b><i>The Scorching Capital of Anaagai</i>"));
+    var el_ekonport = L.marker([-31.989442, -82.188721], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_ekonport.bindPopup(L.popup().setContent("<b><h3>Ekonport & Inkinport</h3></b><i>The Twinned Trade Capitals of Tcara</i>"));
+    var el_saltrokcap = L.marker([32.814978, -114.32373], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_saltrokcap.bindPopup(L.popup().setContent("<b><h3>Saltrok</h3></b><i>The Ruined Capital of the Brittle</i>"));
+    var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    el_bargetowncap.bindPopup(L.popup().setContent("<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i>"));
+
 //Marvels
    var mv_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).bindPopup('<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.<br><br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.</i>');
    var mv_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).bindPopup('<b><h3>Belasan Mesa</h3></b><i></i>');
