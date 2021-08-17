@@ -3,25 +3,27 @@
   <head>
     <title>Paranai</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scripts/leaflet.css">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/leaflet.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sumana:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <script src="scripts/leaflet.js"></script>
     <script src="scripts/L.Control.Sidebar.js"></script>
-    <link rel="stylesheet" href="scripts/L.Control.Sidebar.css" />
+    <link rel="stylesheet" href="scripts/L.Control.Sidebar.css">
     <style type="text/css">
+    .close { }
     @media (min-width: 768px) {
     .close {display: none;}
     .close:hover {color: #999;}
-  </style>
+    </style>
     </head>
   
 <body style="height: 100%;margin: 0;">
   <div id="sidebar">
-</div>
+  </div>
     <div id="map" style="width: 100%; height: 100%; background: #455586;"></div>
     <script type="text/javascript">
 
@@ -37,7 +39,6 @@
       minZoom: 3,
       maxZoom: 7,
     }).addTo(map);
-
 //Custom Icons
     var ImpoIcon = L.Icon.extend({
     options: {
@@ -55,7 +56,7 @@
     marvIcon = new ImpoIcon({iconUrl: 'scripts/images/marvel.png'});
     townIcon = new ImpoIcon({iconUrl: 'scripts/images/town.png'});
     poiIcon = new ImpoIcon({iconUrl: 'scripts/images/poi.png'});
-
+    cntIcon = new ImpoIcon({iconUrl: 'scripts/images/country.png'});
 //Coordinate Finder
     //var marker = L.marker([2.635789, 251.71875], {
       //draggable: true,
@@ -64,7 +65,6 @@
     //marker.on('dragend', function(e) {
       //marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     //});
-
 //Sidebar
  var sidebar = L.control.sidebar('sidebar', {
             closeButton: true,
@@ -75,204 +75,486 @@
     map.on('click', function () {
         sidebar.hide();
       })
-
 //Markers
 //Capitals
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('<h1>Castor Port</h1><i>The Golden Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>');})
-    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Golden Capital of Gomai</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Castor Port</h1><i>The Golden Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>hi");})
+    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Golden Capital of Gomai</i><br><br>Click to see more"));
     var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_vellenaicap.bindPopup(L.popup().setContent("<b><h3>Vellenai (Capital)</h3></b><i>The Mythos Capital of Vellenai</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_vellenaicap.bindPopup(L.popup().setContent("<b><h3>Vellenai (Capital)</h3></b><i>The Mythos Capital of Vellenai</i><br><br>Click to see more"));
     var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_currentcap.bindPopup(L.popup().setContent("<b><h3>The Current<br></h3></b><i>The Trade Capital of Acrostai</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_currentcap.bindPopup(L.popup().setContent("<b><h3>The Current<br></h3></b><i>The Trade Capital of Acrostai</i><br><br>Click to see more"));
     var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_southold.bindPopup(L.popup().setContent("<b><h3>The Southold<br></h3></b><i>The Crown Capital of Acrostai</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_southold.bindPopup(L.popup().setContent("<b><h3>The Southold<br></h3></b><i>The Crown Capital of Acrostai</i><br><br>Click to see more"));
     var el_farnun = L.marker([-42.228517, 40.473633], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_farnun.bindPopup(L.popup().setContent("<b><h3>Far N&#39;un</h3></b><i>The Ancient Capital of Ashokai</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_farnun.bindPopup(L.popup().setContent("<b><h3>Far N&#39;un</h3></b><i>The Ancient Capital of Ashokai</i><br><br>Click to see more"));
     var el_szenjun = L.marker([-36.332828, -41.187744], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_szenjun.bindPopup(L.popup().setContent('<b><h3>Szen Jun</h3></b><i>The Gargantuan Capital of Amri Szen, "The Evercity"</i><br><br>Click to see more.'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_szenjun.bindPopup(L.popup().setContent('<b><h3>Szen Jun</h3></b><i>The Gargantuan Capital of Amri Szen, "The Evercity"</i><br><br>Click to see more'));
     var el_prismcap = L.marker([2.218684, -45.966797], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_prismcap.bindPopup(L.popup().setContent("<b><h3>The Prism</h3></b><i>The United Cities of Gannis, Terris, & Great Virim; Capital of Ovrikai</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_prismcap.bindPopup(L.popup().setContent("<b><h3>The Prism</h3></b><i>The United Cities of Gannis, Terris, & Great Virim; Capital of Ovrikai</i><br><br>Click to see more"));
     var el_ellosciti = L.marker([34.687428, -18.566895], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_ellosciti.bindPopup(L.popup().setContent("<b><h3>Ellos Citi</h3></b><i>The Scorching Capital of Anaagai</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_ellosciti.bindPopup(L.popup().setContent("<b><h3>Ellos Citi</h3></b><i>The Scorching Capital of Anaagai</i><br><br>Click to see more"));
     var el_ekonport = L.marker([-31.989442, -82.188721], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_ekonport.bindPopup(L.popup().setContent("<b><h3>Ekonport & Inkinport</h3></b><i>The Twinned Trade Capitals of Tcara</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_ekonport.bindPopup(L.popup().setContent("<b><h3>Ekonport & Inkinport</h3></b><i>The Twinned Trade Capitals of Tcara</i><br><br>Click to see more"));
     var el_saltrokcap = L.marker([32.814978, -114.32373], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_saltrokcap.bindPopup(L.popup().setContent("<b><h3>Saltrok</h3></b><i>The Ruined Capital of the Brittle</i><br><br>Click to see more."));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_saltrokcap.bindPopup(L.popup().setContent("<b><h3>Saltrok</h3></b><i>The Ruined Capital of the Brittle</i><br><br>Click to see more"));
     var el_bargetowncap = L.marker([6.893707, 10.799561], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
-    el_bargetowncap.bindPopup(L.popup().setContent("<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i><br><br>Click to see more."));
-
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+    el_bargetowncap.bindPopup(L.popup().setContent("<b><h3>Bargetown</h3></b><i>The Free Collective of Bargetown</i><br><br>Click to see more"));
 //Marvels
     var mv_canedmtn = L.marker([1.988126, 55.986328], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content<br>In some beliefs, the Cained Mountain is the final journey for souls on their journey to the afterlife as the realm of the gods supposedly lies just beyond it&#39;s summit. Many grieving travellers come here to pay final respects to their loved ones, bringing offerings to guide their path to the peak and towards an everlasting afterlife.');})
-    mv_canedmtn.bindPopup(L.popup().setContent("<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.</i><br><br>Click to see more."));
+    mv_canedmtn.bindPopup(L.popup().setContent("<b><h3>The Caned Mountain</h3></b><i>The rush of water towards the summit and back over the eastern side baffles those who have tried to explain it. The entire flow of the Current seems to defy gravity stretching into the sky before crashing back down. This action has carved a steep peak and a permanent silvered ring of cloud that encircles the tip.</i><br><br>Click to see more"));
     var mv_belasan = L.marker([-26.568877, 59.293213], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_belasan.bindPopup(L.popup().setContent("<b><h3>Belasan Mesa</h3></b><i></i><br><br>Click to see more."));
+    mv_belasan.bindPopup(L.popup().setContent("<b><h3>Belasan Mesa</h3></b><i></i><br><br>Click to see more"));
     var mv_glimmer = L.marker([1.856365, -45.977783], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_glimmer.bindPopup(L.popup().setContent("<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i><br><br>Click to see more."));
-    var mv_bargetownmarvel = L.marker([6.893707, 10.491943], {icon: marvIcon}).on('click', function () {
+    mv_glimmer.bindPopup(L.popup().setContent("<b><h3>The Glimmer</h3></b><i>A gargantuan mass of crystallized magic that sits atop The Spire at the heart of The Prism.</i><br><br>Click to see more"));
+    var mv_bargetownmarvel = L.marker([6.500899, 9.931641], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_bargetownmarvel.bindPopup(L.popup().setContent("<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i><br><br>Click to see more."));
+    mv_bargetownmarvel.bindPopup(L.popup().setContent("<b><h3>The Barge</h3></b><i>A mass of driftwood and wreckage that is drawn together by an unknown force. It was co-opted as residence by those who wished to live outside the governance of King & Council.</i><br><br>Click to see more"));
     var mv_heartroot = L.marker([4.083453, 58.513184], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_heartroot.bindPopup(L.popup().setContent("<b><h3>The Heartroot of Gallis</h3></b><i></i><br><br>Click to see more."));
+    mv_heartroot.bindPopup(L.popup().setContent("<b><h3>The Heartroot of Gallis</h3></b><i></i><br><br>Click to see more"));
     var mv_trdunes = L.marker([42.147114, 4.899902], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_trdunes.bindPopup(L.popup().setContent("<b><h3>The Trembling Dunes</h3></b><i></i><br><br>Click to see more."));
+    mv_trdunes.bindPopup(L.popup().setContent("<b><h3>The Trembling Dunes</h3></b><i></i><br><br>Click to see more"));
     var mv_dkonisle = L.marker([42.730874, 32.003174], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_dkonisle.bindPopup(L.popup().setContent("<b><h3>The Residents on the Dkon Islands</h3></b><i></i><br><br>Click to see more."));
+    mv_dkonisle.bindPopup(L.popup().setContent("<b><h3>The Residents on the Dkon Islands</h3></b><i></i><br><br>Click to see more"));
     var mv_chain = L.marker([-40.780541, -32.003174], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_chain.bindPopup(L.popup().setContent("<b><h3>The Chain</h3></b><i></i><br><br>Click to see more."));
+    mv_chain.bindPopup(L.popup().setContent("<b><h3>The Chain</h3></b><i></i><br><br>Click to see more"));
     var mv_alhoriascent = L.marker([-30.306503, -91.779785], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_alhoriascent.bindPopup(L.popup().setContent("<b><h3>The Pilgrimage up the Alhori Ascent</h3></b><i></i><br><br>Click to see more."));
+    mv_alhoriascent.bindPopup(L.popup().setContent("<b><h3>The Pilgrimage up the Alhori Ascent</h3></b><i></i><br><br>Click to see more"));
     var mv_ghostlights = L.marker([-19.766704, 115.532227], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_ghostlights.bindPopup(L.popup().setContent("<b><h3>The Ghost Lights over the Steaming Sea</h3></b><i>Mesmerising colours that shine through the fog of the Steaming Sea. Some say the hypnotic swirls and bands of glowing effervescence in the sky come from something of great power lying further beyond the impassable wall of mist, but these are only rumors.</i><br><br>Click to see more."));
+    mv_ghostlights.bindPopup(L.popup().setContent("<b><h3>The Ghost Lights over the Steaming Sea</h3></b><i>Mesmerising colours that shine through the fog of the Steaming Sea. Some say the hypnotic swirls and bands of glowing effervescence in the sky come from something of great power lying further beyond the impassable wall of mist, but these are only rumors.</i><br><br>Click to see more"));
     var mv_saltrokmarvel = L.marker([32.630123, -114.598389], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_saltrokmarvel.bindPopup(L.popup().setContent("<b><h3>The Ruined City of Saltrok</h3></b><i></i><br><br>Click to see more."));
+    mv_saltrokmarvel.bindPopup(L.popup().setContent("<b><h3>The Ruined City of Saltrok</h3></b><i></i><br><br>Click to see more"));
     var mv_osivin = L.marker([32.593106, -23.763428], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content');})
-    mv_osivin.bindPopup(L.popup().setContent("<b><h3>Osiris & Vinferra</h3></b><i>The Shattered Mountains</i><br><br>Click to see more."));
+    mv_osivin.bindPopup(L.popup().setContent("<b><h3>Osiris & Vinferra</h3></b><i>The Shattered Mountains</i><br><br>Click to see more"));
     var mv_olmara = L.marker([-47.709762, -1.043701], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('Sidebar Content<br>But there is one catch in this murky blue that has never been caught. Many will say they&#39;ve seen the beast, but few tell truths. Ol&#39; Mara, named after the first fishing ship she capsized and sank, makes an appearance every couple years but never to the same person twice. Some have gone a lifetime without seeing her. Some claim to have had her on the end of their rod before she snapped the line and swam back to the depths. Through all the tales told one thing seems to stay the same, the bright red stripe along her brilliant white body resembling a streaking star across the dark of the water.');})
-    mv_olmara.bindPopup(L.popup().setContent("<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>Click to see more.</i>"));
+    mv_olmara.bindPopup(L.popup().setContent("<b><h3>Ol&#39; Mara of the Ablac Blue</h3></b><i>An illusive behemoth that lives at the bottom of the lake. Once a year on the nineteenth day of Ester people flock to the town of Ablac to experience the biggest fishing tournament on Paranai. Thousands of fish from thousands of species are caught on that day and the biggest catch always gets a prize.<br><br>Click to see more</i>"));
 //Places of Interest
-   var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).bindPopup('<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i><br><br>Click to see more.');
-   var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).bindPopup('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i><br><br>Click to see more.');
-   var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).bindPopup('<b><h3>Nogesic & the Ruins</h3></b><i></i><br><br>Click to see more.');
-   var poi_2 = L.marker([42.585444, -11.1467294], {icon: poiIcon}).bindPopup('<b><h3>Burial</h3></b><i></i><br><br>Click to see more.');
-   var poi_3 = L.marker([47.180753, -2.83227592], {icon: poiIcon}).bindPopup('<b><h3>Old Castor</h3></b><i></i><br><br>Click to see more.');
-   var poi_4 = L.marker([45.384563, 10.4875482], {icon: poiIcon}).bindPopup('<b><h3>River Castor</h3></b><i></i><br><br>Click to see more.');
-   var poi_5 = L.marker([46.0366355, 17.804442], {icon: poiIcon}).bindPopup('<b><h3>Coffik</h3></b><i></i><br><br>Click to see more.');
-   var poi_6 = L.marker([40.269468, 12.6386711], {icon: poiIcon}).bindPopup('<b><h3>Castor&#39;s Grove</h3></b><i></i><br><br>Click to see more.');
-   var poi_7 = L.marker([42.611323, 17.7846678], {icon: poiIcon}).bindPopup('<b><h3>The Gomai Sandsea (East)</h3></b><i></i>');
-   var poi_8 = L.marker([41.8286420, 31.4890138], {icon: poiIcon}).bindPopup('<b><h3>Lake Dkon</h3></b><i>The wriggling waters move with something a tad more than just waves. The waters of Lake Dkon, untouched for thousands of years due to the legends of monsters with mouths like tooth-filled tuba, is teeming with a newly evolved race of fish people. Their culture completely unique from anything else in Paranai and curious to see what&#39;s so good about this "land" thing the species up there flap about on.<br><br>Nestled in the lake are tiny islands that the fishy-men have built their first surface town. Hoping for trade and to meet new people they occasionally venture out to spread word of this fantastic new hotspot and perhaps offer something a little more magical than just fish pie with a side of fish-chips.</i>');
-   var poi_9 = L.marker([31.853297, 50.427246], {icon: poiIcon}).bindPopup('<b><h3>Lake Trish & River Trish</h3></b><i></i>');
-   var poi_10 = L.marker([32.157012, 47.307129], {icon: poiIcon}).bindPopup('<b><h3>The Flatlands</h3></b><i></i>');
-   var poi_11 = L.marker([26.9397009, 59.646972], {icon: poiIcon}).bindPopup('<b><h3>The Reeds</h3></b><i></i>');
-   var poi_12 = L.marker([7.2360580, 56.063232], {icon: poiIcon}).bindPopup('<b><h3>Gallis&#39;set Jungle</h3></b><i>The jungle of Vellenai is home to many monstrous creatures lurking in the thick fog. The creatures themselves are some of the most devilish beings on Paranai, with leopards that can camouflage, basilisks with jaws as wide as carts, and snakes that could wrap around ships. The deadliest part of the jungle is no creature however, but a lowly white flower spread along the mossy floor.<br><br>These flowers produce a noxious poison mist that rapidly shuts down a creature&#39;s nervous system. The mist permeates the entire jungle floor but Tabaxi, Elves and Half-Elves are naturally immune to this poison due to their ancestral home being close or within the jungle. An antidote and protection from the mist can be obtained by consuming the petals of a flower however the Tabaxi see the flowers as holy idols that connect them with their deity and will fiercely protect them. Elves however feel no connection to the flowers and will gladly sell on the petals for an exorbitant fee, as long as they can make it safely past Tabaxi without them noticing.</i>');
-   var poi_13 = L.marker([3.7655967, 50.603027], {icon: poiIcon}).bindPopup('<b><h3>Sacred Port of the Ashen Ones</h3></b><i></i>');
-   var poi_14 = L.marker([2.7235830, 52.976074], {icon: poiIcon}).bindPopup('<b><h3>Valenica Monastery</h3></b><i>The most prestigious monk training school in the world. The only way to enter the monastery is with a clay beaded necklace with a gold pendant. One side of the pendant is covered with an ever-green leaf from Gallis&#39;set jungle, and the other side a pulsing magical red. When new Monks leave the monastery they have their pendants showing green. It is agreed by every nation that these monks have free peaceful passage through their lands.<br><br>Once the monk finds a suitable recruit they will bestow them with the pendant and have them consume the green leaf so it can only show red. This then sets the recruit on a pilgrimage to Valenica, others who see the red pendant and know of the pilgrimage will seek to help or hinder the recruit by offering travel or by breaking the pendant. If the initiate loses or breaks the pendant they have failed their pilgrimage and can no longer train at the Valenica Monastery, the pendant will dissolve as it is lost and return to the Monastery.</i>');
-   var poi_15 = L.marker([2.11255906, 61.940918], {icon: poiIcon}).bindPopup('<b><h3>The Red Split</h3></b><i></i>');
-   var poi_16 = L.marker([3.634036, 58.513184], {icon: poiIcon}).bindPopup('<b><h3>The Gallis Cult</h3></b><i></i>');
-   var poi_17 = L.marker([-2.119878, 62.885742], {icon: poiIcon}).bindPopup('<b><h3>The Current (The Endless Stream)</h3></b><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i>');
-   var poi_currentriver = L.marker([-48.683708, -10.733643], {icon: poiIcon}).bindPopup('<b><h3>Jadencroft Manor</h3></b><i></i>');
-   var poi_18 = L.marker([31.222197, 36.44165], {icon: poiIcon}).bindPopup('<b><h3>Asbolish</h3></b><i></i>');
-   var poi_19 = L.marker([-29.036961, 141.635742], {icon: poiIcon}).bindPopup('<b><h3>The Rift Islands</h3></b><i>An outer-blue fisherman from Acrostai washed up on shore the only survivor of his boat when a huge wave of magical energy destroyed it. He spoke of massive walls of rock, ash bursting from the ocean in a blue haze, and of a rift below the waves that these rocks seemed to jet from. Later expeditions to find the islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close. </i>');
-   var poi_20 = L.marker([32.045333, -118.78418], {icon: poiIcon}).bindPopup('<b><h3>The Brittle</h3></b><i></i>');
-   var poi_21 = L.marker([46.346928, 26.619873], {icon: poiIcon}).bindPopup('<b><h3>The Sullen Grove & Berenwyrg Ruins</h3></b><i></i>');
-   var poi_22 = L.marker([-39.901309, 49.405518], {icon: poiIcon}).bindPopup('<b><h3>The Tritonlord Lakes</h3></b><i></i>');
-   var poi_23 = L.marker([-36.111253, 55.38208], {icon: poiIcon}).bindPopup('<b><h3>The Amix Mountains</h3></b><i></i>');
-   var poi_24 = L.marker([-27.078692, 50.537109], {icon: poiIcon}).bindPopup('<b><h3>Lake Fel & River Fel</h3></b><i></i>');
-   var poi_25 = L.marker([-42.366662, 28.300781], {icon: poiIcon}).bindPopup('<b><h3>Xerus</h3></b><i></i>');
-   var poi_26 = L.marker([-21.033237, 57.084961], {icon: poiIcon}).bindPopup('<b><h3>River Brys</h3></b><i></i>');
-   var poi_27 = L.marker([-29.305561, 50.679932], {icon: poiIcon}).bindPopup('<b><h3>A Way Below</h3></b><i></i>');
-   var poi_28 = L.marker([-46.626806, 33.33252], {icon: poiIcon}).bindPopup('<b><h3>The Dista Sunsea</h3></b><i></i>');
-   var poi_29 = L.marker([-45.606352, 41.671143], {icon: poiIcon}).bindPopup('<b><h3>Lastport</h3></b><i></i>');
-   var poi_30 = L.marker([-57.183902, 49.482422], {icon: poiIcon}).bindPopup('<b><h3>Here Be Monsters</h3></h3></b><i>Sometimes it&#39;s quicker to sail the Outer Blue to get to your destination... but it definetly isn&#39;t safer. Some 40% of ships who make this journey don&#39;t return, and even fewer return without casualties.<br><br>Reports of dark, choking mists moving just above the water and freak lightning storms that disrupt navigation are some of the challenges of this route. Not to mention the towering shapes that rise from the water and crash back down or the four-legged beasts that seem to wade through the kilometer deep waters and tower into the sky. Captains brave or foolhardy enough to attempt these crossings and survive are known by the nickname "Kal Gadai" (lit. Stolen Fates) by other seasoned sailors.</i>');
-   var poi_31 = L.marker([-36.182225, 57.469482], {icon: poiIcon}).bindPopup('<b><h3>Dala Tribe</h3></b><i></i>');
-   var poi_32 = L.marker([-21.524627, 58.64502], {icon: poiIcon}).bindPopup('<b><h3>Dune Limit</h3></b><i></i>');
-   var poi_33 = L.marker([-32.676373, 59.996338], {icon: poiIcon}).bindPopup('<b><h3>Sela Tong</h3></b><i></i>');
-   var poi_34 = L.marker([38.358888, 43.088379], {icon: poiIcon}).bindPopup('<b><h3>Bethelhyest</h3></b><i></i>');
-   var poi_35 = L.marker([-25.532528, 55.777588], {icon: poiIcon}).bindPopup('<b><h3>Heiss Prison City</h3></b><i></i>');
-   var poi_36 = L.marker([-20.560796, -98.173828], {icon: poiIcon}).bindPopup('<b><h3>Thal & Thal Muuv</h3></b><i></i>');
-   var poi_37 = L.marker([-20.272503, -99.63501], {icon: poiIcon}).bindPopup('<b><h3>Brakon</h3></b><i></i>');
-   var poi_38 = L.marker([-31.409912, -94.394531], {icon: poiIcon}).bindPopup('<b><h3>The Holy One</h3></b><i></i>');
-   var poi_39 = L.marker([-29.802518, -87.011719], {icon: poiIcon}).bindPopup('<b><h3>Grozh Drain</h3></b><i></i>');
-   var poi_40 = L.marker([-25.393661, -90.252686], {icon: poiIcon}).bindPopup('<b><h3>The Passage of Methti&#39;s</h3></b><i></i>');
-   var poi_41 = L.marker([-34.497503, -84.407959], {icon: poiIcon}).bindPopup('<b><h3>Amak&#39;cara Djen</h3></b><i></i>');
-   var poi_42 = L.marker([-32.888813, -80.870361], {icon: poiIcon}).bindPopup('<b><h3>Inkin Djen</h3></b><i></i>');
-   var poi_43 = L.marker([-27.059126, -90.791016], {icon: poiIcon}).bindPopup('<b><h3>The Asoth Sheers</h3></b><i></i>');
-   var poi_44 = L.marker([-35.478565, -92.175293], {icon: poiIcon}).bindPopup('<b><h3>The V&#39;rari Sisters</h3></b><i></i>');
-   var poi_45 = L.marker([-46.118942, 25.938721], {icon: poiIcon}).bindPopup('<b><h3>River Keres</h3></b><i></i>');
-   var poi_46 = L.marker([-45.675482, 38.287354], {icon: poiIcon}).bindPopup('<b><h3>River Tinex</h3></b><i></i>');
-   var poi_47 = L.marker([-42.884015, 13.557129], {icon: poiIcon}).bindPopup('<b><h3>The Karakis Divide</h3></b><i></i>');
-   var poi_48 = L.marker([-39.529467, 13.502197], {icon: poiIcon}).bindPopup('<b><h3>The Shadowed Port City of Ib</h3></b><i></i>');
-   var poi_50 = L.marker([-31.475524, -41.748047], {icon: poiIcon}).bindPopup('<b><h3>Num</h3></b><i>The Wandering City of Num</i>');
-   var poi_51 = L.marker([-35.299435, -42.352295], {icon: poiIcon}).bindPopup('<b><h3>Dicci Num</h3></b><i>The Wandering City of Num</i>');
-   var poi_52 = L.marker([-35.906849, -46.362305], {icon: poiIcon}).bindPopup('<b><h3>Num Muuv</h3></b><i>The Wandering City of Num</i>');
-   var poi_53 = L.marker([-38.453589, -44.58252], {icon: poiIcon}).bindPopup('<b><h3>Hiti Num</h3></b><i>The Wandering City of Num</i>');
-   var poi_54 = L.marker([-37.883525, -42.319336], {icon: poiIcon}).bindPopup('<b><h3>Boici Num</h3></b><i>The Wandering City of Num</i>');
-   var poi_55 = L.marker([-38.771216, -36.485596], {icon: poiIcon}).bindPopup('<b><h3>Desic Num</h3></b><i>The Wandering City of Num</i>');
-   var poi_56 = L.marker([-40.446947, -42.681885], {icon: poiIcon}).bindPopup('<b><h3>Szen Num</h3></b><i>The Wandering City of Num</i>');
-   var poi_57 = L.marker([-43.444943, -39.25415], {icon: poiIcon}).bindPopup('<b><h3>Bocci Num</h3></b><i>The Wandering City of Num</i>');
-   var poi_58 = L.marker([-45.821143, -18.149414], {icon: poiIcon}).bindPopup('<b><h3>Derri, the Sinking City</h3></b><i></i>');
-   var poi_59 = L.marker([-45.844108, -25.466309], {icon: poiIcon}).bindPopup('<b><h3>River Rums & Uumel</h3></b><i></i>');
-   var poi_60 = L.marker([-32.565333, -42.209473], {icon: poiIcon}).bindPopup('<b><h3>River Ines Um</h3></b><i></i>');
-   var poi_61 = L.marker([-24.5771, -45.20874], {icon: poiIcon}).bindPopup('<b><h3>Xerinan</h3></b><i>The Four Crosses</i>');
-   var poi_62 = L.marker([-24.96614, -44.571533], {icon: poiIcon}).bindPopup('<b><h3>Xernak</h3></b><i>The Four Crosses</i>');
-   var poi_63 = L.marker([-24.906367, -43.80249], {icon: poiIcon}).bindPopup('<b><h3>Xerino</h3></b><i>The Four Crosses</i>');
-   var poi_64 = L.marker([-23.91597, -42.692871], {icon: poiIcon}).bindPopup('<b><h3>Xerkaris</h3></b><i>The Four Crosses</i>');
-   var poi_65 = L.marker([5.769036, -46.087646], {icon: poiIcon}).bindPopup('<b><h3>Shuhth & Shuhth West</h3></b><i></i>');
-   var poi_66 = L.marker([2.108899, -45.758057], {icon: poiIcon}).bindPopup('<b><h3>Great Virum</h3></b><i>Industrial District of The Prism</i>');
-   var poi_67 = L.marker([2.141835, -46.186523], {icon: poiIcon}).bindPopup('<b><h3>Terris</h3></b><i>Wise District of The Prism</i>');
-   var poi_68 = L.marker([2.383346, -45.98877], {icon: poiIcon}).bindPopup('<b><h3>Gannis</h3></b><i>Nobel District of The Prism</i>');
-   var poi_69 = L.marker([0.450435, -44.648437], {icon: poiIcon}).bindPopup('<b><h3>Hammara Grove</h3></b><i></i>');
-   var poi_70 = L.marker([0.692122, -43.791504], {icon: poiIcon}).bindPopup('<b><h3>Hammara</h3></b><i>The Harvest Factories</i>');
-   var poi_71 = L.marker([2.185749, -40.605469], {icon: poiIcon}).bindPopup('<b><h3>Migrash Port</h3></b><i></i>');
-   var poi_72 = L.marker([-5.747174, -42.593994], {icon: poiIcon}).bindPopup('<b><h3>River Wesner</h3></b><i></i>');
-   var poi_73 = L.marker([-9.709057, -44.143066], {icon: poiIcon}).bindPopup('<b><h3>Yun Town & the Yun Town Barracks</h3></b><i></i>');
-   var poi_74 = L.marker([-20.94092, -43.934326], {icon: poiIcon}).bindPopup('<b><h3>B&#39;vurativ Forest</h3></b><i></i>');
-   var poi_75 = L.marker([-17.75915, -44.516602], {icon: poiIcon}).bindPopup('<b><h3>Nath Akai</h3></b><i></i>');
-   var poi_76 = L.marker([33.596319, -23.510742], {icon: poiIcon}).bindPopup('<b><h3>Tkerrim Fracture</h3></b><i></i>');
-   var poi_77 = L.marker([34.379713, -26.125488], {icon: poiIcon}).bindPopup('<b><h3>Glacier River Tkerrim</h3></b><i></i>');
-   var poi_78 = L.marker([26.076521, -33.376465], {icon: poiIcon}).bindPopup('<b><h3>River for the King Almen Assar</h3></b><i></i>');
-   var poi_79 = L.marker([24.746831, -32.058105], {icon: poiIcon}).bindPopup('<b><h3>The Twin Cities of Twara</h3></b><i></i>');
-   var poi_80 = L.marker([12.961736, -41.737061], {icon: poiIcon}).bindPopup('<b><h3>The Putrid Marsh (South)</h3></b><i></i>');
-   var poi_81 = L.marker([19.414792, -35.496826], {icon: poiIcon}).bindPopup('<b><h3>The Putrid Marsh (North)</h3></b><i></i>');
-   var poi_82 = L.marker([34.894942, -13.842773], {icon: poiIcon}).bindPopup('<b><h3>The Gomai Sandsea (West)</h3></b><i></i>');
-   var poi_83 = L.marker([-25.700938, 43.198242], {icon: poiIcon}).bindPopup('<b><h3>Ancient Murals on the Cliffs</h3></b><i></i>');
-   var poi_84 = L.marker([38.367502, 3.493652], {icon: poiIcon}).bindPopup('<b><h3>Castor Port</h3></b><i></i>');
-   var poi_85 = L.marker([44.707706, -6.767578], {icon: poiIcon}).bindPopup('<b><h3>Gomai (City of Birth)</h3></b><i></i>');
-   var poi_86 = L.marker([-10.60662, 63.127441], {icon: poiIcon}).bindPopup('<b><h3>Perrins</h3></b><i></i>');
-   var poi_87 = L.marker([-47.017716, -0.307617], {icon: poiIcon}).bindPopup('<b><h3>The Ablac Blue</h3></b><i></i>');
-   var poi_88 = L.marker([-6.413566, 64.061279], {icon: poiIcon}).bindPopup('<b><h3>Hilgael</h3></b><i></i>');
-   var poi_89 = L.marker([-33.94336, -61.040039], {icon: poiIcon}).bindPopup('<b><h3>Screams from Below the Waves</h3></b><i></i>');
-   var poi_90 = L.marker([37.631635, 28.927002], {icon: poiIcon}).bindPopup('<b><h3>The Attos Gulf & the Lembas Delta</h3></b><i></i>');
-   var poi_91 = L.marker([-14.477234, 58.677979], {icon: poiIcon}).bindPopup('<b><h3>Aberic&eacute; Phosphor Mines</h3></b><i></i>');
-   var poi_92 = L.marker([-8.526701, 60.831299], {icon: poiIcon}).bindPopup('<b><h3>A Tinkerer&#39;s Masterwork</h3></b><i></i>');
-   var poi_93 = L.marker([-2.032045, 66.016846], {icon: poiIcon}).bindPopup('<b><h3>The Vents through the Current</h3></b><i></i>');
-   var poi_94 = L.marker([0, 0], {icon: poiIcon}).bindPopup('<b><h3>94</h3></b><i></i>');
+    var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    poi_deep.bindPopup(L.popup().setContent("<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i><br><br>Click to see more"));
+   var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    poi_acrbreaker.bindPopup(L.popup().setContent('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i><br><br>Click to see more'));
+   var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_1.bindPopup(L.popup().setContent('<b><h3>Nogesic & the Ruins</h3></b><i></i><br><br>Click to see more'));
+   var poi_2 = L.marker([42.585444, -11.1467294], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_2.bindPopup(L.popup().setContent('<b><h3>Burial</h3></b><i></i><br><br>Click to see more'));
+   var poi_3 = L.marker([47.180753, -2.83227592], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_3.bindPopup(L.popup().setContent('<b><h3>Old Castor</h3></b><i></i><br><br>Click to see more'));
+   var poi_4 = L.marker([45.384563, 10.4875482], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_4.bindPopup(L.popup().setContent('<b><h3>River Castor</h3></b><i></i><br><br>Click to see more'));
+   var poi_5 = L.marker([46.0366355, 17.804442], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_5.bindPopup(L.popup().setContent('<b><h3>Coffik</h3></b><i></i><br><br>Click to see more'));
+   var poi_6 = L.marker([40.269468, 12.6386711], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_6.bindPopup(L.popup().setContent('<b><h3>Castor&#39;s Grove</h3></b><i></i><br><br>Click to see more'));
+   var poi_7 = L.marker([42.611323, 17.7846678], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_7.bindPopup(L.popup().setContent('<b><h3>The Gomai Sandsea (East)</h3></b><i></i><br><br>Click to see more'));
+   var poi_8 = L.marker([41.8286420, 31.4890138], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent(' Their culture completely unique from anything else in Paranai and curious to see what&#39;s so good about this "land" thing the species up there flap about on.<br><br>Nestled in the lake are tiny islands that the fishy-men have built their first surface town. Hoping for trade and to meet new people they occasionally venture out to spread word of this fantastic new hotspot and perhaps offer something a little more magical than just fish pie with a side of fishy-chips.');})
+   poi_8.bindPopup(L.popup().setContent('<b><h3>Lake Dkon</h3></b><i>The wriggling waters move with something a tad more than just waves. The waters of Lake Dkon, untouched for thousands of years due to the legends of monsters with mouths like tooth-filled tuba, is teeming with a newly evolved race of fish people.</i><br><br>Click to see more'));
+   var poi_9 = L.marker([31.853297, 50.427246], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_9.bindPopup(L.popup().setContent('<b><h3>Lake Trish & River Trish</h3></b><i></i><br><br>Click to see more'));
+   var poi_10 = L.marker([32.157012, 47.307129], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_10.bindPopup(L.popup().setContent('<b><h3>The Flatlands</h3></b><i></i><br><br>Click to see more'));
+   var poi_11 = L.marker([26.9397009, 59.646972], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_11.bindPopup(L.popup().setContent('<b><h3>The Reeds</h3></b><i></i><br><br>Click to see more'));
+   var poi_12 = L.marker([7.2360580, 56.063232], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('The creatures themselves are some of the most devilish beings on Paranai, with leopards that can camouflage, basilisks with jaws as wide as carts, and snakes that could wrap around ships. The deadliest part of the jungle is no creature however, but a lowly white flower spread along the mossy floor.<br><br>These flowers produce a noxious poison mist that rapidly shuts down a creature&#39;s nervous system. The mist permeates the entire jungle floor but Tabaxi, Elves and Half-Elves are naturally immune to this poison due to their ancestral home being close or within the jungle. An antidote and protection from the mist can be obtained by consuming the petals of a flower however the Tabaxi see the flowers as holy idols that connect them with their deity and will fiercely protect them. Elves however feel no connection to the flowers and will gladly sell on the petals for an exorbitant fee, as long as they can make it safely past Tabaxi without them noticing.');})
+   poi_12.bindPopup(L.popup().setContent('<b><h3>Gallis&#39;set Jungle</h3></b><i>The jungle of Vellenai is home to many monstrous creatures lurking in the thick fog.</i><br><br>Click to see more'));
+   var poi_13 = L.marker([3.7655967, 50.603027], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_13.bindPopup(L.popup().setContent('<b><h3>Sacred Port of the Ashen Ones</h3></b><i></i><br><br>Click to see more'));
+   var poi_14 = L.marker([2.7235830, 52.976074], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('It is generally understood that these monks have free peaceful passage through their lands.<br><br>Once the monk finds a suitable recruit they will bestow them with the pendant and have them consume the green leaf so it can only show red. This then sets the recruit on a pilgrimage to Valenica, others who see the red pendant and know of the pilgrimage will seek to help or hinder the recruit by offering travel or by breaking the pendant. If the initiate loses or breaks the pendant they have failed their pilgrimage and can no longer train at the Valenica Monastery, the pendant will dissolve as it is lost and return to the Monastery.');})
+   poi_14.bindPopup(L.popup().setContent('<b><h3>Valenica Monastery</h3></b><i>The most prestigious monk training school in the world. The only way to enter the monastery is with a clay beaded necklace with a gold pendant. One side of the pendant is covered with an ever-green leaf from Gallis&#39;set jungle, and the other side a pulsing magical red. When new Monks leave the monastery they have their pendants showing green.</i><br><br>Click to see more'));
+   var poi_15 = L.marker([2.11255906, 61.940918], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_15.bindPopup(L.popup().setContent('<b><h3>The Red Split</h3></b><i></i><br><br>Click to see more'));
+   var poi_16 = L.marker([3.634036, 58.513184], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_16.bindPopup(L.popup().setContent('<b><h3>The Gallis Cult</h3></b><i></i><br><br>Click to see more'));
+   var poi_17 = L.marker([-2.119878, 62.885742], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_17.bindPopup(L.popup().setContent('<b><h3>The Current (The Endless Stream)</h3></b><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i><br><br>Click to see more'));
+   var poi_currentriver = L.marker([-48.683708, -10.733643], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_currentriver.bindPopup(L.popup().setContent('<b><h3>Jadencroft Manor</h3></b><i></i><br><br>Click to see more'));
+   var poi_18 = L.marker([31.222197, 36.44165], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_18.bindPopup(L.popup().setContent('<b><h3>Asbolish</h3></b><i></i><br><br>Click to see more'));
+   var poi_19 = L.marker([-29.036961, 141.635742], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_19.bindPopup(L.popup().setContent('<b><h3>The Rift Islands</h3></b><i>An outer-blue fisherman from Acrostai washed up on shore the only survivor of his boat when a huge wave of magical energy destroyed it. He spoke of massive walls of rock, ash bursting from the ocean in a blue haze, and of a rift below the waves that these rocks seemed to jet from. Later expeditions to find the islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close. </i><br><br>Click to see more'));
+   var poi_20 = L.marker([32.045333, -118.78418], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_20.bindPopup(L.popup().setContent('<b><h3>The Brittle</h3></b><i></i><br><br>Click to see more'));
+   var poi_21 = L.marker([46.346928, 26.619873], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_21.bindPopup(L.popup().setContent('<b><h3>The Sullen Grove & Berenwyrg Ruins</h3></b><i></i><br><br>Click to see more'));
+   var poi_22 = L.marker([-39.901309, 49.405518], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_22.bindPopup(L.popup().setContent('<b><h3>The Tritonlord Lakes</h3></b><i></i><br><br>Click to see more'));
+   var poi_23 = L.marker([-36.111253, 55.38208], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_23.bindPopup(L.popup().setContent('<b><h3>The Amix Mountains</h3></b><i></i><br><br>Click to see more'));
+   var poi_24 = L.marker([-27.078692, 50.537109], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_24.bindPopup(L.popup().setContent('<b><h3>Lake Fel & River Fel</h3></b><i></i><br><br>Click to see more'));
+   var poi_25 = L.marker([-42.366662, 28.300781], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_25.bindPopup(L.popup().setContent('<b><h3>Xerus</h3></b><i></i><br><br>Click to see more'));
+   var poi_26 = L.marker([-21.033237, 57.084961], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_26.bindPopup(L.popup().setContent('<b><h3>River Brys</h3></b><i></i><br><br>Click to see more'));
+   var poi_27 = L.marker([-29.305561, 50.679932], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_27.bindPopup(L.popup().setContent('<b><h3>A Way Below</h3></b><i></i><br><br>Click to see more'));
+   var poi_28 = L.marker([-46.626806, 33.33252], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_28.bindPopup(L.popup().setContent('<b><h3>The Dista Sunsea</h3></b><i></i><br><br>Click to see more'));
+   var poi_29 = L.marker([-45.606352, 41.671143], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_29.bindPopup(L.popup().setContent('<b><h3>Lastport</h3></b><i></i><br><br>Click to see more'));
+   var poi_30 = L.marker([-57.183902, 49.482422], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_30.bindPopup(L.popup().setContent('<b><h3>Here Be Monsters</h3></h3></b><i>Sometimes it&#39;s quicker to sail the Outer Blue to get to your destination... but it definetly isn&#39;t safer. Some 40% of ships who make this journey don&#39;t return, and even fewer return without casualties.<br><br>Reports of dark, choking mists moving just above the water and freak lightning storms that disrupt navigation are some of the challenges of this route. Not to mention the towering shapes that rise from the water and crash back down or the four-legged beasts that seem to wade through the kilometer deep waters and tower into the sky. Captains brave or foolhardy enough to attempt these crossings and survive are known by the nickname "Kal Gadai" (lit. Stolen Fates) by other seasoned sailors.</i><br><br>Click to see more'));
+   var poi_31 = L.marker([-36.182225, 57.469482], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_31.bindPopup(L.popup().setContent('<b><h3>Dala Tribe</h3></b><i></i><br><br>Click to see more'));
+   var poi_32 = L.marker([-21.524627, 58.64502], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_32.bindPopup(L.popup().setContent('<b><h3>Dune Limit</h3></b><i></i><br><br>Click to see more'));
+   var poi_33 = L.marker([-32.676373, 59.996338], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_33.bindPopup(L.popup().setContent('<b><h3>Sela Tong</h3></b><i></i><br><br>Click to see more'));
+   var poi_34 = L.marker([38.358888, 43.088379], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_34.bindPopup(L.popup().setContent('<b><h3>Bethelhyest</h3></b><i></i><br><br>Click to see more'));
+   var poi_35 = L.marker([-25.532528, 55.777588], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_35.bindPopup(L.popup().setContent('<b><h3>Heiss Prison City</h3></b><i></i><br><br>Click to see more'));
+   var poi_36 = L.marker([-20.560796, -98.173828], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_36.bindPopup(L.popup().setContent('<b><h3>Thal & Thal Muuv</h3></b><i></i><br><br>Click to see more'));
+   var poi_37 = L.marker([-20.272503, -99.63501], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_37.bindPopup(L.popup().setContent('<b><h3>Brakon</h3></b><i></i><br><br>Click to see more'));
+   var poi_38 = L.marker([-31.409912, -94.394531], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_38.bindPopup(L.popup().setContent('<b><h3>The Holy One</h3></b><i></i><br><br>Click to see more'));
+   var poi_39 = L.marker([-29.802518, -87.011719], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_39.bindPopup(L.popup().setContent('<b><h3>Grozh Drain</h3></b><i></i><br><br>Click to see more'));
+   var poi_40 = L.marker([-25.393661, -90.252686], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_40.bindPopup(L.popup().setContent('<b><h3>The Passage of Methti&#39;s</h3></b><i></i><br><br>Click to see more'));
+   var poi_41 = L.marker([-34.497503, -84.407959], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_41.bindPopup(L.popup().setContent('<b><h3>Amak&#39;cara Djen</h3></b><i></i><br><br>Click to see more'));
+   var poi_42 = L.marker([-32.888813, -80.870361], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_42.bindPopup(L.popup().setContent('<b><h3>Inkin Djen</h3></b><i></i><br><br>Click to see more'));
+   var poi_43 = L.marker([-27.059126, -90.791016], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_43.bindPopup(L.popup().setContent('<b><h3>The Asoth Sheers</h3></b><i></i><br><br>Click to see more'));
+   var poi_44 = L.marker([-35.478565, -92.175293], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_44.bindPopup(L.popup().setContent('<b><h3>The V&#39;rari Sisters</h3></b><i></i><br><br>Click to see more'));
+   var poi_45 = L.marker([-46.118942, 25.938721], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_45.bindPopup(L.popup().setContent('<b><h3>River Keres</h3></b><i></i><br><br>Click to see more'));
+   var poi_46 = L.marker([-45.675482, 38.287354], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_46.bindPopup(L.popup().setContent('<b><h3>River Tinex</h3></b><i></i><br><br>Click to see more'));
+   var poi_47 = L.marker([-42.884015, 13.557129], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_47.bindPopup(L.popup().setContent('<b><h3>The Karakis Divide</h3></b><i></i><br><br>Click to see more'));
+   var poi_48 = L.marker([-39.529467, 13.502197], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_48.bindPopup(L.popup().setContent('<b><h3>The Shadowed Port City of Ib</h3></b><i></i><br><br>Click to see more'));
+   var poi_50 = L.marker([-31.475524, -41.748047], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_50.bindPopup(L.popup().setContent('<b><h3>Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_51 = L.marker([-35.299435, -42.352295], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_51.bindPopup(L.popup().setContent('<b><h3>Dicci Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_52 = L.marker([-35.906849, -46.362305], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_52.bindPopup(L.popup().setContent('<b><h3>Num Muuv</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_53 = L.marker([-38.453589, -44.58252], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_53.bindPopup(L.popup().setContent('<b><h3>Hiti Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_54 = L.marker([-37.883525, -42.319336], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_54.bindPopup(L.popup().setContent('<b><h3>Boici Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_55 = L.marker([-38.771216, -36.485596], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_55.bindPopup(L.popup().setContent('<b><h3>Desic Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_56 = L.marker([-40.446947, -42.681885], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_56.bindPopup(L.popup().setContent('<b><h3>Szen Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_57 = L.marker([-43.444943, -39.25415], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_57.bindPopup(L.popup().setContent('<b><h3>Bocci Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
+   var poi_58 = L.marker([-45.821143, -18.149414], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_58.bindPopup(L.popup().setContent('<b><h3>Derri, the Sinking City</h3></b><i></i><br><br>Click to see more'));
+   var poi_59 = L.marker([-45.844108, -25.466309], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_59.bindPopup(L.popup().setContent('<b><h3>River Rums & Uumel</h3></b><i></i><br><br>Click to see more'));
+   var poi_60 = L.marker([-32.565333, -42.209473], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_60.bindPopup(L.popup().setContent('<b><h3>River Ines Um</h3></b><i></i><br><br>Click to see more'));
+   var poi_61 = L.marker([-24.5771, -45.20874], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_61.bindPopup(L.popup().setContent('<b><h3>Xerinan</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
+   var poi_62 = L.marker([-24.96614, -44.571533], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_62.bindPopup(L.popup().setContent('<b><h3>Xernak</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
+   var poi_63 = L.marker([-24.906367, -43.80249], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_63.bindPopup(L.popup().setContent('<b><h3>Xerino</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
+   var poi_64 = L.marker([-23.91597, -42.692871], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_64.bindPopup(L.popup().setContent('<b><h3>Xerkaris</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
+   var poi_65 = L.marker([5.769036, -46.087646], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_65.bindPopup(L.popup().setContent('<b><h3>Shuhth & Shuhth West</h3></b><i></i><br><br>Click to see more'));
+   var poi_66 = L.marker([2.108899, -45.758057], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_66.bindPopup(L.popup().setContent('<b><h3>Great Virum</h3></b><i>Industrial District of The Prism</i><br><br>Click to see more'));
+   var poi_67 = L.marker([2.141835, -46.186523], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_67.bindPopup(L.popup().setContent('<b><h3>Terris</h3></b><i>Wise District of The Prism</i><br><br>Click to see more'));
+   var poi_68 = L.marker([2.383346, -45.98877], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_68.bindPopup(L.popup().setContent('<b><h3>Gannis</h3></b><i>Nobel District of The Prism</i><br><br>Click to see more'));
+   var poi_69 = L.marker([0.450435, -44.648437], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_69.bindPopup(L.popup().setContent('<b><h3>Hammara Grove</h3></b><i></i><br><br>Click to see more'));
+   var poi_70 = L.marker([0.692122, -43.791504], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_70.bindPopup(L.popup().setContent('<b><h3>Hammara</h3></b><i>The Harvest Factories</i><br><br>Click to see more'));
+   var poi_71 = L.marker([2.185749, -40.605469], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_71.bindPopup(L.popup().setContent('<b><h3>Migrash Port</h3></b><i></i><br><br>Click to see more'));
+   var poi_72 = L.marker([-5.747174, -42.593994], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_72.bindPopup(L.popup().setContent('<b><h3>River Wesner</h3></b><i></i><br><br>Click to see more'));
+   var poi_73 = L.marker([-9.709057, -44.143066], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_73.bindPopup(L.popup().setContent('<b><h3>Yun Town & the Yun Town Barracks</h3></b><i></i><br><br>Click to see more'));
+   var poi_74 = L.marker([-20.94092, -43.934326], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_74.bindPopup(L.popup().setContent('<b><h3>B&#39;vurativ Forest</h3></b><i></i><br><br>Click to see more'));
+   var poi_75 = L.marker([-17.75915, -44.516602], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_75.bindPopup(L.popup().setContent('<b><h3>Nath Akai</h3></b><i></i><br><br>Click to see more'));
+   var poi_76 = L.marker([33.596319, -23.510742], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_76.bindPopup(L.popup().setContent('<b><h3>Tkerrim Fracture</h3></b><i></i><br><br>Click to see more'));
+   var poi_77 = L.marker([34.379713, -26.125488], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_77.bindPopup(L.popup().setContent('<b><h3>Glacier River Tkerrim</h3></b><i></i><br><br>Click to see more'));
+   var poi_78 = L.marker([26.076521, -33.376465], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_78.bindPopup(L.popup().setContent('<b><h3>River for the King Almen Assar</h3></b><i></i><br><br>Click to see more'));
+   var poi_79 = L.marker([24.746831, -32.058105], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_79.bindPopup(L.popup().setContent('<b><h3>The Twin Cities of Twara</h3></b><i></i><br><br>Click to see more'));
+   var poi_80 = L.marker([12.961736, -41.737061], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_80.bindPopup(L.popup().setContent('<b><h3>The Putrid Marsh (South)</h3></b><i></i><br><br>Click to see more'));
+   var poi_81 = L.marker([19.414792, -35.496826], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_81.bindPopup(L.popup().setContent('<b><h3>The Putrid Marsh (North)</h3></b><i></i><br><br>Click to see more'));
+   var poi_82 = L.marker([34.894942, -13.842773], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_82.bindPopup(L.popup().setContent('<b><h3>The Gomai Sandsea (West)</h3></b><i></i><br><br>Click to see more'));
+   var poi_83 = L.marker([-25.700938, 43.198242], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_83.bindPopup(L.popup().setContent('<b><h3>Ancient Murals on the Cliffs</h3></b><i></i><br><br>Click to see more'));
+   var poi_85 = L.marker([44.707706, -6.767578], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_85.bindPopup(L.popup().setContent('<b><h3>Gomai (City of Birth)</h3></b><i></i><br><br>Click to see more'));
+   var poi_86 = L.marker([-10.60662, 63.127441], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_86.bindPopup(L.popup().setContent('<b><h3>Perrins</h3></b><i></i><br><br>Click to see more'));
+   var poi_87 = L.marker([-47.017716, -0.307617], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_87.bindPopup(L.popup().setContent('<b><h3>The Ablac Blue</h3></b><i></i><br><br>Click to see more'));
+   var poi_88 = L.marker([-6.413566, 64.061279], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_88.bindPopup(L.popup().setContent('<b><h3>Hilgael</h3></b><i></i><br><br>Click to see more'));
+   var poi_89 = L.marker([-33.94336, -61.040039], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_89.bindPopup(L.popup().setContent('<b><h3>Screams from Below the Waves</h3></b><i></i><br><br>Click to see more'));
+   var poi_90 = L.marker([37.631635, 28.927002], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_90.bindPopup(L.popup().setContent('<b><h3>The Attos Gulf & the Lembas Delta</h3></b><i></i><br><br>Click to see more'));
+   var poi_91 = L.marker([-14.477234, 58.677979], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_91.bindPopup(L.popup().setContent('<b><h3>Aberic&eacute; Phosphor Mines</h3></b><i></i><br><br>Click to see more'));
+   var poi_92 = L.marker([-8.526701, 60.831299], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_92.bindPopup(L.popup().setContent('<b><h3>A Tinkerer&#39;s Masterwork</h3></b><i></i><br><br>Click to see more'));
+   var poi_93 = L.marker([-2.032045, 66.016846], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_93.bindPopup(L.popup().setContent('<b><h3>The Vents through the Current</h3></b><i></i><br><br>Click to see more'));
+   var poi_94 = L.marker([0, 0], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+   poi_94.bindPopup(L.popup().setContent('<b><h3>94</h3></b><i></i><br><br>Click to see more'));
 //Towns
    var twn_1 = L.marker([-38.401949, 44.769287], {icon: townIcon}).bindPopup('<b><h3>Wvom</h3></b><i></i>');
    var twn_2 = L.marker([-42.585444, 48.175049], {icon: townIcon}).bindPopup('<b><h3>Czarshold</h3></b><i></i>');
@@ -473,8 +755,43 @@
    var twn_197 = L.marker([-40.513799, 49.471436], {icon: townIcon}).bindPopup('<b><h3>Tirion</h3></b><i></i>');
    var twn_198 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>198</h3></b><i></i>');
    var twn_199 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>199</h3></b><i></i>');
-
-
+//Countries
+    var cnt_1 = L.marker([6.107784, 10.360107], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_1.bindPopup(L.popup().setContent("<b><h3>The Barge</h3></b><i></i><br><br>Click to see more"));
+    var cnt_2 = L.marker([43.389082, -2.955322], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_2.bindPopup(L.popup().setContent("<b><h3>Gomai</h3></b><i></i><br><br>Click to see more"));
+    var cnt_3 = L.marker([29.152161, -27.015381], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_3.bindPopup(L.popup().setContent("<b><h3>Anaagai</h3></b><i></i><br><br>Click to see more"));
+    var cnt_4 = L.marker([-12.768946, -45.780029], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_4.bindPopup(L.popup().setContent("<b><h3>Ovrikai</h3></b><i></i><br><br>Click to see more"));
+    var cnt_5 = L.marker([-39.283294, -38.551025], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_5.bindPopup(L.popup().setContent("<b><h3>Amri Szen</h3></b><i></i><br><br>Click to see more"));
+    var cnt_6 = L.marker([-43.516689, 34.233398], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_6.bindPopup(L.popup().setContent("<b><h3>Ashokai</h3></b><i></i><br><br>Click to see more"));
+    var cnt_7 = L.marker([-29.964453, 54.404297], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_7.bindPopup(L.popup().setContent("<b><h3>Acrostai</h3></b><i></i><br><br>Click to see more"));
+    var cnt_8 = L.marker([36.914764, 40.209961], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_8.bindPopup(L.popup().setContent("<b><h3>Vellenai</h3></b><i></i><br><br>Click to see more"));
+    var cnt_9 = L.marker([-32.953368, -90.571289], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent('Sidebar Content');})
+    cnt_9.bindPopup(L.popup().setContent("<b><h3>Tcara Szen</h3></b><i></i><br><br>Click to see more"));
 //Hover Event Listeners
   //Capitals
   el_castorport.on("mouseover", function(evt) { this.openPopup(); });
@@ -699,8 +1016,6 @@
   poi_82.on("mouseout", function(evt) { this.closePopup(); });
   poi_83.on("mouseover", function(evt) { this.openPopup(); });
   poi_83.on("mouseout", function(evt) { this.closePopup(); });
-  poi_84.on("mouseover", function(evt) { this.openPopup(); });
-  poi_84.on("mouseout", function(evt) { this.closePopup(); });
   poi_85.on("mouseover", function(evt) { this.openPopup(); });
   poi_85.on("mouseout", function(evt) { this.closePopup(); });
   poi_86.on("mouseover", function(evt) { this.openPopup(); });
@@ -1116,13 +1431,34 @@
   twn_197.on("mouseover", function(evt) { this.openPopup(); });
   twn_197.on("mouseout", function(evt) { this.closePopup(); });
 
+  //Countries
+  cnt_1.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_1.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_2.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_2.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_3.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_3.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_4.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_4.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_5.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_5.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_6.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_6.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_7.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_7.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_8.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_8.on("mouseout", function(evt) { this.closePopup(); });
+  cnt_9.on("mouseover", function(evt) { this.openPopup(); });
+  cnt_9.on("mouseout", function(evt) { this.closePopup(); });
 //Marker Groups
     var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
     var mg_marvels = L.layerGroup([mv_canedmtn,mv_belasan,mv_glimmer,mv_bargetownmarvel,mv_heartroot,mv_trdunes,mv_dkonisle,mv_chain,mv_alhoriascent,mv_ghostlights,mv_saltrokmarvel,mv_osivin,mv_olmara]);
     var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197,]);
-      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);     
+      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);   
+      var mg_countries = L.layerGroup([cnt_1,cnt_2,cnt_3,cnt_4,cnt_5,cnt_6,cnt_7,cnt_8,cnt_9])  
 //Marker Overlay 
       var overlays = {
+        "Countries & Soverign Powers" :mg_countries,
         "The Capitals of Paranai" : mg_capitals,
         "Towns & Named Settlements" : mg_towns,
         "Azrigoli&#39;s &QUOT;The Thirteen Marvels&QUOT;" : mg_marvels,
