@@ -32,6 +32,12 @@
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
     -webkit-border-radius: 4px;
     border-radius: 4px; }
+
+h1,
+.h1 {
+  font-family: Cinzel, serif;
+}
+
     .leaflet-touch .leaflet-sidebar > .leaflet-control {
       box-shadow: none;
       border: 2px solid rgba(0, 0, 0, 0.2);

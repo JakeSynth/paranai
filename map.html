@@ -3,20 +3,19 @@
   <head>
     <title>Paranai</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scripts/leaflet.css">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <script src="scripts/leaflet.js"></script>
     <script src="scripts/L.Control.Sidebar.js"></script>
     <link rel="stylesheet" href="scripts/L.Control.Sidebar.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap" rel="stylesheet">
     <style type="text/css">
     @media (min-width: 768px) {
     .close {display: none;}
     .close:hover {color: #999;}
-    .h1 {font-family: 'Cinzel', serif;}
   </style>
     </head>
   
@@ -82,7 +81,7 @@
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent('<h1>Castor Port</h1><i>The Port Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>');})
-    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Port Capital of Gomai</i>',{direction: 'top'}"));
+    el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Port Capital of Gomai</i>"));
    var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).bindPopup('<b><h3>Vellenai (Capital)</h3></b><i></i>');
    var el_currentcap = L.marker([-0.098877, 58.864746], {icon: capIcon}).bindPopup('<b><h3>The Current<br></h3></b><i>(Trade Capital)</i>');
    var el_southold = L.marker([-38.203655, 52.097168], {icon: capIcon}).bindPopup('<b><h3>The Southold<br></h3></b><i>(Crown Capital)</i>');
