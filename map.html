@@ -58,13 +58,13 @@
     poiIcon = new ImpoIcon({iconUrl: 'scripts/images/poi.png'});
     cntIcon = new ImpoIcon({iconUrl: 'scripts/images/country.png'});
 //Coordinate Finder
-    //var marker = L.marker([2.635789, 251.71875], {
-      //draggable: true,
-    //}).addTo(map);
-    //marker.bindPopup('LatLng Marker').openPopup();
-    //marker.on('dragend', function(e) {
-      //marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-    //});
+    var marker = L.marker([2.635789, 251.71875], {
+      draggable: true,
+    }).addTo(map);
+    marker.bindPopup('LatLng Marker').openPopup();
+    marker.on('dragend', function(e) {
+      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    });
 //Sidebar
  var sidebar = L.control.sidebar('sidebar', {
             closeButton: true,
@@ -79,7 +79,7 @@
 //Capitals
    var el_castorport = L.marker([38.358888, 3.735352], {icon: capIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Castor Port</h1><i>The Golden Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>hi");})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Castor Port</h1><i>The Golden Capital of Gomai</i><br><p>Named for the last king of the sands, Abrillis Castor III.</p>");})
     el_castorport.bindPopup(L.popup().setContent("<b><h3>Castor Port</h3></b><i>The Golden Capital of Gomai</i><br><br>Click to see more"));
     var el_vellenaicap = L.marker([0.999705, 60.227051], {icon: capIcon}).on('click', function () {
         sidebar.show();
@@ -177,55 +177,55 @@
 //Places of Interest
     var poi_deep = L.marker([-2.383346, 6.767578], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     poi_deep.bindPopup(L.popup().setContent("<b><h3>The Deep & the Inner Blue</h3></b><i>A vast ocean encircled by the continent, within the Deep are said to be creatures bigger than warships and underwater cities that shine through the inky abyss.</i><br><br>Click to see more"));
    var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     poi_acrbreaker.bindPopup(L.popup().setContent('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i><br><br>Click to see more'));
    var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_1.bindPopup(L.popup().setContent('<b><h3>Nogesic & the Ruins</h3></b><i></i><br><br>Click to see more'));
    var poi_2 = L.marker([42.585444, -11.1467294], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_2.bindPopup(L.popup().setContent('<b><h3>Burial</h3></b><i></i><br><br>Click to see more'));
    var poi_3 = L.marker([47.180753, -2.83227592], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_3.bindPopup(L.popup().setContent('<b><h3>Old Castor</h3></b><i></i><br><br>Click to see more'));
    var poi_4 = L.marker([45.384563, 10.4875482], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_4.bindPopup(L.popup().setContent('<b><h3>River Castor</h3></b><i></i><br><br>Click to see more'));
    var poi_5 = L.marker([46.0366355, 17.804442], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_5.bindPopup(L.popup().setContent('<b><h3>Coffik</h3></b><i></i><br><br>Click to see more'));
    var poi_6 = L.marker([40.269468, 12.6386711], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_6.bindPopup(L.popup().setContent('<b><h3>Castor&#39;s Grove</h3></b><i></i><br><br>Click to see more'));
    var poi_7 = L.marker([42.611323, 17.7846678], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_7.bindPopup(L.popup().setContent('<b><h3>The Gomai Sandsea (East)</h3></b><i></i><br><br>Click to see more'));
    var poi_8 = L.marker([41.8286420, 31.4890138], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent(' Their culture completely unique from anything else in Paranai and curious to see what&#39;s so good about this "land" thing the species up there flap about on.<br><br>Nestled in the lake are tiny islands that the fishy-men have built their first surface town. Hoping for trade and to meet new people they occasionally venture out to spread word of this fantastic new hotspot and perhaps offer something a little more magical than just fish pie with a side of fishy-chips.');})
+        sidebar.setContent('<img src="https://via.placeholder.com/770x400"><h1></h1><i>Placeholder Subtitle</i><hr><p> Their culture completely unique from anything else in Paranai and curious to see what&#39;s so good about this "land" thing the species up there flap about on.<br><br>Nestled in the lake are tiny islands that the fishy-men have built their first surface town. Hoping for trade and to meet new people they occasionally venture out to spread word of this fantastic new hotspot and perhaps offer something a little more magical than just fish pie with a side of fishy-chips.</p>');})
    poi_8.bindPopup(L.popup().setContent('<b><h3>Lake Dkon</h3></b><i>The wriggling waters move with something a tad more than just waves. The waters of Lake Dkon, untouched for thousands of years due to the legends of monsters with mouths like tooth-filled tuba, is teeming with a newly evolved race of fish people.</i><br><br>Click to see more'));
    var poi_9 = L.marker([31.853297, 50.427246], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_9.bindPopup(L.popup().setContent('<b><h3>Lake Trish & River Trish</h3></b><i></i><br><br>Click to see more'));
    var poi_10 = L.marker([32.157012, 47.307129], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_10.bindPopup(L.popup().setContent('<b><h3>The Flatlands</h3></b><i></i><br><br>Click to see more'));
    var poi_11 = L.marker([26.9397009, 59.646972], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_11.bindPopup(L.popup().setContent('<b><h3>The Reeds</h3></b><i></i><br><br>Click to see more'));
    var poi_12 = L.marker([7.2360580, 56.063232], {icon: poiIcon}).on('click', function () {
         sidebar.show();
@@ -233,7 +233,7 @@
    poi_12.bindPopup(L.popup().setContent('<b><h3>Gallis&#39;set Jungle</h3></b><i>The jungle of Vellenai is home to many monstrous creatures lurking in the thick fog.</i><br><br>Click to see more'));
    var poi_13 = L.marker([3.7655967, 50.603027], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_13.bindPopup(L.popup().setContent('<b><h3>Sacred Port of the Ashen Ones</h3></b><i></i><br><br>Click to see more'));
    var poi_14 = L.marker([2.7235830, 52.976074], {icon: poiIcon}).on('click', function () {
         sidebar.show();
@@ -241,556 +241,1150 @@
    poi_14.bindPopup(L.popup().setContent('<b><h3>Valenica Monastery</h3></b><i>The most prestigious monk training school in the world. The only way to enter the monastery is with a clay beaded necklace with a gold pendant. One side of the pendant is covered with an ever-green leaf from Gallis&#39;set jungle, and the other side a pulsing magical red. When new Monks leave the monastery they have their pendants showing green.</i><br><br>Click to see more'));
    var poi_15 = L.marker([2.11255906, 61.940918], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_15.bindPopup(L.popup().setContent('<b><h3>The Red Split</h3></b><i></i><br><br>Click to see more'));
    var poi_16 = L.marker([3.634036, 58.513184], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_16.bindPopup(L.popup().setContent('<b><h3>The Gallis Cult</h3></b><i></i><br><br>Click to see more'));
    var poi_17 = L.marker([-2.119878, 62.885742], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_17.bindPopup(L.popup().setContent('<b><h3>The Current (The Endless Stream)</h3></b><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i><br><br>Click to see more'));
    var poi_currentriver = L.marker([-48.683708, -10.733643], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_currentriver.bindPopup(L.popup().setContent('<b><h3>Jadencroft Manor</h3></b><i></i><br><br>Click to see more'));
    var poi_18 = L.marker([31.222197, 36.44165], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_18.bindPopup(L.popup().setContent('<b><h3>Asbolish</h3></b><i></i><br><br>Click to see more'));
    var poi_19 = L.marker([-29.036961, 141.635742], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_19.bindPopup(L.popup().setContent('<b><h3>The Rift Islands</h3></b><i>An outer-blue fisherman from Acrostai washed up on shore the only survivor of his boat when a huge wave of magical energy destroyed it. He spoke of massive walls of rock, ash bursting from the ocean in a blue haze, and of a rift below the waves that these rocks seemed to jet from. Later expeditions to find the islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close. </i><br><br>Click to see more'));
    var poi_20 = L.marker([32.045333, -118.78418], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_20.bindPopup(L.popup().setContent('<b><h3>The Brittle</h3></b><i></i><br><br>Click to see more'));
    var poi_21 = L.marker([46.346928, 26.619873], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_21.bindPopup(L.popup().setContent('<b><h3>The Sullen Grove & Berenwyrg Ruins</h3></b><i></i><br><br>Click to see more'));
    var poi_22 = L.marker([-39.901309, 49.405518], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_22.bindPopup(L.popup().setContent('<b><h3>The Tritonlord Lakes</h3></b><i></i><br><br>Click to see more'));
    var poi_23 = L.marker([-36.111253, 55.38208], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_23.bindPopup(L.popup().setContent('<b><h3>The Amix Mountains</h3></b><i></i><br><br>Click to see more'));
    var poi_24 = L.marker([-27.078692, 50.537109], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_24.bindPopup(L.popup().setContent('<b><h3>Lake Fel & River Fel</h3></b><i></i><br><br>Click to see more'));
    var poi_25 = L.marker([-42.366662, 28.300781], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_25.bindPopup(L.popup().setContent('<b><h3>Xerus</h3></b><i></i><br><br>Click to see more'));
    var poi_26 = L.marker([-21.033237, 57.084961], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_26.bindPopup(L.popup().setContent('<b><h3>River Brys</h3></b><i></i><br><br>Click to see more'));
    var poi_27 = L.marker([-29.305561, 50.679932], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_27.bindPopup(L.popup().setContent('<b><h3>A Way Below</h3></b><i></i><br><br>Click to see more'));
    var poi_28 = L.marker([-46.626806, 33.33252], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_28.bindPopup(L.popup().setContent('<b><h3>The Dista Sunsea</h3></b><i></i><br><br>Click to see more'));
    var poi_29 = L.marker([-45.606352, 41.671143], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_29.bindPopup(L.popup().setContent('<b><h3>Lastport</h3></b><i></i><br><br>Click to see more'));
    var poi_30 = L.marker([-57.183902, 49.482422], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_30.bindPopup(L.popup().setContent('<b><h3>Here Be Monsters</h3></h3></b><i>Sometimes it&#39;s quicker to sail the Outer Blue to get to your destination... but it definetly isn&#39;t safer. Some 40% of ships who make this journey don&#39;t return, and even fewer return without casualties.<br><br>Reports of dark, choking mists moving just above the water and freak lightning storms that disrupt navigation are some of the challenges of this route. Not to mention the towering shapes that rise from the water and crash back down or the four-legged beasts that seem to wade through the kilometer deep waters and tower into the sky. Captains brave or foolhardy enough to attempt these crossings and survive are known by the nickname "Kal Gadai" (lit. Stolen Fates) by other seasoned sailors.</i><br><br>Click to see more'));
    var poi_31 = L.marker([-36.182225, 57.469482], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_31.bindPopup(L.popup().setContent('<b><h3>Dala Tribe</h3></b><i></i><br><br>Click to see more'));
    var poi_32 = L.marker([-21.524627, 58.64502], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_32.bindPopup(L.popup().setContent('<b><h3>Dune Limit</h3></b><i></i><br><br>Click to see more'));
    var poi_33 = L.marker([-32.676373, 59.996338], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_33.bindPopup(L.popup().setContent('<b><h3>Sela Tong</h3></b><i></i><br><br>Click to see more'));
    var poi_34 = L.marker([38.358888, 43.088379], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_34.bindPopup(L.popup().setContent('<b><h3>Bethelhyest</h3></b><i></i><br><br>Click to see more'));
    var poi_35 = L.marker([-25.532528, 55.777588], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_35.bindPopup(L.popup().setContent('<b><h3>Heiss Prison City</h3></b><i></i><br><br>Click to see more'));
    var poi_36 = L.marker([-20.560796, -98.173828], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_36.bindPopup(L.popup().setContent('<b><h3>Thal & Thal Muuv</h3></b><i></i><br><br>Click to see more'));
    var poi_37 = L.marker([-20.272503, -99.63501], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_37.bindPopup(L.popup().setContent('<b><h3>Brakon</h3></b><i></i><br><br>Click to see more'));
    var poi_38 = L.marker([-31.409912, -94.394531], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_38.bindPopup(L.popup().setContent('<b><h3>The Holy One</h3></b><i></i><br><br>Click to see more'));
    var poi_39 = L.marker([-29.802518, -87.011719], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_39.bindPopup(L.popup().setContent('<b><h3>Grozh Drain</h3></b><i></i><br><br>Click to see more'));
    var poi_40 = L.marker([-25.393661, -90.252686], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_40.bindPopup(L.popup().setContent('<b><h3>The Passage of Methti&#39;s</h3></b><i></i><br><br>Click to see more'));
    var poi_41 = L.marker([-34.497503, -84.407959], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_41.bindPopup(L.popup().setContent('<b><h3>Amak&#39;cara Djen</h3></b><i></i><br><br>Click to see more'));
    var poi_42 = L.marker([-32.888813, -80.870361], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_42.bindPopup(L.popup().setContent('<b><h3>Inkin Djen</h3></b><i></i><br><br>Click to see more'));
    var poi_43 = L.marker([-27.059126, -90.791016], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_43.bindPopup(L.popup().setContent('<b><h3>The Asoth Sheers</h3></b><i></i><br><br>Click to see more'));
    var poi_44 = L.marker([-35.478565, -92.175293], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_44.bindPopup(L.popup().setContent('<b><h3>The V&#39;rari Sisters</h3></b><i></i><br><br>Click to see more'));
    var poi_45 = L.marker([-46.118942, 25.938721], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_45.bindPopup(L.popup().setContent('<b><h3>River Keres</h3></b><i></i><br><br>Click to see more'));
    var poi_46 = L.marker([-45.675482, 38.287354], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_46.bindPopup(L.popup().setContent('<b><h3>River Tinex</h3></b><i></i><br><br>Click to see more'));
    var poi_47 = L.marker([-42.884015, 13.557129], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_47.bindPopup(L.popup().setContent('<b><h3>The Karakis Divide</h3></b><i></i><br><br>Click to see more'));
    var poi_48 = L.marker([-39.529467, 13.502197], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_48.bindPopup(L.popup().setContent('<b><h3>The Shadowed Port City of Ib</h3></b><i></i><br><br>Click to see more'));
    var poi_50 = L.marker([-31.475524, -41.748047], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_50.bindPopup(L.popup().setContent('<b><h3>Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_51 = L.marker([-35.299435, -42.352295], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_51.bindPopup(L.popup().setContent('<b><h3>Dicci Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_52 = L.marker([-35.906849, -46.362305], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_52.bindPopup(L.popup().setContent('<b><h3>Num Muuv</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_53 = L.marker([-38.453589, -44.58252], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_53.bindPopup(L.popup().setContent('<b><h3>Hiti Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_54 = L.marker([-37.883525, -42.319336], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_54.bindPopup(L.popup().setContent('<b><h3>Boici Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_55 = L.marker([-38.771216, -36.485596], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_55.bindPopup(L.popup().setContent('<b><h3>Desic Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_56 = L.marker([-40.446947, -42.681885], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_56.bindPopup(L.popup().setContent('<b><h3>Szen Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_57 = L.marker([-43.444943, -39.25415], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_57.bindPopup(L.popup().setContent('<b><h3>Bocci Num</h3></b><i>The Wandering City of Num</i><br><br>Click to see more'));
    var poi_58 = L.marker([-45.821143, -18.149414], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_58.bindPopup(L.popup().setContent('<b><h3>Derri, the Sinking City</h3></b><i></i><br><br>Click to see more'));
    var poi_59 = L.marker([-45.844108, -25.466309], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_59.bindPopup(L.popup().setContent('<b><h3>River Rums & Uumel</h3></b><i></i><br><br>Click to see more'));
    var poi_60 = L.marker([-32.565333, -42.209473], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_60.bindPopup(L.popup().setContent('<b><h3>River Ines Um</h3></b><i></i><br><br>Click to see more'));
    var poi_61 = L.marker([-24.5771, -45.20874], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_61.bindPopup(L.popup().setContent('<b><h3>Xerinan</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
    var poi_62 = L.marker([-24.96614, -44.571533], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_62.bindPopup(L.popup().setContent('<b><h3>Xernak</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
    var poi_63 = L.marker([-24.906367, -43.80249], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_63.bindPopup(L.popup().setContent('<b><h3>Xerino</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
    var poi_64 = L.marker([-23.91597, -42.692871], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_64.bindPopup(L.popup().setContent('<b><h3>Xerkaris</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
    var poi_65 = L.marker([5.769036, -46.087646], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_65.bindPopup(L.popup().setContent('<b><h3>Shuhth & Shuhth West</h3></b><i></i><br><br>Click to see more'));
    var poi_66 = L.marker([2.108899, -45.758057], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_66.bindPopup(L.popup().setContent('<b><h3>Great Virum</h3></b><i>Industrial District of The Prism</i><br><br>Click to see more'));
    var poi_67 = L.marker([2.141835, -46.186523], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_67.bindPopup(L.popup().setContent('<b><h3>Terris</h3></b><i>Wise District of The Prism</i><br><br>Click to see more'));
    var poi_68 = L.marker([2.383346, -45.98877], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_68.bindPopup(L.popup().setContent('<b><h3>Gannis</h3></b><i>Nobel District of The Prism</i><br><br>Click to see more'));
    var poi_69 = L.marker([0.450435, -44.648437], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_69.bindPopup(L.popup().setContent('<b><h3>Hammara Grove</h3></b><i></i><br><br>Click to see more'));
    var poi_70 = L.marker([0.692122, -43.791504], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_70.bindPopup(L.popup().setContent('<b><h3>Hammara</h3></b><i>The Harvest Factories</i><br><br>Click to see more'));
    var poi_71 = L.marker([2.185749, -40.605469], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_71.bindPopup(L.popup().setContent('<b><h3>Migrash Port</h3></b><i></i><br><br>Click to see more'));
    var poi_72 = L.marker([-5.747174, -42.593994], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_72.bindPopup(L.popup().setContent('<b><h3>River Wesner</h3></b><i></i><br><br>Click to see more'));
    var poi_73 = L.marker([-9.709057, -44.143066], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_73.bindPopup(L.popup().setContent('<b><h3>Yun Town & the Yun Town Barracks</h3></b><i></i><br><br>Click to see more'));
    var poi_74 = L.marker([-20.94092, -43.934326], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_74.bindPopup(L.popup().setContent('<b><h3>B&#39;vurativ Forest</h3></b><i></i><br><br>Click to see more'));
    var poi_75 = L.marker([-17.75915, -44.516602], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_75.bindPopup(L.popup().setContent('<b><h3>Nath Akai</h3></b><i></i><br><br>Click to see more'));
    var poi_76 = L.marker([33.596319, -23.510742], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_76.bindPopup(L.popup().setContent('<b><h3>Tkerrim Fracture</h3></b><i></i><br><br>Click to see more'));
    var poi_77 = L.marker([34.379713, -26.125488], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_77.bindPopup(L.popup().setContent('<b><h3>Glacier River Tkerrim</h3></b><i></i><br><br>Click to see more'));
    var poi_78 = L.marker([26.076521, -33.376465], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_78.bindPopup(L.popup().setContent('<b><h3>River for the King Almen Assar</h3></b><i></i><br><br>Click to see more'));
    var poi_79 = L.marker([24.746831, -32.058105], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_79.bindPopup(L.popup().setContent('<b><h3>The Twin Cities of Twara</h3></b><i></i><br><br>Click to see more'));
    var poi_80 = L.marker([12.961736, -41.737061], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_80.bindPopup(L.popup().setContent('<b><h3>The Putrid Marsh (South)</h3></b><i></i><br><br>Click to see more'));
    var poi_81 = L.marker([19.414792, -35.496826], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_81.bindPopup(L.popup().setContent('<b><h3>The Putrid Marsh (North)</h3></b><i></i><br><br>Click to see more'));
    var poi_82 = L.marker([34.894942, -13.842773], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_82.bindPopup(L.popup().setContent('<b><h3>The Gomai Sandsea (West)</h3></b><i></i><br><br>Click to see more'));
    var poi_83 = L.marker([-25.700938, 43.198242], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_83.bindPopup(L.popup().setContent('<b><h3>Ancient Murals on the Cliffs</h3></b><i></i><br><br>Click to see more'));
    var poi_85 = L.marker([44.707706, -6.767578], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_85.bindPopup(L.popup().setContent('<b><h3>Gomai (City of Birth)</h3></b><i></i><br><br>Click to see more'));
    var poi_86 = L.marker([-10.60662, 63.127441], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_86.bindPopup(L.popup().setContent('<b><h3>Perrins</h3></b><i></i><br><br>Click to see more'));
    var poi_87 = L.marker([-47.017716, -0.307617], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_87.bindPopup(L.popup().setContent('<b><h3>The Ablac Blue</h3></b><i></i><br><br>Click to see more'));
    var poi_88 = L.marker([-6.413566, 64.061279], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_88.bindPopup(L.popup().setContent('<b><h3>Hilgael</h3></b><i></i><br><br>Click to see more'));
    var poi_89 = L.marker([-33.94336, -61.040039], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_89.bindPopup(L.popup().setContent('<b><h3>Screams from Below the Waves</h3></b><i></i><br><br>Click to see more'));
    var poi_90 = L.marker([37.631635, 28.927002], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_90.bindPopup(L.popup().setContent('<b><h3>The Attos Gulf & the Lembas Delta</h3></b><i></i><br><br>Click to see more'));
    var poi_91 = L.marker([-14.477234, 58.677979], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_91.bindPopup(L.popup().setContent('<b><h3>Aberic&eacute; Phosphor Mines</h3></b><i></i><br><br>Click to see more'));
    var poi_92 = L.marker([-8.526701, 60.831299], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_92.bindPopup(L.popup().setContent('<b><h3>A Tinkerer&#39;s Masterwork</h3></b><i></i><br><br>Click to see more'));
    var poi_93 = L.marker([-2.032045, 66.016846], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_93.bindPopup(L.popup().setContent('<b><h3>The Vents through the Current</h3></b><i></i><br><br>Click to see more'));
    var poi_94 = L.marker([0, 0], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_94.bindPopup(L.popup().setContent('<b><h3>94</h3></b><i></i><br><br>Click to see more'));
 //Towns
-   var twn_1 = L.marker([-38.401949, 44.769287], {icon: townIcon}).bindPopup('<b><h3>Wvom</h3></b><i></i>');
-   var twn_2 = L.marker([-42.585444, 48.175049], {icon: townIcon}).bindPopup('<b><h3>Czarshold</h3></b><i></i>');
-   var twn_3 = L.marker([-36.914764, 49.96582], {icon: townIcon}).bindPopup('<b><h3>Nestu</h3></b><i></i>');
-   var twn_4 = L.marker([-38.573938, 50.74585], {icon: townIcon}).bindPopup('<b><h3>Nimu</h3></b><i></i>');
-   var twn_5 = L.marker([-41.492121, 53.668213], {icon: townIcon}).bindPopup('<b><h3>Shestu</h3></b><i></i>');
-   var twn_6 = L.marker([-39.3173, 55.074463], {icon: townIcon}).bindPopup('<b><h3>Nara&#39; Khan</h3></b><i></i>');
-   var twn_7 = L.marker([-38.993572, 55.777588], {icon: townIcon}).bindPopup('<b><h3>Chrom</h3></b><i></i>');
-   var twn_8 = L.marker([-35.612651, 52.053223], {icon: townIcon}).bindPopup('<b><h3>Hjaman Tribe</h3></b><i></i>');
-   var twn_9 = L.marker([-36.182225, 57.469482], {icon: townIcon}).bindPopup('<b><h3>Dala Tribe</h3></b><i></i>');
-   var twn_10 = L.marker([-32.676373, 59.996338], {icon: townIcon}).bindPopup('<b><h3>Sela Tong</h3></b><i></i>');
-   var twn_11 = L.marker([-31.44741, 54.624023], {icon: townIcon}).bindPopup('<b><h3>Ubin</h3></b><i></i>');
-   var twn_12 = L.marker([-28.0235, 48.35083], {icon: townIcon}).bindPopup('<b><h3>Dorgos</h3></b><i></i>');
-   var twn_13 = L.marker([-29.458731, 47.175293], {icon: townIcon}).bindPopup('<b><h3>P&#39;varas</h3></b><i></i>');
-   var twn_14 = L.marker([-27.235095, 51.207275], {icon: townIcon}).bindPopup('<b><h3>Felmos</h3></b><i></i>');
-   var twn_15 = L.marker([-32.68562, 50.482178], {icon: townIcon}).bindPopup('<b><h3>Chellon</h3></b><i></i>');
-   var twn_16 = L.marker([-32.212801, 46.010742], {icon: townIcon}).bindPopup('<b><h3>Asiah</h3></b><i></i>');
-   var twn_17 = L.marker([-25.661333, 43.428955], {icon: townIcon}).bindPopup('<b><h3>Cliffs Side</h3></b><i></i>');
-   var twn_18 = L.marker([-23.251441, 48.691406], {icon: townIcon}).bindPopup('<b><h3>Hagara Port</h3></b><i></i>');
-   var twn_19 = L.marker([-25.532528, 55.777588], {icon: townIcon}).bindPopup('<b><h3>Heiss Prison City</h3></b><i></i>');
-   var twn_20 = L.marker([-21.524627, 58.64502], {icon: townIcon}).bindPopup('<b><h3>Dune Limit</h3></b><i></i>');
-   var twn_21 = L.marker([-20.519644, 61.710205], {icon: townIcon}).bindPopup('<b><h3>Sanda&#39;s End</h3></b><i></i>');
-   var twn_22 = L.marker([-16.83609, 56.315918], {icon: townIcon}).bindPopup('<b><h3>Satiny</h3></b><i></i>');
-   var twn_23 = L.marker([-12.972442, 60.809326], {icon: townIcon}).bindPopup('<b><h3>Metiny</h3></b><i></i>');
-   var twn_24 = L.marker([-16.804541, 59.490967], {icon: townIcon}).bindPopup('<b><h3>Vill</h3></b><i></i>');
-   var twn_25 = L.marker([-10.60662, 63.127441], {icon: townIcon}).bindPopup('<b><h3>Perrins</h3></b><i></i>');
-   var twn_26 = L.marker([-6.413566, 64.061279], {icon: townIcon}).bindPopup('<b><h3>Hilgael</h3></b><i></i>');
-   var twn_27 = L.marker([-3.502455, 64.6875], {icon: townIcon}).bindPopup('<b><h3>Masgorge</h3></b><i></i>');
-   var twn_28 = L.marker([-1.691649, 59.007568], {icon: townIcon}).bindPopup('<b><h3>Vehest</h3></b><i></i>');
-   var twn_29 = L.marker([-4.696879, 57.315674], {icon: townIcon}).bindPopup('<b><h3>Caforre</h3></b><i></i>');
-   var twn_30 = L.marker([-8.080985, 55.250244], {icon: townIcon}).bindPopup('<b><h3>Fachin Port</h3></b><i></i>');
-   var twn_31 = L.marker([-9.903921, 59.18335], {icon: townIcon}).bindPopup('<b><h3>Gloria</h3></b><i></i>');
-   var twn_32 = L.marker([-6.828261, 61.094971], {icon: townIcon}).bindPopup('<b><h3>Hedbat</h3></b><i></i>');
-   var twn_33 = L.marker([1.417092, 55.942383], {icon: townIcon}).bindPopup('<b><h3>Shard&#39;s Shadow</h3></b><i></i>');
-   var twn_34 = L.marker([-2.229662, 66.137695], {icon: townIcon}).bindPopup('<b><h3>Twovent</h3></b><i></i>');
-   var twn_35 = L.marker([-45.644768, -6.536865], {icon: townIcon}).bindPopup('<b><h3>Tinch</h3></b><i></i>');
-   var twn_36 = L.marker([-47.754098, -9.140625], {icon: townIcon}).bindPopup('<b><h3>Illip</h3></b><i></i>');
-   var twn_37 = L.marker([-50.085344, -1.549072], {icon: townIcon}).bindPopup('<b><h3>Interim</h3></b><i></i>');
-   var twn_38 = L.marker([-46.717269, 0.32959], {icon: townIcon}).bindPopup('<b><h3>Ablac</h3></b><i></i>');
-   var twn_39 = L.marker([-47.776252, 3.845215], {icon: townIcon}).bindPopup('<b><h3>Xoros</h3></b><i></i>');
-   var twn_40 = L.marker([-46.551305, 7.503662], {icon: townIcon}).bindPopup('<b><h3>Omnivos</h3></b><i></i>');
-   var twn_41 = L.marker([-46.377254, 11.45874], {icon: townIcon}).bindPopup('<b><h3>Eriods</h3></b><i></i>');
-   var twn_42 = L.marker([-48.42191, 10.393066], {icon: townIcon}).bindPopup('<b><h3>Heribos</h3></b><i></i>');
-   var twn_43 = L.marker([-44.863656, 11.843262], {icon: townIcon}).bindPopup('<b><h3>Ytas</h3></b><i></i>');
-   var twn_44 = L.marker([-42.098222, 8.822021], {icon: townIcon}).bindPopup('<b><h3>Trader&#39;s Stay</h3></b><i></i>');
-   var twn_45 = L.marker([-41.401536, 15.018311], {icon: townIcon}).bindPopup('<b><h3>Ygritte</h3></b><i></i>');
-   var twn_46 = L.marker([-39.529467, 13.502197], {icon: townIcon}).bindPopup('<b><h3>Ib</h3></b><i></i>');
-   var twn_47 = L.marker([-40.455307, 17.29248], {icon: townIcon}).bindPopup('<b><h3>Pota</h3></b><i></i>');
-   var twn_48 = L.marker([-44.692088, 17.303467], {icon: townIcon}).bindPopup('<b><h3>Ysam</h3></b><i></i>');
-   var twn_49 = L.marker([-42.285437, 20.939941], {icon: townIcon}).bindPopup('<b><h3>Schrova</h3></b><i></i>');
-   var twn_50 = L.marker([17.224758, 54.942627], {icon: townIcon}).bindPopup('<b><h3>Snaketongue</h3></b><i></i>');
-   var twn_51 = L.marker([-44.363133, 24.862061], {icon: townIcon}).bindPopup('<b><h3>Komali</h3></b><i></i>');
-   var twn_52 = L.marker([-43.516689, 29.355469], {icon: townIcon}).bindPopup('<b><h3>Astanna</h3></b><i></i>');
-   var twn_53 = L.marker([-45.552525, 28.981934], {icon: townIcon}).bindPopup('<b><h3>Ytis</h3></b><i></i>');
-   var twn_54 = L.marker([-42.366662, 28.300781], {icon: townIcon}).bindPopup('<b><h3>Xerus</h3></b><i></i>');
-   var twn_55 = L.marker([-44.574817, 34.266357], {icon: townIcon}).bindPopup('<b><h3>Ashothika</h3></b><i></i>');
-   var twn_56 = L.marker([-42.032974, 35.244141], {icon: townIcon}).bindPopup('<b><h3>Ruined Famarris</h3></b><i></i>');
-   var twn_57 = L.marker([-43.945372, 39.605713], {icon: townIcon}).bindPopup('<b><h3>Tinex Town</h3></b><i></i>');
-   var twn_58 = L.marker([-46.293816, 37.628174], {icon: townIcon}).bindPopup('<b><h3>Dista</h3></b><i></i>');
-   var twn_59 = L.marker([-45.606352, 41.671143], {icon: townIcon}).bindPopup('<b><h3>Lastport</h3></b><i></i>');
-   var twn_60 = L.marker([-42.835696, 43.615723], {icon: townIcon}).bindPopup('<b><h3>Czek</h3></b><i></i>');
-   var twn_61 = L.marker([-39.985538, 44.417725], {icon: townIcon}).bindPopup('<b><h3>Ombrivo</h3></b><i></i>');
-   var twn_62 = L.marker([-39.283294, 41.517334], {icon: townIcon}).bindPopup('<b><h3>Djini</h3></b><i></i>');
-   var twn_63 = L.marker([-26.725987, -44.769287], {icon: townIcon}).bindPopup('<b><h3>Schamwood</h3></b><i></i>');
-   var twn_64 = L.marker([-28.197927, -42.385254], {icon: townIcon}).bindPopup('<b><h3>Flutterwood</h3></b><i></i>');
-   var twn_65 = L.marker([-28.594169, -40.473633], {icon: townIcon}).bindPopup('<b><h3>Heiri Muuv</h3></b><i></i>');
-   var twn_66 = L.marker([-28.902397, -43.505859], {icon: townIcon}).bindPopup('<b><h3>Schom</h3></b><i></i>');
-   var twn_67 = L.marker([-31.475524, -41.748047], {icon: townIcon}).bindPopup('<b><h3>Num</h3></b><i>The Wandering City of Num</i>');
-   var twn_68 = L.marker([-34.361576, -44.121094], {icon: townIcon}).bindPopup('<b><h3>Movo</h3></b><i></i>');
-   var twn_69 = L.marker([-35.299435, -42.352295], {icon: townIcon}).bindPopup('<b><h3>Dicci Num</h3></b><i>The Wandering City of Num</i>');
-   var twn_70 = L.marker([-35.906849, -46.362305], {icon: townIcon}).bindPopup('<b><h3>Num Muuv</h3></b><i>The Wandering City of Num</i>');
-   var twn_71 = L.marker([-37.883525, -42.319336], {icon: townIcon}).bindPopup('<b><h3>Boici Num</h3></b><i>The Wandering City of Num</i>');
-   var twn_72 = L.marker([-40.446947, -42.681885], {icon: townIcon}).bindPopup('<b><h3>Szen Num</h3></b><i>The Wandering City of Num</i>');
-   var twn_73 = L.marker([-43.444943, -39.25415], {icon: townIcon}).bindPopup('<b><h3>Bocci Num</h3></b><i>The Wandering City of Num</i>');
-   var twn_74 = L.marker([-38.771216, -36.485596], {icon: townIcon}).bindPopup('<b><h3>Desic Num</h3></b><i>The Wandering City of Num</i>');
-   var twn_75 = L.marker([-41.352072, -35.332031], {icon: townIcon}).bindPopup('<b><h3>Tosen, of the Chain</h3></b><i></i>');
-   var twn_76 = L.marker([-38.933776, -30.377197], {icon: townIcon}).bindPopup('<b><h3>Shoto Muuv, of the Chain</h3></b><i></i>');
-   var twn_77 = L.marker([-39.67337, -31.168213], {icon: townIcon}).bindPopup('<b><h3>Icen, of the Chain</h3></b><i></i>');
-   var twn_78 = L.marker([-40.279526, -31.860352], {icon: townIcon}).bindPopup('<b><h3>Brav, of the Chain</h3></b><i></i>');
-   var twn_79 = L.marker([-41.120746, -32.299805], {icon: townIcon}).bindPopup('<b><h3>Temes, of the Chain</h3></b><i></i>');
-   var twn_80 = L.marker([-42.334184, -33.134766], {icon: townIcon}).bindPopup('<b><h3>Bwal Muuv, of the Chain</h3></b><i></i>');
-   var twn_81 = L.marker([-41.910453, -32.442627], {icon: townIcon}).bindPopup('<b><h3>Stichi, of the Chain</h3></b><i></i>');
-   var twn_82 = L.marker([-42.819581, -32.497559], {icon: townIcon}).bindPopup('<b><h3>Ashren</h3></b><i></i>');
-   var twn_83 = L.marker([-43.969098, -28.564453], {icon: townIcon}).bindPopup('<b><h3>Rumsford</h3></b><i></i>');
-   var twn_84 = L.marker([-46.399988, -23.060303], {icon: townIcon}).bindPopup('<b><h3>Addan Town</h3></b><i></i>');
-   var twn_85 = L.marker([-45.821143, -18.149414], {icon: townIcon}).bindPopup('<b><h3>Derri, the Sinking City</h3></b><i></i>');
-   var twn_86 = L.marker([-47.50978, -14.39209], {icon: townIcon}).bindPopup('<b><h3>Vorim</h3></b><i></i>');
-   var twn_87 = L.marker([-46.065608, -8.865967], {icon: townIcon}).bindPopup('<b><h3>Inchin</h3></b><i></i>');
-   var twn_88 = L.marker([-48.683708, -10.733643], {icon: townIcon}).bindPopup('<b><h3>Jadencroft Manor</h3></b><i></i>');
-   var twn_89 = L.marker([-49.239121, -9.887695], {icon: townIcon}).bindPopup('<b><h3>Gressem</h3></b><i></i>');
-   var twn_90 = L.marker([5.769036, -46.087646], {icon: townIcon}).bindPopup('<b><h3>Shuhth & Shuhth West</h3></b><i></i>');
-   var twn_91 = L.marker([7.079088, -44.626465], {icon: townIcon}).bindPopup('<b><h3>Hagra Town</h3></b><i></i>');
-   var twn_92 = L.marker([6.860985, -42.51709], {icon: townIcon}).bindPopup('<b><h3>Fagan</h3></b><i></i>');
-   var twn_93 = L.marker([6.83917, -40.352783], {icon: townIcon}).bindPopup('<b><h3>Voracio</h3></b><i></i>');
-   var twn_94 = L.marker([4.488809, -47.592773], {icon: townIcon}).bindPopup('<b><h3>Migrassi North</h3></b><i></i>');
-   var twn_95 = L.marker([6.555475, -48.131104], {icon: townIcon}).bindPopup('<b><h3>Gom</h3></b><i></i>');
-   var twn_96 = L.marker([1.570848, -46.483154], {icon: townIcon}).bindPopup('<b><h3>Koff</h3></b><i></i>');
-   var twn_97 = L.marker([0.692122, -43.791504], {icon: townIcon}).bindPopup('<b><h3>Hammara</h3></b><i>The Harvest Factories</i>');
-   var twn_98 = L.marker([2.449205, -42.539062], {icon: townIcon}).bindPopup('<b><h3>Mirka</h3></b><i></i>');
-   var twn_99 = L.marker([2.185749, -40.605469], {icon: townIcon}).bindPopup('<b><h3>Migrash Port</h3></b><i></i>');
-   var twn_100 = L.marker([1.087581, -42.209473], {icon: townIcon}).bindPopup('<b><h3>Hammona</h3></b><i></i>');
-   var twn_101 = L.marker([0.98872, -40.858154], {icon: townIcon}).bindPopup('<b><h3>Asskho</h3></b><i></i>');
-   var twn_102 = L.marker([-0.252685, -40.561523], {icon: townIcon}).bindPopup('<b><h3>Migra</h3></b><i></i>');
-   var twn_103 = L.marker([-2.932069, -41.726074], {icon: townIcon}).bindPopup('<b><h3>Acrom</h3></b><i></i>');
-   var twn_104 = L.marker([-5.823687, -38.50708], {icon: townIcon}).bindPopup('<b><h3>Cassterly</h3></b><i></i>');
-   var twn_105 = L.marker([-9.709057, -44.143066], {icon: townIcon}).bindPopup('<b><h3>Yun Town & the Yun Town Barracks</h3></b><i></i>');
-   var twn_106 = L.marker([-11.102947, -47.900391], {icon: townIcon}).bindPopup('<b><h3>Gondrik</h3></b><i></i>');
-   var twn_107 = L.marker([-17.014768, -47.27417], {icon: townIcon}).bindPopup('<b><h3>Koso</h3></b><i></i>');
-   var twn_108 = L.marker([-17.75915, -44.516602], {icon: townIcon}).bindPopup('<b><h3>Nath Akai</h3></b><i></i>');
-   var twn_109 = L.marker([-20.766387, -45.769043], {icon: townIcon}).bindPopup('<b><h3>Ovri</h3></b><i></i>');
-   var twn_110 = L.marker([-21.993989, -48.812256], {icon: townIcon}).bindPopup('<b><h3>Agranna</h3></b><i></i>');
-   var twn_111 = L.marker([-24.5771, -45.20874], {icon: townIcon}).bindPopup('<b><h3>Xerinan</h3></b><i>The Four Crosses</i>');
-   var twn_112 = L.marker([-24.96614, -44.571533], {icon: townIcon}).bindPopup('<b><h3>Xernak</h3></b><i>The Four Crosses</i>');
-   var twn_113 = L.marker([-24.906367, -43.80249], {icon: townIcon}).bindPopup('<b><h3>Xerino</h3></b><i>The Four Crosses</i>');
-   var twn_114 = L.marker([-23.91597, -42.692871], {icon: townIcon}).bindPopup('<b><h3>Xerkaris</h3></b><i>The Four Crosses</i>');
-   var twn_115 = L.marker([38.317525, -12.4079592], {icon: townIcon}).bindPopup('<b><h3>Nogesic & the Ruins</h3></b><i></i>');
-   var twn_116 = L.marker([36.182225, -11.315918], {icon: townIcon}).bindPopup('<b><h3>Form</h3></b><i></i>');
-   var twn_117 = L.marker([38.333039, -19.368896], {icon: townIcon}).bindPopup('<b><h3>Dinsi</h3></b><i></i>');
-   var twn_118 = L.marker([31.989442, -16.589355], {icon: townIcon}).bindPopup('<b><h3>Ahnport</h3></b><i></i>');
-   var twn_119 = L.marker([31.980123, -19.676514], {icon: townIcon}).bindPopup('<b><h3>Broken Ahn</h3></b><i></i>');
-   var twn_120 = L.marker([32.481963, -24.993896], {icon: townIcon}).bindPopup('<b><h3>Tkerrim</h3></b><i></i>');
-   var twn_121 = L.marker([29.295981, -28.520508], {icon: townIcon}).bindPopup('<b><h3>Tr</h3></b><i></i>');
-   var twn_122 = L.marker([31.316101, -31.838379], {icon: townIcon}).bindPopup('<b><h3>Tkszar</h3></b><i></i>');
-   var twn_123 = L.marker([27.809928, -34.552002], {icon: townIcon}).bindPopup('<b><h3>Tawk</h3></b><i></i>');
-   var twn_124 = L.marker([25.710837, -26.619873], {icon: townIcon}).bindPopup('<b><h3>Werm</h3></b><i></i>');
-   var twn_125 = L.marker([24.746831, -32.058105], {icon: townIcon}).bindPopup('<b><h3>The Twin Cities of Twara</h3></b><i></i>');
-   var twn_126 = L.marker([21.616579, -31.640625], {icon: townIcon}).bindPopup('<b><h3>Mais</h3></b><i></i>');
-   var twn_127 = L.marker([23.211058, -35.936279], {icon: townIcon}).bindPopup('<b><h3>Grassa</h3></b><i></i>');
-   var twn_128 = L.marker([20.591652, -35.925293], {icon: townIcon}).bindPopup('<b><h3>Mwara</h3></b><i></i>');
-   var twn_129 = L.marker([15.135764, -40.935059], {icon: townIcon}).bindPopup('<b><h3>Horma</h3></b><i></i>');
-   var twn_130 = L.marker([12.071553, -45.351562], {icon: townIcon}).bindPopup('<b><h3>Focu</h3></b><i></i>');
-   var twn_131 = L.marker([11.318481, -40.078125], {icon: townIcon}).bindPopup('<b><h3>Tok Ther</h3></b><i></i>');
-   var twn_132 = L.marker([10.563422, -43.80249], {icon: townIcon}).bindPopup('<b><h3>Mvharr</h3></b><i></i>');
-   var twn_133 = L.marker([9.286465, -46.889648], {icon: townIcon}).bindPopup('<b><h3>Iker</h3></b><i></i>');
-   var twn_134 = L.marker([8.254983, -43.022461], {icon: townIcon}).bindPopup('<b><h3>Drakar</h3></b><i></i>');
-   var twn_135 = L.marker([7.776309, -45.32959], {icon: townIcon}).bindPopup('<b><h3>Bwara</h3></b><i></i>');
-   var twn_136 = L.marker([6.577303, -47.69165], {icon: townIcon}).bindPopup('<b><h3>Tet</h3></b><i></i>');
-   var twn_137 = L.marker([11.016689, -48.164063], {icon: townIcon}).bindPopup('<b><h3>Ermi</h3></b><i></i>');
-   var twn_138 = L.marker([46.0366355, 17.804442], {icon: townIcon}).bindPopup('<b><h3>Coffik</h3></b><i></i>');
-   var twn_139 = L.marker([40.805494, 14.93042], {icon: townIcon}).bindPopup('<b><h3>Herken Sand</h3></b><i></i>');
-   var twn_140 = L.marker([46.987747, 12.568359], {icon: townIcon}).bindPopup('<b><h3>Castorbrot</h3></b><i></i>');
-   var twn_141 = L.marker([41.294317, 7.998047], {icon: townIcon}).bindPopup('<b><h3>Goballis</h3></b><i></i>');
-   var twn_142 = L.marker([44.692088, 4.625244], {icon: townIcon}).bindPopup('<b><h3>Tjen</h3></b><i></i>');
-   var twn_143 = L.marker([41.26955, -2.493896], {icon: townIcon}).bindPopup('<b><h3>Vilsish</h3></b><i></i>');
-   var twn_144 = L.marker([47.180753, -2.83227592], {icon: townIcon}).bindPopup('<b><h3>Old Castor</h3></b><i></i>');
-   var twn_145 = L.marker([44.707706, -6.767578], {icon: townIcon}).bindPopup('<b><h3>Gomai (City of Birth)</h3></b><i></i>');
-   var twn_146 = L.marker([42.585444, -11.1467294], {icon: townIcon}).bindPopup('<b><h3>Burial</h3></b><i></i>');
-   var twn_147 = L.marker([40.405131, -8.701172], {icon: townIcon}).bindPopup('<b><h3>Nath</h3></b><i></i>');
-   var twn_148 = L.marker([38.453589, -6.405029], {icon: townIcon}).bindPopup('<b><h3>Strav</h3></b><i></i>');
-   var twn_149 = L.marker([37.987504, -14.732666], {icon: townIcon}).bindPopup('<b><h3>Comeic</h3></b><i></i>');
-   var twn_150 = L.marker([45.413876, 17.479248], {icon: townIcon}).bindPopup('<b><h3>Fassen Port</h3></b><i></i>');
-   var twn_151 = L.marker([45.828799, 21.851807], {icon: townIcon}).bindPopup('<b><h3>Allegiant</h3></b><i></i>');
-   var twn_152 = L.marker([44.964798, 26.51001], {icon: townIcon}).bindPopup('<b><h3>Gyrenwyrg</h3></b><i></i>');
-   var twn_153 = L.marker([43.365126, 27.070313], {icon: townIcon}).bindPopup('<b><h3>Dereywyrg</h3></b><i></i>');
-   var twn_154 = L.marker([46.399988, 27.520752], {icon: townIcon}).bindPopup('<b><h3>Berenwyrg Ruins</h3></b><i></i>');
-   var twn_155 = L.marker([37.309014, 19.35791], {icon: townIcon}).bindPopup('<b><h3>Castor Calls</h3></b><i></i>');
-   var twn_156 = L.marker([37.944198, 22.049561], {icon: townIcon}).bindPopup('<b><h3>Maes Town</h3></b><i></i>');
-   var twn_157 = L.marker([42.730874, 32.003174], {icon: townIcon}).bindPopup('<b><h3>Dkon</h3></b><i></i>');
-   var twn_158 = L.marker([40.472024, 32.145996], {icon: townIcon}).bindPopup('<b><h3>Chaisse</h3></b><i></i>');
-   var twn_159 = L.marker([40.813809, 37.738037], {icon: townIcon}).bindPopup('<b><h3>Keggenen</h3></b><i></i>');
-   var twn_160 = L.marker([38.401949, 38.485107], {icon: townIcon}).bindPopup('<b><h3>Mirinin</h3></b><i></i>');
-   var twn_161 = L.marker([35.272532, 29.234619], {icon: townIcon}).bindPopup('<b><h3>Merewen</h3></b><i></i>');
-   var twn_162 = L.marker([34.813803, 40.539551], {icon: townIcon}).bindPopup('<b><h3>Gengeos</h3></b><i></i>');
-   var twn_163 = L.marker([31.222197, 36.44165], {icon: townIcon}).bindPopup('<b><h3>Asbolish</h3></b><i></i>');
-   var twn_164 = L.marker([37.002553, 47.406006], {icon: townIcon}).bindPopup('<b><h3>Wyrgchester</h3></b><i></i>');
-   var twn_165 = L.marker([34.533712, 51.339111], {icon: townIcon}).bindPopup('<b><h3>Mergos</h3></b><i></i>');
-   var twn_166 = L.marker([30.543339, 46.768799], {icon: townIcon}).bindPopup('<b><h3>Woreish</h3></b><i></i>');
-   var twn_167 = L.marker([26.755421, 43.604736], {icon: townIcon}).bindPopup('<b><h3>Inginbyrg</h3></b><i></i>');
-   var twn_168 = L.marker([27.809928, 52.987061], {icon: townIcon}).bindPopup('<b><h3>Chenge</h3></b><i></i>');
-   var twn_169 = L.marker([24.537129, 51.998291], {icon: townIcon}).bindPopup('<b><h3>Rat Sinnerwal</h3></b><i></i>');
-   var twn_170 = L.marker([22.603869, 59.611816], {icon: townIcon}).bindPopup('<b><h3>Trails Pause</h3></b><i></i>');
-   var twn_171 = L.marker([17.319176, 51.503906], {icon: townIcon}).bindPopup('<b><h3>Kamman</h3></b><i></i>');
-   var twn_172 = L.marker([10.06622, 52.756348], {icon: townIcon}).bindPopup('<b><h3>Shafa</h3></b><i></i>');
-   var twn_173 = L.marker([7.2360580, 56.063232], {icon: townIcon}).bindPopup('<b><h3>Jungle&#39;s Center</h3></b><i></i>');
-   var twn_174 = L.marker([3.7655967, 50.603027], {icon: townIcon}).bindPopup('<b><h3>Sacred Port of the Ashen Ones</h3></b><i></i>');
-   var twn_175 = L.marker([2.7235830, 52.976074], {icon: townIcon}).bindPopup('<b><h3>Valenica Monastery</h3></b><i></i>');
-   var twn_176 = L.marker([2.306506, 56.843262], {icon: townIcon}).bindPopup('<b><h3>Coombs</h3></b><i></i>');
-   var twn_177 = L.marker([0.219726, 57.930908], {icon: townIcon}).bindPopup('<b><h3>Kayenbi</h3></b><i></i>');
-   var twn_178 = L.marker([2.11255906, 61.940918], {icon: townIcon}).bindPopup('<b><h3>The Red Split</h3></b><i></i>');
-   var twn_179 = L.marker([-0.20874, 61.907959], {icon: townIcon}).bindPopup('<b><h3>Split Water</h3></b><i></i>');
-   var twn_180 = L.marker([-1.944207, 60.820313], {icon: townIcon}).bindPopup('<b><h3>Ferr Sher</h3></b><i></i>');
-   var twn_181 = L.marker([0.758035, 66.005859], {icon: townIcon}).bindPopup('<b><h3>Geothiumers</h3></b><i></i>');
-   var twn_182 = L.marker([3.634036, 58.513184], {icon: townIcon}).bindPopup('<b><h3>The Gallis Cult</h3></b><i></i>');
-   var twn_183 = L.marker([-35.496456, -86.451416], {icon: townIcon}).bindPopup('<b><h3>Vociv</h3></b><i></i>');
-   var twn_184 = L.marker([-34.198173, -78.046875], {icon: townIcon}).bindPopup('<b><h3>Rhis Muuv</h3></b><i></i>');
-   var twn_185 = L.marker([-35.924645, -94.042969], {icon: townIcon}).bindPopup('<b><h3>Bvara</h3></b><i></i>');
-   var twn_186 = L.marker([-23.976215, -96.119385], {icon: townIcon}).bindPopup('<b><h3>Rellis</h3></b><i></i>');
-   var twn_187 = L.marker([-29.487425, -91.142578], {icon: townIcon}).bindPopup('<b><h3>Dani</h3></b><i></i>');
-   var twn_188 = L.marker([-31.896214, -89.560547], {icon: townIcon}).bindPopup('<b><h3>Otiv</h3></b><i></i>');
-   var twn_189 = L.marker([-21.463293, -99.525146], {icon: townIcon}).bindPopup('<b><h3>Djorf Muuv</h3></b><i></i>');
-   var twn_190 = L.marker([-20.622502, -98.009033], {icon: townIcon}).bindPopup('<b><h3>Thal Muuv</h3></b><i></i>');
-   var twn_191 = L.marker([7.678329, 10.206299], {icon: townIcon}).bindPopup('<b><h3>Northport</h3></b><i></i>');
-   var twn_192 = L.marker([7.591218, 11.502686], {icon: townIcon}).bindPopup('<b><h3>First Port</h3></b><i></i>');
-   var twn_193 = L.marker([6.326218, 11.634521], {icon: townIcon}).bindPopup('<b><h3>South Side</h3></b><i></i>');
-   var twn_194 = L.marker([-38.453589, -44.58252], {icon: townIcon}).bindPopup('<b><h3>Hiti Num</h3></b><i>The Wandering City of Num</i>');
-   var twn_195 = L.marker([48.173412, -9.481201], {icon: townIcon}).bindPopup('<b><h3>Saltlick</h3></b><i></i>');
-   var twn_196 = L.marker([-23.049407, 64.061279], {icon: townIcon}).bindPopup('<b><h3>Lak</h3></b><i></i>');
-   var twn_197 = L.marker([-40.513799, 49.471436], {icon: townIcon}).bindPopup('<b><h3>Tirion</h3></b><i></i>');
-   var twn_198 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>198</h3></b><i></i>');
-   var twn_199 = L.marker([0, 0], {icon: townIcon}).bindPopup('<b><h3>199</h3></b><i></i>');
-//Countries
-    var cnt_1 = L.marker([6.107784, 10.360107], {icon: cntIcon}).on('click', function () {
+    var twn_1 = L.marker([-38.401949, 44.769287], {icon: townIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Wvom</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_1.bindPopup(L.popup().setContent("<b><h3>Wvom</h3></b><i></i>Click to see more"));
+    var twn_2 = L.marker([-42.585444, 48.175049], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_2.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_3 = L.marker([-36.914764, 49.96582], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_3.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_4 = L.marker([-38.573938, 50.74585], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_4.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_5 = L.marker([-41.492121, 53.668213], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_5.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_6 = L.marker([-39.3173, 55.074463], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_6.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_7 = L.marker([-38.993572, 55.777588], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_7.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_8 = L.marker([-35.612651, 52.053223], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_8.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_9 = L.marker([-36.182225, 57.469482], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_9.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_10 = L.marker([-32.676373, 59.996338], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_10.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_11 = L.marker([-31.44741, 54.624023], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_11.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_12 = L.marker([-28.0235, 48.35083], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_12.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_13 = L.marker([-29.458731, 47.175293], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_13.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_14 = L.marker([-27.235095, 51.207275], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_14.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_15 = L.marker([-32.68562, 50.482178], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_15.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_16 = L.marker([-32.212801, 46.010742], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_16.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_17 = L.marker([-25.661333, 43.428955], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_17.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_18 = L.marker([-23.251441, 48.691406], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_18.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_19 = L.marker([-25.532528, 55.777588], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_19.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_20 = L.marker([-21.524627, 58.64502], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_20.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_21 = L.marker([-20.519644, 61.710205], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_21.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_22 = L.marker([-16.83609, 56.315918], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_22.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_23 = L.marker([-12.972442, 60.809326], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_23.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_24 = L.marker([-16.804541, 59.490967], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_24.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_25 = L.marker([-10.60662, 63.127441], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_25.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_26 = L.marker([-6.413566, 64.061279], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_26.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_27 = L.marker([-3.502455, 64.6875], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_27.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_28 = L.marker([-1.691649, 59.007568], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_28.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_29 = L.marker([-4.696879, 57.315674], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_29.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_30 = L.marker([-8.080985, 55.250244], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_30.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_31 = L.marker([-9.903921, 59.18335], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_31.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_32 = L.marker([-6.828261, 61.094971], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_32.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_33 = L.marker([1.417092, 55.942383], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_33.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_34 = L.marker([-2.229662, 66.137695], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_34.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_35 = L.marker([-45.644768, -6.536865], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_35.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_36 = L.marker([-47.754098, -9.140625], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_36.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_37 = L.marker([-50.085344, -1.549072], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_37.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_38 = L.marker([-46.717269, 0.32959], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_38.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_39 = L.marker([-47.776252, 3.845215], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_39.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_40 = L.marker([-46.551305, 7.503662], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_40.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_41 = L.marker([-46.377254, 11.45874], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_41.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_42 = L.marker([-48.42191, 10.393066], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_42.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_43 = L.marker([-44.863656, 11.843262], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_43.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_44 = L.marker([-42.098222, 8.822021], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_44.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_45 = L.marker([-41.401536, 15.018311], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_45.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_46 = L.marker([-39.529467, 13.502197], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_46.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_47 = L.marker([-40.455307, 17.29248], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_47.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_48 = L.marker([-44.692088, 17.303467], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_48.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_49 = L.marker([-42.285437, 20.939941], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_49.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_50 = L.marker([17.224758, 54.942627], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_50.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_51 = L.marker([-44.363133, 24.862061], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_51.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_52 = L.marker([-43.516689, 29.355469], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_52.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_53 = L.marker([-45.552525, 28.981934], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_53.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_54 = L.marker([-42.366662, 28.300781], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_54.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_55 = L.marker([-44.574817, 34.266357], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_55.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_56 = L.marker([-42.032974, 35.244141], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_56.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_57 = L.marker([-43.945372, 39.605713], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_57.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_58 = L.marker([-46.293816, 37.628174], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_58.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_59 = L.marker([-45.606352, 41.671143], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_59.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));5
+    var twn_60 = L.marker([-42.835696, 43.615723], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_60.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_61 = L.marker([-39.985538, 44.417725], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_61.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_62 = L.marker([-39.283294, 41.517334], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_62.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_63 = L.marker([-26.725987, -44.769287], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_63.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_64 = L.marker([-28.197927, -42.385254], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_64.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_65 = L.marker([-28.594169, -40.473633], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_65.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_66 = L.marker([-28.902397, -43.505859], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_66.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_67 = L.marker([-31.475524, -41.748047], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_67.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Wandering City of Num</i>Click to see more"));
+    var twn_68 = L.marker([-34.361576, -44.121094], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_68.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_69 = L.marker([-35.299435, -42.352295], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_69.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Wandering City of Num</i>Click to see more"));
+    var twn_70 = L.marker([-35.906849, -46.362305], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_70.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Wandering City of Num</i>Click to see more"));
+    var twn_71 = L.marker([-37.883525, -42.319336], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_71.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Wandering City of Num</i>Click to see more"));
+    var twn_72 = L.marker([-40.446947, -42.681885], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_72.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Wandering City of Num</i>Click to see more"));
+    var twn_73 = L.marker([-43.444943, -39.25415], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_73.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Wandering City of Num</i>Click to see more"));
+    var twn_74 = L.marker([-38.771216, -36.485596], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_74.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Wandering City of Num</i>Click to see more"));
+    var twn_75 = L.marker([-41.352072, -35.332031], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_75.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_76 = L.marker([-38.933776, -30.377197], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_76.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_77 = L.marker([-39.67337, -31.168213], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_77.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_78 = L.marker([-40.279526, -31.860352], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_78.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_79 = L.marker([-41.120746, -32.299805], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_79.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_80 = L.marker([-42.334184, -33.134766], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_80.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_81 = L.marker([-41.910453, -32.442627], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_81.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_82 = L.marker([-42.819581, -32.497559], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_82.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_83 = L.marker([-43.969098, -28.564453], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_83.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_84 = L.marker([-46.399988, -23.060303], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_84.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_85 = L.marker([-45.821143, -18.149414], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_85.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_86 = L.marker([-47.50978, -14.39209], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_86.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_87 = L.marker([-46.065608, -8.865967], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_87.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_88 = L.marker([-48.683708, -10.733643], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_88.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_89 = L.marker([-49.239121, -9.887695], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_89.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_90 = L.marker([5.769036, -46.087646], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_90.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_91 = L.marker([7.079088, -44.626465], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_91.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_92 = L.marker([6.860985, -42.51709], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_92.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_93 = L.marker([6.83917, -40.352783], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_93.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_94 = L.marker([4.488809, -47.592773], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_94.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_95 = L.marker([6.555475, -48.131104], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_95.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_96 = L.marker([1.570848, -46.483154], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_96.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_97 = L.marker([0.692122, -43.791504], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_97.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_98 = L.marker([2.449205, -42.539062], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_98.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_99 = L.marker([2.185749, -40.605469], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_99.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_100 = L.marker([1.087581, -42.209473], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_100.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_101 = L.marker([0.98872, -40.858154], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_101.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_102 = L.marker([-0.252685, -40.561523], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_102.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_103 = L.marker([-2.932069, -41.726074], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_103.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_104 = L.marker([-5.823687, -38.50708], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_104.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_105 = L.marker([-9.709057, -44.143066], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_105.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_106 = L.marker([-11.102947, -47.900391], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_106.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_107 = L.marker([-17.014768, -47.27417], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_107.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_108 = L.marker([-17.75915, -44.516602], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_108.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_109 = L.marker([-20.766387, -45.769043], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_109.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_110 = L.marker([-21.993989, -48.812256], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_110.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_111 = L.marker([-24.5771, -45.20874], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_111.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Four Crosses</i>Click to see more"));
+    var twn_112 = L.marker([-24.96614, -44.571533], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_112.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Four Crosses</i>Click to see more"));
+    var twn_113 = L.marker([-24.906367, -43.80249], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_113.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Four Crosses</i>Click to see more"));
+    var twn_114 = L.marker([-23.91597, -42.692871], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_114.bindPopup(L.popup().setContent("<b><h3></h3></b><i>The Four Crosses</i>Click to see more"));
+    var twn_115 = L.marker([38.317525, -12.4079592], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_115.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_116 = L.marker([36.182225, -11.315918], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_116.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_117 = L.marker([38.333039, -19.368896], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_117.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_118 = L.marker([31.989442, -16.589355], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_118.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_119 = L.marker([31.980123, -19.676514], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_119.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_120 = L.marker([32.481963, -24.993896], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_120.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_121 = L.marker([29.295981, -28.520508], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_121.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_122 = L.marker([31.316101, -31.838379], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_122.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_123 = L.marker([27.809928, -34.552002], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_123.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_124 = L.marker([25.710837, -26.619873], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_124.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_125 = L.marker([24.746831, -32.058105], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_125.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_126 = L.marker([21.616579, -31.640625], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_126.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_127 = L.marker([23.211058, -35.936279], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_127.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_128 = L.marker([20.591652, -35.925293], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_128.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_129 = L.marker([15.135764, -40.935059], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_129.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_130 = L.marker([12.071553, -45.351562], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_130.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_131 = L.marker([11.318481, -40.078125], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_131.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_132 = L.marker([10.563422, -43.80249], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_132.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_133 = L.marker([9.286465, -46.889648], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_133.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_134 = L.marker([8.254983, -43.022461], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_134.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_135 = L.marker([7.776309, -45.32959], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_135.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_136 = L.marker([6.577303, -47.69165], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_136.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_137 = L.marker([11.016689, -48.164063], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_137.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_138 = L.marker([46.0366355, 17.804442], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_138.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_139 = L.marker([40.805494, 14.93042], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_139.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_140 = L.marker([46.987747, 12.568359], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_140.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_141 = L.marker([41.294317, 7.998047], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_141.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_142 = L.marker([44.692088, 4.625244], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_142.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_143 = L.marker([41.26955, -2.493896], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_143.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_144 = L.marker([47.180753, -2.83227592], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_144.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_145 = L.marker([44.707706, -6.767578], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_145.bindPopup(L.popup().setContent("<b><h3>Gomai (City of Birth)</h3></b><i></i>Click to see more"));
+    var twn_146 = L.marker([42.585444, -11.1467294], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_146.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_147 = L.marker([40.405131, -8.701172], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_147.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_148 = L.marker([38.453589, -6.405029], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_148.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_149 = L.marker([37.987504, -14.732666], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_149.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_150 = L.marker([45.413876, 17.479248], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_150.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_151 = L.marker([45.828799, 21.851807], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_151.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_152 = L.marker([44.964798, 26.51001], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_152.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_153 = L.marker([43.365126, 27.070313], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_153.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_154 = L.marker([46.399988, 27.520752], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_154.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_155 = L.marker([37.309014, 19.35791], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_155.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_156 = L.marker([37.944198, 22.049561], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_156.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_157 = L.marker([42.730874, 32.003174], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_157.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_158 = L.marker([40.472024, 32.145996], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_158.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_159 = L.marker([40.813809, 37.738037], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_159.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_160 = L.marker([38.401949, 38.485107], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_160.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_161 = L.marker([35.272532, 29.234619], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_161.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_162 = L.marker([-42.585444, 48.175049], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_162.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_163 = L.marker([31.222197, 36.44165], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_163.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_164 = L.marker([37.002553, 47.406006], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_164.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_165 = L.marker([34.533712, 51.339111], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_165.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_166 = L.marker([30.543339, 46.768799], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_166.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_167 = L.marker([26.755421, 43.604736], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_167.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_168 = L.marker([27.809928, 52.987061], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_168.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_169 = L.marker([24.537129, 51.998291], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_169.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_170 = L.marker([22.603869, 59.611816], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_170.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_171 = L.marker([17.319176, 51.503906], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_171.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_172 = L.marker([10.06622, 52.756348], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_172.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_173 = L.marker([7.2360580, 56.063232], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_173.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_174 = L.marker([3.7655967, 50.603027], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_174.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_175 = L.marker([2.7235830, 52.976074], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_175.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_176 = L.marker([2.306506, 56.843262], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_176.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_177 = L.marker([0.219726, 57.930908], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_177.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_178 = L.marker([2.11255906, 61.940918], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_178.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_179 = L.marker([-0.20874, 61.907959], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_179.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_180 = L.marker([-1.944207, 60.820313], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_180.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_181 = L.marker([0.758035, 66.005859], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_181.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_182 = L.marker([3.634036, 58.513184], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_182.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_183 = L.marker([-35.496456, -86.451416], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_183.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_184 = L.marker([-34.198173, -78.046875], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_184.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_185 = L.marker([-35.924645, -94.042969], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_185.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_186 = L.marker([-23.976215, -96.119385], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_186.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_187 = L.marker([-29.487425, -91.142578], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_187.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_188 = L.marker([-31.896214, -89.560547], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_188.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_189 = L.marker([-21.463293, -99.525146], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_189.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_190 = L.marker([-20.622502, -98.009033], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_190.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_191 = L.marker([7.678329, 10.206299], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_191.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_192 = L.marker([7.591218, 11.502686], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_192.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_193 = L.marker([6.326218, 11.634521], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_193.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_194 = L.marker([-38.453589, -44.58252], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_194.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_195 = L.marker([48.173412, -9.481201], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_195.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_196 = L.marker([-23.049407, 64.061279], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_196.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    var twn_197 = L.marker([-40.513799, 49.471436], {icon: townIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_197.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i>Click to see more"));
+    //Template
+        //var twn_ = L.marker([0], {icon: townIcon}).on('click', function () {
+            //sidebar.show();
+            //sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Placeholder Name</h1><i>Placeholder Subtitle</i><br><p>Placeholder Text</p>");})
+        //twn_.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i><br><br>Click to see more"));
+//Countries
+    var cnt_1 = L.marker([6.337137, 10.184326], {icon: cntIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Barge</h1><i>The Free Collective of Bargetown & the outer cities.</i><hr><p>The Barge is constructed from thousands of tonnes of driftwood, broken ships, barges, rope, and other debris that has been brought together over time. Originally the creation of a union between oppressed races wanting self-governance, The Barge and it's capital Bargetown was created from a hundred or more barges that were tied together and built upon. Over the decades it has been expanded on by others who seek self-rule until it was large enough to support 4 cities of people with the idea that anyone is welcome. Of course, being away from a ruling influence doesn't mean there isn't governance over the Barge.In recent times the founders of The Barge have become more controlling.. more power hungry, with armed lackeys in position throughout the town to keep order and relay important information to 'Blue'.<br><br>Only three docks service the Barge as regular ferries, charging what they will for a dangerous trip into the Deep. Ferries only circle the Barge as to not be absorbed by its growing boundaries, as such visitors must swim their way to the wooden shores. Once inside it can feel like you could never escape with the ever-expanding borders of ships docking and being unable to leave, but patrolling ferry ships circle the area frequently to pick up travellers trying to get back to land (and make a few gold from saving them).</p>");})
     cnt_1.bindPopup(L.popup().setContent("<b><h3>The Barge</h3></b><i></i><br><br>Click to see more"));
     var cnt_2 = L.marker([43.389082, -2.955322], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Gomai</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_2.bindPopup(L.popup().setContent("<b><h3>Gomai</h3></b><i></i><br><br>Click to see more"));
     var cnt_3 = L.marker([29.152161, -27.015381], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Anaagai</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_3.bindPopup(L.popup().setContent("<b><h3>Anaagai</h3></b><i></i><br><br>Click to see more"));
     var cnt_4 = L.marker([-12.768946, -45.780029], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ovrikai</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_4.bindPopup(L.popup().setContent("<b><h3>Ovrikai</h3></b><i></i><br><br>Click to see more"));
     var cnt_5 = L.marker([-39.283294, -38.551025], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Amri Szen</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_5.bindPopup(L.popup().setContent("<b><h3>Amri Szen</h3></b><i></i><br><br>Click to see more"));
     var cnt_6 = L.marker([-43.516689, 34.233398], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ashokai</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_6.bindPopup(L.popup().setContent("<b><h3>Ashokai</h3></b><i></i><br><br>Click to see more"));
     var cnt_7 = L.marker([-29.964453, 54.404297], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Acrostai</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_7.bindPopup(L.popup().setContent("<b><h3>Acrostai</h3></b><i></i><br><br>Click to see more"));
     var cnt_8 = L.marker([36.914764, 40.209961], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Vellenai</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_8.bindPopup(L.popup().setContent("<b><h3>Vellenai</h3></b><i></i><br><br>Click to see more"));
     var cnt_9 = L.marker([-32.953368, -90.571289], {icon: cntIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent('Sidebar Content');})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Tcara Szen</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     cnt_9.bindPopup(L.popup().setContent("<b><h3>Tcara Szen</h3></b><i></i><br><br>Click to see more"));
 //Hover Event Listeners
   //Capitals
