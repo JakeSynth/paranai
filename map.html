@@ -229,7 +229,7 @@
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_11.bindPopup(L.popup().setContent('<b><h3>The Reeds</h3></b><i></i><br><br>Click to see more'));
-   var poi_12 = L.marker([7.2360580, 56.063232], {icon: poiIcon}).on('click', function () {
+   var poi_12 = L.marker([6.7360580, 55.063232], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Gallis&#39;set Jungle</h1><i>The jungle of Vellenai is home to many monstrous creatures lurking in the thick fog.</i><hr><p>The creatures themselves are some of the most devilish beings on Paranai, with leopards that can camouflage, basilisks with jaws as wide as carts, and snakes that could wrap around ships. The deadliest part of the jungle is no creature however, but a lowly white flower spread along the mossy floor.<br><br>These flowers produce a noxious poison mist that rapidly shuts down a creature&#39;s nervous system. The mist permeates the entire jungle floor but Tabaxi, Elves and Half-Elves are naturally immune to this poison due to their ancestral home being close or within the jungle. An antidote and protection from the mist can be obtained by consuming the petals of a flower however the Tabaxi see the flowers as holy idols that connect them with their deity and will fiercely protect them. Elves however feel no connection to the flowers and will gladly sell on the petals for an exorbitant fee, as long as they can make it safely past Tabaxi without them noticing.</p>");})
    poi_12.bindPopup(L.popup().setContent('<b><h3>Gallis&#39;set Jungle</h3></b><i>The jungle of Vellenai is home to many monstrous creatures lurking in the thick fog.</i><br><br>Click to see more'));
@@ -249,14 +249,14 @@
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_16.bindPopup(L.popup().setContent('<b><h3>The Gallis Cult</h3></b><i></i><br><br>Click to see more'));
-   var poi_17 = L.marker([-2.119878, 62.885742], {icon: poiIcon}).on('click', function () {
+   var poi_currentriver = L.marker([-2.119878, 62.885742], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_17.bindPopup(L.popup().setContent('<b><h3>The Current (The Endless Stream)</h3></b><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i><br><br>Click to see more'));
-   var poi_currentriver = L.marker([-48.683708, -10.733643], {icon: poiIcon}).on('click', function () {
+   poi_currentriver.bindPopup(L.popup().setContent('<b><h3>The Current (The Endless Stream)</h3></b><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i><br><br>Click to see more'));
+   var poi_17 = L.marker([-48.683708, -10.733643], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>When the residents of this town combined their houses into a manor eighteen-stories tall it certainly left an impression on passers by. With over ten-thousand doors and hundreds more rooms, you&#39;ll lose yourself in Jadencroft... literally.</i><hr><p>Placeholder Text</p>");})
-   poi_currentriver.bindPopup(L.popup().setContent('<b><h3>Jadencroft Manor</h3></b><i>When the residents of this town combined their houses into a manor eighteen-stories tall it certainly left an impression on passers by. With over ten-thousand doors and hundreds more rooms, you&#39;ll lose yourself in Jadencroft... literally.</i><br><br>Click to see more'));
+   poi_17.bindPopup(L.popup().setContent('<b><h3>Jadencroft Manor</h3></b><i>When the residents of this town combined their houses into a manor eighteen-stories tall it certainly left an impression on passers by. With over ten-thousand doors and hundreds more rooms, you&#39;ll lose yourself in Jadencroft... literally.</i><br><br>Click to see more'));
    var poi_18 = L.marker([31.222197, 36.44165], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
@@ -307,16 +307,16 @@
    poi_29.bindPopup(L.popup().setContent('<b><h3>Lastport</h3></b><i></i><br><br>Click to see more'));
    var poi_30 = L.marker([-57.183902, 49.482422], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_30.bindPopup(L.popup().setContent('<b><h3>Here Be Monsters</h3></h3></b><i>Sometimes it&#39;s quicker to sail the Outer Blue to get to your destination... but it definetly isn&#39;t safer. Some 40% of ships who make this journey don&#39;t return, and even fewer return without casualties.<br><br>Reports of dark, choking mists moving just above the water and freak lightning storms that disrupt navigation are some of the challenges of this route. Not to mention the towering shapes that rise from the water and crash back down or the four-legged beasts that seem to wade through the kilometer deep waters and tower into the sky. Captains brave or foolhardy enough to attempt these crossings and survive are known by the nickname "Kal Gadai" (lit. Stolen Fates) by other seasoned sailors.</i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Sometimes it&#39;s quicker to sail the Outer Blue to get to your destination... but it definetly isn&#39;t safer.</i><hr><p>Some 40% of ships who make this journey don&#39;t return, and even fewer return without casualties.<br><br>Reports of dark, choking mists moving just above the water and freak lightning storms that disrupt navigation are some of the challenges of this route. Not to mention the towering shapes that rise from the water and crash back down or the four-legged beasts that seem to wade through the kilometer deep waters and tower into the sky. Captains brave or foolhardy enough to attempt these crossings and survive are known by the nickname &#quot;Kal Gadai&#quot; (lit. Stolen Fates) by other seasoned sailors.</p>");})
+   poi_30.bindPopup(L.popup().setContent('<b><h3>Here Be Monsters</h3></h3></b><i>Sometimes it&#39;s quicker to sail the Outer Blue to get to your destination... but it definetly isn&#39;t safer. </i><br><br>Click to see more'));
    var poi_31 = L.marker([-36.182225, 57.469482], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_31.bindPopup(L.popup().setContent('<b><h3>Dala Tribe</h3></b><i></i><br><br>Click to see more'));
    var poi_32 = L.marker([-21.524627, 58.64502], {icon: poiIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_32.bindPopup(L.popup().setContent('<b><h3>Dune Limit</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>A little slice of heaven in the harsh desert heat. People here enjoy comfortable living with fresh water and abundant fruit trees in some of the only grass for hundreds of miles.</i><hr><p>Placeholder Text</p>");})
+    poi_32.bindPopup(L.popup().setContent("<b><h3>Dune Limit</h3></b><i>A little slice of heaven in the harsh desert heat. People here enjoy comfortable living with fresh water and abundant fruit trees in some of the only grass for hundreds of miles.</i><br><br>Click to see more"));
    var poi_33 = L.marker([-32.676373, 59.996338], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
@@ -517,6 +517,10 @@
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_83.bindPopup(L.popup().setContent('<b><h3>Ancient Murals on the Cliffs</h3></b><i></i><br><br>Click to see more'));
+   var poi_84 = L.marker([17.224758, 54.942627], {icon: poiIcon}).on('click', function () {
+        sidebar.show();
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Snaketongue</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+   poi_84.bindPopup(L.popup().setContent('<b><h3>Snaketongue</h3></b><i></i><br><br>Click to see more'));
    var poi_85 = L.marker([44.707706, -6.767578], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
@@ -754,10 +758,6 @@
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
     twn_49.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i><br><br>Click to see more"));
-    var twn_50 = L.marker([17.224758, 54.942627], {icon: townIcon}).on('click', function () {
-        sidebar.show();
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_50.bindPopup(L.popup().setContent("<b><h3></h3></b><i></i><br><br>Click to see more"));
     var twn_51 = L.marker([-44.363133, 24.862061], {icon: townIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1></h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
@@ -1730,8 +1730,8 @@
   twn_48.on("mouseout", function(evt) { this.closePopup(); });
   twn_49.on("mouseover", function(evt) { this.openPopup(); });
   twn_49.on("mouseout", function(evt) { this.closePopup(); });
-  twn_50.on("mouseover", function(evt) { this.openPopup(); });
-  twn_50.on("mouseout", function(evt) { this.closePopup(); });
+  poi_84.on("mouseover", function(evt) { this.openPopup(); });
+  poi_84.on("mouseout", function(evt) { this.closePopup(); });
   twn_51.on("mouseover", function(evt) { this.openPopup(); });
   twn_51.on("mouseout", function(evt) { this.closePopup(); });
   twn_52.on("mouseover", function(evt) { this.openPopup(); });
@@ -2049,8 +2049,8 @@
 //Marker Groups
     var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
     var mg_marvels = L.layerGroup([mv_canedmtn,mv_belasan,mv_glimmer,mv_bargetownmarvel,mv_heartroot,mv_trdunes,mv_dkonisle,mv_chain,mv_alhoriascent,mv_ghostlights,mv_saltrokmarvel,mv_osivin,mv_olmara]);
-    var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_50,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197,]);
-      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);   
+    var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196,twn_197,]);
+      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93]);   
       var mg_countries = L.layerGroup([cnt_1,cnt_2,cnt_3,cnt_4,cnt_5,cnt_6,cnt_7,cnt_8,cnt_9])  
 //Marker Overlay 
       var overlays = {
