@@ -3,25 +3,17 @@
   <head>
     <title>Paranai</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/script.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="scripts/leaflet.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Sumana:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sumana:wght@700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <script src="scripts/leaflet.js"></script>
     <script src="scripts/L.Control.Sidebar.js"></script>
     <link rel="stylesheet" href="scripts/L.Control.Sidebar.css">
-    <style type="text/css">
-    @media (min-width: 768px) {
-    .close {display: none;}
-    .close:hover {color: #999;}
-    ::-webkit-scrollbar {width: 10px;}
-    ::-webkit-scrollbar-track {background-color: white;}
-    ::-webkit-scrollbar-thumb {border-radius: 5px; background-color: #999;}
-    </style>
-    </head>
+  </head>
   
 <body style="height: 100%;margin: 0;">
   <div id="sidebar">
@@ -652,7 +644,7 @@
     twn_3.bindPopup(L.popup().setContent("<b><h3>Nestu</h3></b><i>The twin brother Nestu built this settlement after an incident with his brother, Nimu</i><br><br>Click to see more"));
     var twn_4 = L.marker([-38.573938, 50.74585], {icon: townIcon}).on('click', function () {
         sidebar.show();
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Nimu</h1><i>Originally called Hallowhall, Nimu is now named after a man of the same name after his brother left to pursue a better life.</i><hr><p>Placeholder Text</p>");})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Nimu</h1><i>Originally called Hallowhall, Nimu was renamed for its founder after their brother left to pursue a better life.</i><hr><p>Placeholder Text</p>");})
     twn_4.bindPopup(L.popup().setContent("<b><h3>Nimu</h3></b><i>Originally called Hallowhall, Nimu is now named after a man of the same name after his brother left to pursue a better life.</i><br><br>Click to see more"));
     var twn_5 = L.marker([-41.492121, 53.668213], {icon: townIcon}).on('click', function () {
         sidebar.show();
@@ -673,7 +665,7 @@
     var twn_9 = L.marker([-36.182225, 57.469482], {icon: townIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Dala Tribe</h1><i>A tribe of Giants allowed to live in peace by the king for helping in the overthrow of Nara&#39; Khan from Ashokan rule.</i><hr><p>Placeholder Text</p>");})
-    twn_9.bindPopup(L.popup().setContent("<b><h3>Dala Tribe</h3></b><i>A tribe of Giants allowed to live in peace by the king for helping in the overthrow of Nara&#39; Khan from Ashokan rule.</i><br><br>Click to see more"));
+    twn_9.bindPopup(L.popup().setContent("<b><h3>Dala Tribe</h3></b><i>A tribe of Giants allowed to live in peace by the king after helping to take Nara&#39; Khan from Ashokan control.</i><br><br>Click to see more"));
     var twn_10 = L.marker([-32.676373, 59.996338], {icon: townIcon}).on('click', function () {
         sidebar.show();
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Sela Tong</h1><i>With mountains to the south and a desert to the north living in Sela Tong isn&#39;t easy.e</i><hr><p>Placeholder Text</p>");})
@@ -2163,7 +2155,7 @@
     var mg_capitals = L.layerGroup([el_castorport,el_vellenaicap,el_currentcap,el_farnun,el_southold,el_saltrokcap,el_ekonport,el_szenjun,el_ellosciti,el_prismcap,el_bargetowncap]);
     var mg_marvels = L.layerGroup([mv_canedmtn,mv_belasan,mv_glimmer,mv_bargetownmarvel,mv_heartroot,mv_trdunes,mv_dkonisle,mv_chain,mv_alhoriascent,mv_ghostlights,mv_saltrokmarvel,mv_osivin,mv_olmara]);
     var mg_towns = L.layerGroup([twn_1,twn_2,twn_3,twn_4,twn_5,twn_6,twn_7,twn_8,twn_9,twn_10,twn_11,twn_12,twn_13,twn_14,twn_15,twn_16,twn_17,twn_18,twn_19,twn_20,twn_21,twn_22,twn_23,twn_24,twn_25,twn_26,twn_27,twn_28,twn_29,twn_30,twn_31,twn_32,twn_33,twn_34,twn_35,twn_36,twn_37,twn_38,twn_39,twn_40,twn_41,twn_42,twn_43,twn_44,twn_45,twn_46,twn_47,twn_48,twn_49,twn_51,twn_52,twn_53,twn_54,twn_55,twn_56,twn_57,twn_58,twn_59,twn_60,twn_61,twn_62,twn_63,twn_64,twn_65,twn_66,twn_67,twn_68,twn_69,twn_70,twn_71,twn_72,twn_73,twn_74,twn_75,twn_76,twn_77,twn_78,twn_79,twn_80,twn_81,twn_82,twn_83,twn_84,twn_85,twn_86,twn_87,twn_88,twn_89,twn_90,twn_91,twn_92,twn_93,twn_94,twn_95,twn_96,twn_97,twn_98,twn_99,twn_100,twn_101,twn_102,twn_103,twn_104,twn_105,twn_106,twn_107,twn_108,twn_109,twn_110,twn_111,twn_112,twn_113,twn_114,twn_115,twn_116,twn_117,twn_118,twn_119,twn_120,twn_121,twn_122,twn_123,twn_124,twn_125,twn_126,twn_127,twn_128,twn_129,twn_130,twn_131,twn_132,twn_133,twn_134,twn_135,twn_136,twn_137,twn_138,twn_139,twn_140,twn_141,twn_142,twn_143,twn_144,twn_145,twn_146,twn_147,twn_148,twn_149,twn_150,twn_151,twn_152,twn_153,twn_154,twn_155,twn_156,twn_157,twn_158,twn_159,twn_160,twn_161,twn_162,twn_163,twn_164,twn_165,twn_166,twn_167,twn_168,twn_169,twn_170,twn_171,twn_172,twn_173,twn_174,twn_175,twn_176,twn_177,twn_178,twn_179,twn_180,twn_181,twn_182,twn_183,twn_184,twn_185,twn_186,twn_187,twn_188,twn_189,twn_190,twn_191,twn_192,twn_193,twn_194,twn_195,twn_196]);
-      var mg_poi = L.layerGroup([poi_deep,poi_acrbreaker,poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_currentriver,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30n,poi_30s,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_49,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93,poi_94,poi_95,poi_96,poi_97,poi_98,poi_99,poi_100,poi_101,poi_102,poi_103,poi_104,poi_105,poi_106,poi_107,poi_108,poi_109,poi_110]);   
+      var mg_poi = L.layerGroup([poi_1,poi_2,poi_3,poi_4,poi_5,poi_6,poi_7,poi_8,poi_9,poi_10,poi_11,poi_12,poi_13,poi_14,poi_15,poi_16,poi_17,poi_18,poi_19,poi_20,poi_21,poi_22,poi_23,poi_24,poi_25,poi_26,poi_27,poi_28,poi_29,poi_30n,poi_30s,poi_31,poi_32,poi_33,poi_34,poi_35,poi_36,poi_37,poi_38,poi_39,poi_40,poi_41,poi_42,poi_43,poi_44,poi_45,poi_46,poi_47,poi_48,poi_49,poi_50,poi_51,poi_52,poi_53,poi_54,poi_55,poi_56,poi_57,poi_58,poi_59,poi_60,poi_61,poi_62,poi_63,poi_64,poi_65,poi_66,poi_67,poi_68,poi_69,poi_70,poi_71,poi_72,poi_73,poi_74,poi_75,poi_76,poi_77,poi_78,poi_79,poi_80,poi_81,poi_82,poi_83,poi_84,poi_85,poi_86,poi_87,poi_88,poi_89,poi_90,poi_91,poi_92,poi_93,poi_94,poi_95,poi_96,poi_97,poi_98,poi_99,poi_100,poi_101,poi_102,poi_103,poi_104,poi_105,poi_106,poi_107,poi_108,poi_109,poi_110,poi_deep,poi_acrbreaker,poi_currentriver]);   
       var mg_countries = L.layerGroup([cnt_1,cnt_2,cnt_3,cnt_4,cnt_5,cnt_6,cnt_7,cnt_8,cnt_9])  
 //Marker Overlay 
       var overlays = {
