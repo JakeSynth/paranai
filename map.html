@@ -56,11 +56,11 @@
     cntIcon = new ImpoIcon({iconUrl: 'scripts/images/country.png'});
 //Coordinate Finder
     //var marker = L.marker([2.635789, 251.71875], {
-      //draggable: true,
+    //  draggable: true,
     //}).addTo(map);
     //marker.bindPopup('LatLng Marker').openPopup();
     //marker.on('dragend', function(e) {
-      //marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    //  marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     //});
 //Sidebar
  var sidebar = L.control.sidebar('sidebar', {
@@ -72,7 +72,7 @@
         sidebar.show();
         document.getElementById("intro").hidden=true;
     }, 500);
-    sidebar.setContent("<img src='https://via.placeholder.com/770x200'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:5px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='https://via.placeholder.com/60x120'></th><th><p style='padding-left:5px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table>");
+    sidebar.setContent("<img src='https://via.placeholder.com/770x200'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table>");
         map.addControl(sidebar);
     map.on('click', function () {
         sidebar.hide();
@@ -82,7 +82,7 @@
     introside.addEventListener("click", function(i) {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-    sidebar.setContent("");
+    sidebar.setContent("<img src='https://via.placeholder.com/770x200'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table>");
   });
 //Markers
 //Capitals
@@ -216,43 +216,43 @@
    var poi_acrbreaker = L.marker([-24.607069, 58.139648], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Acrostai Breaker</h1><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i><hr><p>Placeholder Text</p>");})
-    poi_acrbreaker.bindPopup(L.popup().setContent('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel a challenge, but some of the heartier races find this patch of land rather comfortable.</i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Acrostai Breaker</h1><i>Desert sand cuts the Kingdom of Acrostai in half, making travel by foot a challenge, but some of the heartier races find this patch of land rather comfortable.</i><hr><p>Placeholder Text</p>");})
+    poi_acrbreaker.bindPopup(L.popup().setContent('<b><h3>The Acrostai Breaker</h3></b><i>Desert sand cuts the Kingdom of Acrostai in half, making travel by foot a challenge, but some of the heartier races find this patch of land rather comfortable.</i><br><br>Click to see more'));
    var poi_1 = L.marker([38.317525, -12.4079592], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Nogesic & the Ruins</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_1.bindPopup(L.popup().setContent('<b><h3>Nogesic & the Ruins</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Nogesic & the Ruins</h1><i>Placeholder Subtitle</i><hr><p>A casualty of the war between Anaagai and Gomai. The farthest walls of the ruins signify the border between the two nations.</p>");})
+   poi_1.bindPopup(L.popup().setContent('<b><h3>Nogesic & the Ruins</h3></b><i>A casualty of the war between Anaagai and Gomai. The farthest walls of the ruins signify the border between the two nations.</i><br><br>Click to see more'));
    var poi_2 = L.marker([42.585444, -11.1467294], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Burial</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_2.bindPopup(L.popup().setContent('<b><h3>Burial</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Burial</h1><i>A city built within the skull of an ancient creature fossilised to a type of strong stone that isn&#39;t weathered by sandstorms. From its size the body likely stretches for hundreds of miles below the sands.</i><hr><p>Placeholder Text</p>");})
+   poi_2.bindPopup(L.popup().setContent('<b><h3>Burial</h3></b><i>A city built within the skull of an ancient creature fossilised to a type of strong stone that isn&#39;t weathered by sandstorms. From its size the body likely stretches for hundreds of miles below the sands.</i><br><br>Click to see more'));
    var poi_3 = L.marker([47.180753, -2.83227592], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Old Castor</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_3.bindPopup(L.popup().setContent('<b><h3>Old Castor</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Old Castor</h1><i>A sandstone fort built up by new traders. The birthplace of the famed king of the sands Castor.</i><hr><p>Placeholder Text</p>");})
+   poi_3.bindPopup(L.popup().setContent('<b><h3>Old Castor</h3></b><i>A sandstone fort built up by new traders. The birthplace of the famed king of the sands Castor.</i><br><br>Click to see more'));
    var poi_4 = L.marker([45.384563, 10.4875482], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>River Castor</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_4.bindPopup(L.popup().setContent('<b><h3>River Castor</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>River Castor</h1><i>The river shines the sands back at the viewer, giving the impression of flowing liquid gold.</i><hr><p>Placeholder</p>");})
+   poi_4.bindPopup(L.popup().setContent('<b><h3>River Castor</h3></b><i>The river shines the sands back at the viewer, giving the impression of flowing liquid gold.</i><br><br>Click to see more'));
    var poi_5 = L.marker([46.0366355, 17.804442], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Coffik</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_5.bindPopup(L.popup().setContent('<b><h3>Coffik</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Coffik</h1><i>This half-swallowed town&#39;s residents make their homes beneath the sands where things are cooler.</i><hr><p>Placeholder Text</p>");})
+   poi_5.bindPopup(L.popup().setContent('<b><h3>Coffik</h3></b><i>This half-swallowed town&#39;s residents make their homes beneath the sands where things are cooler.</i><br><br>Click to see more'));
    var poi_6 = L.marker([40.269468, 12.6386711], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Castor&#39;s Grove</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_6.bindPopup(L.popup().setContent('<b><h3>Castor&#39;s Grove</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Castor&#39;s Grove</h1><i>Placeholder Subtitle</i><hr><p>A large dead grove filled with petrified tree trunks. Their root networks exposed make excellent hiding places for those who live there.</p>");})
+   poi_6.bindPopup(L.popup().setContent('<b><h3>Castor&#39;s Grove</h3></b><i>A large dead grove filled with petrified tree trunks. Their root networks exposed make excellent hiding places for those who live there.</i><br><br>Click to see more'));
    var poi_7 = L.marker([42.611323, 17.7846678], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Gomai Sandsea (East)</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_7.bindPopup(L.popup().setContent('<b><h3>The Gomai Sandsea (East)</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Gomai Sandsea (East)</h1><i>The Sandsea to the east extend far further than Gomai&#39;s borders, held back only by the Tkerrim Fracture.</i><hr><p>Placeholder Text</p>");})
+   poi_7.bindPopup(L.popup().setContent('<b><h3>The Gomai Sandsea (East)</h3></b><i>The Sandsea to the east extend far further than Gomai&#39;s borders, held back only by the Tkerrim Fracture.</i><br><br>Click to see more'));
    var poi_8 = L.marker([41.8286420, 31.4890138], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -261,18 +261,18 @@
    var poi_9 = L.marker([31.853297, 50.427246], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Lake Trish & River Trish</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_9.bindPopup(L.popup().setContent('<b><h3>Lake Trish & River Trish</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Lake Trish & River Trish</h1><i>Salt in the water makes the lake unlivable for most kinds of aquatic life, but somehow life still finds a way.</i><hr><p>Placeholder Text</p>");})
+   poi_9.bindPopup(L.popup().setContent('<b><h3>Lake Trish & River Trish</h3></b><i>Salt in the water makes the lake unlivable for most kinds of aquatic life, but somehow life still finds a way.</i><br><br>Click to see more'));
    var poi_10 = L.marker([32.157012, 47.307129], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Flatlands</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_10.bindPopup(L.popup().setContent('<b><h3>The Flatlands</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Flatlands</h1><i>Not a tree in sight for miles. The tallest spires of the towns in the Flatlands light beacons to send messages of importance.</i><hr><p>Placeholder Text</p>");})
+   poi_10.bindPopup(L.popup().setContent('<b><h3>The Flatlands</h3></b><i>Not a tree in sight for miles. The tallest spires of the towns in the Flatlands light beacons to send messages of importance.</i><br><br>Click to see more'));
    var poi_11 = L.marker([26.9397009, 59.646972], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Reeds</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_11.bindPopup(L.popup().setContent('<b><h3>The Reeds</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Reeds</h1><i>A bog that stretches for considerable distance around lets off a pungent aroma that lures people into the marshland.</i><hr><p>Placeholder Text</p>");})
+   poi_11.bindPopup(L.popup().setContent('<b><h3>The Reeds</h3></b><i>A bog that stretches for considerable distance around lets off a pungent aroma that lures people into the marshland.</i><br><br>Click to see more'));
    var poi_12 = L.marker([6.7360580, 55.063232], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -281,8 +281,8 @@
    var poi_13 = L.marker([3.7655967, 50.603027], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Sacred Port of the Ashen Ones</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_13.bindPopup(L.popup().setContent('<b><h3>Sacred Port of the Ashen Ones</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Sacred Port of the Ashen Ones</h1><i>For some dedicated monks prayer is not enough. These devout worshippers find their peace in pain and bizzarre rituals taboo to society.</i><hr><p>Placeholder Text</p>");})
+   poi_13.bindPopup(L.popup().setContent('<b><h3>Sacred Port of the Ashen Ones</h3></b><i>For some dedicated monks prayer is not enough. These devout worshippers find their peace in pain and bizzarre rituals taboo to society.</i><br><br>Click to see more'));
    var poi_14 = L.marker([2.7235830, 52.976074], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -296,12 +296,12 @@
    var poi_16 = L.marker([3.634036, 58.513184], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Gallis Cult</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_16.bindPopup(L.popup().setContent('<b><h3>The Gallis Cult</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Gallis Cult</h1><i>A secretivecult of worshippers who harvest sap from the Heartroot to perform powerful druidic magic.</i><hr><p>Placeholder Text</p>");})
+   poi_16.bindPopup(L.popup().setContent('<b><h3>The Gallis Cult</h3></b><i>A secretivecult of worshippers who harvest sap from the Heartroot to perform powerful druidic magic.</i><br><br>Click to see more'));
    var poi_currentriver = L.marker([-2.119878, 62.885742], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Current (The Endless Stream)</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Current (The Endless Stream)</h1><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i><hr><p>Placeholder Text</p>");})
    poi_currentriver.bindPopup(L.popup().setContent('<b><h3>The Current (The Endless Stream)</h3></b><i>An almost impassable Six-mile-wide river that seperates the harsh Gallis&#39;set Jungle from the temperate lands of Acrostai.</i><br><br>Click to see more'));
    var poi_17 = L.marker([-48.683708, -10.733643], {icon: poiIcon}).on('click', function () {
         sidebar.show();
@@ -311,33 +311,33 @@
    var poi_18 = L.marker([31.222197, 36.44165], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Asbolish</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_18.bindPopup(L.popup().setContent('<b><h3>Asbolish</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Asbolish</h1><i>A newly awakened evil has stepped from a crystalline tomb, igniting fires throughout the town and slaughtering the villagers.</i><hr><p>Placeholder Text</p>");})
+   poi_18.bindPopup(L.popup().setContent('<b><h3>Asbolish</h3></b><i>A newly awakened evil has stepped from a crystalline tomb, igniting fires throughout the town and slaughtering the villagers.</i><br><br>Click to see more'));
    var poi_19 = L.marker([-29.036961, 141.635742], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Rift Islands</h1><i>An outer-blue fisherman from Acrostai washed up on shore the only survivor of his boat when a huge wave of magical energy destroyed it. He spoke of massive walls of rock, ash bursting from the ocean in a blue haze, and of a rift below the waves that these rocks seemed to jet from. Later expeditions to find the islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close.</i><hr><p>Placeholder Text</p>");})
-   poi_19.bindPopup(L.popup().setContent('<b><h3>The Rift Islands</h3></b><i>An outer-blue fisherman from Acrostai washed up on shore the only survivor of his boat when a huge wave of magical energy destroyed it. He spoke of massive walls of rock, ash bursting from the ocean in a blue haze, and of a rift below the waves that these rocks seemed to jet from. Later expeditions to find the islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close.</i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Rift Islands</h1><i>Expeditions to find the rumored islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close. It is speculated that to get to and from the islands you need to first become lost to find your way.</i><hr><p>An outer-blue fisherman from Acrostai washed up on shore the only survivor of his boat when a huge wave of magical energy destroyed it. He spoke of massive walls of rock, ash bursting from the ocean in a blue haze, and of a rift below the waves that these rocks seemed to jet from.</p>");})
+   poi_19.bindPopup(L.popup().setContent('<b><h3>The Rift Islands</h3></b><i>Expeditions to find the rumored islands were thwarted by the sea itself as it boiled and bubbled, eating through the ships that tried to get close. It is speculated that to get to and from the islands you need to first become lost to find your way.</i><br><br>Click to see more'));
    var poi_20 = L.marker([32.045333, -118.78418], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Brittle</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_20.bindPopup(L.popup().setContent('<b><h3>The Brittle</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Brittle</h1><i>An eruption of mountains from the sea with lightning flashes shining like beacons for explorers. Given the name The Brittle because of the crumbling witnessed at the edges of the island, thought to be caused by lightning strikes or unseen explosions.</i><hr><p>Placeholder Text</p>");})
+   poi_20.bindPopup(L.popup().setContent('<b><h3>The Brittle</h3></b><i>An eruption of mountains from the sea with lightning flashes shining like beacons for explorers. Given the name The Brittle because of the crumbling witnessed at the edges of the island, thought to be caused by lightning strikes or unseen explosions.</i><br><br>Click to see more'));
    var poi_21 = L.marker([46.346928, 26.619873], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Sullen Grove & Berenwyrg Ruins</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_21.bindPopup(L.popup().setContent('<b><h3>The Sullen Grove & Berenwyrg Ruins</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Sullen Grove & Berenwyrg Ruins</h1><i>Chased from their homes by screeching winged creatures in the night, the ruins here are left to rot save the brave explorer or silent theif.</i><hr><p>Placeholder Text</p>");})
+   poi_21.bindPopup(L.popup().setContent('<b><h3>The Sullen Grove & Berenwyrg Ruins</h3></b><i>Chased from their homes by screeching winged creatures in the night, the ruins here are left to rot save the brave explorer or silent theif.</i><br><br>Click to see more'));
    var poi_22 = L.marker([-39.901309, 49.405518], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Tritonlord Lakes</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_22.bindPopup(L.popup().setContent('<b><h3>The Tritonlord Lakes</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Tritonlord Lakes</h1><i>A race pushed from their homes by a lurking leviathan in the inner-blue are given refuge in the lakes to build a new society.</i><hr><p>Placeholder Text</p>");})
+   poi_22.bindPopup(L.popup().setContent('<b><h3>The Tritonlord Lakes</h3></b><i>A race pushed from their homes by a lurking leviathan in the inner-blue are given refuge in the lakes to build a new society.</i><br><br>Click to see more'));
    var poi_23 = L.marker([-36.111253, 55.38208], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Amix Mountains</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_23.bindPopup(L.popup().setContent('<b><h3>The Amix Mountains</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Amix Mountains</h1><i>Bursting from the ground and erratically cascading towards the sea, the Amix Mountains are jagged, angled mountains that burst from a fault in the ground millions of years ago brining with them a wealth of precious gems and ore.</i><hr><p>Placeholder Text</p>");})
+   poi_23.bindPopup(L.popup().setContent('<b><h3>The Amix Mountains</h3></b><i>Bursting from the ground and erratically cascading towards the sea, the Amix Mountains are jagged, angled mountains that burst from a fault in the ground millions of years ago brining with them a wealth of precious gems and ore.</i><br><br>Click to see more'));
    var poi_24 = L.marker([-27.078692, 50.537109], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -381,8 +381,8 @@
    var poi_31 = L.marker([-36.182225, 57.469482], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Dala Tribe</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_31.bindPopup(L.popup().setContent('<b><h3>Dala Tribe</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Dala Tribe</h1><i>A tribe of Giants allowed to live in peace by the king for helping in the overthrow of Nara&#39; Khan from Ashokan rule.</i><hr><p>Placeholder Text</p>");})
+   poi_31.bindPopup(L.popup().setContent('<b><h3>Dala Tribe</h3></b><i>A tribe of Giants allowed to live in peace by the king for helping in the overthrow of Nara&#39; Khan from Ashokan rule.</i><br><br>Click to see more'));
    var poi_32 = L.marker([-21.524627, 58.64502], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -391,8 +391,8 @@
    var poi_33 = L.marker([-32.676373, 59.996338], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Sela Tong</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_33.bindPopup(L.popup().setContent('<b><h3>Sela Tong</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Sela Tong</h1><i>With mountains to the south and a desert to the north living in Sela Tong isn&#39;t easy.</i><hr><p>Placeholder Text</p>");})
+   poi_33.bindPopup(L.popup().setContent('<b><h3>Sela Tong</h3></b><i>With mountains to the south and a desert to the north living in Sela Tong isn&#39;t easy.</i><br><br>Click to see more'));
    var poi_34 = L.marker([38.358888, 43.088379], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -401,8 +401,8 @@
    var poi_35 = L.marker([-25.532528, 55.777588], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Heiss Prison City</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_35.bindPopup(L.popup().setContent('<b><h3>Heiss Prison City</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Heiss Prison City</h1><i>Where do you send those who would mean harm to every aspect of civilization? To a place without it.</i><hr><p>Placeholder Text</p>");})
+   poi_35.bindPopup(L.popup().setContent('<b><h3>Heiss Prison City</h3></b><i>Where do you send those who would mean harm to every aspect of civilization? To a place without it.</i><br><br>Click to see more'));
    var poi_36 = L.marker([-20.560796, -98.173828], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -466,13 +466,13 @@
    var poi_48 = L.marker([-39.529467, 13.502197], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Shadowed Port City of Ib</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_48.bindPopup(L.popup().setContent('<b><h3>The Shadowed Port City of Ib</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Shadowed Port City of Ib</h1><i>The air is filled with a putrid fish scent that matches the horror of the people within. The people of Ib, twisted and broken from an otherworldly force, despise outsiders cooped up in their waterlogged houses.</i><hr><p>Placeholder Text</p>");})
+   poi_48.bindPopup(L.popup().setContent('<b><h3>The Shadowed Port City of Ib</h3></b><i>The air is filled with a putrid fish scent that matches the horror of the people within. The people of Ib, twisted and broken from an otherworldly force, despise outsiders cooped up in their waterlogged houses.</i><br><br>Click to see more'));
    var poi_49 = L.marker([-44.645208, 13.985596], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>What Eeks in the Thicket</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_49.bindPopup(L.popup().setContent('<b><h3>What Eeks in the Thicket</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>What Eeks in the Thicket</h1><i>The sound of a whimpering faun draws adventurers off the well trodden path.</i><hr><p>Placeholder Text</p>");})
+   poi_49.bindPopup(L.popup().setContent('<b><h3>What Eeks in the Thicket</h3></b><i>The sound of a whimpering faun draws adventurers off the well trodden path.</i><br><br>Click to see more'));
    var poi_50 = L.marker([-31.475524, -41.748047], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -516,8 +516,8 @@
    var poi_58 = L.marker([-45.821143, -18.149414], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Derri, the Sinking City</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_58.bindPopup(L.popup().setContent('<b><h3>Derri, the Sinking City</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Derri, the Sinking City</h1><i>The council of Derri drew water from the ground using powerful magic instead of building a well. This action turned the once fertile soil into a deep bog in which the houses of Derri are slowly sinking, constantly being built up with new floors to move into as the lower ones sink deeper into the marsh.</i><hr><p>Placeholder Text</p>");})
+   poi_58.bindPopup(L.popup().setContent('<b><h3>Derri, the Sinking City</h3></b><i>The council of Derri drew water from the ground using powerful magic instead of building a well. This action turned the once fertile soil into a deep bog in which the houses of Derri are slowly sinking, constantly being built up with new floors to move into as the lower ones sink deeper into the marsh.</i><br><br>Click to see more'));
    var poi_59 = L.marker([-45.844108, -25.466309], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -528,26 +528,26 @@
         document.getElementById("intro").hidden=true;
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>River Ines Um</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
    poi_60.bindPopup(L.popup().setContent('<b><h3>River Ines Um</h3></b><i></i><br><br>Click to see more'));
-   var poi_61 = L.marker([-24.5771, -45.20874], {icon: poiIcon}).on('click', function () {
+   var poi_61 = L.marker([-23.91597, -44.25293], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Xerinan</h1><i>The Four Crosses</i><hr><p>Placeholder Text</p>");})
-   poi_61.bindPopup(L.popup().setContent('<b><h3>Xerinan</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
-   var poi_62 = L.marker([-24.96614, -44.571533], {icon: poiIcon}).on('click', function () {
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Four Crosses</h1><i></i><hr><p>Placeholder Text</p>");})
+   poi_61.bindPopup(L.popup().setContent('<b><h3>The Four Crosses</h3></b><i></i><br><br>Click to see more'));
+   var poi_62 = L.marker([-4.806365, -45.725098], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Xernak</h1><i>The Four Crosses</i><hr><p>Placeholder Text</p>");})
-   poi_62.bindPopup(L.popup().setContent('<b><h3>Xernak</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
-   var poi_63 = L.marker([-24.906367, -43.80249], {icon: poiIcon}).on('click', function () {
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Collapse of South Hammara</h1><i></i><hr><p>Placeholder Text</p>");})
+   poi_62.bindPopup(L.popup().setContent('<b><h3>The Collapse of South Hammara</h3></b><i></i><br><br>Click to see more'));
+   var poi_63 = L.marker([21.739091, -25.982666], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Xerino</h1><i>The Four Crosses</i><hr><p>Placeholder Text</p>");})
-   poi_63.bindPopup(L.popup().setContent('<b><h3>Xerino</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
-   var poi_64 = L.marker([-23.91597, -42.692871], {icon: poiIcon}).on('click', function () {
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ghost Ships on the Horizon</h1><i></i><hr><p>Placeholder Text</p>");})
+   poi_63.bindPopup(L.popup().setContent('<b><h3>Ghost Ships on the Horizon</h3></b><i></i><br><br>Click to see more'));
+   var poi_64 = L.marker([-43.683764, 23.104248], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Xerkaris</h1><i>The Four Crosses</i><hr><p>Placeholder Text</p>");})
-   poi_64.bindPopup(L.popup().setContent('<b><h3>Xerkaris</h3></b><i>The Four Crosses</i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Sweetwater Falls</h1><i></i><hr><p>Placeholder Text</p>");})
+   poi_64.bindPopup(L.popup().setContent('<b><h3>Sweetwater Falls</h3></b><i></i><br><br>Click to see more'));
    var poi_65 = L.marker([5.769036, -46.087646], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -957,63 +957,63 @@
     var twn_35 = L.marker([-45.644768, -6.536865], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Tinch</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_35.bindPopup(L.popup().setContent("<b><h3>Tinch</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Tinch</h1><i>A rivalry spanning generations, the towns of Tinch and Inchin meet once a year to see who is superior with a game of Gress.</i><hr><p>Placeholder Text</p>");})
+    twn_35.bindPopup(L.popup().setContent("<b><h3>Tinch</h3></b><i>A rivalry spanning generations, the towns of Tinch and Inchin meet once a year to see who is superior with a game of Gress.</i><br><br>Click to see more"));
     var twn_36 = L.marker([-47.754098, -9.140625], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Illip</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_36.bindPopup(L.popup().setContent("<b><h3>Illip</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Illip</h1><i>This border town was mandated to expand it&#39;s farming fields greatly into Szenian territory before a treaty was signed between Szen Jun and Ashokai that defined their borders. This led to a huge land grab by the Ashokans.</i><hr><p>Placeholder Text</p>");})
+    twn_36.bindPopup(L.popup().setContent("<b><h3>Illip</h3></b><i>This border town was mandated to expand it&#39;s farming fields greatly into Szenian territory before a treaty was signed between Szen Jun and Ashokai that defined their borders. This led to a huge land grab by the Ashokans.</i><br><br>Click to see more"));
     var twn_37 = L.marker([-50.085344, -1.549072], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Interim</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_37.bindPopup(L.popup().setContent("<b><h3>Interim</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Interim</h1><i>It may be a relatively isolated town at the shores of the outer-blue but go into any tavern in Ashokai and hear The Ballad of Matalli Abellis at Interim Shores.</i><hr><p>Placeholder Text</p>");})
+    twn_37.bindPopup(L.popup().setContent("<b><h3>Interim</h3></b><i>It may be a relatively isolated town at the shores of the outer-blue but go into any tavern in Ashokai and hear The Ballad of Matalli Abellis at Interim Shores.</i><br><br>Click to see more"));
     var twn_38 = L.marker([-46.717269, 0.32959], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ablac</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_38.bindPopup(L.popup().setContent("<b><h3>Ablac</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ablac</h1><i>One of the biggest fishing cities in Paranai. Ablac hosts an infamously challenging fishing tournament each year on the Day of Ester.</i><hr><p>Placeholder Text</p>");})
+    twn_38.bindPopup(L.popup().setContent("<b><h3>Ablac</h3></b><i>One of the biggest fishing cities in Paranai. Ablac hosts an infamously challenging fishing tournament each year on the Day of Ester.</i><br><br>Click to see more"));
     var twn_39 = L.marker([-47.776252, 3.845215], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Xoros</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_39.bindPopup(L.popup().setContent("<b><h3>Xoros</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Xoros</h1><i>Set in a valley below sea-level and prone to extreme flooding. Of late the town is home to a sparse few.</i><hr><p>Placeholder Text</p>");})
+    twn_39.bindPopup(L.popup().setContent("<b><h3>Xoros</h3></b><i>Set in a valley below sea-level and prone to extreme flooding. Of late the town is home to a sparse few.</i><br><br>Click to see more"));
     var twn_40 = L.marker([-46.551305, 7.503662], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Omnivos</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_40.bindPopup(L.popup().setContent("<b><h3>Omnivos</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Omnivos</h1><i>Cattle herders make settlement near the lush grasses of the Karakis Divide to take advantage of it&#39;s rich nutrient content and the unique flavour it gives their meat.</i><hr><p>Placeholder Text</p>");})
+    twn_40.bindPopup(L.popup().setContent("<b><h3>Omnivos</h3></b><i>Cattle herders make settlement near the lush grasses of the Karakis Divide to take advantage of it&#39;s rich nutrient content and the unique flavour it gives their meat.</i><br><br>Click to see more"));
     var twn_41 = L.marker([-46.377254, 11.45874], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Eriods</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_41.bindPopup(L.popup().setContent("<b><h3>Eriods</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Eriods</h1><i>A weavers town that makes fine clothing for numerous prestigious guests. Silk, linen, wool, and other hard to find fabrics are mastered here by generations of elite professionals.</i><hr><p>Placeholder Text</p>");})
+    twn_41.bindPopup(L.popup().setContent("<b><h3>Eriods</h3></b><i>A weavers town that makes fine clothing for numerous prestigious guests. Silk, linen, wool, and other hard to find fabrics are mastered here by generations of elite professionals.</i><br><br>Click to see more"));
     var twn_42 = L.marker([-48.42191, 10.393066], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Heribos</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_42.bindPopup(L.popup().setContent("<b><h3>Heribos</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Heribos</h1><i>This small blacksmith town was the birthplace of the famed jeweller Attinos the Golden.</i><hr><p>Placeholder Text</p>");})
+    twn_42.bindPopup(L.popup().setContent("<b><h3>Heribos</h3></b><i>This small blacksmith town was the birthplace of the famed jeweller Attinos the Golden.</i><br><br>Click to see more"));
     var twn_43 = L.marker([-44.863656, 11.843262], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ytas</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_43.bindPopup(L.popup().setContent("<b><h3>Ytas</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ytas</h1><i>A hunting village on the outskirts of the Karakis Divide specialises in tracking one of the hardest of games. The Blue-Bellied Squab.</i><hr><p>Placeholder Text</p>");})
+    twn_43.bindPopup(L.popup().setContent("<b><h3>Ytas</h3></b><i>A hunting village on the outskirts of the Karakis Divide specialises in tracking one of the hardest of games. The Blue-Bellied Squab.</i><br><br>Click to see more"));
     var twn_44 = L.marker([-42.098222, 8.822021], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Trader&#39;s Stay</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_44.bindPopup(L.popup().setContent("<b><h3>Trader&#39;s Stay</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Trader&#39;s Stay</h1><i>A large trading hub and one of only two sanctioned trade ports in Ashokai, ordered to be the main hub for trade with Szen Jun. The reefs off the coast of this city are notorious for their beauty in the summer.</i><hr><p>Placeholder Text</p>");})
+    twn_44.bindPopup(L.popup().setContent("<b><h3>Trader&#39;s Stay</h3></b><i>A large trading hub and one of only two sanctioned trade ports in Ashokai, ordered to be the main hub for trade with Szen Jun. The reefs off the coast of this city are notorious for their beauty in the summer.</i><br><br>Click to see more"));
     var twn_45 = L.marker([-41.401536, 15.018311], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ygritte</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_45.bindPopup(L.popup().setContent("<b><h3>Ygritte</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ygritte</h1><i>Named for the founder's hound. Ygritte is a waypoint for hunters who travel through the Karakai Divide towards Ytas. While they themselves don&#39;t hunt much, they make excellent jerky.</i><hr><p>Placeholder Text</p>");})
+    twn_45.bindPopup(L.popup().setContent("<b><h3>Ygritte</h3></b><i>Named for the founder's hound. Ygritte is a waypoint for hunters who travel through the Karakai Divide towards Ytas. While they themselves don&#39;t hunt much, they make excellent jerky.</i><br><br>Click to see more"));
     var twn_46 = L.marker([-39.529467, 13.502197], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Shadowed Port City of Ib</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_46.bindPopup(L.popup().setContent("<b><h3>The Shadowed Port City of Ib</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Shadowed Port City of Ib</h1><i>If not for the trading post at it&#39;s docks, few souls would travel here. The air is filled with a putrid fish scent that matches the horror of the people within. The people of Ib, twisted and broken from an otherworldly force, despise outsiders cooped up in their waterlogged houses.</i><hr><p>Placeholder Text</p>");})
+    twn_46.bindPopup(L.popup().setContent("<b><h3>The Shadowed Port City of Ib</h3></b><i>If not for the trading post at it&#39;s docks, few souls would travel here. The air is filled with a putrid fish scent that matches the horror of the people within. The people of Ib, twisted and broken from an otherworldly force, despise outsiders cooped up in their waterlogged houses.</i><br><br>Click to see more"));
     var twn_47 = L.marker([-40.455307, 17.29248], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
