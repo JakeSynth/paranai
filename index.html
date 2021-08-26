@@ -14,7 +14,7 @@
     <script src="scripts/L.Control.Sidebar.js"></script>
     <link rel="stylesheet" href="scripts/L.Control.Sidebar.css">
   </head>
-<body style="height: 100%;margin: 0;">
+<body style="height: 100%; margin: 0;">
 <div id="intro">
     <img src="scripts/images/intro-temp.gif" style="width:30px; height:100px;"></div>
     <div id="sidebar"></div>
@@ -70,7 +70,7 @@
         sidebar.show();
         document.getElementById("intro").hidden=true;
     }, 500);
-    sidebar.setContent("<img src='scripts/images/header2.png'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table>");
+    sidebar.setContent("<img src='scripts/images/header2.png'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/highlight.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>If you find the marker text to always be highlighted, not appear correctly, or is just generally bugged then zoom out and click anywhere on the map 3 times quickly to solve the issue.</p></th></tr></table>");
         map.addControl(sidebar);
     map.on('click', function () {
         sidebar.hide();
@@ -1275,53 +1275,53 @@
     var twn_75 = L.marker([-41.352072, -35.332031], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Tosen</h1><i>City of the Chain<br><br></i><hr><p>Placeholder Text</p>");})
-    twn_75.bindPopup(L.popup().setContent("<b><h3>Tosen, of the Chain</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Tosen</h1><i>City of the Chain<br><br>Furthest from the chain, Tosen&#39; craftsmen make much of the equipment sold through the Chain.</i><hr><p>Placeholder Text</p>");})
+    twn_75.bindPopup(L.popup().setContent("<b><h3>Tosen, of the Chain</h3></b><i>Furthest from the chain, Tosen&#39; craftsmen make much of the equipment sold through the Chain.</i><br><br>Click to see more"));
     var twn_76 = L.marker([-38.933776, -30.377197], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Shoto Muuv</h1><i>City of the Chain<br><br></i><hr><p>Placeholder Text</p>");})
-    twn_76.bindPopup(L.popup().setContent("<b><h3>Shoto Muuv, of the Chain</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Shoto Muuv</h1><i>City of the Chain<br><br>The final stop for goods leaving the Chain. Half the foreign goods Ashokai imports come from here along with almost 10% of raw materials traded on the south of the continent.</i><hr><p>Placeholder Text</p>");})
+    twn_76.bindPopup(L.popup().setContent("<b><h3>Shoto Muuv, of the Chain</h3></b><i>The final stop for goods leaving the Chain. Half the foreign goods Ashokai imports come from here along with almost 10% of raw materials traded on the south of the continent.</i><br><br>Click to see more"));
     var twn_77 = L.marker([-39.67337, -31.168213], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Icen</h1><i>City of the Chain<br><br></i><hr><p>Placeholder Text</p>");})
-    twn_77.bindPopup(L.popup().setContent("<b><h3>Icen, of the Chain</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Icen</h1><i>City of the Chain<br><br>Towards the end of the Chain. Icen&#39;s refineries produce pure metals at the cost of burning vast fields of woodland yearly.</i><hr><p>Placeholder Text</p>");})
+    twn_77.bindPopup(L.popup().setContent("<b><h3>Icen, of the Chain</h3></b><i>Towards the end of the Chain. Icen&#39;s refineries produce pure metals at the cost of burning vast fields of woodland yearly.</i><br><br>Click to see more"));
     var twn_78 = L.marker([-40.279526, -31.860352], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Brav</h1><i>City of the Chain<br><br></i><hr><p>Placeholder Text</p>");})
-    twn_78.bindPopup(L.popup().setContent("<b><h3>Brav, of the Chain</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Brav</h1><i>City of the Chain<br><br>This city was here long before the Chain. The higher class of Brav orchestrated the formation of the Chain when they found themselves with an abundance of goods no one in the region were buying.</i><hr><p>Placeholder Text</p>");})
+    twn_78.bindPopup(L.popup().setContent("<b><h3>Brav, of the Chain</h3></b><i>This city was here long before the Chain. The higher class of Brav orchestrated the formation of the Chain when they found themselves with an abundance of goods no one in the region were buying.</i><br><br>Click to see more"));
     var twn_79 = L.marker([-41.120746, -32.299805], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Temes</h1><i>City of the Chain<br><br></i><hr><p>Placeholder Text</p>");})
-    twn_79.bindPopup(L.popup().setContent("<b><h3>Temes, of the Chain</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Temes</h1><i>City of the Chain<br><br>The vaults at Temes are guarded day and night by six-hundred highly-trained warrior guards. The six vaults combined hold untold amounts deep underground in reinforced bunkers.</i><hr><p>Placeholder Text</p>");})
+    twn_79.bindPopup(L.popup().setContent("<b><h3>Temes, of the Chain</h3></b><i>The vaults at Temes are guarded day and night by six-hundred highly-trained warrior guards. The six vaults combined hold untold amounts deep underground in reinforced bunkers.</i><br><br>Click to see more"));
     var twn_80 = L.marker([-42.334184, -33.134766], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Bwal Muuv</h1><i>City of the Chain<br><br></i><hr><p>Placeholder Text</p>");})
-    twn_80.bindPopup(L.popup().setContent("<b><h3>Bwal Muuv, of the Chain</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Bwal Muuv</h1><i>City of the Chain<br><br>The town produces mostly foodstuffs and fishes the outer-blue for it&#39;s more exclusive catch. The city opened a port exclusively to service Num after a hefty donation from the elite.</i><hr><p>Placeholder Text</p>");})
+    twn_80.bindPopup(L.popup().setContent("<b><h3>Bwal Muuv, of the Chain</h3></b><i>The town produces mostly foodstuffs and fishes the outer-blue for it&#39;s more exclusive catch. The city opened a port exclusively to service Num after a hefty donation from the elite.</i><br><br>Click to see more"));
     var twn_81 = L.marker([-41.910453, -32.442627], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Stichi</h1><i>City of the Chain<br><br></i><hr><p>Placeholder Text</p>");})
-    twn_81.bindPopup(L.popup().setContent("<b><h3>Stichi, of the Chain</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Stichi</h1><i>City of the Chain<br><br>A town of herders that breed sheep for their wool. This town supplies some of the highest quality wool in the world and is the exclusive source of wool for the seamstresses of Eriods.</i><hr><p>Placeholder Text</p>");})
+    twn_81.bindPopup(L.popup().setContent("<b><h3>Stichi, of the Chain</h3></b><i>A town of herders that breed sheep for their wool. This town supplies some of the highest quality wool in the world and is the exclusive source of wool for the seamstresses of Eriods.</i><br><br>Click to see more"));
     var twn_82 = L.marker([-42.819581, -32.497559], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ashren</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_82.bindPopup(L.popup().setContent("<b><h3>Ashren</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ashren</h1><i>The mineral reserves here have been sparse for decades now, making the once booming mining town rather poor. Most residents moved to part of the Chain rather than face the economic hardships that the ones who stayed have faced.</i><hr><p>Placeholder Text</p>");})
+    twn_82.bindPopup(L.popup().setContent("<b><h3>Ashren</h3></b><i>The mineral reserves here have been sparse for decades now, making the once booming mining town rather poor. Most residents moved to part of the Chain rather than face the economic hardships that the ones who stayed have faced.</i><br><br>Click to see more"));
     var twn_83 = L.marker([-43.969098, -28.564453], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Rumsford</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_83.bindPopup(L.popup().setContent("<b><h3>Rumsford</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Rumsford</h1><i>Riverfolk are known for their nomadic nature if nothing else, however the caravans of Rumsford haven&#39;t moved in years after finding a pasture of sweet herbs that give them prophetic, spiritual dreams.</i><hr><p>Placeholder Text</p>");})
+    twn_83.bindPopup(L.popup().setContent("<b><h3>Rumsford</h3></b><i>Riverfolk are known for their nomadic nature if nothing else, however the caravans of Rumsford haven&#39;t moved in years after finding a pasture of sweet herbs that give them prophetic, spiritual dreams.</i><br><br>Click to see more"));
     var twn_84 = L.marker([-46.399988, -23.060303], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Addan Town</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_84.bindPopup(L.popup().setContent("<b><h3>Addan Town</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Addan Town</h1><i>Addan owns all the land between the stem and end of the River Uumel. Their land is fairly poor for farming, not mineral rich but if you were to find yourself on their land you&#39;ll have two options: either pay the toll, or fight.</i><hr><p>Placeholder Text</p>");})
+    twn_84.bindPopup(L.popup().setContent("<b><h3>Addan Town</h3></b><i>Addan owns all the land between the stem and end of the River Uumel. Their land is fairly poor for farming, not mineral rich but if you were to find yourself on their land you&#39;ll have two options: either pay the toll, or fight.</i><br><br>Click to see more"));
     var twn_85 = L.marker([-45.821143, -18.149414], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1330,8 +1330,8 @@
     var twn_86 = L.marker([-47.50978, -14.39209], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Vorim</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_86.bindPopup(L.popup().setContent("<b><h3>Vorim</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Vorim</h1><i>The only town for hundreds of miles in either direction. Vorim is a hotspot for travellers boasting over fourty family-owned hostels, hotels, and inns.</i><hr><p>Placeholder Text</p>");})
+    twn_86.bindPopup(L.popup().setContent("<b><h3>Vorim</h3></b><i>The only town for hundreds of miles in either direction. Vorim is a hotspot for travellers boasting over fourty family-owned hostels, hotels, and inns.</i><br><br>Click to see more"));
     var twn_87 = L.marker([-46.065608, -8.865967], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1345,8 +1345,8 @@
     var twn_89 = L.marker([-49.239121, -9.887695], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Gressem</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_89.bindPopup(L.popup().setContent("<b><h3>Gressem</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Gressem</h1><i>Many of the people here work for the elite in Jadencroft Manor or have relatives who do. This town also supplies almost all the needs of the manor from food, silks, and more.</i><hr><p>Placeholder Text</p>");})
+    twn_89.bindPopup(L.popup().setContent("<b><h3>Gressem</h3></b><i>Many of the people here work for the elite in Jadencroft Manor or have relatives who do. This town also supplies almost all the needs of the manor from food, silks, and more.</i><br><br>Click to see more"));
     var twn_90 = L.marker([5.769036, -46.087646], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1870,8 +1870,8 @@
     var twn_194 = L.marker([-38.453589, -44.58252], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Hiti Num</h1><i>The Wandering City of Num<br><br>Built on the carcass of an ancient crab-like behemoth and controlled with magic more ancient still, Num and the residents wander the lowlands of Amri Szen safe from harm.</i><hr><p>Placeholder Text</p>");})
-    twn_194.bindPopup(L.popup().setContent("<b><h3>Hiti Num</h3></b><i>The Wandering City of Num<br><br>Built on the carcass of an ancient crab-like behemoth and controlled with magic more ancient still, Num and the residents wander the lowlands of Amri Szen safe from harm.</i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Hiti Num</h1><i>The Wandering City of Num<br><br>A waypoint and site for the waste generated by the city.</i><hr><p>Placeholder Text</p>");})
+    twn_194.bindPopup(L.popup().setContent("<b><h3>Hiti Num</h3></b><i>The Wandering City of Num<br><br>A waypoint and site for the waste generated by the city.</i><br><br>Click to see more"));
     var twn_195 = L.marker([48.173412, -9.481201], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
