@@ -70,7 +70,7 @@
         sidebar.show();
         document.getElementById("intro").hidden=true;
     }, 500);
-    sidebar.setContent("<img src='scripts/images/header2.png'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/highlight.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>If you find the marker text to always be highlighted, not appear correctly, or is just generally bugged then zoom out and click anywhere on the map 3 times quickly to solve the issue.</p></th></tr></table>");
+    sidebar.setContent("<img src='scripts/images/header2.png'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/highlight.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>If you find the text to be permanently highlighted, not appear correctly, or is generally bugged then zoom out and triple-click anywhere on the map to solve the issue.</p></th></tr></table>");
         map.addControl(sidebar);
     map.on('click', function () {
         sidebar.hide();
@@ -80,7 +80,7 @@
     introside.addEventListener("click", function(i) {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-    sidebar.setContent("<img src='scripts/images/header2.png'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table>");
+    sidebar.setContent("<img src='scripts/images/header2.png'><img src='https://via.placeholder.com/770x300'><br><br><i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...</i><br><hr><h2>Map Key</h2><div style='font-size:14px; !important'><table style='width:100% display:inline-block;'><tr><th><img src='scripts/images/lake.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Rivers & Lakes</p></th><th><img src='scripts/images/mountain.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Steep Mountains</p></th></tr><tr><th><img src='scripts/images/jungle.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Vicious Jungle</p></th><th><img src='scripts/images/desert.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Scorching Desert</p></th></tr><tr><th><img src='scripts/images/swamp.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Deep Swamp</p></th><th><img src='scripts/images/forest.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Dense Forest</p></th></tr><tr><th><img src='scripts/images/trade.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Trade Routes</p></th><th><img src='scripts/images/port.png' style='padding-left:10px;'></th><th><p style='padding-left:15px; text-align:left;'>Ports</p></th></tr></table></div><br><h2>Quick Tips</h2><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/markergroups.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>Hover the layer control in the top right  for marker categories, select what you want to be shown and hover over the markers to get a small blurb.<br><br>Click the marker to learn more about them.</p></th></tr></table><table><tr><th style='width:60px; height:120px;'><img src='scripts/images/highlight.png'></th><th><p style='padding-left:15px; text-align:left; font-family: Lato, sans-serif;'>If you find the text to be permanently highlighted, not appear correctly, or is generally bugged then zoom out and triple-click anywhere on the map to solve the issue.</p></th></tr></table>");
   });
 //Markers
 //Capitals
@@ -193,8 +193,8 @@
     var mv_saltrokmarvel = L.marker([32.630123, -114.598389], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Ruined City of Saltrok</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    mv_saltrokmarvel.bindPopup(L.popup().setContent("<b><h3>Saltrok</h3></b><i>The Ruined Capital of the Brittle</i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Ruined city of Saltrok</h1><i>A city burned to ash still moves with the whispers of unseen inhabitants.</i><hr><p>Placeholder Text</p>");})
+    mv_saltrokmarvel.bindPopup(L.popup().setContent("<b><h3>The Ruined city of Saltrok</h3></b><i>A city burned to ash still moves with the whispers of unseen inhabitants.</i><br><br>Click to see more"));
     var mv_osivin = L.marker([32.593106, -23.763428], {icon: marvIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -659,8 +659,8 @@
    var poi_87 = L.marker([-47.017716, -0.307617], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Ablac Blue</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_87.bindPopup(L.popup().setContent('<b><h3>The Ablac Blue</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Ablac Blue</h1><i>A massive lake with an impressive array of fish species. After hundreds of years of fishing the lake still teems with life.</i><hr><p>Placeholder Text</p>");})
+   poi_87.bindPopup(L.popup().setContent('<b><h3>The Ablac Blue</h3></b><i>A massive lake with an impressive array of fish species. After hundreds of years of fishing the lake still teems with life.</i><br><br>Click to see more'));
    var poi_88 = L.marker([-6.413566, 64.061279], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -674,13 +674,13 @@
    var poi_90 = L.marker([37.631635, 28.927002], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Attos Gulf & the Lembas Delta</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_90.bindPopup(L.popup().setContent('<b><h3>The Attos Gulf & the Lembas Delta</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The Attos Gulf & the Lembas Delta</h1><i>The Gulf bleeds into the lowland hills of Vellenai through the Lembas Delta which breathes life into the fertile soil where the rare Azmanni Flowers bloom.</i><hr><p>Placeholder Text</p>");})
+   poi_90.bindPopup(L.popup().setContent('<b><h3>The Attos Gulf & the Lembas Delta</h3></b><i>The Gulf bleeds into the lowland hills of Vellenai through the Lembas Delta which breathes life into the fertile soil where the rare Azmanni Flowers bloom.</i><br><br>Click to see more'));
    var poi_91 = L.marker([-14.477234, 58.677979], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Aberic&eacute; Phosphor Mines</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_91.bindPopup(L.popup().setContent('<b><h3>Aberic&eacute; Phosphor Mines</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Aberic&eacute; Phosphor Mines</h1><i>The caves glow a deep luminous green that attracts a lot of unwanted attention. Miners frequently confront monstrous creatures in the depths; So much so that their uniforms come equipped with miniature crossbows and powder bombs to defend themselves with.</i><hr><p>Placeholder Text</p>");})
+   poi_91.bindPopup(L.popup().setContent('<b><h3>Aberic&eacute; Phosphor Mines</h3></b><i>The caves glow a deep luminous green that attracts a lot of unwanted attention. Miners frequently confront monstrous creatures in the depths; So much so that their uniforms come equipped with miniature crossbows and powder bombs to defend themselves with.</i><br><br>Click to see more'));
    var poi_92 = L.marker([-8.526701, 60.831299], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1380,8 +1380,8 @@
     var twn_96 = L.marker([1.570848, -46.483154], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Koffik</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_96.bindPopup(L.popup().setContent("<b><h3>Koffik</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Koff</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+    twn_96.bindPopup(L.popup().setContent("<b><h3>Koff</h3></b><i></i><br><br>Click to see more"));
     var twn_97 = L.marker([0.692122, -43.791504], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1415,8 +1415,8 @@
     var twn_103 = L.marker([-2.932069, -41.726074], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Acrom</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_103.bindPopup(L.popup().setContent("<b><h3>Acrom</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Acrom</h1><i>Rumors of a bookkeeper in Acrom having created the spell used to destabilize the Prism a decade ago. After the rumor spread, witnesses saw a unit of royal guards apprehend the bookkeeper and he was taken to an unknown location.</i><hr><p>Placeholder Text</p>");})
+    twn_103.bindPopup(L.popup().setContent("<b><h3>Acrom</h3></b><i>Rumors of a bookkeeper in Acrom having created the spell used to destabilize the Prism a decade ago. After the rumor spread, witnesses saw a unit of royal guards apprehend the bookkeeper and he was taken to an unknown location.</i><br><br>Click to see more"));
     var twn_104 = L.marker([-5.823687, -38.50708], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1445,13 +1445,13 @@
     var twn_109 = L.marker([-20.766387, -45.769043], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ovri</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_109.bindPopup(L.popup().setContent("<b><h3>Ovri</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Ovri</h1><i>The Orcish tribe of Ovri claim the country&#39;s namesake is from them. The warriors influence was pushed when their battalion of fighters held off nine legions of perissodan war chiefs for a week in the woods of B&#39;vurativ Forest.</i><hr><p>Placeholder Text</p>");})
+    twn_109.bindPopup(L.popup().setContent("<b><h3>Ovri</h3></b><i>The Orcish tribe of Ovri claim the country&#39;s namesake is from them. The warriors influence was pushed when their battalion of fighters held off nine legions of perissodan war chiefs for a week in the woods of B&#39;vurativ Forest.</i><br><br>Click to see more"));
     var twn_110 = L.marker([-21.993989, -48.812256], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Agranna</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_110.bindPopup(L.popup().setContent("<b><h3>Agranna</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Agranna</h1><i>To have a trade agreement with the Tcarans one must show greater strength than they have seen on their island. The Agranna showed this through their champion who defeated the Tcaran high council champion in armed combat. The centaur warrior was honored with a feast that allegedly went on for thirty days.</i><hr><p>Placeholder Text</p>");})
+    twn_110.bindPopup(L.popup().setContent("<b><h3>Agranna</h3></b><i>To have a trade agreement with the Tcarans one must show greater strength than they have seen on their island. The Agranna showed this through their champion who defeated the Tcaran high council champion in armed combat. The centaur warrior was honored with a feast that allegedly went on for thirty days.</i><br><br>Click to see more"));
     var twn_111 = L.marker([-24.5771, -45.20874], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1725,8 +1725,8 @@
     var twn_165 = L.marker([34.533712, 51.339111], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Mergos</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_165.bindPopup(L.popup().setContent("<b><h3>Mergos</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Mergos</h1><i>Travellers visiting this village are often taken aback by the lack of adults. 'The Village of the Young' has puzzled passers-by for decades but it seems that no matter the time frame the residents here never age.</i><hr><p>Placeholder Text</p>");})
+    twn_165.bindPopup(L.popup().setContent("<b><h3>Mergos</h3></b><i>Travellers visiting this village are often taken aback by the lack of adults. 'The Village of the Young' has puzzled passers-by for decades but it seems that no matter the time frame the residents here never age.</i><br><br>Click to see more"));
     var twn_166 = L.marker([30.543339, 46.768799], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1760,8 +1760,8 @@
     var twn_172 = L.marker([10.06622, 52.756348], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Shafa</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_172.bindPopup(L.popup().setContent("<b><h3>Shafa</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Shafa</h1><i>A ferocious clan of beast-people, huge tabaxi relatives who favoured muscle over dexterity in their evolutionary chain. Their brutal society pit children against each other killing the weak and cutting their young&#39;s numbers more than half every year.</i><hr><p>Placeholder Text</p>");})
+    twn_172.bindPopup(L.popup().setContent("<b><h3>Shafa</h3></b><i>A ferocious clan of beast-people, huge tabaxi relatives who favoured muscle over dexterity in their evolutionary chain. Their brutal society pit children against each other killing the weak and cutting their young&#39;s numbers more than half every year.</i><br><br>Click to see more"));
     var twn_173 = L.marker([7.2360580, 56.063232], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -1815,43 +1815,43 @@
     var twn_183 = L.marker([-35.496456, -86.451416], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Vociv</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_183.bindPopup(L.popup().setContent("<b><h3>Vociv</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Vociv</h1><i>A permanent foraging tribe at the edge of the island. The mushrooms collected in this spot are said to be the secret to the Dragonborn&#39;s longevity.</i><hr><p>Placeholder Text</p>");})
+    twn_183.bindPopup(L.popup().setContent("<b><h3>Vociv</h3></b><i>A permanent foraging tribe at the edge of the island. The mushrooms collected in this spot are said to be the secret to the Dragonborn&#39;s longevity.</i><br><br>Click to see more"));
     var twn_184 = L.marker([-34.198173, -78.046875], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Rhis Muuv</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_184.bindPopup(L.popup().setContent("<b><h3>Rhis Muuv</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Rhis Muuv</h1><i>This trading hub is one of the only permanent settlements on Tcara and certainly the biggest. The capitals populations combined don&#39;t match the sheer scale of Rhis Muuv.</i><hr><p>Placeholder Text</p>");})
+    twn_184.bindPopup(L.popup().setContent("<b><h3>Rhis Muuv</h3></b><i>This trading hub is one of the only permanent settlements on Tcara and certainly the biggest. The capitals populations combined don&#39;t match the sheer scale of Rhis Muuv.</i><br><br>Click to see more"));
     var twn_185 = L.marker([-35.924645, -94.042969], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Bvara</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_185.bindPopup(L.popup().setContent("<b><h3>Bvara</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Bvara</h1><i>Nicknamed &#quot;Watchers of the Sisters&#quot;, Bvara sits at the foot of the sacred mountain range, watching the peaks for the gods to appear and signal the end times.</i><hr><p>Placeholder Text</p>");})
+    twn_185.bindPopup(L.popup().setContent("<b><h3>Bvara</h3></b><i>Nicknamed &#quot;Watchers of the Sisters&#quot;, Bvara sits at the foot of the sacred mountain range, watching the peaks for the gods to appear and signal the end times.</i><br><br>Click to see more"));
     var twn_186 = L.marker([-23.976215, -96.119385], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Rellis</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_186.bindPopup(L.popup().setContent("<b><h3>Rellis</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Rellis</h1><i>One of the northernmost tribes stopped their nomadic lifestyle when their elder, and leader, Hanis was slain in battle. The people of Rellis set down their arms and set up a permanent settlement around the grave of their brave leader. Now led by his son, Rosha, the tribe waits patiently for a time they can get back at those who took so much from them.</i><hr><p>Placeholder Text</p>");})
+    twn_186.bindPopup(L.popup().setContent("<b><h3>Rellis</h3></b><i>One of the northernmost tribes stopped their nomadic lifestyle when their elder, and leader, Hanis was slain in battle. The people of Rellis set down their arms and set up a permanent settlement around the grave of their brave leader. Now led by his son, Rosha, the tribe waits patiently for a time they can get back at those who took so much from them.</i><br><br>Click to see more"));
     var twn_187 = L.marker([-29.487425, -91.142578], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Dani</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_187.bindPopup(L.popup().setContent("<b><h3>Dani</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Dani</h1><i>The base of Dani plays host to a small herding village of the same name. Here, food for those attempting the Alhori Ascent is grown and distributed for free. The holy journey&#39;s deep tradition denotes a free meal to all the night before their climb, among other ritualistic things.</i><hr><p>Placeholder Text</p>");})
+    twn_187.bindPopup(L.popup().setContent("<b><h3>Dani</h3></b><i>The base of Dani plays host to a small herding village of the same name. Here, food for those attempting the Alhori Ascent is grown and distributed for free. The holy journey&#39;s deep tradition denotes a free meal to all the night before their climb, among other ritualistic things.</i><br><br>Click to see more"));
     var twn_188 = L.marker([-31.896214, -89.560547], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Otiv</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_188.bindPopup(L.popup().setContent("<b><h3>Otiv</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Otiv</h1><i>At the foot of Otiv, the unnamed settlement of priests (often referred to as Otiv) spend their lives taking offerings to the top of the mountain and walking back down while chanting hymns.</i><hr><p>Placeholder Text</p>");})
+    twn_188.bindPopup(L.popup().setContent("<b><h3>Otiv</h3></b><i>At the foot of Otiv, the unnamed settlement of priests (often referred to as Otiv) spend their lives taking offerings to the top of the mountain and walking back down while chanting hymns.</i><br><br>Click to see more"));
     var twn_189 = L.marker([-21.463293, -99.525146], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Djord Muuv</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_189.bindPopup(L.popup().setContent("<b><h3>Djord Muuv</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Djord Muuv</h1><i>The only port servicing Thal and the only way in and out of the mine. This is the home to the slave masters of Thal and the last stop before a lifetime of servitude for those captured by the ruthless Djord tribe.</i><hr><p>Placeholder Text</p>");})
+    twn_189.bindPopup(L.popup().setContent("<b><h3>Djord Muuv</h3></b><i>The only port servicing Thal and the only way in and out of the mine. This is the home to the slave masters of Thal and the last stop before a lifetime of servitude for those captured by the ruthless Djord tribe.</i><br><br>Click to see more"));
     var twn_190 = L.marker([-20.622502, -98.009033], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Thal Muuv</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-    twn_190.bindPopup(L.popup().setContent("<b><h3>Thal Muuv</h3></b><i></i><br><br>Click to see more"));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Thal Muuv</h1><i>A mining site with a permanent residence of slaves that live and die in the depths of Thal, a rocky mountain miles in diameter that stretches out from the seabed. The inner core is relatively hollow, having multiple magma chambers and thousands of precious stones formed over millions of years at intense pressures.</i><hr><p>Placeholder Text</p>");})
+    twn_190.bindPopup(L.popup().setContent("<b><h3>Thal Muuv</h3></b><i>A mining site with a permanent residence of slaves that live and die in the depths of Thal, a rocky mountain miles in diameter that stretches out from the seabed. The inner core is relatively hollow, having multiple magma chambers and thousands of precious stones formed over millions of years at intense pressures.</i><br><br>Click to see more"));
     var twn_191 = L.marker([7.678329, 10.206299], {icon: townIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
