@@ -95,10 +95,56 @@
     border-radius: 20px;
     cursor: pointer;
     z-index: 1000; }
-.close:hover {
-  color: #999;
-.leaflet-left {
-  transition: left 0.5s; }
+.close:hover {color: #999;}
+.leaflet-left {transition: left 0.5s; }
 
-.leaflet-right {
-  transition: right 0.5s; }
+.leaflet-right {transition: right 0.5s; }
+
+.tooltip {
+  position: relative !important;
+  display: inline-block !important;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden !important;
+  width: 120px !important;
+  background-color: black !important;
+  color: #fff !important;
+  text-align: center !important;
+  border-radius: 6px !important;
+  padding: 5px 0 !important;
+  
+  /* Position the tooltip */
+  position: absolute !important;
+  z-index: 1 !important;
+  bottom: 100% !important;
+  left: 50% !important;
+  margin-left: -60px !important;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible !important;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
