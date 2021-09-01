@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+h1 {
+  justify-content: center;
+  text-align: center;
+}
+h2 {
+  color: white;
+  padding-left: 10px;
+  font-size: 15px;
+}
+table {
+  border-collapse: collapse;
+}
+.sidenav {
+  height: 100%;
+  width: 230px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: left;
+}
+.sidenav a {
+  padding: 6px 8px 6px 10px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #818181;
+  display: block;
+}
+.sidenav tr:hover {
+  background-color: #000;
+  border: 5px;
+  border-radius: 50px;
+}
+.sidenav img {
+  width:60px;
+  padding-left: 10px;
+}
+.main {
+  margin-left: 240px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+.sidenav button {
+   position:absolute;
+   top:0;
+   right:0;
+   padding-top: 30px;
+   padding-right: 30px;
+}
+.sidenav span {
+  display: block;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+}
+@media all and (max-width: 1000px) {
+  .txt {display: none;}
+  .sidenav {width:95px;}
+  .sidenav .button {display:none;}
+  .headerimage {display: none;}
+  .noshow {display: none;}
+  .main { margin-left: 105px; }
+.sidenav img {
+  padding-left: 5px;
+}
+}
+ .sidenav::-webkit-scrollbar {width: 10px;}
+ .sidenav::-webkit-scrollbar-track {background-color: transparent;}
+ .sidenav::-webkit-scrollbar-thumb {border-radius: 5px; background-color: #999;}
+
+ ::-webkit-scrollbar {width: 10px;}
+ ::-webkit-scrollbar-track {background-color: #fff;}
+ ::-webkit-scrollbar-thumb {border-radius: 5px; background-color: #999;}
+ section{
+  min-height: 1000px;
+}
+.noshow:hover {
+  background-color: #111!important;
+}
+.noshow {
+  color: #111!important;
+  user-select: none;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 9999999;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  padding: 18px 17px 12px 18px;
+  border-radius: 40px;
+}
+
+#myBtn:hover {
+  background-color: #444;
+}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn"><span class="material-icons">&#xE5CE;</span></button>
+<div class="sidenav" id="nav"><br><div class='headerimage'><a href="https://www.paranai.co.uk/"><img src="scripts/images/header2.png" class='headerimage' style="width:180px;"><br><br></a></div>
+  <h2 class="txt">Exclusive Races</h2>
+  <table style="display: inline-block;">
+    <tr><th><a href="#gearborn"><img src='scripts/images/races/Gearborn.png'></a></th><th><a href="#gearborn" class="txt"><span>Gearborn</span></a></th></tr>
+    <tr><th><a href="#geist"><img src='scripts/images/races/Geist-Reg.png'></a></th><th><a href="#geist" class="txt"><span>Geist</span></a></th></tr>
+    <tr><th><a href="#slimekin"><img src='scripts/images/races/Slimekin.png'></a></th><th><a href="#slimekin" class="txt"><span>Slimekin</span></a></th></tr>
+    <tr><th><a href="#lycan"><img src='scripts/images/races/Lycan-Reg.png'></a></th><th><a href="#lycan" class="txt"><span>Lycan</span></a></th></tr>
+    <tr><th><a href="#mushie"><img src='scripts/images/races/Mushling-Reg.png'></a></th><th><a href="#mushie" class="txt"><span>Mushie</span></a></th></tr>
+    <tr><th><a href="#perissodan"><img src='scripts/images/races/Perissodan.png'></a></th><th><a href="#perissodan" class="txt"><span>Perissodan</span></a></th></tr>
+    <tr><th><a href="#frogperson"><img src='scripts/images/races/Frog-Person-Reg.png'></a></th><th><a href="#frogperson" class="txt"><span>Frog-Person</span></a></th></tr>
+    <tr><th><a href="#beastman"><img src='scripts/images/races/Beastman.png'></a></th><th><a href="#beastman" class="txt"><span>Beastman</span></a></th></tr>
+    <tr><th><a href="#coleoptera"><img src='scripts/images/races/Coleoptera.png'></a></th><th><a href="#coleoptera" class="txt"><span>Coleoptera</span></a></th></tr>
+    <tr><th><a href="#dkonian"><img src='scripts/images/races/Dkonian-Reg.png'></a></th><th><a href="#dkonian" class="txt"><span>Dkonian</span></a></th></tr>
+    <tr><th><a href="#elemental"><img src='scripts/images/races/Elemental.png'></a></th><th><a href="#elemental" class="txt"><span>Elemental</span></a></th></tr>
+    <tr><th><a href="#ratpack"><img src='scripts/images/races/Ratpack-Reg.png'></a></th><th><a href="#ratpack" class="txt"><span>Ratpack</span></a></th></tr>
+    <tr><th><a href="#other"><img src='scripts/images/races/Other.png'></a></th><th><a href="#other" class="txt"><span>The Other</span></a></th></tr>
+    <tr class='noshow'><th></th><th><span>Ignore me please :)</span></th></tr>
+  </table>
+  <h2 class="txt">Official Races</h2>
+  <table style="display: inline-block;">
+    <tr><th><a href="#human"><img src='scripts/images/races/Human.png'></a></th><th><a href="#human" class="txt"><span>Human</span></a></th></tr>
+    <tr><th><a href="#dwarf"><img src='scripts/images/races/Dwarf.png'></a></th><th><a href="#dwarf" class="txt"><span>Dwarf</span></a></th></tr>
+    <tr><th><a href="#elf"><img src='scripts/images/races/Elf.png'></a></th><th><a href="#elf" class="txt"><span>Elf</span></a></th></tr>
+    <tr><th><a href="#halfelf"><img src='scripts/images/races/Half-Elf.png'></a></th><th><a href="#halfelf" class="txt"><span>Half-Elf</span></a></th></tr>
+    <tr><th><a href="#halfling"><img src='scripts/images/races/Halfling-Reg.png'></a></th><th><a href="#halfling" class="txt"><span>Halfling</span></a></th></tr>
+    <tr><th><a href="#gnome"><img src='scripts/images/races/Gnome.png'></a></th><th><a href="#gnome" class="txt"><span>Gnome</span></a></th></tr>
+    <tr><th><a href="#dragonborn"><img src='scripts/images/races/Dragonborn.png'></a></th><th><a href="#dragonborn" class="txt"><span>Dragonborn</span></a></th></tr>
+    <tr><th><a href="#triton"><img src='scripts/images/races/Triton.png'></a></th><th><a href="#triton" class="txt"><span>Triton</span></a></th></tr>
+    <tr><th><a href="#tiefling"><img src='scripts/images/races/Tiefling.png'></a></th><th><a href="#tiefling" class="txt"><span>Tiefling</span></a></th></tr>
+    <tr><th><a href="#orc"><img src='scripts/images/races/Orc.png'></a></th><th><a href="#orc" class="txt"><span>Orc</span></a></th></tr>
+    <tr><th><a href="#kenku"><img src='scripts/images/races/Kenku.png'></a></th><th><a href="#kenku" class="txt"><span>Kenku</span></a></th></tr>
+    <tr><th><a href="#aarakocra"><img src='scripts/images/races/Aarakocra-Reg.png'></a></th><th><a href="#aarakocra" class="txt"><span>Aarakocra</span></a></th></tr>
+    <tr><th><a href="#tortle"><img src='scripts/images/races/Tortle.png'></a></th><th><a href="#tortle" class="txt"><span>Tortle</span></a></th></tr>
+    <tr><th><a href="#tabaxi"><img src='scripts/images/races/Tabaxi-Reg.png'></a></th><th><a href="#tabaxi" class="txt"><span>Tabaxi</span></a></th></tr>
+    <tr><th><a href="#centaur"><img src='scripts/images/races/Centaur.png'></a></th><th><a href="#centaur" class="txt"><span>Centaur</span></a></th></tr>
+    <tr class='noshow'><th></th><th><span>Ignore me please :)</span></th></tr>
+  </table><br><p style="text-align: center; color: #444">Jacob Heath &copy; 2021</p><br><br>
+</div>
+
+<div class="main">
+      <section>
+      <h1>Chicken Noodle Soup</h1>
+      </section>
+      <section id="gearborn">
+      Home
+      </section>
+      <section id="geist">
+      Home
+      </section>
+      <section id="slimekin">
+      Home
+      </section>
+      <section id="lycan">
+      Home
+      </section>
+      <section id="mushie">
+      Home
+      </section>
+      <section id="perissodan">
+      Home
+      </section>
+      <section id="frogperson">
+      Home
+      </section>
+      <section id="beastman">
+      Home
+      </section>
+      <section id="coleoptera">
+      Home
+      </section>
+      <section id="dkonian">
+      Home
+      </section>
+      <section id="elemental">
+      Home
+      </section>
+      <section id="other">
+      Home
+      </section>
+      <section id="human">
+      Home
+      </section>
+      <section id="dwarf">
+      Home
+      </section>
+      <section id="elf">
+      Home
+      </section>
+      <section id="halfelf">
+      Home
+      </section>
+      <section id="halfling">
+      Home
+      </section>
+      <section id="gnome">
+      Home
+      </section>
+      <section id="dragonborn">
+      Home
+      </section>
+      <section id="triton">
+      Home
+      </section>
+      <section id="tiefling">
+      Home
+      </section>
+      <section id="orc">
+      Home
+      </section>
+      <section id="kenku">
+      Home
+      </section>
+      <section id="aarakocra">
+      Home
+      </section>
+      <section id="tortle">
+      Home
+      </section>
+      <section id="tabaxi">
+      Home
+      </section>
+      <section id="centaur">
+      Home
+      </section>
+</body>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 200) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</html> 
