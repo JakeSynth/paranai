@@ -84,7 +84,12 @@
       .leaflet-sidebar.right.visible ~ .leaflet-right {
         right: 460px; }}
 
-  .race{width:60px;}}
+  .race{width:60px;}
+.race:hover {
+  background-color: lightgray;
+  border: 5px;
+  border-radius: 50px;
+}
 
   .leaflet-sidebar .close {
     position: absolute;
