@@ -9,18 +9,42 @@ html {
 }
 body {
   font-family: "Lato", sans-serif;
+  background-color: #222;
 }
 h1 {
   justify-content: center;
   text-align: center;
+  margin-bottom: 2px;
 }
 h2 {
+  justify-content: center;
+  text-align: center;
   color: white;
   padding-left: 10px;
   font-size: 15px;
 }
+p {
+  font-size: 20px;
+}
+.subtitle {
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 15px;
+}
+.smallspacer {
+  border-width: 4px;
+  border-style: solid;
+  border-color: #222;
+}
 table {
   border-collapse: collapse;
+}
+hr {
+  border-color: #222;
+  border-width: 4px;
+  border-style: solid;
 }
 .sidenav {
   height: 100%;
@@ -65,7 +89,20 @@ table {
 .sidenav span {
   display: block;
 }
-
+.element1 {
+  float: right;
+  width: 30%;
+  height: 700px;
+  background: #fff;
+  margin: auto;
+  padding: 2%;
+}
+.element2 {
+  float: left;
+  width: 65%;
+  height: 700px;
+  background: #fff;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
 }
@@ -76,9 +113,15 @@ table {
   .headerimage {display: none;}
   .noshow {display: none;}
   .main { margin-left: 105px; }
-.sidenav img {
-  padding-left: 5px;
+  .sidenav img {padding-left: 5px;}
+  .headerimage2 {display: block;}
+  .smallspacer {display: block;}
+  .element1 {width:100%; display: block;}
+  .element2 {width:100%; display: block;}
 }
+@media all and (min-width: 1001px) {
+  .headerimage2 {display: none;}
+  .smallspacer {display: none;}
 }
  .sidenav::-webkit-scrollbar {width: 10px;}
  .sidenav::-webkit-scrollbar-track {background-color: transparent;}
@@ -97,7 +140,7 @@ table {
   color: #111!important;
   user-select: none;
 }
-#myBtn {
+#totop {
   display: none;
   position: fixed;
   bottom: 20px;
@@ -113,14 +156,25 @@ table {
   border-radius: 40px;
 }
 
-#myBtn:hover {
+#totop:hover {
   background-color: #444;
+}
+.face {
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    max-width: 70%;
+    height: auto;
+    width: auto;
+}
+section {
+  height: 100vh;
 }
 </style>
 </head>
 <body>
-<button onclick="topFunction()" id="myBtn"><span class="material-icons">&#xE5CE;</span></button>
-<div class="sidenav" id="nav"><br><div class='headerimage'><a href="https://www.paranai.co.uk/"><img src="scripts/images/header2.png" class='headerimage' style="width:180px;"><br><br></a></div>
+<button onclick="topFunction()" id="totop"><span class="material-icons">&#xE5CE;</span></button>
+<div class="sidenav" id="nav"><br><div class='headerimage'><a href="https://www.paranai.co.uk/"><img src="scripts/images/header2.png" class='headerimage' style="width:180px;"><br><br></a></div><div class='headerimage2'><a href="https://www.paranai.co.uk/"><img src="https://via.placeholder.com/60" class='headerimage2'><br><br></a></div>
   <h2 class="txt">Exclusive Races</h2>
   <table style="display: inline-block;">
     <tr><th><a href="#gearborn"><img src='scripts/images/races/Gearborn.png'></a></th><th><a href="#gearborn" class="txt"><span>Gearborn</span></a></th></tr>
@@ -138,6 +192,7 @@ table {
     <tr><th><a href="#other"><img src='scripts/images/races/Other.png'></a></th><th><a href="#other" class="txt"><span>The Other</span></a></th></tr>
     <tr class='noshow'><th></th><th><span>Ignore me please :)</span></th></tr>
   </table>
+  <hr class='smallspacer'>
   <h2 class="txt">Official Races</h2>
   <table style="display: inline-block;">
     <tr><th><a href="#human"><img src='scripts/images/races/Human.png'></a></th><th><a href="#human" class="txt"><span>Human</span></a></th></tr>
@@ -156,15 +211,23 @@ table {
     <tr><th><a href="#tabaxi"><img src='scripts/images/races/Tabaxi-Reg.png'></a></th><th><a href="#tabaxi" class="txt"><span>Tabaxi</span></a></th></tr>
     <tr><th><a href="#centaur"><img src='scripts/images/races/Centaur.png'></a></th><th><a href="#centaur" class="txt"><span>Centaur</span></a></th></tr>
     <tr class='noshow'><th></th><th><span>Ignore me please :)</span></th></tr>
-  </table><br><p style="text-align: center; color: #444">Jacob Heath &copy; 2021</p><br><br>
+  </table><br><p style="text-align: center; color: #444"><a href='https://www.instagram.com/jakesynth'>Jake Heath &copy; 2021<a></p><br><br>
 </div>
 
 <div class="main">
       <section>
       <h1>Chicken Noodle Soup</h1>
       </section>
-      <section id="gearborn">
-      Home
+      <section id="gearborn"><br>
+  <div class="element1">
+    <img src="scripts/images/races/Gearborn.png" class="face">
+      <h1>Gearborn</h1>
+      <p class='subtitle'>"Hello dying stranger! I am here to he- oh, you died.."</p>
+      <p>bopbopboop</p>
+  </div>
+  <div class="element2">
+      <p>beep boop robot stuff here</p>
+  </div>
       </section>
       <section id="geist">
       Home
