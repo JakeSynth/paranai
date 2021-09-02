@@ -25,13 +25,13 @@
     var myAttrib = 'Created by <a target="_blank" href="https://instagram.com/jakesynth">JakeSynth</a>, &copy; 2021';
 
 //Map
-    var map = L.map('map').setView([0, 0], 0);
+    var map = L.map('map').setView([0, 0], 3);
     document.getElementById("intro").hidden=true;
     L.tileLayer('geo/{z}/{x}/{y}.png', {
       attribution: myAttrib,
       continuousWorld: false,
       noWrap: true,  
-      minZoom: 3,
+      minZoom: 1,
       maxZoom: 7,
     }).addTo(map);
 //Custom Icons
