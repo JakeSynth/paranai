@@ -37,6 +37,10 @@ h2 {
   font-size: 24px;
   padding-left: 10px;
 }
+.racename {
+  width: 100%;
+  max-width: auto;
+}
 p {
   font-size: 15px;
 }
@@ -135,6 +139,14 @@ th {
   padding: 2%;
   height: fit-content;
 }
+.element3 {
+  float: center;
+  width: 60%;
+  background: #fff;
+  margin: auto;
+  padding: 2%;
+  height: fit-content;
+}
 .big {
   font-size: 17px;
 }
@@ -151,10 +163,25 @@ th {
   .sidenav img {padding-left: 5px;}
   .headerimage2 {display: block;}
   .smallspacer {display: block;}
+  button {display: none!important;}
 }
 @media all and (min-width: 1401px) {
   .headerimage2 {display: none;}
   .smallspacer {display: none;}
+}
+@media all and (max-width: 851px) {
+  .main {padding: 0px 0px;}
+  .sidenav {width:15%;}
+  .sidenav img {width: 300%;}
+  .sidenav span {display: none;}
+  .mobile {display: block!important;}
+  .element1 {display: none;}
+  .element2 {width: 100%;padding-left: 10px; margin-left: 0px; float: right; padding-top: 30px;}
+  .main {margin-left: 70px;}
+  .element2 p {padding-left: 15px; padding-right: 15px; text-align: justify;}
+  .element2 h1 h2 {text-align: center;}
+ ::-webkit-scrollbar {display: none;}
+ .headerimage2 {width: 30px; padding-left: 0px!important;}
 }
  .sidenav::-webkit-scrollbar {width: 10px;}
  .sidenav::-webkit-scrollbar-track {background-color: transparent;}
@@ -169,7 +196,7 @@ th {
   display: table;
 }
 .noshow:hover {
-  background-color: transparent!important;;
+  background-color: transparent!important;
 }
 .noshow {
   color: #111!important;
@@ -190,6 +217,7 @@ th {
   padding: 18px 17px 12px 18px;
   border-radius: 40px;
 }
+  .mobile {display: none;}
 
 #toTop:hover {
   background-color: #444;
@@ -275,11 +303,12 @@ svg:hover {
 <div class="main">
       <section>
       <h1>Chicken Noodle Soup</h1>
+    <div class="element3"></div>
       </section>
       <section id="gearborn"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1>Gearborn</h1>
+      <h1 class="racename">Gearborn</h1>
       <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -291,6 +320,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+  <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -378,7 +416,7 @@ svg:hover {
       <section id="geist"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Geist.png" class="face">
-      <h1>Geist</h1>
+      <h1 class="racename">Geist</h1>
       <p class='subtitle'>&quot;Oh?, this form amuses you? Come a little closer and say that.&quot;</p>
       <p>A Geist conforms to the space it&#39;s vessel allows, making some foolishly mistake their small size for weakness.</p>
       
@@ -390,6 +428,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Geist.png" class="face">
+      <h1 class="racename">Geist</h1>
+      <p class='subtitle'>&quot;Oh?, this form amuses you? Come a little closer and say that.&quot;</p>
+        <p><b>Racial Traits: </b>Vessel Fraility, Destruction, Acquiring Upgrades, Millenia of Study</p>
+        <p><b>Example Names: </b>Harrow, Wail, Aballon, Gallow, Cide, Murcy</p>
+        <p><b>Home Town: </b>Saltrok, The Unsettled Land</p>
+        <p><b>Recommended Classes: </b>Rogue, Barbarian, Fighter, Monk, Paladin, Warlock</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Geists are wailing spirits who inhabit anything hollow they can find. Geists have attempted to make deals with blacksmiths or threaten them in order to have a reinforced living space, however in a pinch a Geist can climb into Jars, Pots, Barrels, or other similar <b>unowned</b> vessels. To possess owned property Geists need to bargain with its owner or creator, often ending in someone's death. Their foul natures mean they are often shunned by society and taverns close their doors to them. Many exploring Geists hide their true nature with trinkets or shape changing magics that allow them to pose as another.</p>
       <ul>
@@ -436,7 +483,7 @@ svg:hover {
       <section id="slimekin"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Slimekin.png" class="face">
-      <h1>Slimekin</h1>
+      <h1 class="racename">Slimekin</h1>
       <p class='subtitle'>&quot;Aww! Hey little guy!, I&#39;d give you a hug but you would probably die...&quot;</p>
       <p>The whimzical existence of a slimekin is akin to the childlike innocence of a youthful soul. Unlike Ooze, the sapience displayed in this race gives them a playful inquisitive nature.</p>
       <div style="width:100">
@@ -447,6 +494,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Slimekin.png" class="face">
+      <h1 class="racename">Slimekin</h1>
+      <p class='subtitle'>&quot;Aww! Hey little guy!, I&#39;d give you a hug but you would probably die...&quot;</p>
+        <p><b>Racial Traits: </b>Imitate Voices, Hold Forms, Ooze, Poison Trail</p>
+        <p><b>Example Names: </b>Beans, Tattle, Jello, Sponge, Grog, Ning, Whill</p>
+        <p><b>Home Town: </b>Nath, Western Gomai (Orange Slimekin)<br><b style="color:white; user-select: none;">Home Town: </b>Nath&#39; Akai, Ovrikai (Green, Blue Slimekin)</p>
+        <p><b>Recommended Classes: </b>Druid, Monk, Warlock, Sorceror, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Slimekin are enchanted creatures that gain sentience when they take over the body of a sapient creature. Their forms follow the look of the race they’ve absorbed but with gelatinous, see-through flesh. Slimes come in many colours but are most commonly found in Green, Orange, and Blue. Slimes most often take on the classes of the creature they absorb, picking up their weapons and armor to carry on as if they’ve always lived the life of the host.</p>
       <ul>
@@ -492,7 +548,7 @@ svg:hover {
       <section id="lycan"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Lycan.png" class="face">
-      <h1>Lycan</h1>
+      <h1 class="racename">Lycan</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -504,6 +560,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Lycan.png" class="face">
+      <h1 class="racename">Lycan</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -591,7 +656,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Mushling.png" class="face">
-      <h1>Mushling</h1>
+      <h1 class="racename">Mushling</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -603,6 +668,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Mushling.png" class="face">
+      <h1 class="racename">Mushling</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -690,7 +764,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Perissodan.png" class="face">
-      <h1>Perissodan</h1>
+      <h1 class="racename">Perissodan</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -702,6 +776,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Perissodan.png" class="face">
+      <h1 class="racename">Perissodan</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -789,7 +872,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Frog-Person.png" class="face">
-      <h1>Frog-Person</h1>
+      <h1 class="racename">Frog-Person</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -801,6 +884,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Frog-Person.png" class="face">
+      <h1 class="racename">Frog-Person</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -889,7 +981,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Beastman.png" class="face">
-      <h1>Beastman</h1>
+      <h1 class="racename">Beastman</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -901,6 +993,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Beastman.png" class="face">
+      <h1 class="racename">Beastman</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -988,7 +1089,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Coleoptera.png" class="face">
-      <h1>Coleoptera</h1>
+      <h1 class="racename">Coleoptera</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1000,6 +1101,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Coleoptera.png" class="face">
+      <h1 class="racename">Coleoptera</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1087,7 +1197,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Dkonian.png" class="face">
-      <h1>Dkonian</h1>
+      <h1 class="racename">Dkonian</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1099,6 +1209,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Dkonian.png" class="face">
+      <h1 class="racename">Dkonian</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1186,7 +1305,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Elemental.png" class="face">
-      <h1>Elemental</h1>
+      <h1 class="racename">Elemental</h1>
       <p class='subtitle'>&quot;Let my divine light guide your step.&quot;</p>
       <p>With a solemn demeanor they approach life as inquisitive wanderers, eager for discovery and analytical challenge.</p>
       <div style="width:100%;">
@@ -1197,6 +1316,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Elemental.png" class="face">
+      <h1 class="racename">Elemental</h1>
+      <p class='subtitle'>&quot;Let my divine light guide your step.&quot;</p>
+        <p><b>Racial Traits:</b> Body from the Stars, Beacon Body, Water Susceptibility<br><b>Additionally via subclass:</b> Prismatic Flash, Thin Body, Celestial Boom, Smolder, Plunged Into Fire, The Weight of Light, Burn Brighter, Monch</p>
+        <p><b>Example Names: </b>D'vra, Onasa, Aleias, Entosh, Jhosa</p>
+        <p><b>Home Town: </b>Elemental Plane, &quot;The Space Between Space&quot;, Ashokai</p>
+        <p><b>Recommended Classes: </b>Wizard, Sorceror, Bard, Cleric</p>
+  </div>
     <h1 class="sectionheader">Background & Origin</h1>
       <p>The Elementals explore all possible planes of reality in search of a cure to their own. The reality they once called home now crumbles at the molecular level from an encroching evil at the heart of the universe. As beings of light they feel the anguish of collapsing stars the call out in pain through the void.</p>
       <ul>
@@ -1282,7 +1410,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Other.png" class="face">
-      <h1>The Other</h1>
+      <h1 class="racename">The Other</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1294,6 +1422,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Other.png" class="face">
+      <h1 class="racename">The Other</h1>
+      <p class='subtitle'>"Funy subtitle haha</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1381,7 +1518,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Human.png" class="face">
-      <h1>Human</h1>
+      <h1 class="racename">Human</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1393,6 +1530,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Human.png" class="face">
+      <h1 class="racename">Human</h1>
+      <p class='subtitle'>blub</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1480,7 +1626,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Dwarf.png" class="face">
-      <h1>Dwarf</h1>
+      <h1 class="racename">Dwarf</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1492,6 +1638,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Dwarf.png" class="face">
+      <h1 class="racename">Dwarf</h1>
+      <p class='subtitle'>blub</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>D</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1579,7 +1734,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Elf.png" class="face">
-      <h1>Elf</h1>
+      <h1 class="racename">Elf</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1591,6 +1746,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1678,7 +1842,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Half-Elf.png" class="face">
-      <h1>Half-Elf</h1>
+      <h1 class="racename">Half-Elf</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1690,6 +1854,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1777,7 +1950,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Halfling.png" class="face">
-      <h1>Halfling</h1>
+      <h1 class="racename">Halfling</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1789,6 +1962,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1876,7 +2058,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Gnome.png" class="face">
-      <h1>Gnome</h1>
+      <h1 class="racename">Gnome</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1888,6 +2070,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -1975,7 +2166,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Dragonborn.png" class="face">
-      <h1>Dragonborn</h1>
+      <h1 class="racename">Dragonborn</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -1987,6 +2178,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2074,7 +2274,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Triton.png" class="face">
-      <h1>Triton</h1>
+      <h1 class="racename">Triton</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2086,6 +2286,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2173,7 +2382,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Tiefling.png" class="face">
-      <h1>Tiefling</h1>
+      <h1 class="racename">Tiefling</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2185,6 +2394,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2272,7 +2490,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Orc.png" class="face">
-      <h1>Orc</h1>
+      <h1 class="racename">Orc</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2284,6 +2502,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2371,7 +2598,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Kenku.png" class="face">
-      <h1>Kenku</h1>
+      <h1 class="racename">Kenku</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2383,6 +2610,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2470,7 +2706,7 @@ svg:hover {
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Aarakocra.png" class="face">
-      <h1>Aarakocra</h1>
+      <h1 class="racename">Aarakocra</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2482,6 +2718,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2568,7 +2813,7 @@ svg:hover {
       <section id="tortle"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Tortle.png" class="face">
-      <h1>Tortle</h1>
+      <h1 class="racename">Tortle</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2580,6 +2825,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2666,7 +2920,7 @@ svg:hover {
       <section id="tabaxi"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Tabaxi.png" class="face">
-      <h1>Tabaxi</h1>
+      <h1 class="racename">Tabaxi</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2678,6 +2932,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
@@ -2764,7 +3027,7 @@ svg:hover {
       <section id="centaur"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Centaur.png" class="face">
-      <h1>Centaur</h1>
+      <h1 class="racename">Centaur</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
@@ -2776,6 +3039,15 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
+      <div class="mobile" style="width:100%;">
+    <img src="scripts/images/colraces/Gearborn.png" class="face">
+      <h1 class="racename">Gearborn</h1>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+        <p><b>Racial Traits: </b>A</p>
+        <p><b>Example Names: </b>B</p>
+        <p><b>Home Town: </b>C</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+  </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
