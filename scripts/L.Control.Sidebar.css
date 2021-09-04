@@ -123,6 +123,7 @@
   color: #fff !important;
   border-radius: 6px !important;
   padding: 5px 0 !important;
+  padding-left: 10px !important;
   
   /* Position the tooltip */
   position: absolute !important;
