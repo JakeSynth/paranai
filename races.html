@@ -30,6 +30,13 @@ h2 {
   font-size: 18px;
   padding-left: 10px;
 }
+.sectionheader {
+  color: black;
+  justify-content: left;
+  text-align: left;
+  font-size: 24px;
+  padding-left: 10px;
+}
 p {
   font-size: 15px;
 }
@@ -47,6 +54,23 @@ li {
   border-width: 4px;
   border-style: solid;
   border-color: #222;
+}
+.lg, .ng, .cg{
+  color: green;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+.ln, .tn, .cn {
+  color: grey;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
+} 
+.le, .ne, .ce {
+  color: red;
+  font-weight: bold;
+  text-decoration: underline dotted;
+}
 }
 table {
   border-collapse: collapse;
@@ -79,26 +103,18 @@ hr {
 .sidenav tr:hover {
   background-color: #000;
   border: 5px;
-  border-radius: 50px;
 }
 .sidenav img {
   width:60px;
   padding-left: 10px;
 }
 .main {
-  margin-left: 240px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  margin-left: 240px; 
+  font-size: 28px; 
   padding: 0px 10px;
 }
 th {
   font-size: 15px!important;
-}
-.sidenav button {
-   position:absolute;
-   top:0;
-   right:0;
-   padding-top: 30px;
-   padding-right: 30px;
 }
 .sidenav span {
   display: block;
@@ -110,7 +126,6 @@ th {
   background: #fff;
   margin: auto;
   padding: 2%;
-  position: sticky;
 }
 .element2 {
   float: left;
@@ -120,10 +135,13 @@ th {
   padding: 2%;
   height: fit-content;
 }
+.big {
+  font-size: 17px;
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
 }
-@media all and (max-width: 1000px) {
+@media all and (max-width: 1400px) {
   .txt {display: none;}
   .sidenav {width:95px;}
   .sidenav .button {display:none;}
@@ -134,7 +152,7 @@ th {
   .headerimage2 {display: block;}
   .smallspacer {display: block;}
 }
-@media all and (min-width: 1001px) {
+@media all and (min-width: 1401px) {
   .headerimage2 {display: none;}
   .smallspacer {display: none;}
 }
@@ -143,10 +161,12 @@ th {
  .sidenav::-webkit-scrollbar-thumb {border-radius: 5px; background-color: #999;}
 
  ::-webkit-scrollbar {width: 10px;}
- ::-webkit-scrollbar-track {background-color: #fff;}
+ ::-webkit-scrollbar-track {background-color: #222;}
  ::-webkit-scrollbar-thumb {border-radius: 5px; background-color: #999;}
  section{
-  height: fit-content;
+  height: fit-content!important;
+  padding-bottom: 50px;
+  display: table;
 }
 .noshow:hover {
   background-color: transparent!important;;
@@ -178,7 +198,7 @@ th {
         display:block;
         margin-left: auto;
         margin-right: auto;
-    max-width: 60%;
+    max-width: 85%;
     height: auto;
     width: auto;
 }
@@ -187,6 +207,10 @@ section {
 }
 ul {
   font-size: 15px;
+}
+.element1 p {
+  margin-top: 10px;
+  margin-bottom: 25px;
 }
 .home {
   margin: auto;
@@ -256,22 +280,22 @@ svg:hover {
   <div class="element1">
     <img src="scripts/images/colraces/Gearborn.png" class="face">
       <h1>Gearborn</h1>
-      <p class='subtitle'>"Hello dying stranger! I am here to he- oh, you died.."</p>
+      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>D</p>
+        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b>Ability Score Increase</b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
           <b>Age</b> Yoyo hella old you feel
@@ -286,8 +310,20 @@ svg:hover {
           <b>Speed</b> vroom
         </li>
         <li>
+          <b>Darkvision</b> Im blaind
+        </li>
+        <li>
+          <b>Languages</b> I speak the tongue lalala
+        </li>
+        <li>
           <b>Culture</b> Godz n stuff
         </li>
+        <li>
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>
         <li>
           <b>Racial Trait 1</b> Desc 1
         </li>
@@ -343,174 +379,114 @@ svg:hover {
   <div class="element1">
     <img src="scripts/images/colraces/Geist.png" class="face">
       <h1>Geist</h1>
-      <p class='subtitle'>"Funy subtitle haha</p>
-      <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      <p class='subtitle'>&quot;Oh?, this form amuses you? Come a little closer and say that.&quot;</p>
+      <p>A Geist conforms to the space it&#39;s vessel allows, making some foolishly mistake their small size for weakness.</p>
+      
       <div style="width:100%;">
-        <p><b>Racial Traits: </b>A</p>
-        <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>D</p>
+        <p><b>Racial Traits: </b>Vessel Fraility, Destruction, Acquiring Upgrades, Millenia of Study</p>
+        <p><b>Example Names: </b>Harrow, Wail, Aballon, Gallow, Cide, Murcy</p>
+        <p><b>Home Town: </b>Saltrok, The Unsettled Land</p>
+        <p><b>Recommended Classes: </b>Rogue, Fighter, Monk, Paladin, Warlock</p>
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
-      <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
+    <h2 class="sectionheader">Background & Origin</h2>
+      <p>Geists are wailing spirits who inhabit anything hollow they can find. Geists have attempted to make deals with blacksmiths or threaten them in order to have a reinforced living space, however in a pinch a Geist can climb into Jars, Pots, Barrels, or other similar <b>unowned</b> vessels. To possess owned property Geists need to bargain with its owner or creator, often ending in someone's death. Their foul natures mean they are often shunned by society and taverns close their doors to them. Many exploring Geists hide their true nature with trinkets or shape changing magics that allow them to pose as another.</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Your <b>Intelligence</b> score increases by 2.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> As long as Geists inhabit a vessel their essence doesn&#39;t decay. This makes them some of the oldest beings recorded.
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> Most Geists are <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="cn">Chaotic Neutral</a>, doing what they need to do to keep their vessels alive. As a rule, they are selfish beings, inquisitive and wise, often unleashing fury on creatures that pose a threat to their life.
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big">Size</u></b> Geists can inhabit vessels of many varying sizes. The size of a Geist is usually determined by the GM once a vessel is chosen, and again when a new vessel is found.
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>30 feet</b>. Outside of a vessel this decreases to <b>10 feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>120 feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> You can speak, read, and write <b>Common</b> and <b>three other languages</b> of your choosing.
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
+        </li>
+        <br>
+        <li>
+          <b class="big"><u>Vessel Fraility</u></b> A Geist cannot face the world unaided for long. They must contain themselves within a hollow object to stay alive. Once their vessel is destroyed the party has 3 turns to find another suitable vessel or face watching the dissipation of their friend. (or 3 minutes out of combat).
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Destruction</u></b> When a Geists health hits 0 it must make a Survival Check of at least 12 to keep it’s vessel together. This check is made before a Death Save. If the check is made the Death save can be made as usual, if it is failed, the vessel ignites in holy light and erupts, dealing 1d10 to 5d10 force damage to all units within 30ft depending on vessel size.<br>The inventory of a Geist is scattered/destroyed when this happens; however high enough Perception checks may be able to find weapons, tools, or other items in the rubble.
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Acquiring Upgrades</u></b> Geists can directly upgrade their vessels by finding skilled blacksmiths or artificiers that can alter that which they inhabit. Because their lives are lived within a vessel, the idea of armor to protect them seems useless and they often go without, opting instead for carrying a few jars on them to transfer into just in case. Blacksmiths may be able to alter the vessels by fashioning legs, arms, or plating. Wizards could alter more abstract characteristics, like size, shape, colour, or material (if enough of the desired material is brought along with the request).
+        </li>
+        <li>
+          <b class="big"><u>Millenia of Study</u></b> Geists have advantage on <b>Intelligence</b> checks and proficiency in <b>Intimidation</b>, <b>Arcana</b>, and <b>History</b>.
         </li>
       </ul>
-      <h2 class="sectionname">Subrace 1?</h2>
-      <ul>
-        <li>
-        <b>Ability Score Increase</b> It changed
-      </li>
-        <li>
-        <b>Subrace Trait 1</b> Desc 1
-      </li>
-        <li>
-        <b>Subrace Trait 2</b> Desc 2
-      </li>
-    </ul>
-      <h2 class="sectionname">Subrace 2?</h2>
-      <ul>
-        <li>
-        <b>Ability Score Increase</b> It changed
-      </li>
-        <li>
-        <b>Subrace Trait 1</b> Desc 1
-      </li>
-        <li>
-        <b>Subrace Trait 2</b> Desc 2
-      </li>
-    </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
-      <ul>
-        <li>
-        <b>Ability Score Increase</b> It changed
-      </li>
-        <li>
-        <b>Subrace Trait 1</b> Desc 1
-      </li>
-        <li>
-        <b>Subrace Trait 2</b> Desc 2
-      </li>
-    </ul>
   </div>
       </section>
       <section id="slimekin"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Slimekin.png" class="face">
       <h1>Slimekin</h1>
-      <p class='subtitle'>"Funy subtitle haha</p>
-      <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
-      <div style="width:100%;">
-        <p><b>Racial Traits: </b>A</p>
-        <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>D</p>
+      <p class='subtitle'>&quot;Aww! Hey little guy!, I&#39;d give you a hug but you would probably die...&quot;</p>
+      <p>The whimzical existence of a slimekin is akin to the childlike innocence of a youthful soul. Unlike Ooze, the sapience displayed in this race gives them a playful inquisitive nature.</p>
+      <div style="width:100">
+        <p><b>Racial Traits: </b>Imitate Voices, Hold Forms, Ooze, Poison Trail</p>
+        <p><b>Example Names: </b>Beans, Tattle, Jello, Sponge, Grog, Ning, Whill</p>
+        <p><b>Home Town: </b>Nath, Western Gomai (Orange Slimekin)<br><b style="color:white; user-select: none;">Home Town: </b>Nath&#39; Akai, Ovrikai (Green, Blue Slimekin)</p>
+        <p><b>Recommended Classes: </b>Druid, Monk, Warlock, Sorceror, Bard</p>
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
-      <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
+    <h2 class="sectionheader">Background & Origin</h2>
+      <p>Slimekin are enchanted creatures that gain sentience when they take over the body of a sapient creature. Their forms follow the look of the race they’ve absorbed but with gelatinous, see-through flesh. Slimes come in many colours but are most commonly found in Green, Orange, and Blue. Slimes most often take on the classes of the creature they absorb, picking up their weapons and armor to carry on as if they’ve always lived the life of the host.</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Your <b>Dexterity</b> score increases by 3. Your <b>Intelligence</b> score decreases by 1.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> The age of a slime can be determined by counting the rings around it’s Ooze. Because Slimes often lose their Ooze this is hard to determine.
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> Most Slimes are <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>, experiencing life with whimsy and glee.
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> Slimekin take the form of the race they first absorbed. This is most commonly <b>Medium</b> size, but slimes of larger and smaller sizes have been observed.
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>30 feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>60 feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> You can speak, read, and write <b>Common</b>, <b>Slimekin</b> and the <b>language of the race they first absorbed</b>.
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
+        </li><br>
+        <li>
+          <b class="big"><u>Imitate Voices</u></b> Slimekin are able to change the shape of their vocal chords to imitate the voices of those they’ve previously encountered. This can only be used in languages the Slime knows.
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Hold Forms</u></b> Slimes can use concentration to change their form to take on the shape of any creature they have seen, however their bodies keep their gelatinous look. A Slimekin must possess enough <b>Ooze</b> to create the form which can be hollow if it helps achieve the size needed.
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Ooze</u></b> A slime&#39;s goop doesn&#39;t grow on trees. The form of a Slime is made up of Ooze which is created in the digestion of rations or other food/drink. A full health normal Slime is Medium sized and when fully healed will return to this size. When attacked or injured Ooze will be cut off the Slime and slightly change its size.<br>If too much Ooze is lost the Slime will change size until they are as small as a squishy skull, covered in ooze, slithering on the floor. A Slime can consume extra food to increase its size but this will not add any bonus health beyond the Slime&#39;s maximum health and will be lost if the Slime takes damage.
+        </li>
+        <li>
+          <b class="big"><u>Poison Trail</u></b> Slimekin leave a trail of acidic poison behind them that decays after 2 minutes. Creatures that step in the trail receive 2d6 poison damage and have disadvantage on all skill checks for 1 hour. Walking on surfaces softer than stone or glass are corrodes them. Slimes are immune to this trail.
         </li>
       </ul>
-      <h2 class="sectionname">Subrace 1?</h2>
-      <ul>
-        <li>
-        <b>Ability Score Increase</b> It changed
-      </li>
-        <li>
-        <b>Subrace Trait 1</b> Desc 1
-      </li>
-        <li>
-        <b>Subrace Trait 2</b> Desc 2
-      </li>
-    </ul>
-      <h2 class="sectionname">Subrace 2?</h2>
-      <ul>
-        <li>
-        <b>Ability Score Increase</b> It changed
-      </li>
-        <li>
-        <b>Subrace Trait 1</b> Desc 1
-      </li>
-        <li>
-        <b>Subrace Trait 2</b> Desc 2
-      </li>
-    </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
-      <ul>
-        <li>
-        <b>Ability Score Increase</b> It changed
-      </li>
-        <li>
-        <b>Subrace Trait 1</b> Desc 1
-      </li>
-        <li>
-        <b>Subrace Trait 2</b> Desc 2
-      </li>
-    </ul>
   </div>
       </section>
       <section id="lycan"><br>
@@ -519,7 +495,7 @@ svg:hover {
       <h1>Lycan</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -528,78 +504,88 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
-      
       </section>
       <section id="mushie">
       <br>
@@ -608,7 +594,7 @@ svg:hover {
       <h1>Mushling</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -617,74 +603,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Your Charisma score increases by 1. You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> s
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="tn">True Neutral</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> Your size is <b>Small</b>.
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -696,7 +693,7 @@ svg:hover {
       <h1>Perissodan</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -705,74 +702,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -784,7 +792,7 @@ svg:hover {
       <h1>Frog-Person</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -793,7 +801,7 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
@@ -809,11 +817,23 @@ svg:hover {
           <b>Size</b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b>Speed</b> Your base walking speed is <b>X feet</b>.
+        </li>
+        <li>
+          <b>Darkvision</b> You have the ability to see in the dark up to <b>X feet</b>.
+        </li>
+        <li>
+          <b>Languages</b> I speak the tongue lalala
         </li>
         <li>
           <b>Culture</b> Godz n stuff
         </li>
+        <li>
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>
         <li>
           <b>Racial Trait 1</b> Desc 1
         </li>
@@ -872,7 +892,7 @@ svg:hover {
       <h1>Beastman</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -881,74 +901,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -960,7 +991,7 @@ svg:hover {
       <h1>Coleoptera</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -969,74 +1000,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1048,7 +1090,7 @@ svg:hover {
       <h1>Dkonian</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1057,74 +1099,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1134,85 +1187,93 @@ svg:hover {
   <div class="element1">
     <img src="scripts/images/colraces/Elemental.png" class="face">
       <h1>Elemental</h1>
-      <p class='subtitle'>"Funy subtitle haha</p>
-      <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      <p class='subtitle'>&quot;Let my divine light guide your step.&quot;</p>
+      <p>With a solemn demeanor they approach life as inquisitive wanderers, eager for discovery and analytical challenge.</p>
       <div style="width:100%;">
-        <p><b>Racial Traits: </b>A</p>
-        <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>D</p>
+        <p><b>Racial Traits:</b> Body from the Stars, Beacon Body, Water Susceptibility<br><b>Additionally via subclass:</b> Prismatic Flash, Thin Body, Celestial Boom, Smolder, Plunged Into Fire, The Weight of Light, Burn Brighter, Monch</p>
+        <p><b>Example Names: </b>D'vra, Onasa, Aleias, Entosh, Jhosa</p>
+        <p><b>Home Town: </b>Elemental Plane, &quot;The Space Between Space&quot;, Ashokai</p>
+        <p><b>Recommended Classes: </b>Wizard, Sorceror, Bard, Cleric</p>
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
-      <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
+    <h1 class="sectionheader">Background & Origin</h1>
+      <p>The Elementals explore all possible planes of reality in search of a cure to their own. The reality they once called home now crumbles at the molecular level from an encroching evil at the heart of the universe. As beings of light they feel the anguish of collapsing stars the call out in pain through the void.</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Your <b>Charisma</b> score increases by 1. You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> An Elemental taken physical form greatly reduces their lifespan in the search of experience. Born into adulthood, they live for roughly 800 years before their light extinguishes.
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> Most Elementals are <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="tn">True Neutral</a>, taking emotion out of otherwise difficult decisions to focus on the truth.
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> An average Celestial stands around the same height as a human when fully mature and weighs an average of fifteen pounds. Your size is <b>Medium</b>.
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>30 feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>80 feet</b>. (<b>Body from the Stars</b> feat included.)
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> You can speak, read, and write <b>Common</b>, and <b>Cosmic</b>.
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
-        </li>
-        <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Neuron</b> and <b>Cosmos</b> subraces.
         </li>
       </ul>
-      <h2 class="sectionname">Subrace 1?</h2>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Body from the Stars</u></b> Elementals glow constantly. The brightness of their bodies glow is comparable to a bright torch, giving the Celestial and party members an additional 20 ft. darkvision when together.
+        </li>
+        <li>
+          <b class="big"><u>Beacon Body</u></b> Elementals are incapable of using stealth mechanics due to their bodies glow making them extremely visible. Party members within 10 ft. of a Celestial are also unable to use stealth mechanics.
+        </li>
+        <li>
+          <b class="big"><u>Water Susceptibility</u></b> For every 5 ft. the Elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage.
+        </li>
+      </ul>
+      <h2 class="sectionname">Neuron</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> Your <b>Intelligence</b> score increases by 2.
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Prismatic Flash</u></b> (Replaces <b><u>Body from the Stars</u></b> and sets darkvision to 60 ft.)<br>Neurons know and can cast <b><i>Blinding Flash</i></b> for free once per day. This spell can be used regardless of class, spell points, or whether in battle or not.
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Thin Body</u></b> Neurons can briefly change their size to fit through spaces of size small or larger.
+      </li>
+        <li>
+        <b class="big"><u>Celestial Boom</u></b> Neurons learn the <b><i>Light</b></i> cantrip, this refreshes on long rest. At level 5 Neurons learn the <b><i>Fire Bolt</b></i> cantrip as a 2nd-level spell, replacing the <b><i>Light</b></i> cantrip.
+      </li>
+        <li>
+        <b class="big"><u>Smolder</u></b> Neurons roll a d10 when taking Fire damage, on a roll of 7 or higher they take half-damage.
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 2?</h2>
+      <h2 class="sectionname">Cosmos</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> Your <b>Charisma</b> score additionally increases by 2.
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Plunged Into Fire</u></b> Cosmos Elementals can run their hands along the blades of weapons to apply a layer of living fire to the party's weapons. This fire lasts for one hour and ignites struck enemies for three turns, dealing 1d4 Fire damage at the start of their turn unless extinguished.
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
-      </li>
-    </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
-      <ul>
-        <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>The Weight of Light</u></b> Cosmos Celestials have half the carrying capacity their Strength stat would usually allow.
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Burn Brighter</u></b> Enemies who finish their turns within Melee range of a Cosmos Celestial take 1d4 Fire damage.
+
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Monch</u></b> Cosmos Elementals can consume ignitable materials as rations if no food is available. These objects are permanently destroyed.
       </li>
     </ul>
   </div>
@@ -1224,7 +1285,7 @@ svg:hover {
       <h1>The Other</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1233,74 +1294,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1312,7 +1384,7 @@ svg:hover {
       <h1>Human</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1321,74 +1393,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1400,7 +1483,7 @@ svg:hover {
       <h1>Dwarf</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1409,74 +1492,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1488,7 +1582,7 @@ svg:hover {
       <h1>Elf</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1497,74 +1591,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1576,7 +1681,7 @@ svg:hover {
       <h1>Half-Elf</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1585,74 +1690,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1664,7 +1780,7 @@ svg:hover {
       <h1>Halfling</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1673,74 +1789,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1752,7 +1879,7 @@ svg:hover {
       <h1>Gnome</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1761,74 +1888,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1840,7 +1978,7 @@ svg:hover {
       <h1>Dragonborn</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1849,74 +1987,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -1928,7 +2077,7 @@ svg:hover {
       <h1>Triton</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -1937,74 +2086,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -2016,7 +2176,7 @@ svg:hover {
       <h1>Tiefling</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -2025,74 +2185,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -2104,7 +2275,7 @@ svg:hover {
       <h1>Orc</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -2113,74 +2284,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -2192,7 +2374,7 @@ svg:hover {
       <h1>Kenku</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -2201,74 +2383,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -2280,7 +2473,7 @@ svg:hover {
       <h1>Aarakocra</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -2289,74 +2482,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -2367,7 +2571,7 @@ svg:hover {
       <h1>Tortle</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -2376,74 +2580,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -2454,7 +2669,7 @@ svg:hover {
       <h1>Tabaxi</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -2463,74 +2678,85 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
@@ -2541,7 +2767,7 @@ svg:hover {
       <h1>Centaur</h1>
       <p class='subtitle'>"Funy subtitle haha</p>
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-      <br>
+      
       <div style="width:100%;">
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
@@ -2550,74 +2776,84 @@ svg:hover {
   </div>
   </div>
   <div class="element2">
-    <h2 class="sectionname">Background & Origin</h2>
+    <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b>Ability Score Increase</b> Do this then that and point go brr
+          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
+        <li>
+          <b class="big"><u>Age</u></b> Yoyo hella old you feel
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Size</u></b> haha
         </li>
         <li>
-          <b>Size</b> haha
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
         </li>
         <li>
-          <b>Speed</b> vroom
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
         </li>
         <li>
-          <b>Culture</b> Godz n stuff
+          <b class="big"><u>Languages</u></b> I speak the tongue lalala
         </li>
         <li>
-          <b>Racial Trait 1</b> Desc 1
+          <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b>Racial Trait 2</b> Desc 2
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+        </li>
+      </ul>
+      <h2 class="sectionname">Shared Race Traits</h2>
+      <ul>     <li>
+          <b class="big"><u>Racial Trait 1</u></b> Desc 1
         </li>
         <li>
-          <b>Racial Trait 3?</b> Desc 3?
+          <b class="big"><u>Racial Trait 2</u></b> Desc 2
         </li>
         <li>
-          <b>Racial Trait 4??</b> Desc 4??
+          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+        </li>
+        <li>
+          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
         </li>
       </ul>
       <h2 class="sectionname">Subrace 1?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
       <h2 class="sectionname">Subrace 2?</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3?</h2>
+      <h2 class="sectionname">Subrace 3??</h2>
       <ul>
         <li>
-        <b>Ability Score Increase</b> It changed
+        <b class="big"><u>Ability Score Increase</u></b> It changed
       </li>
         <li>
-        <b>Subrace Trait 1</b> Desc 1
+        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
       </li>
         <li>
-        <b>Subrace Trait 2</b> Desc 2
+        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
       </li>
     </ul>
   </div>
