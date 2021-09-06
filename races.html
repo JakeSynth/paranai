@@ -3,255 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<style>
-html {
-  scroll-behavior: smooth;
-}
-body {
-  font-family: "Lato", sans-serif;
-  background-color: #222;
-}
-h1 {
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 2px;
-}
-h2 {
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding-left: 10px;
-  font-size: 15px;
-}
-.sectionname {
-  color: black;
-  justify-content: left;
-  text-align: left;
-  font-size: 18px;
-  padding-left: 10px;
-}
-.sectionheader {
-  color: black;
-  justify-content: left;
-  text-align: left;
-  font-size: 24px;
-  padding-left: 10px;
-}
-.racename {
-  width: 100%;
-  max-width: auto;
-}
-p {
-  font-size: 15px;
-}
-li {
-  padding: 5px;
-}
-.subtitle {
-  justify-content: center;
-  text-align: center;
-  font-style: italic;
-  margin-top: 10px;
-  font-size: 15px;
-}
-.smallspacer {
-  border-width: 4px;
-  border-style: solid;
-  border-color: #222;
-}
-.lg, .ng, .cg{
-  color: green;
-  font-weight: bold;
-  text-decoration: underline dotted;
-}
-.ln, .tn, .cn {
-  color: grey;
-  font-weight: bold;
-  text-decoration: underline dotted;
-}
-} 
-.le, .ne, .ce {
-  color: red;
-  font-weight: bold;
-  text-decoration: underline dotted;
-}
-}
-table {
-}
-hr {
-  border-color: #222;
-  border-width: 4px;
-  border-style: solid;
-}
-.sidenav {
-  height: 100%;
-  width: 230px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 20px;
-  text-align: left;
-  font-weight: bold!important;
-}
-.sidenav a {
-  padding: 6px 8px 6px 10px;
-  text-decoration: none;
-  font-size: 15px;
-  color: #818181;
-  display: block;
-}
-.sidenav tr:hover {
-  background-color: #000;
-  border: 5px;
-}
-.sidenav img {
-  width:60px;
-  padding-left: 10px;
-}
-.main {
-  margin-left: 240px; 
-  font-size: 28px; 
-  padding: 0px 10px;
-}
-th {
-  font-size: 15px!important;
-}
-.sidenav span {
-  display: block;
-}
-.element1 {
-  float: right;
-  width: 30%;
-  height: 80%;
-  background: #fff;
-  margin: auto;
-  padding: 2%;
-}
-.element2 {
-  float: left;
-  width: 60%;
-  background: #fff;
-  margin: auto;
-  padding: 2%;
-  height: fit-content;
-}
-.element3 {
-  float: center;
-  width: 60%;
-  background: #fff;
-  margin: auto;
-  padding: 2%;
-  height: fit-content;
-}
-.big {
-  font-size: 17px;
-}
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-}
-@media all and (max-width: 1400px) {
-  .txt {display: none;}
-  .sidenav {width:95px;}
-  .sidenav .button {display:none;}
-  .headerimage {display: none;}
-  .noshow {display: none;}
-  .main { margin-left: 105px; }
-  .sidenav img {padding-left: 5px;}
-  .headerimage2 {display: block;}
-  .smallspacer {display: block;}
-  button {display: none!important;}
-}
-@media all and (min-width: 1401px) {
-  .headerimage2 {display: none;}
-  .smallspacer {display: none;}
-}
-@media all and (max-width: 851px) {
-  .main {padding: 0px 0px;}
-  .sidenav {display: none;}
-  .mobile {display: block!important;}
-  .element1 {display: none;}
-  .element2 {width: 100%;margin:0px; float: right; padding-top: 30px;}
-  .main {margin:60px; margin-right: 30px;}
-  .element2 p {padding-left: 15px; padding-right: 15px; text-align: justify;}
-  .element2 h1 h2 {text-align: center;}
- ::-webkit-scrollbar {display: none;}
- .headerimage2 {width: 30px; padding-left: 0px!important;}
-}
- .sidenav::-webkit-scrollbar {width: 10px;}
- .sidenav::-webkit-scrollbar-track {background-color: transparent;}
- .sidenav::-webkit-scrollbar-thumb {border-radius: 5px; background-color: #999;}
-
- ::-webkit-scrollbar {width: 10px;}
- ::-webkit-scrollbar-track {background-color: #222;}
- ::-webkit-scrollbar-thumb {border-radius: 5px; background-color: #999;}
- section{
-  height: fit-content!important;
-  padding-bottom: 50px;
-  display: table;
-}
-.noshow:hover {
-  background-color: transparent!important;
-}
-.noshow {
-  color: #111!important;
-  user-select: none;
-}
-#toTop {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 9999999;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #111;
-  color: white;
-  cursor: pointer;
-  padding: 18px 17px 12px 18px;
-  border-radius: 40px;
-}
-  .mobile {display: none;}
-
-#toTop:hover {
-  background-color: #444;
-}
-.face {
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
-    max-width: 85%;
-    height: auto;
-    width: auto;
-}
-section {
-  height: 100vh;
-}
-ul {
-  font-size: 15px;
-}
-.element1 p {
-  margin-top: 10px;
-  margin-bottom: 25px;
-}
-.home {
-  margin: auto;
-  display: block;
-  width: 60px;
-  height: auto;
-}
-svg:hover {
-  color: #000;
-}
-</style>
+<link rel="stylesheet" href="scripts/racescripts.css">
 </head>
 <body>
-<div class="sidenav" id="nav"><br><div class='headerimage'><a href="https://www.paranai.co.uk/"><img src="scripts/images/header2.png" class='headerimage' style="width:180px;">
-<br><br><br></a></div>
-<div class='headerimage2'><a href="https://www.paranai.co.uk/"><img src="https://via.placeholder.com/60" class='headerimage2'><br><br></a></div>
+<div class="sidenav" id="nav"><br><div class='headerimage'><a href="https://www.paranai.co.uk/"><img src="scripts/images/header2.png" class='headerimage' style="width:180px;"><br><br><br></a></div>
+  <div class='headerimage2'><a href="https://www.paranai.co.uk/"><img src="https://via.placeholder.com/60" class='headerimage2'><br><br></a></div>
   <hr class='smallspacer'>
   <table style="display: inline-block; border-collapse: collapse!important;">
     <tr><th><a href="#"><img src='scripts/images/home.svg'></a></th><th><a href="#" class="txt"><span>Back To Top</span></a></th></tr>
@@ -275,8 +31,8 @@ svg:hover {
     <tr><th><a href="#other"><img src='scripts/images/races/Other.png'></a></th><th><a href="#other" class="txt"><span>The Other</span></a></th></tr>
     <tr class='noshow'><th></th><th><span>Ignore me please :)</span></th></tr>
   </table>
-  <hr class='smallspacer'>
-  <h2 class="txt">Official Races</h2>
+    <hr class='smallspacer'>
+    <h2 class="txt">Official Races</h2>
   <table style="display: inline-block; border-collapse: collapse!important;">
     <tr><th><a href="#human"><img src='scripts/images/races/Human.png'></a></th><th><a href="#human" class="txt"><span>Human</span></a></th></tr>
     <tr><th><a href="#dwarf"><img src='scripts/images/races/Dwarf.png'></a></th><th><a href="#dwarf" class="txt"><span>Dwarf</span></a></th></tr>
@@ -299,10 +55,13 @@ svg:hover {
 
 <div class="main">
       <section>
+    <div class="element3">
       <h1>Chicken Noodle Soup</h1>
-    <div class="element3"></div>
+    </div>
       </section>
-      <section id="gearborn"><br>
+
+
+<section id="gearborn"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Gearborn.png" class="face">
       <h1 class="racename">Gearborn</h1>
@@ -310,10 +69,10 @@ svg:hover {
       <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
       
       <div style="width:100%;">
-        <p><b>Racial Traits: </b>A</p>
-        <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Racial Traits: </b>Central Processor, Morality Core, Inquisitive Nature, Battle-Unit</p>
+        <p><b>Example Names: </b>Ma-77, AGATH-A, #13, Prototype 147-AB (Proto)</p>
+        <p><b>Home Town: </b>Pota, Ashokai</p>
+        <p><b>Recommended Classes: </b>Artificer, Fighter, Cleric, Bard</p>
   </div>
   </div>
   <div class="element2">
@@ -321,10 +80,10 @@ svg:hover {
     <img src="scripts/images/colraces/Gearborn.png" class="face">
       <h1 class="racename">Gearborn</h1>
       <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
-        <p><b>Racial Traits: </b>A</p>
-        <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Racial Traits: </b>Central Processor, RT-2/Morality-Core, Inquisitive Nature, Battle-Unit</p>
+        <p><b>Example Names: </b>Ma-77, AGATH-A, #13, Prototype 147-AB (Proto)</p>
+        <p><b>Home Town: </b>Pota, Ashokai</p>
+        <p><b>Recommended Classes: </b>Artificer, Fighter, Cleric, Bard</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -333,10 +92,10 @@ svg:hover {
           <b>Ability Score Increase</b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b>Age</b> Yoyo hella old you feel
+          <b>Age</b> Replacement parts are few and far between. The further a Gearborn strays from Pota, it&#39;s ancestral home, the less likely it is to find parts to fix itself if it is injured. A lot of Gearborn shutdown after 60 years.
         </li>
         <li>
-          <b>Alignment</b> m' goodboye
+          <b class="big"><u>Alignment</u></b> Most Gearborn are <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="lg">Lawful Good</a>, operating by the laws of their creator with a cheerful attitude.
         </li>
         <li>
           <b>Size</b> haha
@@ -410,7 +169,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="geist"><br>
+<section id="geist"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Geist.png" class="face">
       <h1 class="racename">Geist</h1>
@@ -469,7 +228,7 @@ svg:hover {
           <b class="big"><u>Destruction</u></b> When a Geists health hits 0 it must make a Survival Check of at least 12 to keep it’s vessel together. This check is made before a Death Save. If the check is made the Death save can be made as usual, if it is failed, the vessel ignites in holy light and erupts, dealing 1d10 to 5d10 force damage to all units within 30ft depending on vessel size.<br>The inventory of a Geist is scattered/destroyed when this happens; however high enough Perception checks may be able to find weapons, tools, or other items in the rubble.
         </li>
         <li>
-          <b class="big"><u>Acquiring Upgrades</u></b> Geists can directly upgrade their vessels by finding skilled blacksmiths or artificiers that can alter that which they inhabit. Because their lives are lived within a vessel, the idea of armor to protect them seems useless and they often go without, opting instead for carrying a few jars on them to transfer into just in case. Blacksmiths may be able to alter the vessels by fashioning legs, arms, or plating. Wizards could alter more abstract characteristics, like size, shape, colour, or material (if enough of the desired material is brought along with the request).
+          <b class="big"><u>Acquiring Upgrades</u></b> Geists can directly upgrade their vessels by finding skilled blacksmiths or artificers that can alter that which they inhabit. Because their lives are lived within a vessel, the idea of armor to protect them seems useless and they often go without, opting instead for carrying a few jars on them to transfer into just in case. Blacksmiths may be able to alter the vessels by fashioning legs, arms, or plating. Wizards could alter more abstract characteristics, like size, shape, colour, or material (if enough of the desired material is brought along with the request).
         </li>
         <li>
           <b class="big"><u>Millenia of Study</u></b> Geists have advantage on <b>Intelligence</b> checks and proficiency in <b>Intimidation</b>, <b>Arcana</b>, and <b>History</b>.
@@ -477,7 +236,7 @@ svg:hover {
       </ul>
   </div>
       </section>
-      <section id="slimekin"><br>
+<section id="slimekin"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Slimekin.png" class="face">
       <h1 class="racename">Slimekin</h1>
@@ -485,9 +244,9 @@ svg:hover {
       <p>The whimzical existence of a slimekin is akin to the childlike innocence of a youthful soul. Unlike Ooze, the sapience displayed in this race gives them a playful inquisitive nature.</p>
       <div style="width:100">
         <p><b>Racial Traits: </b>Imitate Voices, Hold Forms, Ooze, Poison Trail</p>
-        <p><b>Example Names: </b>Beans, Tattle, Jello, Sponge, Grog, Ning, Whill</p>
+        <p><b>Example Names: </b>Beans, Mallow, Golly, Sponge, Merry, Peep, Whill</p>
         <p><b>Home Town: </b>Nath, Western Gomai (Orange Slimekin)<br><b style="color:white; user-select: none;">Home Town: </b>Nath&#39; Akai, Ovrikai (Green, Blue Slimekin)</p>
-        <p><b>Recommended Classes: </b>Druid, Monk, Warlock, Sorceror, Bard</p>
+        <p><b>Recommended Classes: </b>Druid, Monk, Warlock, Sorceror, Bard, Rogue</p>
   </div>
   </div>
   <div class="element2">
@@ -498,13 +257,13 @@ svg:hover {
         <p><b>Racial Traits: </b>Imitate Voices, Hold Forms, Ooze, Poison Trail</p>
         <p><b>Example Names: </b>Beans, Tattle, Jello, Sponge, Grog, Ning, Whill</p>
         <p><b>Home Town: </b>Nath, Western Gomai (Orange Slimekin)<br><b style="color:white; user-select: none;">Home Town: </b>Nath&#39; Akai, Ovrikai (Green, Blue Slimekin)</p>
-        <p><b>Recommended Classes: </b>Druid, Monk, Warlock, Sorceror, Bard</p>
+        <p><b>Recommended Classes: </b>Druid, Monk, Warlock, Sorceror, Bard, Rogue</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Slimekin are enchanted creatures that gain sentience when they take over the body of a sapient creature. Their forms follow the look of the race they’ve absorbed but with gelatinous, see-through flesh. Slimes come in many colours but are most commonly found in Green, Orange, and Blue. Slimes most often take on the classes of the creature they absorb, picking up their weapons and armor to carry on as if they’ve always lived the life of the host.</p>
       <ul>
         <li>
-          <b class="big"><u>Ability Score Increase</u></b> Your <b>Dexterity</b> score increases by 3. Your <b>Intelligence</b> score decreases by 1.
+          <b class="big"><u>Ability Score Increase</u></b> Your <b>Dexterity</b> score increases by 3. Your <b>Intelligence</b> score decreases by 1.<br><b class="big" style="color:white; user-select: none;">Ability Score Increase</b><b> OR</b><br><b class="big" style="color:white; user-select: none;">Ability Score Increase</b> Your <b>Intelligence</b> score increases by 3. Your <b>Dexterity</b> score decreases by 1.
         </li>
         <li>
           <b class="big"><u>Age</u></b> The age of a slime can be determined by counting the rings around it’s Ooze. Because Slimes often lose their Ooze this is hard to determine.
@@ -542,7 +301,7 @@ svg:hover {
       </ul>
   </div>
       </section>
-      <section id="lycan"><br>
+<section id="lycan" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Lycan.png" class="face">
       <h1 class="racename">Lycan</h1>
@@ -649,7 +408,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="mushie">
+<section id="mushie" class="unfinished">
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Mushling.png" class="face">
@@ -757,7 +516,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="perissodan">
+<section id="perissodan">
       <br>
   <div class="element1">
     <img src="scripts/images/colraces/Perissodan.png" class="face">
@@ -865,8 +624,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="frogperson">
-      <br>
+<section id="frogperson" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Frog-Person.png" class="face">
       <h1 class="racename">Frog-Person</h1>
@@ -974,116 +732,72 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="beastman">
-      <br>
+<section id="beastman"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Beastman.png" class="face">
       <h1 class="racename">Beastman</h1>
-      <p class='subtitle'>&quot;&quot;</p>
-      <p>I am a filler text where the race description would go blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+      <p class='subtitle'>&quot;Pay up or get put down.&quot;</p>
+      <p>A boisterous and menacing race that always seeks challenge. Beastmen flex their strength often seen placing highly in tournaments throughout Paranai. Their reign as guardians to nobility and bounty hunters makes them one of the most feared races in the lands.</p>
       
       <div style="width:100%;">
-        <p><b>Racial Traits: </b>A</p>
-        <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>D</p>
+        <p><b>Racial Traits: </b>Ancestral Strength, Bloodied Steel, Heart of the Jungle</p>
+        <p><b>Example Names: </b>Murcia, Tyran, Challen, Helos, Markas, Tort&#39;kal</p>
+        <p><b>Home Town: </b>Shafa,  Gallis&#39;set Jungle, Vellenai</p>
+        <p><b>Recommended Classes: </b>Barbarian, Fighter, Monk</p>
   </div>
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
     <img src="scripts/images/colraces/Beastman.png" class="face">
       <h1 class="racename">Beastman</h1>
-      <p class='subtitle'>&quot;&quot;</p>
-        <p><b>Racial Traits: </b>A</p>
-        <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>D</p>
+      <p class='subtitle'>&quot;Pay up or get put down.&quot;</p>
+        <p><b>Racial Traits: </b>Ancestral Strength, Bloodied Steel, Heart of the Jungle</p>
+        <p><b>Example Names: </b>Murcia, Tyran, Challen, Helos, Markas, Tort&#39;kal</p>
+        <p><b>Home Town: </b>Shafa,  Gallis&#39;set Jungle, Vellenai</p>
+        <p><b>Recommended Classes: </b>Barbarian, Fighter, Monk</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
-      <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
+      <p>Noble and ready for a fight, the Beastmen of Shafa dominate the wilds of the jungle with raw strength. The spellcasters of the tribe specialise in close-range battle magics to overwhelm their opponents. There is a reason the northern Gallis&#39;set jungle is considered their undisputed territory.</p>
       <ul>
         <li>
-          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
+          <b class="big"><u>Ability Score Increase</u></b> Your <b>Strength</b> score increases by 2. Your <b>Dexterity</b> score increases by 1.
         </li>
         <li>
-          <b class="big"><u>Age</u></b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> Beastmen have life spans a little shorter than humans, reaching adulthood around 15 and lives averaging 60 years.
         </li>
         <li>
-          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
+          <b class="big"><u>Alignment</u></b> Most Beastmen are methodical hunters, using their stature to intimidate opponents. Your Beastman is <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="tn">True Neutral</a>. Evil Beastmen aren&#39;t unheard of but keep to the fringes of society when they show themselves.
         </li>
         <li>
-          <b class="big"><u>Size</u></b> haha
+          <b class="big"><u>Size</u></b> Beastmen stand at 7 to 8 feet tall and weigh 250-300 pounds. Your size is <b>Medium</b>.
         </li>
         <li>
-          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>30 feet</b>. (Increasing to <b>45 feet</b> with <b>Heart of the Jungle</b> active.)
         </li>
         <li>
-          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>60 feet</b>.
         </li>
         <li>
-          <b class="big"><u>Languages</u></b> I speak the tongue lalala
+          <b class="big"><u>Languages</u></b> You can speak, read, and write <b>Common</b> and <b>Tabaxi</b>.
         </li>
         <li>
           <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
-        <li>
-          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
-        </li>
       </ul>
       <h2 class="sectionname">Shared Race Traits</h2>
       <ul>     <li>
-          <b class="big"><u>Racial Trait 1</u></b> Desc 1
+          <b class="big"><u>Ancestral Strength</u></b> When casting a spell with a range of <b>Touch</b>, the Beastman can use <b>Strength</b> as their <b>Spellcasting Ability Modifier</b> instead.
         </li>
         <li>
-          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+          <b class="big"><u>Bloodied Steel</u></b> Cutting an opponent down in battle fills the Beastmen with glorious fortitude. When you incapacitate/kill an enemy in battle you can immediately cast the race exclusive cantrip <i><b>Feral Roar</b></i> for free.<br><br><b class="big" ><u>Feral Roar</u></b> You roar into the sky from the euphoria of slaughter. Opponents within 40 feet must make a Charisma saving throw of <i><b>(Your Strength modifier + 6 + any bonuses)</b></i>. On a fail the enemies speed is halved for three turns and cannot flee battle. On a save the spell fails. Once an enemy experiences <i><b>Feral Roar</b></i> they are immune to the effects of any future casts of the spell for 1 hour.
         </li>
         <li>
-          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
-        </li>
-        <li>
-          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
+          <b class="big"><u>Heart of the Jungle</u></b> Once per long rest you can unleash your inner wild. Your eyes glow a blood-red, and you fall to all-fours. Your senses feel heightened and your muscles strengthen.<br>For one hour you gain advantage to <b>Investigation</b>, <b>Perception</b>, <b>Survival</b>, and <b>Athletics</b> checks and saves that relate to vision or smell. Your base walk speed increases to 45 ft. and you can scale shear walls up to 30ft. effortlessly.<br>Additionally, you lose the ability to communicate verbally, managing primal growls to explain your intentions. You keep any weapons you were holding however you are only able to attack with melee weaponry or <i><b>Touch</b></i> spells.
         </li>
       </ul>
-      <h2 class="sectionname">Subrace 1?</h2>
-      <ul>
-        <li>
-        <b class="big"><u>Ability Score Increase</u></b> It changed
-      </li>
-        <li>
-        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
-      </li>
-        <li>
-        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
-      </li>
-    </ul>
-      <h2 class="sectionname">Subrace 2?</h2>
-      <ul>
-        <li>
-        <b class="big"><u>Ability Score Increase</u></b> It changed
-      </li>
-        <li>
-        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
-      </li>
-        <li>
-        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
-      </li>
-    </ul>
-      <h2 class="sectionname">Subrace 3??</h2>
-      <ul>
-        <li>
-        <b class="big"><u>Ability Score Increase</u></b> It changed
-      </li>
-        <li>
-        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
-      </li>
-        <li>
-        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
-      </li>
-    </ul>
   </div>
       </section>
-      <section id="coleoptera">
-      <br>
+<section id="coleoptera"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Coleoptera.png" class="face">
       <h1 class="racename">Coleoptera</h1>
@@ -1104,94 +818,260 @@ svg:hover {
       <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
-        <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>D</p>
+        <p><b>Home Town: </b>Widespread</p>
+        <p><b>Recommended Classes: </b>Barbarian, Fighter, Paladin, Bard, Rogue, </p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
       <ul>
         <li>
-          <b class="big"><u>Ability Score Increase</u></b> Do this then that and point go brr You additionally gain an ability score increase unique to the subrace you choose.
+          <b class="big"><u>Ability Score Increase</u></b> Your <b>Constitution</b> score increases by 1. You additionally gain an ability score increase unique to the subrace you choose.
         </li>
         <li>
-          <b class="big"><u>Age</u></b> Yoyo hella old you feel
+          <b class="big"><u>Age</u></b> A Coleoptera reaches adulthood at the age of 5 and generally lives to 100 to 200. Royal Coleoptera can live to be 450 under the right circumstances.
         </li>
         <li>
-          <b class="big"><u>Alignment</u></b> <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="ng">Neutral Good</a>
+          <b class="big"><u>Alignment</u></b> Most Coleoptera are <a target="_blank" href="https://en.wikipedia.org/wiki/Alignment_(Dungeons_%26_Dragons)#Alignments" title="Click to go through to Wikipedia for a more in depth explanation of Alignment." class="cn">Chaotic Neutral</a>, following their whims, holding their personal freedom and providing for the hive above all else. They form strong bonds with party members but can put people in danger with their reckless actions. A Coleoptera willing to change their minds is a rare sight but a few possess a caring and selfless disposition.
         </li>
         <li>
-          <b class="big"><u>Size</u></b> haha
+          <b class="big"><u>Size</u></b> An average Coleoptera stands a little under four feet tall when fully mature and weighs an average of one hundred and fifty pounds. Your size is <b>Small</b>.
         </li>
         <li>
-          <b class="big"><u>Speed</u></b> Your base walking speed is <b>X feet</b>.
+          <b class="big"><u>Speed</u></b> Your base walking speed is <b>25 feet</b>.
         </li>
         <li>
-          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>X feet</b>.
+          <b class="big"><u>Darkvision</u></b> You have the ability to see in the dark up to <b>60 feet</b>.
         </li>
         <li>
-          <b class="big"><u>Languages</u></b> I speak the tongue lalala
+          <b class="big"><u>Languages</u></b> You can speak, read, and write <b>Common</b> and <b>Bugspeak</b>.
         </li>
         <li>
           <b class="big"><u>Culture</u></b> Godz n stuff
         </li>
         <li>
-          <b class="big"><u>Subraces</u></b> You may choose between the <b>Bing</b> and <b>Bong</b> subraces.
+          <b class="big"><u>Subraces</u></b> You may choose between the <b>Giant Coleoptera</b>, <b>Songbird Coleoptera</b>, <b>Royal Coleoptera</b>, or <b>Shimmering Coleoptera</b> subraces.
         </li>
       </ul>
       <h2 class="sectionname">Shared Race Traits</h2>
-      <ul>     <li>
-          <b class="big"><u>Racial Trait 1</u></b> Desc 1
+      <ul>
+        <li>
+          <b class="big"><u>Contortionist</u></b> While climbing, you may move through any space one size smaller than your own.
         </li>
         <li>
-          <b class="big"><u>Racial Trait 2</u></b> Desc 2
+          <b class="big"><u>Smooth-Talker</u></b> Coleopteras are by nature smooth-talkers, able to move the gems from a Dwarf's hands with nothing but flattery and a sweet look. You have an advantage on <b>Charisma</b> checks and against <b>Deception</b> saving throws.
         </li>
         <li>
-          <b class="big"><u>Racial Trait 3?</u></b> Desc 3?
+          <b class="big"><u>Hardened Shell</u></b> Your AC equals 11 + your <b>Constitution</b> modifier. Most Coleoptera cannot wear armor.
         </li>
         <li>
-          <b class="big"><u>Racial Trait 4??</u></b> Desc 4??
+          <b class="big"><u>Tarsus Claws</u></b> Your claws have fantastic grip. You can cling to walls for 1 hour per long rest. You also gain a climbing speed equal to your walking speed.
         </li>
       </ul>
-      <h2 class="sectionname">Subrace 1?</h2>
+      <h2 class="sectionname">Giant Coleoptera</h2>
       <ul>
         <li>
-        <b class="big"><u>Ability Score Increase</u></b> It changed
+          <b class="big"><u>About Giant Coleoptera</u></b><br><br>Coleoptera adapted to enforcement and protection. Looking like Hercules beetles with a shimmer of purple in their black shells. These beetles are the largest variant of Coleoptera at six feet tall with a horn that can add up to another foot and a half. They often weigh in excess of two hundred pounds.
+        </li>
+        <li>
+        <b class="big"><u>Ability Score Increase</u></b> Your <b>Strength</b> score increases by 2.
       </li>
         <li>
-        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
+        <b class="big"><u>Horn</u></b> You have a large horn, with which you are proficient. When you take the attack action, you may make an additional attack with your horn if you are within melee range, dealing <b>1d6 slashing</b> damage on a hit.
       </li>
         <li>
-        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
+        <b class="big"><u>No Need to be Nimble</u></b> Due to your enormous shell, your size is <b>Medium</b>. By squeezing your shell in contorted ways you can move through the space of any creature that is of one size smaller than yours.
+      </li>
+        <li>
+        <b class="big"><u>Carapace</u></b> You can spread your back shell sections to conceal small items beneath them or hold them out to carry two creatures of your size or smaller on top. Holding your shell out will drop all items concealed underneath and visa versa.
+      </li>
+        <li>
+        <b class="big"><u>Hardened Plating</u></b> Your AC is additionally increased by half your <b>Strength</b> modifier. (Rounding up.)
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 2?</h2>
+      <h2 class="sectionname">Songbird Coleoptera</h2>
       <ul>
         <li>
-        <b class="big"><u>Ability Score Increase</u></b> It changed
+          <b class="big"><u>About Songbird Coleoptera</u></b><br><br>They are enthusiastic to a fault, and like to burst into song at the slightest opportunity. The wings of the Songbird don’t function for flight but have evolved to vibrate against each other to produce a sound crossed between a lute, violin, and piano.
+        </li>
+        <li>
+        <b class="big"><u>Ability Score Increase</u></b> Your <b>Charisma</b> score increases by 2.
       </li>
         <li>
-        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
+        <b class="big"><u>Little Legs</u></b> Your base walking speed is <b>25 feet</b>. Your steps are silent and can’t be tracked except by magical means.
       </li>
         <li>
-        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
+        <b class="big"><u>Organic Sonnet</u></b> Your wings are too small to fly, but can be rubbed against one-another to create music. You are proficient with this instrument. While playing an instrument you are proficient in, you can take an additional movement action at half your base walking speed.
+      </li>
+        <li>
+        <b class="big"><u>Tunnel Vision</u></b> You gain advantage on <b>Perception</b> checks when underground. Your <b>Darkvision</b> is increased by an additional <b>40 feet</b> while underground.
       </li>
     </ul>
-      <h2 class="sectionname">Subrace 3??</h2>
+      <h2 class="sectionname">Royal Coleoptera</h2>
       <ul>
         <li>
-        <b class="big"><u>Ability Score Increase</u></b> It changed
+          <b class="big"><u>About Royal Coleoptera</u></b><br><br>Royal Coleoptera are the last subrace to keep the function of their wings after evolution. They use this power to help their homes with construction and celebratory festivals. They are usually one of four colourations: White frills and Gold shell, White frills and Green shell, Yellow frills and Blood Red shell, or Dark Blue frills and White shell.
+        </li>
+        <li>
+        <b class="big"><u>Ability Score Increase</u></b> Your <b>Dexterity</b> score increases by 1.
       </li>
         <li>
-        <b class="big"><u>Subrace Trait 1</u></b> Desc 1
+        <b class="big"><u>Flight</u></b> You have a flying speed of <b>65 feet</b>. You cannot wear medium or heavy armor.
       </li>
         <li>
-        <b class="big"><u>Subrace Trait 2</u></b> Desc 2
+        <b class="big"><u>Built for Speed</u></b> (Replaces <b><u>Hardened Shell</b></u>.) Your elegant form allows you to reroll Initiative when entering battle. You must take the rerolled Initiative even if it is lower than the first roll. If either roll is a Natural 20 you place first in the Initiative regardless if something else placed higher.
+      </li>
+        <li>
+        <b class="big"><u>Glutton</u></b> You gain <b>2 additional Hit Dice</b> per long rest.
+      </li>
+    </ul>
+      <h2 class="sectionname">Shimmering Coleoptera</h2>
+      <ul>
+        <li>
+          <b class="big"><u>About Shimmering Coleoptera</u></b><br><br>Glittering eyes and a Dazzling gems adorn the carapace of this Beetle. The shell of Shimmering Coleoptera pulses with earthen magic, growing rock and ores from their bodies, converted from the food they eat and sunlight, these ores vary vastly from beetle to beetle but always seem to leave the individual with an abundance of wealth.
+        </li>
+        <li>
+        <b class="big"><u>Ability Score Increase</u></b> Your <b>Constitution</b> score increases by 2.
+      </li>
+        <li>
+        <b class="big"><u>Glints of Gold</u></b> Your carapace is made of an amalgam of glittering ores making your shell a sight to behold, but much more brittle than others of your species. Immediately after a long rest you may flip a coin. If Heads, your shell repairs all damage done to it by this Trait and you regain the <b><u>Dazzling</u></b> Trait.<br><br>If Tails your shell cracks apart more, reducing your base AC to <b>9 + Constitution</b> until repaired, decreasing by 1 with every subsequent Tails made in the future until your shell is repaired. You also roll a d100 to determine the shard of ore that has broken free from your shell.<br><br>See the breakdown below.<br><br>
+        <table class="coleotb">
+          <tr>
+            <th>
+              1-40
+            </th>
+            <th>
+              A Shard of Brittle Rock
+            </th>
+            <th>
+              The rock crumbles in your hands as you pick it up.
+            </th>
+          </tr>
+          <tr>
+            <th>
+              41-60
+            </th>
+            <th>
+              A crumbling piece of Copper, Iron, Lead, or Tin
+            </th>
+            <th>
+              Worth ~5 cp
+            </th>
+          </tr>
+          <tr>
+            <th>
+              61-80
+            </th>
+            <th>
+              A sliver of silver
+            </th>
+            <th>
+              Worth ~2 sp
+            </th>
+          </tr>
+          <tr>
+            <th>
+              81-94
+            </th>
+            <th>
+              A tiny nugget of unrefined Gold or Fool’s Gold
+            </th>
+            <th>
+              Worth ~5 sp
+            </th>
+          </tr>
+          <tr>
+            <th>
+              95-99
+            </th>
+            <th>
+              A small uncut Emerald, Lapis Lazuli, Obsidian, Pearl or Amber (DM’s discretion)
+            </th>
+            <th>
+              DM rolls a d6.<br>
+  1-3 yields Fool’s Gold, worthless but might fool an inexperienced traveller.<br>
+  4-6 yields unrefined gold worth ~5 gp.<br>
+  Players may make an Insight check of 17 + their proficiency bonus to differentiate the two.
+            </th>
+          </tr>
+          <tr>
+            <th>
+              100
+            </th>
+            <th>
+              A small uncut Emerald, Lapis Lazuli, Obsidian, Pearl or Amber (DM&#39;s discretion)
+            </th>
+            <th>
+              <table class="minerals">
+              <tr>
+                <th>
+                  DM rolls a <b>d6</b>.
+                </th>
+                <th>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <b>1</b> yields a broken Emerald, worthless.
+                </th>
+                <th>
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <b>2</b> yields a tiny Amber.
+                </th>
+                <th>
+                  ~2 gp
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <b>3</b> yields a tiny Pearl.
+                </th>
+                <th>
+                  ~5 gp
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <b>4</b> yields a tiny Obsidian.
+                </th>
+                <th>
+                  ~8 gp
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <b>5</b> yields a tiny Lapis Lazuli.
+                </th>
+                <th>
+                  ~10 gp
+                </th>
+              </tr>
+              <tr>
+                <th>
+                  <b>6</b> yields a tiny Emerald.
+                </th>
+                <th>
+                  ~15 gp
+                </th>
+              </tr>
+            </th>
+          </table>
+          </tr>
+        </table>
+
+      </li>
+        <li>
+        <b class="big"><u>Dazzling</u></b> Your shell glimmers with dazzling ores, making you the talk of the town wherever you go. You have an advantage on <b>Performance</b> checks, but a disadvantage on <b>Stealth</b> checks and saving throws. If your shell is <b>cracked</b> this trait becomes inactive.
+      </li>
+        <li>
+        <b class="big"><u>Keen Eye</u></b> You have proficiency in <b>Mining</b> and can search a four-square-mile (or more) area to determine what gems or ores may be found there. The proficiency check is made in secret after this survey, and if successful, the character has found a good site (though many other misfortunes may befall a mine successfully sited). On a failure, the character believes they have a good site, but the effort will be for naught. Once a successful mine has been founded. A proficient character must remain on-site in order to keep the mine in operation.
       </li>
     </ul>
   </div>
       </section>
-      <section id="dkonian">
-      <br>
+<section id="dkonian" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Dkonian.png" class="face">
       <h1 class="racename">Dkonian</h1>
@@ -1298,8 +1178,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="elemental">
-      <br>
+<section id="elemental"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Elemental.png" class="face">
       <h1 class="racename">Elemental</h1>
@@ -1403,8 +1282,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="other">
-      <br>
+<section id="other" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Other.png" class="face">
       <h1 class="racename">The Other</h1>
@@ -1515,8 +1393,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="human">
-      <br>
+<section id="human" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Human.png" class="face">
       <h1 class="racename">Human</h1>
@@ -1534,7 +1411,7 @@ svg:hover {
       <div class="mobile" style="width:100%;">
     <img src="scripts/images/colraces/Human.png" class="face">
       <h1 class="racename">Human</h1>
-      <p class='subtitle'>blub</p>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
@@ -1623,8 +1500,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="dwarf">
-      <br>
+<section id="dwarf" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Dwarf.png" class="face">
       <h1 class="racename">Dwarf</h1>
@@ -1642,7 +1518,7 @@ svg:hover {
       <div class="mobile" style="width:100%;">
     <img src="scripts/images/colraces/Dwarf.png" class="face">
       <h1 class="racename">Dwarf</h1>
-      <p class='subtitle'>blub</p>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
@@ -1731,8 +1607,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="elf">
-      <br>
+<section id="elf" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Elf.png" class="face">
       <h1 class="racename">Elf</h1>
@@ -1748,13 +1623,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Elf.png" class="face">
+      <h1 class="racename">Elf</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -1839,8 +1714,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="halfelf">
-      <br>
+<section id="halfelf" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Half-Elf.png" class="face">
       <h1 class="racename">Half-Elf</h1>
@@ -1856,13 +1730,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Half-Elf.png" class="face">
+      <h1 class="racename">Half-Elf</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -1947,8 +1821,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="halfling">
-      <br>
+<section id="halfling" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Halfling.png" class="face">
       <h1 class="racename">Halfling</h1>
@@ -1964,13 +1837,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Halfling.png" class="face">
+      <h1 class="racename">Halfling</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2055,8 +1928,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="gnome">
-      <br>
+<section id="gnome" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Gnome.png" class="face">
       <h1 class="racename">Gnome</h1>
@@ -2072,13 +1944,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Gnome.png" class="face">
+      <h1 class="racename">Gnome</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2163,8 +2035,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="dragonborn">
-      <br>
+<section id="dragonborn" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Dragonborn.png" class="face">
       <h1 class="racename">Dragonborn</h1>
@@ -2180,13 +2051,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Dragonborn.png" class="face">
+      <h1 class="racename">Dragonborn</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2271,8 +2142,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="triton">
-      <br>
+<section id="triton" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Triton.png" class="face">
       <h1 class="racename">Triton</h1>
@@ -2288,13 +2158,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Triton.png" class="face">
+      <h1 class="racename">Triton</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2379,8 +2249,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="tiefling">
-      <br>
+<section id="tiefling" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Tiefling.png" class="face">
       <h1 class="racename">Tiefling</h1>
@@ -2396,13 +2265,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Tiefling.png" class="face">
+      <h1 class="racename">Tiefling</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2487,8 +2356,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="orc">
-      <br>
+<section id="orc" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Orc.png" class="face">
       <h1 class="racename">Orc</h1>
@@ -2504,13 +2372,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Orc.png" class="face">
+      <h1 class="racename">Orc</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2595,8 +2463,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="kenku">
-      <br>
+<section id="kenku" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Kenku.png" class="face">
       <h1 class="racename">Kenku</h1>
@@ -2612,13 +2479,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Kenku.png" class="face">
+      <h1 class="racename">Kenku</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2703,8 +2570,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="aarakocra">
-      <br>
+<section id="aarakocra" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Aarakocra.png" class="face">
       <h1 class="racename">Aarakocra</h1>
@@ -2720,13 +2586,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Aarakocra.png" class="face">
+      <h1 class="racename">Aarakocra</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2811,7 +2677,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="tortle"><br>
+<section id="tortle" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Tortle.png" class="face">
       <h1 class="racename">Tortle</h1>
@@ -2827,13 +2693,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Tortle.png" class="face">
+      <h1 class="racename">Tortle</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -2918,7 +2784,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="tabaxi"><br>
+<section id="tabaxi" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Tabaxi.png" class="face">
       <h1 class="racename">Tabaxi</h1>
@@ -2934,13 +2800,14 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Tabaxi.png" class="face">
+      <h1 class="racename">Tabaxi</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
+
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -3025,7 +2892,7 @@ svg:hover {
     </ul>
   </div>
       </section>
-      <section id="centaur"><br>
+<section id="centaur" class="unfinished"><br>
   <div class="element1">
     <img src="scripts/images/colraces/Centaur.png" class="face">
       <h1 class="racename">Centaur</h1>
@@ -3041,13 +2908,13 @@ svg:hover {
   </div>
   <div class="element2">
       <div class="mobile" style="width:100%;">
-    <img src="scripts/images/colraces/Gearborn.png" class="face">
-      <h1 class="racename">Gearborn</h1>
-      <p class='subtitle'>&quot;Hello dying stranger! I am here to he- oh, you died..&quot;</p>
+    <img src="scripts/images/colraces/Centaur.png" class="face">
+      <h1 class="racename">Centaur</h1>
+      <p class='subtitle'>&quot;&quot;</p>
         <p><b>Racial Traits: </b>A</p>
         <p><b>Example Names: </b>B</p>
         <p><b>Home Town: </b>C</p>
-        <p><b>Recommended Classes: </b>Artificier, Fighter, Cleric, Bard</p>
+        <p><b>Recommended Classes: </b>D</p>
   </div>
     <h2 class="sectionheader">Background & Origin</h2>
       <p>Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler Filler</p>
@@ -3131,27 +2998,16 @@ svg:hover {
     </ul>
   </div>
       </section>
-<button onclick="topFunction()" id="toTop"><span class="material-icons">&#xE5CE;</span></button>
+  <button onclick="topFunction()" id="toTop"><span class="material-icons">&#xE5CE;</span></button>
 </body>
 <script>
-//Get the button
-var mybutton = document.getElementById("toTop");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
+  var mybutton = document.getElementById("toTop");
+  window.onscroll = function() {scrollFunction()};
+  function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 200) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+    mybutton.style.display = "block";} else {mybutton.style.display = "none";}}
+  function topFunction() {
   document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
+  document.documentElement.scrollTop = 0;}
+  </script>
 </html> 
