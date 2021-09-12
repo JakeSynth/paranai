@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="scripts/lightbox.min.css" rel="stylesheet" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1500px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 0px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.contenttodo {
+  padding: 0px;
+    background-color: #333;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+  box-shadow: 5px 5px 7px #000;
+  height: 215px;
+}
+.contentdone {
+  padding: 0px;
+    background-color: #159947;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+  box-shadow: 5px 5px 7px #000;
+  height: 215px;
+}
+.contentplan {
+  padding: 0px;
+    background-color: #FF8A25;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+  box-shadow: 5px 5px 7px #000;
+  height: 215px;
+}
+.contentdev {
+  padding: 0px;
+    background-color: #1E3A4B;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+  box-shadow: 5px 5px 7px #000;
+  height: 215px;
+}
+.contentmore {
+  padding: 0px;
+    background-color: darkred;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    color: whitesmoke;
+  box-shadow: 5px 5px 7px #000;
+  height: 215px;
+}
+.contentnone {
+  padding: 0px;
+    background-color: transparent;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+th {font-weight: normal;
+  font-size: 18px;
+}
+img {
+  padding-top: 15px;}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+  .column2 {
+    width: 50%;
+  }
+  .hide {
+    display: none;
+  }
+  img {width: 80%; height: auto!important;}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+  .column2 {
+    width: 100%;
+  }
+  .hide {
+    display: none;
+  }
+}
+a {
+  font-weight: bold;
+  
+}
+.header {
+  color: black;
+  text-decoration: none;
+  padding-bottom: -5px;
+}
+table {
+  width: 100%;
+}
+th {
+  width: 50%;
+}
+</style>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main"><a href="https://www.paranai.co.uk"><img src="scripts/images/header2.png" style="display: block; margin: auto; height: 200px; padding-top: 2%;"></a>
+  <div style="width:100%; text-align: center; color: white;padding-top: 20px;"><h1 style="">Development Roadmap</h1></div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="contentdone"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.done.svg">
+      <h2>Leaflet Map</h2>
+      <p>Released</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contentdone"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.done.svg">
+      <h2>Town Markers</h2>
+      <p>Released</p>
+    </div>
+    </div>
+  <div class="column">
+    <div class="contentdone"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.done.svg">
+      <h2>Places of Interest Markers</h2>
+      <p>Released</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contentdone"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.done.svg">
+      <h2>Capital, Country, & Marvel Markers</h2>
+      <p>Released</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="contentdone"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.done.svg">
+      <h2>Introductory Sidebar</h2>
+      <p>Released</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contentdone"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.done.svg">
+      <h2>Town Marker Descriptions</h2>
+      <p>Released</p>
+    </div>
+    </div>
+  <div class="column">
+    <div class="contentdev"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.dev.svg">
+      <h2>Races of Paranai Page</h2>
+      <p>In Development</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contentdone"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.done.svg">
+      <h2>Town Sidebars</h2>
+      <p>Released</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="contentplan"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.plan.svg">
+      <h2>Places of Interest Sidebars</h2>
+      <p>In Planning</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contentplan"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.plan.svg">
+      <h2>Capital & Country Sidebars</h2>
+      <p>In Planning</p>
+    </div>
+    </div>
+  <div class="column">
+    <div class="contentplan"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.plan.svg">
+      <h2>Gods & Religion Page</h2>
+      <p>In Planning</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contenttodo"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.yet.svg">
+      <h2>Replace 'Inadequate' Race Icons</h2>
+      <p>Yet to Start</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="contenttodo"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.yet.svg">
+      <h2>Town Population Stats</h2>
+      <p>Yet to Start</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contenttodo"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.yet.svg">
+      <h2>Replace Temporary Art Assets</h2>
+      <p>Yet to Start</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contenttodo"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.yet.svg">
+      <h2>Race Page Character Silhouettes</h2>
+      <p>Yet to Start</p>
+    </div>
+    </div>
+  <div class="column">
+    <div class="contenttodo"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.yet.svg">
+      <h2>Gods & Religion Page Silhouettes</h2>
+      <p>Yet to Start</p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="contentmore"><img style="width: 35px; padding-bottom: -10px;" src="scripts/images/c.more.svg">
+      <h2>More to come..</h2>
+      <p> </p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="contentnone">
+    </div>
+  </div>
+  <div class="column">
+    <div class="contentnone">
+    </div>
+    </div>
+  <div class="column">
+    <div class="contentnone">
+    </div>
+  </div>
+</div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div><p style="text-align: center;"><a  style='color: whitesmoke; text-decoration: none;' href='https://www.jakesynth.co.uk/'>Jake Heath &copy; 2021<a></p>
+</body>
+<script src="scripts/lightbox-plus-jquery.js"></script>
+</html>
