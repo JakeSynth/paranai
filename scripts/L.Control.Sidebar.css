@@ -41,7 +41,8 @@
       box-shadow: none;
       border: 2px solid rgba(0, 0, 0, 0.2);
       background-clip: padding-box; }
-  @media (max-width: 412px) {.race{width:45px!important;}}
+  @media (max-width: 412px) {.race{width:45px!important;}
+.button {width: 80%;}}
   @media (max-width: 767px) {
     .leaflet-sidebar {
       width: 100%;
@@ -64,7 +65,8 @@
         border-radius: 0; }
         .leaflet-touch .leaflet-sidebar > .leaflet-control {
           border: 0; } 
-  .race{width:120px;}}
+  .race{width:120px;}
+.button {width: 80%;}}
   @media (min-width: 768px) and (max-width: 991px) {
     .leaflet-sidebar {
       width: 390px; }
@@ -72,7 +74,8 @@
         left: 390px; }
       .leaflet-sidebar.right.visible ~ .leaflet-right {
         right: 390px; } 
-  .race{width:50px!important;}}
+  .race{width:50px!important;}
+.button {width: 80%;}}
   @media (min-width: 992px) and (max-width: 1199px) {
     .leaflet-sidebar {
       width: 390px; }
@@ -80,7 +83,8 @@
         left: 390px; }
       .leaflet-sidebar.right.visible ~ .leaflet-right {
         right: 390px; }
-  .race{width:50px!important;}}
+  .race{width:50px!important;}
+.button {width: 80%;}}
   @media (min-width: 1200px) {
     .leaflet-sidebar {
       width: 460px; }
@@ -88,7 +92,7 @@
         left: 460px; }
       .leaflet-sidebar.right.visible ~ .leaflet-right {
         right: 460px; }}
-.button {width: 360px;}
+.button {width: 80%;}
   .race{width:60px;}
 .race:hover {
   background-color: lightgray;
