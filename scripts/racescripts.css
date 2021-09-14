@@ -150,6 +150,7 @@ border: 0px none white;
   body {margin-right: 0%!important;
     margin-left: 0%!important;}
 }
+.mobileraces {display: none;}
 @media all and (max-width: 1400px) {
   .txt {display: none;}
   .sidenav {width:95px;}
@@ -167,6 +168,14 @@ border: 0px none white;
   .smallspacer {display: none;}
 }
 @media all and (max-width: 1001px) {
+.mobileraces {display: block;}
+.mobileraces span {font-size: 12px;display: block;color:black;font-weight: bold;}
+.mobileraces a { text-decoration: none;}
+.mobileraces .item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;}
   body {margin-right: 8px!important;}
   .main {padding: 0px 0px;}
   .sidenav {display: none;}
