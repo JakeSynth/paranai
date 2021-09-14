@@ -169,7 +169,7 @@ border: 0px none white;
 }
 @media all and (max-width: 1001px) {
 .mobileraces {display: block;}
-.mobileraces span {font-size: 12px;display: block;color:black;font-weight: bold;}
+.mobileraces span {font-size: 16px;display: block;color:black;font-weight: bold;width: 100px;}
 .mobileraces a { text-decoration: none;}
 .mobileraces .item {
     vertical-align: top;
