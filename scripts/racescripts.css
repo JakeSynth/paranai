@@ -4,6 +4,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   background-color: #222;
+  margin-right: 10%;
 }
 h1 {
   justify-content: center;
@@ -63,14 +64,10 @@ li {
   font-weight: bold;
   text-decoration: underline dotted;
 }
-} 
 .le, .ne, .ce {
   color: red;
   font-weight: bold;
   text-decoration: underline dotted;
-}
-}
-table {
 }
 hr {
   border-color: #222;
@@ -150,6 +147,8 @@ border: 0px none white;
 }
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
+  body {margin-right: 0%!important;
+    margin-left: 0%!important;}
 }
 @media all and (max-width: 1400px) {
   .txt {display: none;}
@@ -168,6 +167,8 @@ border: 0px none white;
   .smallspacer {display: none;}
 }
 @media all and (max-width: 1001px) {
+  body {margin-right: 10%!important;
+    margin-left: 10%!important;}
   .main {padding: 0px 0px;}
   .sidenav {display: none;}
   .mobile {display: block!important;}
