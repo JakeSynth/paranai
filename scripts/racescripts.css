@@ -167,8 +167,7 @@ border: 0px none white;
   .smallspacer {display: none;}
 }
 @media all and (max-width: 1001px) {
-  body {margin-right: 10%!important;
-    margin-left: 10%!important;}
+  body {margin-right: 8px!important;}
   .main {padding: 0px 0px;}
   .sidenav {display: none;}
   .mobile {display: block!important;}
