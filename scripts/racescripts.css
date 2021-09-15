@@ -141,9 +141,6 @@ border: 0px none white;
   text-align: center;
   justify-content: center;
 }
-.element3 div {
-  font-size: 14px;
-}
 .big {
   font-size: 17px;
 }
@@ -170,7 +167,7 @@ border: 0px none white;
   .headerimage2 {display: none;}
   .smallspacer {display: none;}
 }
-@media all and (max-width: 1001px) {
+@media all and (max-width: 950px) {
   .toppart {display: none;}
 .mobileraces {display: block;}
 .mobileraces span {font-size: 16px;display: block;color:black;font-weight: bold;width: 100px;}
@@ -183,11 +180,9 @@ border: 0px none white;
   body {margin-right: 8px!important;}
   .main {padding: 0px 0px;}
   .sidenav {display: none;}
-  .face {max-width: 50%!important;
-    float: left; padding-right: 25px; padding-bottom: 45px;}
-    .subtitle {text-align: center!important; padding-bottom: 10px;
-    }
+  .subtitle {text-align: center!important;}
   .mobile {display: block!important; float: right;}
+  .face {float: left; max-width: 50%!important;padding: 25px;}
   .element1 {display: none;}
   .element2 {width: 100%;margin:0px; float: right; padding-top: 30px;}
   .main {margin:60px; margin-right: 30px;}
