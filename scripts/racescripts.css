@@ -118,6 +118,10 @@ hr {
 border: 0px none white;
 padding-right: 25px;
 }
+.minerals2 th, td, tr, tbody, table {
+border: 0px none white;
+padding-right: 25px;
+}
 .sidenav span {
   display: block;
 }
