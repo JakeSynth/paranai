@@ -4,6 +4,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   background-color: #222;
+  width: 90%;
 }
 h1 {
   justify-content: center;
@@ -162,7 +163,10 @@ border: 0px none white;
   .sidenav img {padding-left: 5px;}
   .headerimage2 {display: block;}
   .smallspacer {display: block;}
+  body {margin-right: 8px!important; width: 95%;}
 }
+@media all and (max-width: 1100px) {
+  body {margin-right: 8px!important; width: 100%;}}
 @media all and (min-width: 1401px) {
   .headerimage2 {display: none;}
   .smallspacer {display: none;}
@@ -177,7 +181,7 @@ border: 0px none white;
     display: inline-block;
     text-align: center;
     margin-bottom: 10px;}
-  body {margin-right: 8px!important;}
+  body {margin-right: 8px!important; width: 100%;}
   .main {padding: 0px 0px;}
   .sidenav {display: none;}
   .subtitle {text-align: center!important;}
