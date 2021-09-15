@@ -161,7 +161,6 @@ border: 0px none white;
   .sidenav img {padding-left: 5px;}
   .headerimage2 {display: block;}
   .smallspacer {display: block;}
-  button {display: none!important;}
 }
 @media all and (min-width: 1401px) {
   .headerimage2 {display: none;}
@@ -225,19 +224,17 @@ border: 0px none white;
   padding: 18px 17px 12px 18px;
   border-radius: 40px;
 }
-  .mobile {display: none;}
-
 #toTop:hover {
   background-color: #444;
 }
+.mobile {display: none;}
 .face {
         display:block;
         margin-left: auto;
         margin-right: auto;
     max-width: 85%;
     height: auto;
-    width: auto;
-}
+    width: auto;}
 section {
   height: 100vh;
 }
