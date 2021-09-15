@@ -102,6 +102,9 @@ hr {
   width:60px;
   padding-left: 10px;
 }
+.sidenav h1, h2 {
+  font-size: 15px!important;
+}
 .main {
   margin-left: 240px; 
   padding: 0px 10px;
