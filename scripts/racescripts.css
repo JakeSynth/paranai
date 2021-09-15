@@ -104,9 +104,10 @@ hr {
 }
 .main {
   margin-left: 240px; 
-  font-size: 28px; 
   padding: 0px 10px;
 }
+.main h1, h2 {
+  font-size: 28px; }
 .coleotb th, td, tr, tbody, table {
   font-size: 15px!important;
   border: 1px solid black;
