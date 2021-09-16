@@ -42,6 +42,42 @@ p {
 li {
   padding: 5px;
 }
+.mancontainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50%;
+}
+
+.manresponsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.eastcontainer {
+  position: relative; 
+  width: 100%;
+  overflow: hidden;
+  padding-top: 80%;
+  margin-left: 25%;
+}
+
+.eastresponsive-iframe {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  border: none;
+}
 .subtitle {
   justify-content: center;
   text-align: center;
