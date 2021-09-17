@@ -172,6 +172,15 @@ padding-right: 25px;
   margin: auto;
   padding: 2%;
 }
+.element11 {
+  float: right;
+  width: 30%;
+  height: 80%;
+  background: #fff;
+  margin: auto;
+  padding: 2%;
+  padding-top: 0px;
+}
 .element2 {
   float: left;
   width: 60%;
@@ -233,6 +242,7 @@ padding-right: 25px;
   .subtitle {text-align: center!important;}
   .mobile {display: block!important; float: right; padding-right: 25px;}
   .face {float: left; max-width: 50%!important;padding: 50px; padding-top: 25px;}
+  .face2 {float: left; max-width: 50%!important;padding: 50px; padding-top: 25px;}
   .element1 {display: none;}
   .element2 {width: 100%;margin:0px; float: right; padding-top: 30px;}
   .main {margin:60px; margin-right: 30px;}
@@ -286,6 +296,15 @@ padding-right: 25px;
     max-width: 85%;
     height: auto;
     width: auto;}
+.face2 {
+        display:block;
+        padding: 0px;
+        margin-left: -6.7%;
+        margin-right: auto;
+    max-width: 113.3%;
+  background-color: #222;
+    height: auto;
+    width: auto;}
 section {
   height: 100vh;
 }
@@ -293,6 +312,10 @@ ul {
   font-size: 15px;
 }
 .element1 p {
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+.element11 p {
   margin-top: 10px;
   margin-bottom: 25px;
 }
