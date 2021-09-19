@@ -192,7 +192,6 @@ padding-right: 25px;
 .element3 {
   background: #fff;
   margin: auto;
-  padding: 2%;
   padding-bottom: 0px;
   height: fit-content;
   text-align: center;
@@ -231,11 +230,7 @@ padding-right: 25px;
 .mobileraces {display: block;}
 .mobileraces span {font-size: 16px;display: block;color:black;font-weight: bold;width: 100px;}
 .mobileraces a { text-decoration: none;}
-.mobileraces .item {
-    vertical-align: top;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 10px;}
+.mobileraces .item {vertical-align: top;display: inline-block;text-align: center;margin-bottom: 10px;}
   body {margin-right: 8px!important; width: 100%;}
   .main {padding: 0px 0px;}
   .sidenav {display: none;}
