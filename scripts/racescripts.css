@@ -190,10 +190,8 @@ padding-right: 25px;
   height: fit-content;
 }
 .element3 {
-  background: #fff;
+  background: #222;
   margin: auto;
-  padding-bottom: 0px;
-  height: fit-content;
   text-align: center;
   justify-content: center;
 }
