@@ -6,6 +6,7 @@ body {
   background-color: #222;
   width: 90%;
 }
+img {user-select: none;}
 h1 {
   justify-content: center;
   text-align: center;
@@ -322,6 +323,6 @@ ul {
 svg:hover {
   color: #000;
 }
-.unfinished {
+#unfinished {
   display: none!important;
 }
