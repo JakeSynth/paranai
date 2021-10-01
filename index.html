@@ -79,13 +79,13 @@
     poiIcon = new ImpoIcon({iconUrl: 'scripts/images/poi2.png'});
     cntIcon = new ImpoIcon({iconUrl: 'scripts/images/country2.png'});
 //Coordinate Finder
-    //var marker = L.marker([3, 250], {
-    //  draggable: true,
-    //}).addTo(map);
-    //marker.bindPopup('LatLng Marker').openPopup();
-    //marker.on('dragend', function(e) {
-    //  marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-    //});
+    var marker = L.marker([3, 250], {
+      draggable: true,
+    }).addTo(map);
+    marker.bindPopup('LatLng Marker').openPopup();
+    marker.on('dragend', function(e) {
+      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    });
 //Sidebar
  var sidebar = L.control.sidebar('sidebar', {
             closeButton: true,
@@ -472,11 +472,11 @@
         document.getElementById("intro").hidden=true;
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>The V&#39;rari Sisters</h1><i>Representing fertility with a sister each for inexhaustible livestock, bountiful plants, and strong newborns.</i><hr><p>Placeholder Text</p>");})
    poi_44.bindPopup(L.popup().setContent('<b><h3>The V&#39;rari Sisters</h3></b><i>Representing fertility with a sister each for inexhaustible livestock, bountiful plants, and strong newborns.</i><br><br>Click to see more'));
-   var poi_45 = L.marker([-46.118942, 25.938721], {icon: poiIcon}).on('click', function () {
+   var poi_45 = L.marker([-45.721522, 26.191406], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>River Keres</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_45.bindPopup(L.popup().setContent('<b><h3>River Keres</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Runaway Bride</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+   poi_45.bindPopup(L.popup().setContent('<b><h3>Runaway Bride</h3></b><i></i><br><br>Click to see more'));
    var poi_46 = L.marker([-45.675482, 38.287354], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -542,11 +542,11 @@
         document.getElementById("intro").hidden=true;
         sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Derri, the Sinking City</h1><i>The council of Derri drew water from the ground using powerful magic instead of building a well. This action turned the once fertile soil into a deep bog in which the houses of Derri are slowly sinking, constantly being built up with new floors to move into as the lower ones sink deeper into the marsh.</i><hr><p>Placeholder Text</p>");})
    poi_58.bindPopup(L.popup().setContent('<b><h3>Derri, the Sinking City</h3></b><i>The council of Derri drew water from the ground using powerful magic instead of building a well. This action turned the once fertile soil into a deep bog in which the houses of Derri are slowly sinking, constantly being built up with new floors to move into as the lower ones sink deeper into the marsh.</i><br><br>Click to see more'));
-   var poi_59 = L.marker([-45.844108, -25.466309], {icon: poiIcon}).on('click', function () {
+   var poi_59 = L.marker([-45.228481, -24.862061], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>River Rums & Uumel</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_59.bindPopup(L.popup().setContent('<b><h3>River Rums & Uumel</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>Bought and Sold</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+   poi_59.bindPopup(L.popup().setContent('<b><h3>Bought and Sold</h3></b><i></i><br><br>Click to see more'));
    var poi_60 = L.marker([-32.565333, -42.209473], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
@@ -610,8 +610,8 @@
    var poi_72 = L.marker([-5.747174, -42.593994], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
-        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>River Wesner</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
-   poi_72.bindPopup(L.popup().setContent('<b><h3>River Wesner</h3></b><i></i><br><br>Click to see more'));
+        sidebar.setContent("<img src='https://via.placeholder.com/770x400'><h1>A Child in the Reeds</h1><i>Placeholder Subtitle</i><hr><p>Placeholder Text</p>");})
+   poi_72.bindPopup(L.popup().setContent('<b><h3>A Child in the Reeds</h3></b><i></i><br><br>Click to see more'));
    var poi_73 = L.marker([-9.709057, -44.143066], {icon: poiIcon}).on('click', function () {
         sidebar.show();
         document.getElementById("intro").hidden=true;
