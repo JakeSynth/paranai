@@ -79,13 +79,13 @@
     poiIcon = new ImpoIcon({iconUrl: 'scripts/images/poi2.png'});
     cntIcon = new ImpoIcon({iconUrl: 'scripts/images/country2.png'});
 //Coordinate Finder
-    var marker = L.marker([3, 250], {
-      draggable: true,
-    }).addTo(map);
-    marker.bindPopup('LatLng Marker').openPopup();
-    marker.on('dragend', function(e) {
-      marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
-    });
+    //var marker = L.marker([3, 250], {
+    //  draggable: true,
+    //}).addTo(map);
+    //marker.bindPopup('LatLng Marker').openPopup();
+    //marker.on('dragend', function(e) {
+    //  marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    //});
 //Sidebar
  var sidebar = L.control.sidebar('sidebar', {
             closeButton: true,
