@@ -18,7 +18,7 @@
 <div id="intro">
     <img src="scripts/images/intro-temp.gif" style="width:30px; height:100px;"></div>
     <div id="sidebar"></div>
-    <div id="map" style="width: 100%; height: 100%; background: #455586;"></div><style>
+    <div id="map" style="width: 100%; height: 100%; background: #52679e;"></div><style>
 .info {
   position: relative;
   display: inline-block;
@@ -51,9 +51,9 @@
 //My Attribution
     var myAttrib = 'Paranai created by <a target="_blank" href="https://www.jakesynth.co.uk">JakeSynth</a>, &copy; 2021';
 //Map
-    var map = L.map('map').setView([0, 0], 3);
+    var map = L.map('map').setView([67.05887, -4.240723], 3);
     document.getElementById("intro").hidden=true;
-    L.tileLayer('map/{z}/{x}/{y}.jpg', {
+    L.tileLayer('map/{z}/{x}/{y}.png', {
       attribution: myAttrib,
       continuousWorld: false,
       noWrap: true,  
