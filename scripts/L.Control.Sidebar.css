@@ -15,7 +15,8 @@
     transition: left 0.5s, width 0.5s;
     padding-right: 0; }
     .leaflet-sidebar.left.visible {
-      left: 0; }
+      left: 0; 
+        overflow-y: hidden;}
   .leaflet-sidebar.right {
     right: -500px;
     transition: right 0.5s, width 0.5s;
@@ -25,12 +26,10 @@
   .leaflet-sidebar > .leaflet-control {
     height: 100%;
     width: 100%;
-    overflow: auto;
     -webkit-overflow-scrolling: touch;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 24px 24px;
     font-size: 1.1em;
     background: white;
     box-shadow: 0 1px 7px rgba(0, 0, 0, 0.65);
@@ -94,11 +93,28 @@
         right: 460px; }}
 .button {width: 80%;}
   .race{width:60px;}
-.race:hover {
-  background-color: lightgray;
-  border: 5px;
-  border-radius: 50px;
-}
+
+
+.findoutBtn {padding:10px; 
+  display:flex; 
+  text-align:center; 
+  background-color:#444; 
+  flex-direction: column; 
+  font-size:16px; 
+  font-weight:bold; 
+  color:white!important; 
+  border-radius:8px; 
+  text-decoration:none;}
+
+.findoutBtnWrapper{padding:20px; 
+  position:sticky; 
+  bottom:-30px; 
+  left:0px; 
+  right:0px; 
+  top: auto;
+  background-color:white;}
+
+
 
   .leaflet-sidebar .close {
     position: absolute;
@@ -123,6 +139,8 @@
 .tooltip {
   position: relative !important;
   display: inline-block !important;
+  font: 14px/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .tooltip .tooltiptext {
@@ -137,13 +155,23 @@
   /* Position the tooltip */
   position: absolute !important;
   z-index: 1 !important;
-  bottom: 100% !important;
+  bottom: 120% !important;
   text-align: center !important;
   left: 50% !important;
   margin-left: -60px !important;
 }
 .tooltip:hover .tooltiptext {
   visibility: visible !important;
+}
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 .button {

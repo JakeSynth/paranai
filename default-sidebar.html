@@ -1,0 +1,356 @@
+<html>
+  <head>
+    <title>Paranai - An in-depth fantasy setting for Dungeons & Dragons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scripts/script.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="scripts/leaflet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <script src="scripts/leaflet.js"></script>
+    <script src="scripts/L.Control.Sidebar.js"></script>
+    <link rel="stylesheet" href="scripts/L.Control.Sidebar.css">
+  </head>
+  <style type="text/css">
+    p {
+      font: 12px/1.5 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    a {
+      font: 16px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    h2 {
+      font: 24px 'Martel Sans', sans-serif;
+    }
+  </style>
+  <body style="padding: 24px; margin: 0px; class='leaflet-control'">
+    <img src='scripts/images/header2.png'>
+    <br>
+    <p style='text-align:justify;'>
+      <i>An in-depth fantasy setting for Dungeons & Dragons including expansive lore, locations, quest prompts, and more...
+    </p>
+    </i>
+    <h2 style='text-align:center;margin-top:35px;'>Status: <span style='color:#4CAF50;'>Temporary Hiatus</span>
+    </h2>
+    <p style='text-align:justify; padding:10px;'>
+      <span style='font-style:normal;'>Beset in the sea as a jewel set in an azure crown; the island of Paranai and it's close neighbours jut from the waves as the sole land for weeks sailing in any direction. Titanous beasts beneath the &quot;Outer-Blue&quot; stymie any travellers who dare visit, or attempt to leave, and awakened magics in the very soil are beginning to take their toll on those living there. The continents of Meilur Aaeth at its far east, The Ilsa distant west, and Bhy'allor further still sets the tides bearing curious flotsam to grace the shores of the islands.</span>
+    </p>
+    <hr>
+    </i>
+    <h2>Quick Links</h2>
+    <br>
+    <a href='/roadmap' class='button' style='font-weight: bold;'>Development Roadmap</a>
+    <br>
+    <br>
+    <br>
+    <a href='https://www.paranai.co.uk/races' target="_blank" class='button' style='font-weight: bold;'>The Races of Paranai</a>
+    <br>
+    <br>
+    <br>
+    <a class='button disabled' style='font-weight: bold;'>Gods, Religion, & Patrons</a>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <h2>Map Key</h2>
+    <div style='font-size:14px; !important'>
+      <table style='width:100% display:inline-block;'>
+        <tr>
+          <th>
+            <img src='scripts/images/lake.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Rivers & Lakes</p>
+          </th>
+          <th>
+            <img src='scripts/images/mountain.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Steep Mountains</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src='scripts/images/jungle.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Vicious Jungle</p>
+          </th>
+          <th>
+            <img src='scripts/images/desert.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Scorching Desert</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src='scripts/images/swamp.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Deep Swamp</p>
+          </th>
+          <th>
+            <img src='scripts/images/forest.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Dense Forest</p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <img src='scripts/images/trade.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Trade Routes</p>
+          </th>
+          <th>
+            <img src='scripts/images/port.png' style='padding-left:10px;'>
+          </th>
+          <th>
+            <p style='padding-left:10px; text-align:left; font-weight: bold;'>Ports</p>
+          </th>
+        </tr>
+      </table>
+    </div>
+    <p style='text-align:justify;'>
+      <br>The biomes highlighted on the map outline the borders of Difficult Terrain, where movement between points could increase drastically. A walking party would take a day's travel between the points dotted around Paranai normally; It is your choice how this is interpreted, from 8-12 hours to 24 hours. However, when in marked terrains below movement becomes awfully encumbered, and as such moving novel distances could take twice to quadruple the time it would usually take. (This is except for trade routes and ports which are included here for clarity.)
+      <hr>
+    <h2>The Races of Paranai</h2>
+    <p style='font-family: Lato, sans-serif;text-align:justify;'>While any race can be played the 28 below are written into the lore of the world, with 15 official races and 13 custom races there are many to choose from. Learn more about each race by selecting the portrait below or any portrait on the marker sidebars. <br>
+      <br>
+    <p>
+      <b>Exclusive Races</b>
+    </p>
+    <table style='width:100% display:inline-block;'>
+      <tr>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Beastman'>
+            <img src='scripts/images/races/Beastmen.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Beastman</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Coleoptera'>
+            <img src='scripts/images/races/Coleoptera.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Coleoptera</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Dkonian'>
+            <img src='scripts/images/races/Dkonian.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Dkonian</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Elemental'>
+            <img src='scripts/images/races/Elemental.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Elemental</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Frogperson'>
+            <img src='scripts/images/races/Frog-Person.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Frog-Person</span>
+        </th>
+      </tr>
+      <tr>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Gearborn'>
+            <img src='scripts/images/races/Gearborn.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Gearborn</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Geist'>
+            <img src='scripts/images/races/Geist.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Geist</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Lycan'>
+            <img src='scripts/images/races/Lycan.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Lycan</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Mushling'>
+            <img src='scripts/images/races/Mushling.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Mushling</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Other'>
+            <img src='scripts/images/races/Other.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Other</span>
+        </th>
+      </tr>
+      <tr>
+        <th class='tooltip' style='padding-left:10px;'>
+          <img src='scripts/images/races/spc.png' class='race'>
+          <span></span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Perissodan'>
+            <img src='scripts/images/races/Perissodan.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Perissodan</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Ratpack'>
+            <img src='scripts/images/races/Ratpack.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>The Ratpack</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Slimekin'>
+            <img src='scripts/images/races/Slimekin.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Slimekin</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <img src='scripts/images/races/spc.png' style='display:hidden;width:60px;'>
+          <span></span>
+        </th>
+      </tr>
+    </table>
+    <br>
+    <p>
+    <b>Official Races</b>
+    </p>
+    <table style='width:100% display:inline-block;'>
+      <tr>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Aarakocra'>
+            <img src='scripts/images/races/Aarakocra.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Aarakocra</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Centaur'>
+            <img src='scripts/images/races/Centaur.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Centaur</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Dragonborn'>
+            <img src='scripts/images/races/Dragonborn.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Dragonborn</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Dwarf'>
+            <img src='scripts/images/races/Dwarf.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Dwarf</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Elf'>
+            <img src='scripts/images/races/Elf.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Elf</span>
+        </th>
+      </tr>
+      <tr>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Gnome'>
+            <img src='scripts/images/races/Gnome.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Gnome</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Halfelf'>
+            <img src='scripts/images/races/Halfelf.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Half-Elf</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Halfling'>
+            <img src='scripts/images/races/Halfling.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Halfling</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Human'>
+            <img src='scripts/images/races/Human.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Human</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Kenku'>
+            <img src='scripts/images/races/Kenku.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Kenku</span>
+        </th>
+      </tr>
+      <tr>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Orc'>
+            <img src='scripts/images/races/Orc.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Orc</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Tabaxi'>
+            <img src='scripts/images/races/Tabaxi.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Tabaxi</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Tiefling'>
+            <img src='scripts/images/races/Tiefling.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Tiefling</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Tortle'>
+            <img src='scripts/images/races/Tortle.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Tortle</span>
+        </th>
+        <th class='tooltip' style='padding-left:10px;'>
+          <a target='_blank' href='https://www.paranai.co.uk/races#Triton'>
+            <img src='scripts/images/races/Triton.svg' class='race'>
+          </a>
+          <span class='tooltiptext'>Triton</span>
+        </th>
+      </tr>
+    </table>
+    <br>
+    <hr>
+    <h2>Quick Tips</h2>
+    <table>
+      <tr>
+        <th style='width:60px; height:120px;'>
+          <img src='scripts/images/markergroups.png'>
+        </th>
+        <th>
+          <p style='padding-left:15px; text-align:justify; font-family: Lato, sans-serif;font-weight:normal;'>Hover the layer control in the top right for marker categories, select what you want to be shown and hover over the markers to get a small blurb. <br>
+            <br>
+            <span style='font-weight:bold;'>Click the markers to learn more about them.</span>
+          </p>
+        </th>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th style='width:60px; height:120px;'>
+          <img src='scripts/images/highlight.png'>
+        </th>
+        <th>
+          <p style='padding-left:15px; text-align:justify; font-family: Lato, sans-serif;font-weight:normal;'>If you find the text to be permanently highlighted, not appearing correctly, or is generally bugged then zoom out and triple-click anywhere on the map to solve the issue.</p>
+        </th>
+      </tr>
+    </table>
+    <br>
+    <p style='text-align:center;'>
+      <a style='color:black;font-weight:bolder!important;text-decoration:none;font-weight:700!important;font-size:2vh;' href='https://www.jakesynth.co.uk/'>Created by Jake Heath &copy; 2024</a>
+    </p>
+  </body>
+</html>
