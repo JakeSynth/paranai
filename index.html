@@ -237,6 +237,7 @@ sidebarContent += "</th></tr></table><hr><p>" + description + "</p><div class='f
 
 if (markerType === 'capital') {
             // get additional info for town markers
+            var banner = rowData[5];
             var crest = rowData[6];
             var leaderType = rowData[9];
             var leaderName = rowData[10];
@@ -251,7 +252,7 @@ if (markerType === 'capital') {
             marker.on('click', function() {
                 sidebar.show();
                 document.getElementById("intro").hidden = true;
-                var sidebarContent = "<h1 style='float:left'>" + name + "</h1><img src='https://www.paranai.co.uk/scripts/images/" + crest + "crest.svg' style='float:left; padding-left:15px;padding-top:15px; height:30px; width:auto;'><br><br><br><br><i>" + description + "</i><hr><table style='width:100%;'><tr style='padding:10px;'><th style='width:50%; height:100px;'><img src='scripts/images/leader.png' style='width:80px!important;'><p style='margin:0px; font-weight:normal;'><b>Leader</b><br><b>" + leaderType + "</b> " + leaderName + "</p></th></tr></table>";
+                var sidebarContent = "<img src='https://www.paranai.co.uk/scripts/images/town/" + banner + ".png' style='width:100%;height:auto;'><br><h1 style='float:left'>" + name + "</h1><img src='https://www.paranai.co.uk/scripts/images/" + crest + "crest.svg' style='float:left; padding-left:15px;padding-top:15px; height:30px; width:auto;'><br><br><br><br><i>" + description + "</i><hr><table style='width:100%;'><tr style='padding:10px;'><th style='width:50%; height:100px;'><img src='scripts/images/leader.png' style='width:80px!important;'><p style='margin:0px; font-weight:normal;'><b>Leader</b><br><b>" + leaderType + "</b> " + leaderName + "</p></th></tr></table>";
 
 // dominant races
 var dominantRaces = [race1, race2, race3, race4];
