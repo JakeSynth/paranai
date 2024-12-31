@@ -199,6 +199,7 @@ function createMarkers(initObj, data) {
         
 if (markerType === 'towns') {
             // get additional info for town markers
+            var banner = rowData[5];
             var crest = rowData[6];
             var leaderType = rowData[9];
             var leaderName = rowData[10];
@@ -236,7 +237,7 @@ sidebarContent += "</th></tr></table><hr><p>" + description + "</p><div class='f
         }
 
 if (markerType === 'capital') {
-            // get additional info for town markers
+            // get additional info for capital markers
             var banner = rowData[5];
             var crest = rowData[6];
             var leaderType = rowData[9];
